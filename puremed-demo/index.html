@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pure Med Aesthetics · Edinburg, TX</title>
+<meta name="description" content="Injectables, Purefection laser lipo, facials, laser and wellness in Edinburg, Texas. Every treatment and starting price in one place.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F7F3ED;
+  --stone:#EDE5D8;
+  --vein:#DCD1C0;
+  --ink:#221A15;
+  --ink-2:#5A4C42;
+  --gold:#B08D57;
+  --gold-ink:#7A5B2B;
+  --gold-light:#DCC394;
+  --night:#1B1511;
+  --night-2:#2A211B;
+  --on-night:#F3ECE2;
+  --on-night-2:#C9BBA8;
+  --display:"Bodoni Moda", "Didot", serif;
+  --body:"Jost", "Futura", system-ui, sans-serif;
+  --wrap:min(1180px, 100% - 2.5rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+::selection{background:var(--gold-light);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;letter-spacing:-.015em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--ivory);padding:.6rem 1rem;z-index:100}
+.skip:focus{left:1rem;top:1rem}
+
+/* Demo ribbon */
+.concept{background:var(--night);color:var(--on-night-2);font-size:.8125rem;letter-spacing:.02em;text-align:center;padding:.55rem 1rem;line-height:1.45}
+.concept strong{color:var(--gold-light);font-weight:500}
+
+/* Buttons */
+.btn{--h:3rem;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:var(--h);padding:0 1.5rem;border-radius:999px;font:500 .9375rem/1 var(--body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--gold-light);color:var(--night)}
+.btn-gold:hover{background:#E8D3AB}
+.btn-ink{background:var(--ink);color:var(--ivory)}
+.btn-ink:hover{background:#3A2E25}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.btn-line:hover{background:rgba(255,255,255,.08)}
+.on-light .btn-line:hover{background:rgba(34,26,21,.05)}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+
+/* Header */
+.site-head{position:absolute;inset-inline:0;z-index:20;color:var(--on-night)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.1rem}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.brand img{width:52px;height:52px}
+.brand span{font-family:var(--display);font-size:1.15rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.1}
+.brand small{display:block;font:400 .6875rem/1.4 var(--body);letter-spacing:.3em;color:var(--on-night-2)}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav ul{display:flex;gap:1.75rem;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:.875rem;letter-spacing:.12em;text-transform:uppercase;padding-block:.5rem;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .35s var(--ease)}
+.nav ul a:hover{background-size:100% 1px}
+.nav .btn{--h:2.6rem;padding:0 1.15rem;font-size:.8125rem}
+@media (max-width:960px){.nav ul{display:none}}
+@media (max-width:560px){.nav .btn-line{display:none}.brand span{font-size:1rem}.brand img{width:44px;height:44px}}
+
+/* Hero */
+.hero{position:relative;min-height:min(100svh,920px);display:grid;align-items:end;color:var(--on-night);overflow:hidden;background:var(--night)}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform-origin:50% 30%;animation:settle 2.4s var(--ease) both}
+@keyframes settle{from{transform:scale(1.08);filter:brightness(.7)}to{transform:none;filter:none}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,21,17,.6) 0%,rgba(27,21,17,.2) 60%,rgba(27,21,17,0) 100%),linear-gradient(180deg,rgba(27,21,17,.55) 0%,rgba(27,21,17,.15) 30%,rgba(27,21,17,.4) 55%,rgba(27,21,17,.94) 100%)}
+.hero-copy{position:relative;padding-block:9rem 3.5rem;display:grid;gap:1.5rem;max-width:880px}
+.hero h1{font-size:clamp(2.75rem,7.2vw,6rem);font-weight:400;letter-spacing:-.025em;line-height:1}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero-lede{font-size:clamp(1.0625rem,1.6vw,1.25rem);max-width:36rem;color:var(--on-night);font-weight:300}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+.facts{position:relative;border-top:1px solid rgba(220,195,148,.35)}
+.facts ul{list-style:none;margin:0;padding:1.25rem 0 1.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem 2rem}
+.facts li{font-size:.9375rem;color:var(--on-night-2);line-height:1.4}
+.facts b{display:block;font:500 1rem/1.3 var(--body);color:var(--on-night);letter-spacing:.02em}
+@media (max-width:860px){.facts ul{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){.hero-media img{animation:none}}
+
+/* Section rhythm */
+section{scroll-margin-top:1rem}
+.block{padding-block:clamp(5rem,10vw,8.5rem)}
+.head{display:grid;gap:1rem;margin-bottom:clamp(2.5rem,5vw,3.75rem);max-width:44rem}
+.head h2{font-size:clamp(2.25rem,4.6vw,3.75rem)}
+.head p{color:var(--ink-2);font-size:1.125rem;max-width:38rem}
+
+/* Treatment menu */
+.menu{background:var(--ivory)}
+.menu-shell{display:grid;grid-template-columns:15rem 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.tabs{position:sticky;top:1.5rem;display:grid;gap:.25rem}
+.tabs button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--vein);font:400 1.375rem/1.2 var(--display);color:var(--ink-2);transition:color .25s var(--ease),padding .35s var(--ease)}
+.tabs button span{font:400 .8125rem/1 var(--body);letter-spacing:.08em;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--ink);padding-left:.9rem;border-bottom-color:var(--gold)}
+.tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.panel h3{font-size:clamp(1.75rem,3vw,2.25rem);margin-bottom:.5rem}
+.panel > p{color:var(--ink-2);margin-bottom:1.75rem;max-width:40rem}
+.items{list-style:none;margin:0;padding:0}
+.item{display:grid;grid-template-columns:1fr auto;gap:.25rem 1.5rem;padding:1.15rem 0;border-top:1px solid var(--vein)}
+.item:last-child{border-bottom:1px solid var(--vein)}
+.item-name{display:flex;align-items:baseline;gap:.75rem;font:500 1.0625rem/1.35 var(--body);letter-spacing:.01em}
+.item-name::after{content:"";flex:1;border-bottom:1px dotted var(--gold);transform:translateY(-.25em);min-width:1.5rem}
+.item-price{font:500 1.25rem/1.3 var(--display);font-variant-numeric:tabular-nums lining-nums;white-space:nowrap;text-align:right}
+.item-price small{display:block;font:400 .75rem/1.3 var(--body);letter-spacing:.06em;color:var(--ink-2);text-transform:uppercase}
+.item-note{grid-column:1/-1;color:var(--ink-2);font-size:.9688rem;line-height:1.55;max-width:44rem}
+.item-note span{white-space:nowrap}
+.menu-foot{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between;color:var(--ink-2);font-size:.9375rem}
+.js .panel[hidden]{display:none}
+.no-js .tabs{display:none}
+.no-js .panel + .panel{margin-top:4rem}
+@media (max-width:860px){
+  .menu-shell{grid-template-columns:1fr}
+  .tabs{position:sticky;top:0;z-index:5;display:flex;overflow-x:auto;gap:1.5rem;background:var(--ivory);margin-inline:-1.25rem;padding:0 1.25rem;scrollbar-width:none;border-bottom:1px solid var(--vein)}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{flex:none;border-bottom:2px solid transparent;font-size:1.125rem;padding:1rem 0 .85rem}
+  .tabs button span{display:none}
+  .tabs button[aria-selected="true"]{padding-left:0;border-bottom-color:var(--gold)}
+}
+
+/* Tox bank */
+.bank{background:var(--night);color:var(--on-night)}
+.bank-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(3rem,7vw,7rem);align-items:center}
+.bank h2{font-size:clamp(2.5rem,5.5vw,4.75rem);font-weight:400}
+.bank h2 em{color:var(--gold-light)}
+.bank-copy{display:grid;gap:1.5rem}
+.bank-copy p{color:var(--on-night-2);font-size:1.125rem;max-width:32rem}
+.bank-figure{font-variant-numeric:lining-nums proportional-nums;display:flex;align-items:baseline;gap:1rem;font-family:var(--display);color:var(--gold-light)}
+.bank-figure b{font-size:clamp(4rem,9vw,7rem);font-weight:400;line-height:.9;letter-spacing:-.03em}
+.bank-figure span{font:400 1rem/1.4 var(--body);color:var(--on-night-2);max-width:12rem}
+.tiers{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tiers caption{text-align:left;font:400 1.5rem/1.2 var(--display);padding-bottom:1rem;color:var(--on-night)}
+.tiers th,.tiers td{padding:.85rem 0;border-bottom:1px solid rgba(220,195,148,.22);text-align:left;font-weight:400}
+.tiers thead th{font-size:.8125rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-night-2);border-bottom-color:rgba(220,195,148,.5)}
+.tiers td:last-child,.tiers th:last-child{text-align:right}
+.tiers td:last-child{font:500 1.125rem/1 var(--display);color:var(--gold-light)}
+.tiers-note{margin-top:1rem;font-size:.875rem;color:var(--on-night-2)}
+@media (max-width:860px){.bank-grid{grid-template-columns:1fr}}
+
+/* Purefection */
+.body{background:var(--stone)}
+.body-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+.body-photo{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:2px}
+.body-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.body-copy{display:grid;gap:1.5rem}
+.body-copy h2{font-size:clamp(2.25rem,4.6vw,3.75rem)}
+.body-copy > p{color:var(--ink-2);font-size:1.125rem;max-width:34rem}
+.steps{list-style:none;margin:.5rem 0 0;padding:0;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:7rem 1fr;gap:1.5rem;padding:1.1rem 0;border-top:1px solid var(--vein)}
+.steps li:last-child{border-bottom:1px solid var(--vein)}
+.steps b{font:500 .8125rem/1.6 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
+.steps span{color:var(--ink)}
+@media (max-width:860px){.body-grid{grid-template-columns:1fr}.body-photo{aspect-ratio:4/4.2}.steps li{grid-template-columns:1fr;gap:.2rem}}
+
+/* Skinny shot */
+.skinny{background:var(--ivory)}
+.skinny-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--vein)}
+.skinny-row div{padding:2rem 2rem 2.25rem 0;display:grid;gap:.6rem;align-content:start}
+.skinny-row div + div{padding-left:2rem;border-left:1px solid var(--vein)}
+.skinny-row h3{font-size:1.75rem}
+.skinny-row p{color:var(--ink-2);font-size:.9688rem}
+.skinny-row .from{font:400 2.75rem/1 var(--display);font-variant-numeric:lining-nums proportional-nums;margin-top:.5rem}
+.skinny-row .from small{font:400 .8125rem/1.4 var(--body);letter-spacing:.06em;color:var(--ink-2);display:block;margin-top:.4rem}
+.skinny-foot{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;color:var(--ink-2)}
+@media (max-width:760px){.skinny-row{grid-template-columns:1fr}.skinny-row div,.skinny-row div + div{padding:1.75rem 0;border-left:0}.skinny-row div + div{border-top:1px solid var(--vein)}}
+
+/* Reviews */
+.reviews{background:var(--stone);padding-block:clamp(5rem,9vw,7.5rem)}
+.reviews-inner{display:grid;grid-template-columns:auto 1fr;gap:clamp(2.5rem,7vw,7rem);align-items:center}
+.score{display:grid;gap:.75rem;justify-items:start}
+.score-num{font:400 clamp(6rem,14vw,10rem)/.8 var(--display);letter-spacing:-.03em;font-variant-numeric:lining-nums proportional-nums}
+.stars{display:flex;gap:.3rem;color:var(--gold)}
+.stars svg{width:1.6rem;height:1.6rem}
+.score-count{font-size:.9375rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.reviews h2{font-size:clamp(2rem,4vw,3.25rem)}
+.reviews-copy{display:grid;gap:1.5rem}
+.pull{margin:0;padding:.25rem 0 .25rem 1.5rem;border-left:1px solid var(--gold);display:grid;gap:.6rem}
+.pull p{font:italic 400 clamp(1.375rem,2.4vw,1.75rem)/1.3 var(--display);color:var(--ink)}
+.pull cite{font:400 .875rem/1.4 var(--body);font-style:normal;letter-spacing:.06em;color:var(--ink-2)}
+.reviews-copy > p{color:var(--ink-2);font-size:1.125rem;max-width:36rem}
+.loved{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--vein)}
+.loved li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--vein)}
+.loved li:nth-child(odd){padding-right:1.5rem}
+.loved li:nth-child(even){padding-left:1.5rem;border-left:1px solid var(--vein)}
+.loved b{font-weight:500}
+.loved span{font:500 1.125rem/1 var(--display);color:var(--gold-ink);font-variant-numeric:lining-nums}
+@media (max-width:860px){.reviews-inner{grid-template-columns:1fr}}
+@media (max-width:520px){.loved{grid-template-columns:1fr}.loved li:nth-child(n){padding-inline:0;border-left:0}}
+
+/* Visit */
+.visit{background:var(--night);color:var(--on-night)}
+.visit-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(3rem,7vw,7rem)}
+.visit h2{font-size:clamp(2.5rem,5.5vw,4.5rem);font-weight:400}
+.visit-lede{color:var(--on-night-2);font-size:1.125rem;margin-top:1.25rem;max-width:30rem}
+.visit .hero-actions{margin-top:2rem}
+.details{display:grid;gap:0;margin:0}
+.details div{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:1.1rem 0;border-top:1px solid rgba(220,195,148,.22)}
+.details div:last-child{border-bottom:1px solid rgba(220,195,148,.22)}
+.details dt{font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);padding-top:.2rem}
+.details dd{margin:0;color:var(--on-night)}
+.details a{text-decoration:underline;text-decoration-color:rgba(220,195,148,.5)}
+.details a:hover{text-decoration-color:var(--gold-light)}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}.details div{grid-template-columns:1fr;gap:.25rem}}
+
+/* Footer */
+.site-foot{background:var(--night);color:var(--on-night-2);border-top:1px solid rgba(220,195,148,.18);padding-block:2.5rem 6.5rem;font-size:.875rem}
+.site-foot .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 2.5rem;align-items:center;justify-content:space-between}
+.site-foot img{width:64px;height:64px;opacity:.85}
+.site-foot nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.site-foot a{color:var(--on-night)}
+@media (min-width:861px){.site-foot{padding-bottom:2.5rem}}
+
+/* Mobile action bar */
+.dock{position:fixed;inset:auto .75rem .75rem;z-index:30;display:none;grid-template-columns:1fr 1.4fr;gap:.5rem;padding:.5rem;background:rgba(27,21,17,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;box-shadow:0 10px 30px rgba(27,21,17,.28);transform:translateY(160%);transition:transform .5s var(--ease)}
+.dock.show{transform:none}
+.dock .btn{--h:2.9rem;color:var(--on-night)}
+.dock .btn-gold{color:var(--night)}
+@media (max-width:860px){.dock{display:grid}}
+@media (prefers-reduced-motion:reduce){.dock{transition:none}}
+</style>
+</head>
+<body class="no-js">
+<script>document.body.classList.replace('no-js','js')</script>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="concept" role="note">
+  <strong>Design concept</strong> prepared for Pure Med Aesthetics by Drusus Technologies. Not the live site; prices and details are taken from puremedrgv.com.
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Pure Med Aesthetics, back to top">
+      <img src="images/logo.png" alt="" width="52" height="52">
+      <span>Pure Med<small>Aesthetics</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#menu">Treatments</a></li>
+        <li><a href="#tox">Tox bank</a></li>
+        <li><a href="#purefection">Purefection</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a class="btn btn-line" href="tel:+19566287873">(956) 628-PURE</a>
+      <a class="btn btn-gold" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media">
+      <img src="images/salon.jpg" alt="The Pure Med Aesthetics salon in Edinburg: a white marble reception desk under gold chandeliers" width="1600" height="1198" fetchpriority="high">
+    </div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 id="hero-title">The Valley's most <em>qualified</em> hands in aesthetics.</h1>
+        <p class="hero-lede">Injectables, physician-led laser lipo, medical facials and wellness, all under one chandelier in Edinburg, Texas.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Book a consultation</a>
+          <a class="btn btn-line" href="#menu">See every price</a>
+        </div>
+      </div>
+      <div class="facts">
+        <ul>
+          <li><b>Physician-led</b>Body contouring by Dr. Jim Garza</li>
+          <li><b>5.0 on Google</b>From 737 client reviews</li>
+          <li><b>Pay over time</b>Financing with Cherry</li>
+          <li><b>Edinburg, TX</b>4101 Crosspoint Blvd</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu block" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="menu-title">The treatment menu</h2>
+        <p>Every service and its starting price, in one place. New to injectables? We recommend booking a consultation with one of our providers first.</p>
+      </div>
+
+      <div class="menu-shell">
+        <div class="tabs" role="tablist" aria-label="Treatment categories">
+          <button role="tab" id="t-inj" aria-controls="p-inj" aria-selected="true">Injectables <span>11</span></button>
+          <button role="tab" id="t-body" aria-controls="p-body" aria-selected="false" tabindex="-1">Body <span>04</span></button>
+          <button role="tab" id="t-skin" aria-controls="p-skin" aria-selected="false" tabindex="-1">Facials <span>07</span></button>
+          <button role="tab" id="t-laser" aria-controls="p-laser" aria-selected="false" tabindex="-1">Laser &amp; threads <span>08</span></button>
+          <button role="tab" id="t-well" aria-controls="p-well" aria-selected="false" tabindex="-1">Wellness <span>05</span></button>
+          <button role="tab" id="t-beauty" aria-controls="p-beauty" aria-selected="false" tabindex="-1">Brows &amp; lashes <span>05</span></button>
+        </div>
+
+        <div>
+          <div class="panel" role="tabpanel" id="p-inj" aria-labelledby="t-inj" tabindex="0">
+            <h3>Injectables</h3>
+            <p>Tox, filler and collagen builders, placed by the largest aesthetic team in South Texas.</p>
+            <ul class="items">
+              <li class="item"><span class="item-name">Botox &amp; Dysport</span><span class="item-price">$10–14<small>per unit</small></span><p class="item-note">Tiered pricing: the more units, the lower the price per unit. Bank 100 units for $999.</p></li>
+              <li class="item"><span class="item-name">Xeomin</span><span class="item-price">$9–10<small>per unit</small></span><p class="item-note">$10 per unit up to 40 units, $9 per unit after that.</p></li>
+              <li class="item"><span class="item-name">The Mini Lip</span><span class="item-price">$450</span><p class="item-note">Half syringe of Restylane. A soft refresh for first-timers, lasting <span>3–4 months</span>.</p></li>
+              <li class="item"><span class="item-name">The Longer Lasting Mini Lip</span><span class="item-price">$550</span><p class="item-note">A subtle plump that holds for <span>4–6 months</span>.</p></li>
+              <li class="item"><span class="item-name">Full lip treatments</span><span class="item-price">$625–725</span><p class="item-note">Shape, definition and volume, with results lasting up to <span>8–12 months</span>.</p></li>
+              <li class="item"><span class="item-name">Lip Rehab</span><span class="item-price">$999</span><p class="item-note">Consult with our director or nurse practitioner, dissolver, and a pre-purchased lip filler.</p></li>
+              <li class="item"><span class="item-name">The Revive Eye</span><span class="item-price">Consult</span><p class="item-note">Under-eye filler with Restylane L to brighten and smooth tired eyes.</p></li>
+              <li class="item"><span class="item-name">Sculptra</span><span class="item-price">$800<small>per vial</small></span><p class="item-note">Stimulates your own collagen. Improvement continues for months.</p></li>
+              <li class="item"><span class="item-name">Kybella</span><span class="item-price">$600<small>per vial</small></span><p class="item-note">Permanently dissolves fat under the chin, flanks, bra line and more.</p></li>
+              <li class="item"><span class="item-name">Sclerotherapy</span><span class="item-price">$600<small>from</small></span><p class="item-note">Clears spider veins. About 45–60 minutes.</p></li>
+              <li class="item"><span class="item-name">The Booty Pop</span><span class="item-price">Consult</span><p class="item-note">Radiesse buttock enhancement, the non-surgical &ldquo;liquid BBL&rdquo;.</p></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-body" aria-labelledby="t-body" tabindex="0" hidden>
+            <h3>Body</h3>
+            <p>Physician-performed contouring with Dr. Jim Garza. Walk in in the morning, go home the same day.</p>
+            <ul class="items">
+              <li class="item"><span class="item-name">Purefection awake laser liposuction</span><span class="item-price">Consult</span><p class="item-note">Laser melts targeted fat, then it is removed for good, while the laser tightens skin in the same pass.</p></li>
+              <li class="item"><span class="item-name">Purefect fat transfer &amp; petite BBL</span><span class="item-price">Consult</span><p class="item-note">Your own fat, moved where you want it, with no overnight hospital stay.</p></li>
+              <li class="item"><span class="item-name">The Skinny Shot</span><span class="item-price">$325<small>from</small></span><p class="item-note">Semaglutide, tirzepatide or retatrutide weight loss. New-patient starting doses.</p></li>
+              <li class="item"><span class="item-name">Kybella body</span><span class="item-price">$600<small>per vial</small></span><p class="item-note">Flanks, abs, thighs, bra fat and banana roll.</p></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-skin" aria-labelledby="t-skin" tabindex="0" hidden>
+            <h3>Facials</h3>
+            <p>Organic Eminence facials, medical-grade peels and PRP, matched to your skin.</p>
+            <ul class="items">
+              <li class="item"><span class="item-name">Pure Essential Organic Facial</span><span class="item-price">$125</span><p class="item-note">60 minutes. Cleanse, steam, extractions, exfoliation, mask and massage.</p></li>
+              <li class="item"><span class="item-name">Arctic Berry Resurfacing Facial</span><span class="item-price">$125</span><p class="item-note">60 minutes of brightening resurfacing with Eminence organics.</p></li>
+              <li class="item"><span class="item-name">Organic Illuminating Gemstone Facial</span><span class="item-price">$125</span><p class="item-note">60 minutes for glow and radiance.</p></li>
+              <li class="item"><span class="item-name">Diamond Glow Facial</span><span class="item-price">$199</span><p class="item-note">75 minutes. Exfoliates, extracts and infuses serums in one step.</p></li>
+              <li class="item"><span class="item-name">Medical-grade chemical peels</span><span class="item-price">$199<small>from</small></span><p class="item-note">Including the Bye-Bye Blemish peel and BioRePeel, with little to no downtime.</p></li>
+              <li class="item"><span class="item-name">Microneedling + PRP</span><span class="item-price">$550</span><p class="item-note">90 minutes with numbing. Your own platelets boost collagen and repair.</p></li>
+              <li class="item"><span class="item-name">Diamond tip microdermabrasion</span><span class="item-price">$35<small>add-on</small></span><p class="item-note">Add to any facial for smoother, brighter skin.</p></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-laser" aria-labelledby="t-laser" tabindex="0" hidden>
+            <h3>Laser &amp; threads</h3>
+            <p>Resurfacing, hair and tattoo removal, and non-surgical lifting.</p>
+            <ul class="items">
+              <li class="item"><span class="item-name">IPL Flash Facial</span><span class="item-price">$200</span><p class="item-note">Broad-spectrum light for sun spots, redness and uneven tone.</p></li>
+              <li class="item"><span class="item-name">Microneedling with vitamin complex</span><span class="item-price">$350</span><p class="item-note">Finished with 20% vitamin C serum for faster healing and even tone.</p></li>
+              <li class="item"><span class="item-name">Laser Polish Facial</span><span class="item-price">$400</span><p class="item-note">Improves texture, tone and elasticity.</p></li>
+              <li class="item"><span class="item-name">Moxi laser</span><span class="item-price">$500</span><p class="item-note">Gentle 1927 nm laser for &ldquo;prejuvenation&rdquo; and early signs of aging.</p></li>
+              <li class="item"><span class="item-name">Mega Youth Machine</span><span class="item-price">$500–700</span><p class="item-note">Pixel+ microneedling with radio frequency, with or without PRP.</p></li>
+              <li class="item"><span class="item-name">Laser hair removal</span><span class="item-price">Bundles</span><p class="item-note">Buy four or more sessions for bundle pricing.</p></li>
+              <li class="item"><span class="item-name">Laser tattoo removal</span><span class="item-price">$125<small>per session</small></span><p class="item-note">Fades unwanted ink over a series of sessions.</p></li>
+              <li class="item"><span class="item-name">PDO Jawline Lift</span><span class="item-price">$1,250</span><p class="item-note">A non-surgical lift with dissolvable threads. 60–90 minutes.</p></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-well" aria-labelledby="t-well" tabindex="0" hidden>
+            <h3>Wellness</h3>
+            <p>IV drips and booster shots to restore energy, immunity and balance.</p>
+            <ul class="items">
+              <li class="item"><span class="item-name">Pure Hydration IV drip</span><span class="item-price">$125</span><p class="item-note">One hour of fluids and electrolytes.</p></li>
+              <li class="item"><span class="item-name">Immunity IV drip</span><span class="item-price">$195</span><p class="item-note">Helps shorten how long you are sick.</p></li>
+              <li class="item"><span class="item-name">NAD+ anti-aging IV</span><span class="item-price">$250<small>from</small></span><p class="item-note">Cellular energy and recovery support.</p></li>
+              <li class="item"><span class="item-name">B12 booster</span><span class="item-price">$25</span><p class="item-note">15 minutes. Energy and mood support.</p></li>
+              <li class="item"><span class="item-name">PRP hair rejuvenation</span><span class="item-price">Consult</span><p class="item-note">Platelet-rich plasma to stimulate regrowth, with an optional stem-cell boost.</p></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-beauty" aria-labelledby="t-beauty" tabindex="0" hidden>
+            <h3>Brows &amp; lashes</h3>
+            <p>The finishing touches.</p>
+            <ul class="items">
+              <li class="item"><span class="item-name">Lash lift</span><span class="item-price">$60</span><p class="item-note">About 45 minutes. Lifted, longer-looking natural lashes, no extensions.</p></li>
+              <li class="item"><span class="item-name">Brow lamination + tint + wax</span><span class="item-price">$110</span><p class="item-note">60 minutes.</p></li>
+              <li class="item"><span class="item-name">Brow lamination + wax</span><span class="item-price">$95</span><p class="item-note">60 minutes.</p></li>
+              <li class="item"><span class="item-name">Brow wax + tint</span><span class="item-price">$45</span><p class="item-note">45 minutes.</p></li>
+              <li class="item"><span class="item-name">Brow wax</span><span class="item-price">$25</span><p class="item-note">15 minutes.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-foot on-light">
+        <p>Starting prices. Your provider confirms final pricing at your consultation.</p>
+        <a class="btn btn-ink" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Book online</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bank block" id="tox" aria-labelledby="tox-title">
+    <div class="wrap bank-grid">
+      <div class="bank-copy">
+        <h2 id="tox-title">Bank your <em>Botox.</em></h2>
+        <div class="bank-figure"><b>$999</b><span>for 100 units of Botox or Dysport, one full vial</span></div>
+        <p>Buy once, then use your units whenever you like over the next 365 days. Touch-ups stop being a budgeting decision.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Bank my units</a>
+        </div>
+      </div>
+      <div>
+        <table class="tiers">
+          <caption>Botox &amp; Dysport pricing</caption>
+          <thead><tr><th scope="col">Units per visit</th><th scope="col">Price per unit</th></tr></thead>
+          <tbody>
+            <tr><td>1–20</td><td>$14</td></tr>
+            <tr><td>21–40</td><td>$13</td></tr>
+            <tr><td>41–60</td><td>$12</td></tr>
+            <tr><td>61–99</td><td>$11</td></tr>
+            <tr><td>100+</td><td>$10</td></tr>
+          </tbody>
+        </table>
+        <p class="tiers-note">Xeomin: $10 per unit up to 40 units, then $9.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="body block" id="purefection" aria-labelledby="pf-title">
+    <div class="wrap body-grid">
+      <figure class="body-photo" style="margin:0">
+        <img src="images/dr-garza.jpg" alt="Dr. Jim Garza performing a Purefection laser liposuction procedure" width="1100" height="1375" loading="lazy">
+      </figure>
+      <div class="body-copy">
+        <h2 id="pf-title">Purefection, by Dr.&nbsp;Jim&nbsp;Garza</h2>
+        <p>Awake laser liposuction and fat transfer, performed in our Edinburg clinic. Your dream body without general anesthesia or an overnight hospital stay.</p>
+        <ol class="steps">
+          <li><b>Consult</b><span>Meet Dr. Garza and map the areas you want to change.</span></li>
+          <li><b>Morning</b><span>The laser melts targeted fat and tightens the skin above it, so nothing sags.</span></li>
+          <li><b>Same day</b><span>Go home that afternoon. Add fat transfer for a petite BBL or facial volume.</span></li>
+          <li><b>Pay over time</b><span>Spread the cost with Cherry financing.</span></li>
+        </ol>
+        <div class="hero-actions on-light">
+          <a class="btn btn-ink" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Book a consult with Dr. Garza</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skinny block" id="skinny" aria-labelledby="skinny-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="skinny-title">The Skinny Shot</h2>
+        <p>Medical weight loss that helps you feel full sooner and eat less. Choose the medication that fits you with your provider.</p>
+      </div>
+      <div class="skinny-row">
+        <div><h3>Semaglutide</h3><p>The active ingredient in Ozempic.</p><p class="from">$325<small>New-patient starting dose, 0.25 mg</small></p></div>
+        <div><h3>Tirzepatide</h3><p>The active ingredient in Mounjaro.</p><p class="from">$400<small>New-patient starting dose, 2.5 mg</small></p></div>
+        <div><h3>Retatrutide</h3><p>Ask your provider if it suits you.</p><p class="from">$450<small>New-patient starting dose, 2 mg</small></p></div>
+      </div>
+      <div class="skinny-foot on-light">
+        <p>Returning patients and higher doses are priced at your visit.</p>
+        <a class="btn btn-line" href="tel:+19566287873">Call to start</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="rev-title">
+    <div class="wrap reviews-inner">
+      <div class="score">
+      <p class="score-num" aria-hidden="true">5.0</p>
+      <div class="stars" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+      </div>
+      <p class="score-count">737 Google reviews</p>
+      </div>
+      <div class="reviews-copy">
+        <h2 id="rev-title">Rated 5.0 by 737 clients on Google.</h2>
+        <blockquote class="pull">
+          <p>&ldquo;The room where the services take place is SO SOOTHING.&rdquo;</p>
+          <cite>Pure Med client, Google review</cite>
+        </blockquote>
+        <p>A perfect score across hundreds of visits. These are the treatments clients mention most:</p>
+        <ul class="loved">
+          <li><b>Weight loss</b><span>29</span></li>
+          <li><b>Microblading</b><span>12</span></li>
+          <li><b>The Skinny Shot</b><span>12</span></li>
+          <li><b>Diamond Glow Facial</b><span>4</span></li>
+        </ul>
+        <div class="on-light">
+          <a class="btn btn-ink" href="https://www.google.com/maps?cid=8966225888855866636" target="_blank" rel="noopener">Read the reviews on Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit block" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div>
+        <h2 id="visit-title">Come see the chandeliers in person.</h2>
+        <p class="visit-lede">Book online in a minute, or call and our front desk will find the right provider and time for you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Book online</a>
+          <a class="btn btn-line" href="tel:+19566287873">Call (956) 628-PURE</a>
+        </div>
+      </div>
+      <dl class="details">
+        <div><dt>Address</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=4101+Crosspoint+Blvd+Edinburg+TX+78539" target="_blank" rel="noopener">4101 Crosspoint Blvd<br>Edinburg, TX 78539</a></dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+19566287873">(956) 628-7873</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/pure.med.aesthetics/" target="_blank" rel="noopener">@pure.med.aesthetics</a></dd></div>
+        <div><dt>Financing</dt><dd>Pay over time with <a href="https://withcherry.com/" target="_blank" rel="noopener">Cherry</a></dd></div>
+        <div><dt>Careers</dt><dd>Want to join our team? <a href="https://puremedrgv.com/" target="_blank" rel="noopener">Apply here</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <img src="images/logo.png" alt="Pure Med Aesthetics" width="64" height="64" loading="lazy">
+    <nav aria-label="Footer">
+      <a href="#menu">Treatments</a>
+      <a href="#tox">Tox bank</a>
+      <a href="#purefection">Purefection</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <p>© 2026 Pure Med Aesthetics, LLC. Concept design by Drusus Technologies.</p>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Quick actions">
+  <a class="btn btn-line" href="tel:+19566287873">Call</a>
+  <a class="btn btn-gold" href="https://na02.envisiongo.com/a/puremedaesthetics/OnlineBooking.aspx" target="_blank" rel="noopener">Book a visit</a>
+</div>
+
+<script>
+(() => {
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const select = (tab, focus) => {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+    tab.scrollIntoView({block:'nearest', inline:'nearest'});
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      const k = e.key;
+      let n = null;
+      if (k === 'ArrowDown' || k === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      if (k === 'ArrowUp' || k === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      if (k === 'Home') n = tabs[0];
+      if (k === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); select(n, true); }
+    });
+  });
+
+  const dock = document.querySelector('.dock');
+  const hero = document.querySelector('.hero');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => dock.classList.toggle('show', !e.isIntersecting), {threshold: 0.15}).observe(hero);
+  } else {
+    dock.classList.add('show');
+  }
+})();
+</script>
+</body>
+</html>
