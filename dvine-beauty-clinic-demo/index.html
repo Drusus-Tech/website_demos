@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>D'Vine Beauty Clinic · Medical Aesthetics in McAllen, TX</title>
+<meta name="description" content="Botox, fillers, facial balancing, HydraFacial and more in McAllen, Texas, led by nurse practitioner Brenda Perez-Ruiz, FNP-C. Rated 4.8 on Google. Call (956) 867-3525.">
+<meta property="og:title" content="D'Vine Beauty Clinic · McAllen, TX">
+<meta property="og:description" content="Medical aesthetics designed to enhance, never change, your natural beauty.">
+<meta property="og:image" content="images/hero-team.jpeg">
+<meta name="theme-color" content="#FBF8F1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -32 132 132'%3E%3Crect x='-6' y='-32' width='132' height='132' rx='28' fill='%231E2414'/%3E%3Cg fill='%23E3A21A'%3E%3Cg transform='translate%2860 50%29 rotate%28-80%29 translate%280 -21%29'%3E%3Cpath d='M0 0C2.9 -2.8 3.6 -7.6 0 -12C-3.6 -7.6 -2.9 -2.8 0 0Z'/%3E%3C/g%3E%3Cg transform='translate%2860 50%29 rotate%28-54%29 translate%280 -21%29'%3E%3Cpath d='M0 0C3.8 -3.7 4.8 -10.1 0 -16C-4.8 -10.1 -3.8 -3.7 0 0Z'/%3E%3C/g%3E%3Cg transform='translate%2860 50%29 rotate%28-27%29 translate%280 -21%29'%3E%3Cpath d='M0 0C4.7 -4.5 5.8 -12.3 0 -19.5C-5.8 -12.3 -4.7 -4.5 0 0Z'/%3E%3C/g%3E%3Cg transform='translate%2860 50%29 rotate%280%29 translate%280 -21%29'%3E%3Cpath d='M0 0C5.3 -5.1 6.6 -13.9 0 -22C-6.6 -13.9 -5.3 -5.1 0 0Z'/%3E%3C/g%3E%3Cg transform='translate%2860 50%29 rotate%2827%29 translate%280 -21%29'%3E%3Cpath d='M0 0C4.7 -4.5 5.8 -12.3 0 -19.5C-5.8 -12.3 -4.7 -4.5 0 0Z'/%3E%3C/g%3E%3Cg transform='translate%2860 50%29 rotate%2854%29 translate%280 -21%29'%3E%3Cpath d='M0 0C3.8 -3.7 4.8 -10.1 0 -16C-4.8 -10.1 -3.8 -3.7 0 0Z'/%3E%3C/g%3E%3Cg transform='translate%2860 50%29 rotate%2880%29 translate%280 -21%29'%3E%3Cpath d='M0 0C2.9 -2.8 3.6 -7.6 0 -12C-3.6 -7.6 -2.9 -2.8 0 0Z'/%3E%3C/g%3E%3Cpath d='M41 50a19 19 0 0 1 38 0Z'/%3E%3C/g%3E%3Cpath d='M1 55Q60 41 119 55Q60 49 1 55Z' fill='%23F6F1E2' stroke='%231E2414' stroke-width='2.4' paint-order='stroke'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=boska@400,500,401,501&f[]=switzer@400,500,600&display=swap">
+<link rel="preload" as="image" href="images/hero-team.webp" fetchpriority="high">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+<script>document.documentElement.classList.add('js')</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1; --surface:#F3EDDC; --butter:#F4EDCB; --ink:#1E2414; --ink-soft:#4C5242;
+  --olive:#273019; --olive-2:#1A200F; --cream:#F6F1E2; --cream-soft:rgba(246,241,226,.76);
+  --accent:#E3A21A; --accent-hi:#F0B63A; --accent-ink:#1E2414; --line:rgba(30,36,20,.14); --line-dark:rgba(246,241,226,.16);
+  --display:"Boska", "Iowan Old Style", Georgia, serif; --body:"Switzer", "Helvetica Neue", Arial, sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1); --gut:clamp(16px,4vw,56px); --max:1320px; --top:118px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;letter-spacing:-.025em;margin:0;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+::selection{background:var(--accent);color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+html{scrollbar-color:var(--ink-soft) var(--surface)}
+::-webkit-scrollbar{width:11px}::-webkit-scrollbar-track{background:var(--surface)}::-webkit-scrollbar-thumb{background:#8c8f7c;border-radius:8px;border:3px solid var(--surface)}
+.ic{width:1.25em;height:1.25em;flex:none;--ic-duo:var(--accent);--ic-duo-op:.35}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--cream);padding:12px 16px;border-radius:10px}
+.skip:focus{top:12px}
+
+/* ---------- top: concept bar + header ---------- */
+.top{position:fixed;inset:0 0 auto;z-index:50;transition:transform .5s var(--ease)}
+.top.hide{transform:translateY(-100%)}
+.concept{background:var(--ink);color:var(--cream-soft);font-size:12.5px;line-height:1.3;text-align:center;padding:7px 16px;letter-spacing:.01em}
+.concept b{color:var(--cream);font-weight:500}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:12px var(--gut) 10px;transition:background .4s,box-shadow .4s,padding .4s}
+.top.solid .nav{background:rgba(251,248,241,.86);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 var(--line),0 10px 30px -18px rgba(30,36,20,.35);padding-block:8px 7px}
+.nav-l,.links{grid-column:1;grid-row:1;justify-self:start}
+.nav-r{grid-column:3;grid-row:1;justify-self:end;display:flex;align-items:center;gap:12px}
+.nav-call{display:none;width:44px;height:44px;border-radius:50%;place-items:center;background:var(--accent);color:var(--accent-ink);text-decoration:none}
+.nav-call .ic{--ic-duo:var(--accent-ink);--ic-duo-op:.18}
+.brand{grid-column:2;grid-row:1;display:flex;flex-direction:column;align-items:center;gap:5px;text-decoration:none;min-height:44px;--vein:var(--bg)}
+.brand svg.logo-mark{width:74px;height:auto;overflow:visible;transition:width .45s var(--ease)}
+.top.solid .brand svg.logo-mark{width:44px}
+.brand .wm{display:flex;flex-direction:column;align-items:center;line-height:1}
+.brand .wm b{display:flex;align-items:flex-start;font-family:var(--display);font-weight:500;font-size:30px;letter-spacing:-.015em}
+.brand .apos{width:.3em;height:.46em;fill:var(--accent);margin:.02em .015em 0 .03em;transform:rotate(22deg);transform-origin:50% 100%;flex:none}
+.brand .wm small{white-space:nowrap;display:flex;align-items:center;gap:8px;font-weight:600;font-size:11.5px;letter-spacing:.3em;margin-top:5px;padding-left:.3em;color:var(--ink)}
+.brand .wm small::before,.brand .wm small::after{content:"";width:14px;height:1px;background:currentColor;opacity:.45}
+.links{display:flex;gap:2px;margin-left:-12px}
+.links a{position:relative;text-decoration:none;font-size:15px;font-weight:500;padding:12px 12px;border-radius:999px}
+.links a::after{content:"";position:absolute;left:12px;right:12px;bottom:8px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+@media (hover:hover){.links a:hover::after{transform:scaleX(1);transform-origin:left}}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{all:unset;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:.06em;min-width:40px;min-height:36px;display:grid;place-items:center;border-radius:999px;transition:background .25s,color .25s}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- buttons ---------- */
+.btn{--b:var(--accent);--c:var(--accent-ink);display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--b);color:var(--c);text-decoration:none;font-weight:600;font-size:16px;letter-spacing:.005em;border:0;cursor:pointer;transition:background .25s,transform .2s var(--ease),box-shadow .3s;box-shadow:0 10px 24px -12px rgba(160,105,0,.55)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover){.btn:hover{background:var(--accent-hi)} .btn:hover .ic-arrow{transform:translateX(4px)}}
+.btn .ic-arrow{transition:transform .3s var(--ease)}
+.btn.ghost{--b:transparent;--c:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+@media (hover:hover){.btn.ghost:hover{background:var(--ink);color:var(--cream)}}
+.btn.light{--b:var(--cream);--c:var(--ink);box-shadow:none}
+@media (hover:hover){.btn.light:hover{background:#fff}}
+.btn.sm{min-height:44px;padding:0 18px;font-size:15px}
+.tlink{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:5px;text-decoration-color:var(--accent);min-height:44px}
+@media (hover:hover){.tlink:hover{text-decoration-color:currentColor}}
+
+/* ---------- HERO: sunrise ---------- */
+.hero{position:relative;background:var(--bg)}
+.stage{position:relative;padding:calc(var(--top) + 30px) var(--gut) 0;text-align:center;overflow:clip}
+.sky{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 100%,rgba(240,182,58,.38),rgba(244,237,203,.5) 45%,rgba(251,248,241,0) 75%);pointer-events:none}
+.h-copy{position:relative;z-index:3;max-width:980px;margin:0 auto}
+.h-title{font-size:clamp(3.1rem,7.4vw,6rem);line-height:.96;letter-spacing:-.03em}
+.h-title .ln{display:block;overflow:clip;padding-bottom:.08em}
+.h-title .ln>span{display:inline-block}
+.h-title em{font-style:italic;font-weight:400}
+.h-sub{max-width:44ch;margin:22px auto 0;color:var(--ink-soft);font-size:clamp(16px,1.25vw,18px)}
+.h-cta{display:flex;gap:12px 20px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:26px}
+.sun{position:relative;margin:48px auto 0;width:min(820px,94vw)}
+.rays{display:block;width:100%;height:auto;overflow:visible}
+.rays use{fill:var(--accent)}
+.dome{position:relative;margin:-25% auto 0;width:50%;aspect-ratio:2/1;border-radius:999px 999px 0 0;overflow:hidden;background:var(--butter)}
+.dome img{width:100%;height:100%;object-fit:cover;object-position:50% 16%}
+.swoosh{position:relative;z-index:2;display:block;width:min(1100px,100%);height:auto;margin:-4px auto 0;color:var(--ink)}
+.caps{display:none}
+.scrim{display:none}
+/* cinematic mode (motion allowed + scripts loaded) */
+.motion .hero{height:320vh}
+.motion .stage{position:sticky;top:0;height:100vh;height:100svh;padding-bottom:0}
+.motion .sun{position:absolute;inset:0;margin:0;width:auto;pointer-events:none}
+.motion .dome{position:absolute;inset:0;margin:0;width:auto;aspect-ratio:auto;border-radius:0;clip-path:circle(var(--r0,260px) at 50% 100%);will-change:clip-path}
+.motion .dome img{position:absolute;inset:0;height:100%}
+.motion .rays{position:absolute;left:50%;bottom:0;width:calc(var(--r0,260px)*4);transform-origin:50% 100%;translate:-50% 0}
+.motion .swoosh{position:absolute;left:50%;bottom:-2px;translate:-50% 0;width:calc(var(--r0,260px)*4.4);margin:0}
+.motion .scrim{display:block;position:absolute;inset:auto 0 0;height:68%;background:linear-gradient(to top,rgba(26,32,15,.88),rgba(26,32,15,.6) 40%,rgba(26,32,15,0));opacity:0;z-index:4;pointer-events:none}
+.motion .caps{display:block;position:absolute;left:var(--gut);right:var(--gut);bottom:clamp(88px,12vh,130px);z-index:5;text-align:left;color:var(--cream);pointer-events:none}
+.caps p{position:absolute;bottom:0;left:0;margin:0;max-width:16ch;font-family:var(--display);font-size:clamp(2.2rem,4.6vw,4.2rem);line-height:1;letter-spacing:-.025em;opacity:0;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.caps p small{display:block;font-family:var(--body);font-size:15px;letter-spacing:.02em;margin-top:14px;color:var(--cream-soft);max-width:38ch;line-height:1.5}
+.rail{position:absolute;right:var(--gut);bottom:clamp(88px,12vh,130px);z-index:5;width:2px;height:120px;background:rgba(246,241,226,.25);opacity:0}
+.rail i{position:absolute;inset:0;background:var(--accent);transform-origin:top;transform:scaleY(0)}
+.motion .h-title .ln>span{will-change:transform}
+
+/* ---------- proof ---------- */
+.proof{padding:clamp(80px,11vw,152px) 0 clamp(72px,9vw,128px)}
+.proof .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:center}
+.score{grid-column:1/6}
+.score .big{font-family:var(--display);font-size:clamp(6rem,15vw,12.5rem);line-height:.8;letter-spacing:-.04em;display:flex;align-items:flex-start;gap:.06em}
+.stars{display:flex;gap:6px;margin:22px 0 10px;color:var(--accent)}
+.stars svg{width:28px;height:28px;--ic-duo:var(--accent);--ic-duo-op:1}
+.score p{color:var(--ink-soft);margin:0}
+.proof-r{grid-column:7/13}
+.proof-r h2{font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:24px}
+.themes{list-style:none;padding:0;margin:0 0 32px;border-top:1px solid var(--line)}
+.themes li{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid var(--line);font-size:18px}
+.themes li .ic{width:22px;height:22px;color:var(--ink)}
+blockquote{margin:0 0 18px;font-family:var(--display);font-style:italic;font-size:clamp(1.4rem,2vw,1.75rem);line-height:1.3;letter-spacing:-.01em}
+blockquote cite{display:block;font-family:var(--body);font-style:normal;font-size:14px;color:var(--ink-soft);margin-top:10px}
+
+/* ---------- marquee ---------- */
+.marq{overflow:clip;border-block:1px solid var(--line);padding:20px 0;background:var(--bg)}
+.marq-t{display:flex;width:max-content;gap:0}
+.marq span{font-family:var(--display);font-size:clamp(1.8rem,3.4vw,2.9rem);letter-spacing:-.02em;white-space:nowrap;display:inline-flex;align-items:center}
+.marq span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--accent);margin:0 clamp(22px,3vw,40px)}
+.marq span:nth-child(even){font-style:italic}
+
+/* ---------- treatments ---------- */
+.treat{background:var(--surface);padding:clamp(88px,11vw,160px) 0}
+.treat-head{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-bottom:clamp(48px,6vw,88px)}
+.treat-head h2{grid-column:1/9;font-size:clamp(2.7rem,6vw,5.4rem)}
+.treat-head p{grid-column:9/13;align-self:end;color:var(--ink-soft);margin:0}
+.groups{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3.5vw,56px)}
+.group h3{font-family:var(--body);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center;gap:12px;padding-bottom:16px;border-bottom:1.5px solid var(--ink)}
+.group h3 .tile{width:40px;height:40px;border-radius:14px;background:var(--butter);display:grid;place-items:center}
+.group h3 .tile .ic{width:22px;height:22px}
+.group ul{list-style:none;margin:0;padding:0}
+.group li{padding:20px 0 18px;border-bottom:1px solid var(--line);transition:padding .35s var(--ease)}
+.group li b{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:500;font-size:clamp(1.55rem,2.1vw,1.95rem);line-height:1.1;letter-spacing:-.015em}
+.group li b::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);transform:scale(0);transition:transform .35s var(--ease);flex:none}
+.group li span{display:block;color:var(--ink-soft);font-size:15.5px;margin-top:6px;line-height:1.5}
+@media (hover:hover){.group li:hover{padding-left:6px}.group li:hover b::before{transform:scale(1)}}
+.consult{margin-top:clamp(48px,6vw,80px);display:grid;grid-template-columns:auto 1fr auto;gap:18px 40px;align-items:center;background:var(--bg);border-radius:16px;padding:26px 30px;box-shadow:0 18px 40px -28px rgba(30,36,20,.45)}
+.consult .price{font-family:var(--display);font-size:3rem;line-height:1;letter-spacing:-.03em}
+.consult ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 28px;color:var(--ink-soft);font-size:15.5px}
+.consult li{display:flex;align-items:center;gap:8px}
+.consult li .ic{width:20px;height:20px;color:var(--ink)}
+.consult strong{display:block;font-size:17px;color:var(--ink);font-weight:600;margin-bottom:6px}
+
+/* ---------- provider (dark) ---------- */
+.prov{background:var(--olive);color:var(--cream);padding:clamp(88px,11vw,170px) 0;position:relative;overflow:clip}
+.prov::before{content:"";position:absolute;width:70vw;height:70vw;left:-25vw;bottom:-45vw;border-radius:50%;background:radial-gradient(closest-side,rgba(227,162,26,.22),rgba(227,162,26,0));pointer-events:none}
+.prov .wrap{position:relative;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:center}
+.prov-img{grid-column:1/6;position:relative;border-radius:999px 999px 16px 16px;overflow:hidden;aspect-ratio:3/4.1;background:#3a4430}
+.prov-img img{width:100%;height:118%;object-fit:cover;object-position:50% 20%}
+.prov-txt{grid-column:7/13}
+.prov-name{font-size:clamp(3rem,6.2vw,5.6rem);line-height:.95}
+.prov-name em{font-style:italic;font-weight:400;color:var(--accent)}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+.creds span{font-size:13.5px;font-weight:600;letter-spacing:.12em;padding:8px 14px;border-radius:999px;background:rgba(246,241,226,.1);color:var(--cream)}
+.prov-role{color:var(--cream-soft);margin:14px 0 36px}
+.statement{font-family:var(--display);font-size:clamp(1.55rem,2.5vw,2.25rem);line-height:1.25;letter-spacing:-.015em;margin:0 0 40px}
+.statement .w{opacity:.22;transition:none}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid var(--line-dark);padding-top:24px;list-style:none;margin:0;padding-left:0}
+.pillars li{font-size:15.5px;color:var(--cream-soft);line-height:1.45}
+.pillars b{display:block;color:var(--cream);font-weight:600;font-size:16px;margin-bottom:4px}
+
+/* ---------- results ---------- */
+.results{background:var(--bg);padding:clamp(88px,10vw,150px) 0 clamp(72px,8vw,120px);overflow:clip}
+.res-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px 48px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,64px)}
+.res-head h2{font-size:clamp(2.7rem,6vw,5.4rem);max-width:12ch}
+.res-head h2 em{font-style:italic;font-weight:400}
+.res-head p{max-width:40ch;color:var(--ink-soft);margin:0}
+.track{display:flex;gap:clamp(16px,2vw,28px);padding:0 var(--gut);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.card{flex:none;width:clamp(270px,34vw,500px);scroll-snap-align:center;margin:0}
+.card .ph{border-radius:16px;overflow:hidden;background:#111;aspect-ratio:1/0.92}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+@media (hover:hover){.card:hover img{transform:scale(1.04)}}
+.card figcaption{display:flex;justify-content:space-between;font-size:14px;color:var(--ink-soft);padding:12px 4px 0;font-weight:500;letter-spacing:.02em}
+.motion .results.pinx .track{overflow:visible;scroll-snap-type:none}
+.drag-hint{display:flex;align-items:center;gap:8px;color:var(--ink-soft);font-size:14px;padding:18px var(--gut) 0}
+
+/* ---------- clinic ---------- */
+.clinic{background:var(--butter);padding:clamp(88px,11vw,160px) 0;position:relative}
+.clinic .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.clinic-txt{grid-column:1/6;position:relative;z-index:2;padding-top:clamp(0px,4vw,60px)}
+.clinic-txt h2{font-size:clamp(2.6rem,5.2vw,4.6rem);margin-bottom:24px}
+.clinic-txt h2 em{font-style:italic;font-weight:400}
+.clinic-txt>p{color:var(--ink-soft);max-width:42ch}
+.perks{list-style:none;margin:36px 0 0;padding:0}
+.perks li{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:20px 0;border-top:1px solid rgba(30,36,20,.18)}
+.perks .tile{width:48px;height:48px;border-radius:16px;background:var(--bg);display:grid;place-items:center;transition:transform .35s var(--ease)}
+.perks .tile .ic{width:26px;height:26px}
+@media (hover:hover){.perks li:hover .tile{transform:translateY(-3px) scale(1.1) rotate(-6deg)}}
+.perks b{display:block;font-weight:600;font-size:17px}
+.perks span{color:var(--ink-soft);font-size:15.5px;line-height:1.5}
+.perks a{font-weight:600}
+.clinic-img{grid-column:6/13;position:relative}
+.clinic-img .main{border-radius:16px;overflow:hidden;aspect-ratio:4/4.6;background:#ddd}
+.clinic-img .main img{width:100%;height:116%;object-fit:cover;object-position:50% 40%}
+.clinic-img .inset{position:absolute;left:-5%;bottom:-9%;width:34%;border-radius:999px 999px 14px 14px;overflow:hidden;aspect-ratio:3/4.3;box-shadow:0 30px 60px -30px rgba(30,36,20,.6);border:6px solid var(--butter)}
+.clinic-img .inset img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+
+/* ---------- visit ---------- */
+.visit{padding:clamp(88px,11vw,160px) 0;background:var(--bg)}
+.visit .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:center}
+.visit-txt{grid-column:1/8}
+.visit-txt h2{font-size:clamp(2.7rem,6vw,5.4rem);margin-bottom:36px}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:36px 40px}
+.vgrid h3{font-family:var(--body);font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;display:flex;gap:10px;align-items:center;margin-bottom:12px}
+.vgrid h3 .ic{width:22px;height:22px}
+.vgrid p{margin:0;font-size:18px;line-height:1.5}
+.vgrid .soft{color:var(--ink-soft);font-size:15.5px;margin-top:6px}
+.hours{width:100%;border-collapse:collapse;font-size:17px}
+.hours td{padding:8px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{font-weight:600}
+.hours tr.today td:first-child::after{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-left:8px;vertical-align:middle}
+.phone-big{font-family:var(--display);font-size:clamp(2rem,3vw,2.6rem);letter-spacing:-.02em;text-decoration:none;display:inline-block;line-height:1.1;padding:4px 0}
+@media (hover:hover){.phone-big:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:6px;text-decoration-thickness:2px}}
+.v-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.visit-img{grid-column:9/13;border-radius:999px 999px 16px 16px;overflow:hidden;aspect-ratio:3/4.4;background:#e9e6df}
+.visit-img img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+
+/* ---------- closing ---------- */
+.close{position:relative;background:var(--olive-2);color:var(--cream);text-align:center;padding:clamp(110px,14vw,200px) 0 clamp(96px,12vw,170px);overflow:clip}
+.close .glow{position:absolute;left:50%;bottom:-60vw;width:120vw;height:120vw;translate:-50% 0;border-radius:50%;background:radial-gradient(closest-side,rgba(240,182,58,.55),rgba(227,162,26,.18) 45%,rgba(227,162,26,0) 70%);pointer-events:none}
+.close .wrap{position:relative}
+.close h2{font-size:clamp(3rem,8vw,7rem);line-height:.95;letter-spacing:-.03em;max-width:13ch;margin:0 auto}
+.close h2 em{font-style:italic;font-weight:400;color:var(--accent)}
+.close p{color:var(--cream-soft);margin:24px auto 36px;max-width:40ch}
+.close .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.close .btn.ghost{--c:var(--cream);box-shadow:inset 0 0 0 1.5px var(--cream)}
+@media (hover:hover){.close .btn.ghost:hover{background:var(--cream);color:var(--ink)}}
+
+/* ---------- footer ---------- */
+footer{background:var(--olive-2);color:var(--cream-soft);border-top:1px solid var(--line-dark);padding:56px 0 calc(40px + env(safe-area-inset-bottom));font-size:15px}
+footer .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.f-brand{grid-column:1/5;color:var(--cream)}
+.f-brand .brand{align-items:flex-start;--vein:var(--olive-2)}.f-brand .brand .wm{align-items:flex-start}.f-brand .brand .wm small{color:var(--cream)}.f-brand .brand svg.logo-mark{width:72px}
+.f-brand p{color:var(--cream-soft);margin-top:16px;max-width:30ch}
+.f-col{grid-column:span 2}
+.f-col h3{font-family:var(--body);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--cream);margin-bottom:12px}
+.f-col a,.f-col p{display:block;text-decoration:none;margin:0;padding:6px 0;line-height:1.45}
+@media (hover:hover){.f-col a:hover{color:var(--cream);text-decoration:underline;text-underline-offset:4px}}
+.fine{grid-column:1/-1;border-top:1px solid var(--line-dark);padding-top:22px;font-size:13px;line-height:1.6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px}
+
+/* ---------- mobile bar ---------- */
+.mbar{display:none}
+
+/* ---------- reveals ---------- */
+.js .rv{opacity:0}
+.no-motion .rv,.reduced .rv{opacity:1!important}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .links{display:none}
+}
+@media (max-width:900px){
+  :root{--top:112px}
+  .proof .wrap,.prov .wrap,.clinic .wrap,.visit .wrap,.treat-head{grid-template-columns:1fr}
+  .score,.proof-r,.prov-img,.prov-txt,.clinic-txt,.clinic-img,.visit-txt,.visit-img,.treat-head h2,.treat-head p{grid-column:1/-1}
+  .proof-r{margin-top:40px}
+  .groups{grid-template-columns:1fr;gap:48px}
+  .consult{grid-template-columns:1fr;padding:24px}
+  .prov-img{max-width:440px;width:100%;margin:0 auto 32px}
+  .pillars{grid-template-columns:1fr;gap:14px}
+  .clinic-img{margin-top:48px;padding-left:10%}
+  .clinic-img .inset{left:0;width:40%}
+  .visit-img{max-width:380px;width:100%;margin:56px auto 0}
+  footer .wrap{grid-template-columns:1fr 1fr}
+  .f-brand,.fine{grid-column:1/-1}
+  .f-col{grid-column:span 1}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .concept{font-size:11.5px;padding:6px 12px}
+  .nav{gap:12px;padding:10px 16px}
+  .brand svg.logo-mark{width:50px}
+  .top.solid .brand svg.logo-mark{width:38px}
+  .brand .wm b{font-size:25px}
+  .brand .wm small{font-size:10.5px;letter-spacing:.24em}
+  .brand .wm small::before,.brand .wm small::after{width:10px}
+  .nav .btn.sm{display:none}
+  .nav-call{display:grid}
+  .lang button{min-width:36px}
+  .stage{padding-top:calc(var(--top) + 28px)}
+  .h-title{font-size:clamp(2.75rem,12.6vw,3.6rem)}
+  .h-sub{margin-top:16px;font-size:16px}
+  .h-cta{margin-top:20px}
+  .h-cta .btn{width:100%}
+  .vgrid{grid-template-columns:1fr;gap:30px}
+  .caps p{font-size:2.3rem}
+  .rail{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,248,241,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 -1px 0 var(--line);transform:translateY(110%);transition:transform .5s var(--ease)}
+  .mbar.show{transform:none}
+  .mbar .btn{min-height:50px;padding:0 12px}
+  footer{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-chat-circle-text" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128A96,96,0,0,1,79.93,211.11h0L42.54,223.58a8,8,0,0,1-10.12-10.12l12.47-37.39h0A96,96,0,1,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-4-1.08,7.85,7.85,0,0,0-2.53.42L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Zm40-104a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm0,32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,144Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 256 256" fill="currentColor"><path d="M229.06,108.79l-48.7,42,14.88,62.79a8.4,8.4,0,0,1-12.52,9.17L128,189.09,73.28,222.74a8.4,8.4,0,0,1-12.52-9.17l14.88-62.79-48.7-42A8.46,8.46,0,0,1,31.73,94L95.64,88.8l24.62-59.6a8.36,8.36,0,0,1,15.48,0l24.62,59.6L224.27,94A8.46,8.46,0,0,1,229.06,108.79Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M216,128l-72,72V56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M192,64V168L88,64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M192,56H88a8,8,0,0,0-5.66,13.66L128.69,116,58.34,186.34a8,8,0,0,0,11.32,11.32L140,127.31l46.34,46.35A8,8,0,0,0,200,168V64A8,8,0,0,0,192,56Zm-8,92.69-38.34-38.34h0L107.31,72H184Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V88H40V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 256 256" fill="currentColor"><path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></symbol>
+<symbol id="i-syringe" viewBox="0 0 256 256" fill="currentColor"><path d="M196,116l-89.66,89.66a8,8,0,0,1-5.65,2.34H48V155.31a8,8,0,0,1,2.34-5.65L140,60Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M237.66,66.34l-48-48a8,8,0,0,0-11.32,11.32L196.69,48,168,76.69,133.66,42.34a8,8,0,0,0-11.32,11.32L128.69,60l-84,84A15.86,15.86,0,0,0,40,155.31v49.38L18.34,226.34a8,8,0,0,0,11.32,11.32L51.31,216h49.38A15.86,15.86,0,0,0,112,211.31l84-84,6.34,6.35a8,8,0,0,0,11.32-11.32L179.31,88,208,59.31l18.34,18.35a8,8,0,0,0,11.32-11.32ZM100.69,200H56V155.31l18-18,20.34,20.35a8,8,0,0,0,11.32-11.32L85.31,126,98,113.31l20.34,20.35a8,8,0,0,0,11.32-11.32L109.31,102,140,71.31,184.69,116Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 256 256" fill="currentColor"><path d="M208,144a80,80,0,0,1-160,0c0-72,80-128,80-128S208,72,208,144Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 256 256" fill="currentColor"><path d="M184,128a56,56,0,1,1-56-56A56,56,0,0,1,184,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-instagram-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="i-facebook-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+<symbol id="i-hand-heart" viewBox="0 0 256 256" fill="currentColor"><path d="M16,152H48v56H16a8,8,0,0,1-8-8V160A8,8,0,0,1,16,152ZM192.54,40A39.12,39.12,0,0,0,156,64a39.12,39.12,0,0,0-36.54-24C97.67,40,80,58.31,80,80c0,14.56,7,27.71,16.73,40H140a20,20,0,0,1,0,40h4l37.78-8.68C203.82,135.07,232,109.23,232,80,232,58.31,214.33,40,192.54,40Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M230.33,141.06a24.34,24.34,0,0,0-18.61-4.77C230.5,117.33,240,98.48,240,80c0-26.47-21.29-48-47.46-48A47.58,47.58,0,0,0,156,48.75,47.58,47.58,0,0,0,119.46,32C93.29,32,72,53.53,72,80c0,11,3.24,21.69,10.06,33a31.87,31.87,0,0,0-14.75,8.4L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56ZM119.46,48A31.15,31.15,0,0,1,148.6,67a8,8,0,0,0,14.8,0,31.15,31.15,0,0,1,29.14-19C209.59,48,224,62.65,224,80c0,19.51-15.79,41.58-45.66,63.9l-11.09,2.55A28,28,0,0,0,140,112H100.68C92.05,100.36,88,90.12,88,80,88,62.65,102.41,48,119.46,48ZM16,160H40v40H16Zm203.43,8.21-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9Z"/></symbol>
+<symbol id="i-gift" viewBox="0 0 256 256" fill="currentColor"><path d="M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"/></symbol>
+<symbol id="i-credit-card" viewBox="0 0 256 256" fill="currentColor"><path d="M232,96v96a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V96Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z"/></symbol>
+<symbol id="i-video-camera" viewBox="0 0 256 256" fill="currentColor"><path d="M200,72V184a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H192A8,8,0,0,1,200,72Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M251.77,73a8,8,0,0,0-8.21.39L208,97.05V72a16,16,0,0,0-16-16H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V159l35.56,23.71A8,8,0,0,0,248,184a8,8,0,0,0,8-8V80A8,8,0,0,0,251.77,73ZM192,184H32V72H192V184Zm48-22.95-32-21.33V116.28L240,95Z"/></symbol>
+</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf" viewBox="-12 -36 24 37" preserveAspectRatio="none"><path d="M0 0C9-8 11-22 0-35-11-22-9-8 0 0Z"/><path d="M0-3V-30" fill="none" stroke="var(--vein,#FBF8F1)" stroke-width="1.4" stroke-linecap="round" opacity=".7"/></symbol>
+</svg>
+<a class="skip" href="#main" data-es="Saltar al contenido">Skip to content</a>
+
+<div class="top" id="top">
+  <div class="concept" data-es="Concepto de diseño preparado para <b>D'Vine Beauty Clinic</b> por Drusus Technologies. No es el sitio oficial.">Design concept prepared for <b>D'Vine Beauty Clinic</b> by Drusus Technologies. Not the live site.</div>
+  <nav class="nav" aria-label="Main">
+    <div class="nav-l">
+      <a class="nav-call" href="tel:+19568673525" aria-label="Call (956) 867-3525"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></a>
+    </div>
+    <a class="brand" href="#main" aria-label="D'Vine Beauty Clinic, home">
+      <svg viewBox="0 1 120 57" aria-hidden="true" class="logo-mark">
+        <g class="lm-leaves" fill="var(--accent)"><g transform="translate(60 50) rotate(-80) translate(0 -23.5)"><use href="#leaf" width="9.60" height="12" x="-4.80" y="-12"/></g><g transform="translate(60 50) rotate(-54) translate(0 -23.5)"><use href="#leaf" width="12.80" height="16" x="-6.40" y="-16"/></g><g transform="translate(60 50) rotate(-27) translate(0 -23.5)"><use href="#leaf" width="15.60" height="19.5" x="-7.80" y="-19.5"/></g><g transform="translate(60 50) rotate(0) translate(0 -23.5)"><use href="#leaf" width="17.60" height="22" x="-8.80" y="-22"/></g><g transform="translate(60 50) rotate(27) translate(0 -23.5)"><use href="#leaf" width="15.60" height="19.5" x="-7.80" y="-19.5"/></g><g transform="translate(60 50) rotate(54) translate(0 -23.5)"><use href="#leaf" width="12.80" height="16" x="-6.40" y="-16"/></g><g transform="translate(60 50) rotate(80) translate(0 -23.5)"><use href="#leaf" width="9.60" height="12" x="-4.80" y="-12"/></g></g>
+        <path class="lm-sun" d="M41 50a19 19 0 0 1 38 0Z" fill="var(--accent)"/>
+        <path class="lm-hz" d="M1 55Q60 41 119 55Q60 49 1 55Z" fill="currentColor" stroke="var(--bg)" stroke-width="2.4" paint-order="stroke"/>
+      </svg>
+      <span class="wm"><b>D<svg class="apos" viewBox="-12 -36 24 37" aria-hidden="true"><path d="M0 0C9-8 11-22 0-35-11-22-9-8 0 0Z"/></svg>Vine</b><small>BEAUTY CLINIC</small></span>
+    </a>
+    <div class="links" id="navLinks">
+      <a href="#treatments" data-es="Tratamientos">Treatments</a>
+      <a href="#results" data-es="Resultados">Results</a>
+      <a href="#provider" data-es="Tu proveedora">Your provider</a>
+      <a href="#visit" data-es="Visítanos">Visit</a>
+    </div>
+    <div class="nav-r">
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <a class="btn sm mag" href="tel:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(956) 867-3525</span></a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+<!-- HERO: the logo's sun rises, then opens onto the team -->
+<section class="hero" id="hero" aria-label="Welcome">
+  <div class="stage" id="stage">
+    <div class="sky" aria-hidden="true"></div>
+    <div class="h-copy">
+      <h1 class="h-title">
+        <span class="ln"><span data-es="Tu belleza">Your beauty</span></span>
+        <span class="ln"><span data-es="es <em>nuestro deber.</em>">is <em>our duty.</em></span></span>
+      </h1>
+      <p class="h-sub" data-es="Medicina estética en McAllen, dirigida por la enfermera practicante Brenda Perez-Ruiz, FNP-C. Cada tratamiento está pensado para realzar tu belleza natural, nunca para cambiarla.">Medical aesthetics in McAllen, led by nurse practitioner Brenda Perez-Ruiz, FNP-C. Every treatment is designed to enhance your natural beauty, never to change it.</p>
+      <div class="h-cta">
+        <a class="btn mag" href="tel:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-es="Llama para agendar tu consulta">Call to book a consultation</span></a>
+        <a class="tlink" href="#results"><span data-es="Ver resultados reales">See real results</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+    <div class="sun" aria-hidden="true">
+      <svg class="rays" viewBox="-100 -100 200 100" preserveAspectRatio="xMidYMax meet" style="--vein:var(--bg)">
+        <g transform="rotate(-78) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+        <g transform="rotate(-52) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+        <g transform="rotate(-26) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+        <g transform="rotate(0) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+        <g transform="rotate(26) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+        <g transform="rotate(52) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+        <g transform="rotate(78) translate(0 -55)"><use href="#leaf" width="16" height="24.7" x="-8" y="-24.7"/></g>
+      </svg>
+      <div class="dome" id="dome">
+        <img src="images/hero-team.webp" width="1333" height="2000" alt="The D'Vine Beauty Clinic team in their butter-yellow uniforms, with Brenda Perez-Ruiz seated at center" fetchpriority="high">
+      </div>
+      <svg class="swoosh" viewBox="0 0 440 24" preserveAspectRatio="none"><path d="M0 22Q220 -6 440 22Q220 8 0 22Z" fill="currentColor"/></svg>
+    </div>
+    <div class="scrim" aria-hidden="true"></div>
+    <div class="caps" aria-hidden="true">
+      <p class="cap"><span data-es="Hola a todos.">Hola todos.</span><br><em data-es="Bienvenidos.">Hi, everyone.</em><small data-es="Un enfoque médico, con una bienvenida cálida desde que entras.">A medical approach, with a warm welcome from the moment you walk in.</small></p>
+      <p class="cap"><span data-es="Resultados naturales,">Natural results,</span><br><em data-es="planeados para ti.">planned around you.</em><small data-es="Planes personalizados según tus rasgos, tus metas y tus resultados a largo plazo.">Personalized plans built on your features, your goals and your long-term results.</small></p>
+    </div>
+    <div class="rail" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof" aria-labelledby="proof-h">
+  <div class="wrap">
+    <div class="score rv">
+      <div class="big num" aria-hidden="true"><span id="rating">4.8</span></div>
+      <div class="stars" aria-hidden="true">
+        <svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg>
+      </div>
+      <p class="num" data-es="4.8 de 5 en Google, con 410 reseñas">Rated 4.8 out of 5 on Google from 410 reviews</p>
+    </div>
+    <div class="proof-r">
+      <h2 id="proof-h" class="rv" data-es="Lo que repiten <em>410 reseñas.</em>">What <em>410 reviews</em> keep saying.</h2>
+      <ul class="themes rv">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-hand-heart"/></svg><span data-es="Una bienvenida cálida desde la recepción">A warm welcome from the front desk</span></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg><span data-es="Un espacio hermoso y muy limpio">A beautiful, spotless space</span></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-syringe"/></svg><span data-es="Una enfermera practicante atenta">An attentive nurse practitioner</span></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg><span data-es="Trabajo increíble que los hace regresar">Amazing work that brings people back</span></li>
+      </ul>
+      <blockquote class="rv">“Staff is always so polite and makes you feel at home.”<cite data-es="Reseña de Google">Google review</cite></blockquote>
+      <a class="tlink rv" href="https://www.google.com/maps/place/D%27vine+Beauty+Clinic+%26+Telemedicine+Family+Care/@26.1911668,-98.231492,17z" target="_blank" rel="noopener"><span data-es="Leer las reseñas en Google">Read the reviews on Google</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="marq-t" id="marq">
+  <span>Botox</span><span>Lip filler</span><span>Nose lift</span><span>Jawline contour</span><span>HydraFacial</span><span>Endolift</span><span>HIFU</span><span>Facial balancing</span><span>Glow Jelly Facial</span><span>Hair growth PRP</span>
+  <span>Botox</span><span>Lip filler</span><span>Nose lift</span><span>Jawline contour</span><span>HydraFacial</span><span>Endolift</span><span>HIFU</span><span>Facial balancing</span><span>Glow Jelly Facial</span><span>Hair growth PRP</span>
+</div></div>
+
+<!-- TREATMENTS -->
+<section class="treat" id="treatments" aria-labelledby="treat-h">
+  <div class="wrap">
+    <div class="treat-head">
+      <h2 id="treat-h" class="rv" data-es="Tratamientos para el rostro que <em>ya amas.</em>">Treatments for the face you <em style="font-weight:400">already love.</em></h2>
+      <p class="rv" data-es="Todo empieza con una consulta, para que tu tratamiento vaya con tus rasgos y tus metas, no con una moda.">Every plan starts with a consultation, so your treatment fits your features and your goals, not a trend.</p>
+    </div>
+    <div class="groups">
+      <div class="group rv">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-syringe"/></svg></span><span data-es="Rostro y contorno">Face &amp; contour</span></h3>
+        <ul>
+          <li><b>Botox</b><span data-es="Suaviza líneas de la frente, entrecejo y patas de gallo.">Softens forehead lines, frown lines and crow’s feet.</span></li>
+          <li><b data-es="Relleno de labios">Lip filler</b><span data-es="Forma y volumen, fieles a tus proporciones.">Shape and volume that stay true to your proportions.</span></li>
+          <li><b data-es="Rinomodelación sin cirugía">Non-surgical nose lift</b><span data-es="Afina el perfil sin pasar por cirugía.">Refines the profile without surgery.</span></li>
+          <li><b data-es="Contorno de mentón y mandíbula">Chin &amp; jawline contour</b><span data-es="Define la mandíbula y equilibra el perfil.">Defines the jaw and balances the profile.</span></li>
+          <li><b data-es="Armonización facial">Facial balancing</b><span data-es="Pequeños ajustes que armonizan todo el rostro.">Small adjustments that bring the whole face into harmony.</span></li>
+          <li><b data-es="Mini lifting facial">Mini facelift</b><span data-es="Un aspecto más firme y descansado.">A firmer, more rested look.</span></li>
+        </ul>
+      </div>
+      <div class="group rv">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg></span><span data-es="Piel y firmeza">Skin &amp; lift</span></h3>
+        <ul>
+          <li><b>HydraFacial</b><span data-es="Limpieza profunda e hidratación para un brillo inmediato.">Deep cleansing and hydration for an instant glow.</span></li>
+          <li><b>Glow Jelly Facial</b><span data-es="Un facial que calma la piel y la deja luminosa.">A soothing facial that leaves skin calm and luminous.</span></li>
+          <li><b>HIFU</b><span data-es="Ultrasonido focalizado que levanta pómulos y cejas y define la mandíbula.">Focused ultrasound that lifts cheeks and brows and defines the jawline.</span></li>
+          <li><b>Endolift</b><span data-es="Lo más nuevo en D'Vine. Pregunta por él en tu consulta.">New at D’Vine. Ask about it at your consultation.</span></li>
+        </ul>
+      </div>
+      <div class="group rv">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-hand-heart"/></svg></span><span data-es="Bienestar">Wellness</span></h3>
+        <ul>
+          <li><b data-es="PRP para el cabello">Hair growth PRP</b><span data-es="Inyecciones con tu propio plasma rico en plaquetas.">Injections made with your own platelet-rich plasma.</span></li>
+          <li><b>Skinny shots</b><span data-es="Inyecciones de bienestar para apoyar tus metas.">Wellness injections to support your goals.</span></li>
+          <li><b>D-Shot</b><span data-es="Bienestar íntimo, platicado en privado.">Intimate wellness, discussed in private.</span></li>
+          <li><b data-es="Telemedicina familiar">Telemedicine family care</b><span data-es="Consultas familiares por video con una enfermera practicante.">Family care visits by video with a nurse practitioner.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="consult rv">
+      <div class="price num">$40</div>
+      <div>
+        <strong data-es="Consulta en persona · 1 hora">In-person consultation · 1 hour</strong>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-video-camera"/></svg><span data-es="También hay consultas virtuales">Virtual consultations available</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-credit-card"/></svg><span data-es="Planes de pago con Affirm">Payment plans with Affirm</span></li>
+        </ul>
+      </div>
+      <a class="btn mag" href="tel:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg><span data-es="Agendar consulta">Book a consultation</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROVIDER -->
+<section class="prov" id="provider" aria-labelledby="prov-h">
+  <div class="wrap">
+    <div class="prov-img" id="provImg"><img src="images/brenda.webp" width="933" height="1400" loading="lazy" alt="Brenda Perez-Ruiz, FNP-C, in a white coat holding a syringe"></div>
+    <div class="prov-txt">
+      <h2 id="prov-h" class="prov-name rv">Brenda <em>Perez-Ruiz</em></h2>
+      <div class="creds rv"><span>FNP-C</span><span>APRN</span><span>MSN</span><span>CSFA</span></div>
+      <p class="prov-role rv" data-es="Inyectora principal de D'Vine. Enfermera practicante familiar con más de 18 años de experiencia.">D’Vine Master Injector. Family nurse practitioner with more than 18 years of experience.</p>
+      <p class="statement" id="statement" data-es="Tu tratamiento lo realiza una profesional médica que conoce la anatomía del rostro y la seguridad del paciente, y lo adapta a tus rasgos, tus metas y tus resultados a largo plazo.">Your treatment is performed by a medical professional who understands facial anatomy and patient safety, and is tailored to your features, your goals and your long-term results.</p>
+      <ul class="pillars rv">
+        <li><b data-es="Enfoque médico">Medical-based approach</b><span data-es="Seguridad y anatomía primero.">Safety and anatomy come first.</span></li>
+        <li><b data-es="Planes personalizados">Personalized plans</b><span data-es="Nunca un tratamiento igual para todos.">Never one-size-fits-all.</span></li>
+        <li><b data-es="Resultados naturales">Natural-looking results</b><span data-es="Realzar, nunca cambiar.">Enhance, never change.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results" aria-labelledby="res-h">
+  <div class="wrap res-head">
+    <h2 id="res-h" class="rv" data-es="Pacientes reales. <em>Resultados reales.</em>">Real patients. <em>Real results.</em></h2>
+    <p class="rv" data-es="Fotos de antes y después de pacientes de D'Vine Beauty Clinic, de la galería de la clínica. Los resultados varían en cada persona.">Before and after photos of D’Vine Beauty Clinic patients, from the clinic’s own gallery. Individual results vary.</p>
+  </div>
+  <div class="track" id="track" tabindex="0" aria-label="Before and after gallery">
+    <figure class="card"><div class="ph"><img src="images/result-1.webp" width="1400" height="1302" loading="lazy" alt="Lip filler before and after, front view"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Labios">Lips</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-2.webp" width="1400" height="1081" loading="lazy" alt="Lip filler before and after, close-up"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Labios">Lips</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-9.webp" width="1400" height="1135" loading="lazy" alt="Facial treatment before and after"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Rostro">Face</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-3.webp" width="1400" height="1193" loading="lazy" alt="Facial contour before and after, side view"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Perfil">Profile</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-5.webp" width="1336" height="1400" loading="lazy" alt="Non-surgical nose lift before and after, profile"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Nariz">Nose</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-8.webp" width="1400" height="1092" loading="lazy" alt="Jawline contour before and after on a male patient"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Mandíbula">Jawline</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-4.webp" width="1400" height="1395" loading="lazy" alt="Treatment before and after, three-quarter view"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Rostro">Face</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-10.webp" width="1400" height="1286" loading="lazy" alt="Treatment before and after"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Rostro">Face</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-6.webp" width="1400" height="1010" loading="lazy" alt="Treatment before and after"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Perfil">Profile</span></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="images/result-7.webp" width="1400" height="1094" loading="lazy" alt="Treatment before and after"></div><figcaption><span data-es="Antes · Después">Before · After</span><span data-es="Rostro">Face</span></figcaption></figure>
+  </div>
+  <p class="drag-hint" id="dragHint"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg><span data-es="Desliza para ver más">Swipe to see more</span></p>
+</section>
+
+<!-- CLINIC -->
+<section class="clinic" aria-labelledby="clinic-h">
+  <div class="wrap">
+    <div class="clinic-txt">
+      <h2 id="clinic-h" class="rv" data-es="Ven por los resultados. <em>Quédate por la bienvenida.</em>">Come for the results. <em>Stay for the welcome.</em></h2>
+      <p class="rv" data-es="La clínica está dentro del Clarion Inn, cerca del aeropuerto de McAllen: un espacio luminoso y tranquilo, con un equipo que te hace sentir en casa.">The clinic sits inside the Clarion Inn near McAllen Airport: a bright, calm space with a team that makes you feel at home.</p>
+      <ul class="perks">
+        <li class="rv"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg></span><div><b data-es="D'Vine Rewards">D’Vine Rewards</b><span data-es="Gana puntos en tus procedimientos y cámbialos por recompensas gratis.">Earn points on procedures and trade them for free rewards.</span> <a class="tlink" href="https://club.glueloyalty.com/glue/app/overview/xPTFwyOaYXs__-__zGUmLjuSbuPg0H3nomHVC6JKRp2J3GY=" target="_blank" rel="noopener" data-es="Únete">Join now</a></div></li>
+        <li class="rv"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-credit-card"/></svg></span><div><b data-es="Planes de pago">Payment plans</b><span data-es="Divide el costo de tu tratamiento con Affirm.">Spread the cost of your treatment with Affirm.</span></div></li>
+        <li class="rv"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-video-camera"/></svg></span><div><b data-es="Consulta virtual">Virtual consultation</b><span data-es="¿Aún no estás lista para venir? Empieza con una consulta por video.">Not ready to come in yet? Start with a video consultation.</span></div></li>
+      </ul>
+    </div>
+    <div class="clinic-img">
+      <div class="main" id="deskImg"><img src="images/front-desk.webp" width="1094" height="1400" loading="lazy" alt="Brenda Perez-Ruiz at the D'Vine front desk, with the golden sun logo on the wall behind her"></div>
+      <div class="inset rv"><img src="images/team-black.webp" width="933" height="1400" loading="lazy" alt="The D'Vine team in black uniforms"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="visit-txt">
+      <h2 id="visit-h" class="rv" data-es="Visita la clínica.">Visit the clinic.</h2>
+      <div class="vgrid">
+        <div class="rv">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg><span data-es="Dirección">Address</span></h3>
+          <p class="num">1309 South 10th Street<br>McAllen, Texas 78501</p>
+          <p class="soft" data-es="Dentro del Clarion Inn, cerca del aeropuerto de McAllen">Inside the Clarion Inn near McAllen Airport</p>
+        </div>
+        <div class="rv">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><span data-es="Horario">Hours</span></h3>
+          <table class="hours num" id="hours">
+            <tr data-days="1,2,3,4,5,6"><td data-es="Lunes – Sábado">Monday – Saturday</td><td>9:30 AM – 7:00 PM</td></tr>
+            <tr data-days="0"><td data-es="Domingo">Sunday</td><td data-es="Cerrado">Closed</td></tr>
+          </table>
+        </div>
+        <div class="rv">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-es="Llama o envía mensaje">Call or text</span></h3>
+          <a class="phone-big num" href="tel:+19568673525">(956) 867-3525</a>
+        </div>
+        <div class="rv">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-chat-circle-text"/></svg><span data-es="Correo">Email</span></h3>
+          <p><a href="mailto:dvinebeautystudio@gmail.com" style="text-underline-offset:4px;text-decoration-color:var(--accent)">dvinebeautystudio@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="v-cta rv">
+        <a class="btn mag" href="https://www.google.com/maps/dir/?api=1&destination=D%27vine+Beauty+Clinic+1309+S+10th+St+McAllen+TX+78501" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg><span data-es="Cómo llegar">Get directions</span></a>
+        <a class="btn ghost" href="sms:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-chat-circle-text"/></svg><span data-es="Enviar mensaje">Send a text</span></a>
+      </div>
+    </div>
+    <div class="visit-img rv"><img src="images/brenda-full.webp" width="933" height="1400" loading="lazy" alt="Brenda Perez-Ruiz in a white coat"></div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="close" aria-labelledby="close-h">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 id="close-h" class="rv" data-es="Tu brillo empieza con <em>una llamada.</em>">Your glow starts with <em>one call.</em></h2>
+    <p class="rv" data-es="Llama o envía un mensaje para agendar tu consulta. Lunes a sábado, de 9:30 AM a 7:00 PM.">Call or text to book your consultation. Monday – Saturday, 9:30 AM – 7:00 PM.</p>
+    <div class="row rv">
+      <a class="btn mag" href="tel:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(956) 867-3525</span></a>
+      <a class="btn ghost" href="sms:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-chat-circle-text"/></svg><span data-es="Enviar mensaje">Send a text</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">
+      <a class="brand" href="#main" aria-label="D'Vine Beauty Clinic, back to top">
+        <svg viewBox="0 1 120 57" aria-hidden="true" class="logo-mark">
+          <g fill="currentColor"><g transform="translate(60 50) rotate(-80) translate(0 -23.5)"><use href="#leaf" width="9.60" height="12" x="-4.80" y="-12"/></g><g transform="translate(60 50) rotate(-54) translate(0 -23.5)"><use href="#leaf" width="12.80" height="16" x="-6.40" y="-16"/></g><g transform="translate(60 50) rotate(-27) translate(0 -23.5)"><use href="#leaf" width="15.60" height="19.5" x="-7.80" y="-19.5"/></g><g transform="translate(60 50) rotate(0) translate(0 -23.5)"><use href="#leaf" width="17.60" height="22" x="-8.80" y="-22"/></g><g transform="translate(60 50) rotate(27) translate(0 -23.5)"><use href="#leaf" width="15.60" height="19.5" x="-7.80" y="-19.5"/></g><g transform="translate(60 50) rotate(54) translate(0 -23.5)"><use href="#leaf" width="12.80" height="16" x="-6.40" y="-16"/></g><g transform="translate(60 50) rotate(80) translate(0 -23.5)"><use href="#leaf" width="9.60" height="12" x="-4.80" y="-12"/></g></g>
+          <path d="M41 50a19 19 0 0 1 38 0Z" fill="currentColor"/><path d="M1 55Q60 41 119 55Q60 49 1 55Z" fill="currentColor" stroke="var(--olive-2)" stroke-width="2.4" paint-order="stroke"/>
+        </svg>
+        <span class="wm"><b>D<svg class="apos" viewBox="-12 -36 24 37" aria-hidden="true"><path d="M0 0C9-8 11-22 0-35-11-22-9-8 0 0Z"/></svg>Vine</b><small>BEAUTY CLINIC</small></span>
+      </a>
+      <p data-es="Medicina estética y telemedicina familiar en McAllen, Texas.">Medical aesthetics and telemedicine family care in McAllen, Texas.</p>
+    </div>
+    <div class="f-col">
+      <h3 data-es="Visítanos">Visit</h3>
+      <p>1309 South 10th Street<br>McAllen, Texas 78501</p>
+    </div>
+    <div class="f-col">
+      <h3 data-es="Contacto">Contact</h3>
+      <a class="num" href="tel:+19568673525">(956) 867-3525</a>
+      <a href="mailto:dvinebeautystudio@gmail.com">dvinebeautystudio@gmail.com</a>
+    </div>
+    <div class="f-col">
+      <h3 data-es="Síguenos">Follow</h3>
+      <a href="https://www.instagram.com/dvinebeautyclinic.tx/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://club.glueloyalty.com/glue/app/overview/xPTFwyOaYXs__-__zGUmLjuSbuPg0H3nomHVC6JKRp2J3GY=" target="_blank" rel="noopener">D’Vine Rewards</a>
+    </div>
+    <div class="fine">
+      <span><span data-es="© 2026 D'Vine Beauty Clinic. Concepto de diseño de Drusus Technologies; el logo es una propuesta de rediseño.">© 2026 D’Vine Beauty Clinic. Design concept by Drusus Technologies; the logo shown is a logo concept.</span> <a href="logo.html" style="color:var(--cream);text-underline-offset:4px;text-decoration-color:var(--accent)" data-es="Compáralo con el logo actual">Compare it with the current logo</a></span>
+      <span data-es="Fotos de la clínica tomadas de su sitio web actual. Los resultados varían en cada persona.">Photos from the clinic’s current website. Individual results vary.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="btn" href="tel:+19568673525"><svg class="ic ring" aria-hidden="true"><use href="#i-phone"/></svg><span data-es="Llamar">Call</span></a>
+  <a class="btn ghost" href="sms:+19568673525"><svg class="ic" aria-hidden="true"><use href="#i-chat-circle-text"/></svg><span data-es="Mensaje">Text</span></a>
+</div>
+
+<script>
+/* ---------- language toggle (works without GSAP) ---------- */
+(function(){
+  const nodes=[...document.querySelectorAll('[data-es]')];
+  nodes.forEach(n=>n.dataset.en=n.innerHTML);
+  const btns=document.querySelectorAll('.lang button');
+  window.setLang=function(l){
+    nodes.forEach(n=>{n.innerHTML=l==='es'?n.dataset.es:n.dataset.en});
+    document.documentElement.lang=l;
+    btns.forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));
+    try{localStorage.setItem('dvine-lang',l)}catch(e){}
+    document.dispatchEvent(new CustomEvent('langchange'));
+  };
+  btns.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+  let saved=null;try{saved=localStorage.getItem('dvine-lang')}catch(e){}
+  if(saved==='es')setLang('es');
+  /* today's hours */
+  const d=new Date().getDay();
+  document.querySelectorAll('#hours tr').forEach(r=>{if(r.dataset.days.split(',').includes(String(d)))r.classList.add('today')});
+})();
+
+window.addEventListener('DOMContentLoaded',()=>{
+  const html=document.documentElement;
+  if(!window.gsap||!window.ScrollTrigger){html.classList.add('no-motion');return}
+  gsap.registerPlugin(ScrollTrigger);
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const top=document.getElementById('top'), mbar=document.getElementById('mbar');
+
+  /* header: solid after hero start, hide on scroll down */
+  let lastY=0;
+  const onScroll=y=>{
+    top.classList.toggle('solid',y>40);
+    if(!reduce) top.classList.toggle('hide',y>lastY&&y>400);
+    mbar.classList.toggle('show',y>innerHeight*.6);
+    lastY=y;
+  };
+
+  if(reduce){
+    html.classList.add('reduced');
+    addEventListener('scroll',()=>onScroll(scrollY),{passive:true});
+    return;
+  }
+
+  html.classList.add('motion');
+  /* Lenis */
+  let lenis=null;
+  if(window.Lenis){
+    lenis=new Lenis({duration:1.25,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
+    lenis.on('scroll',e=>{ScrollTrigger.update();onScroll(e.scroll)});
+    gsap.ticker.add(t=>lenis.raf(t*1000)); gsap.ticker.lagSmoothing(0);
+  } else addEventListener('scroll',()=>onScroll(scrollY),{passive:true});
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href')); if(!t)return;
+    e.preventDefault(); lenis?lenis.scrollTo(t,{offset:a.getAttribute('href')==='#main'?0:-70,duration:1.6}):t.scrollIntoView();
+  }));
+
+  const stage=document.getElementById('stage'), dome=document.getElementById('dome');
+  const domeImg=dome.querySelector('img'), rays=stage.querySelector('.rays'), swoosh=stage.querySelector('.swoosh');
+  const hcopy=stage.querySelector('.h-copy');
+  const r0=()=>{const base=innerWidth<640?Math.min(innerWidth*.46,innerHeight*.26):Math.min(innerWidth*.17,innerHeight*.25);
+    const room=(stage.offsetHeight||innerHeight)-(hcopy.offsetTop+hcopy.offsetHeight)-28;
+    return Math.max(90,Math.min(base,room/1.62))};
+  const rMax=()=>Math.hypot(innerWidth/2,stage.offsetHeight)+20;
+  const setR0=()=>stage.style.setProperty('--r0',r0()+'px');
+  setR0();
+
+  /* ---------- load: the sun rises ---------- */
+  const leaves=rays.querySelectorAll('use'), mLeaves=document.querySelectorAll('.lm-leaves use');
+  const order=[3,2,4,1,5,0,6];
+  const tl=gsap.timeline({defaults:{ease:'expo.out'}});
+  tl.from('.logo-mark .lm-hz',{scaleX:0,transformOrigin:'50% 50%',duration:.8})
+    .from('.logo-mark .lm-sun',{y:14,opacity:0,duration:.8},'<.1')
+    .from(order.map(i=>mLeaves[i]),{scale:0,opacity:0,transformOrigin:'50% 100%',stagger:.05,duration:.6},'<.15')
+    .from('.h-title .ln>span',{yPercent:110,duration:1.1,stagger:.09},0.15)
+    .from(swoosh,{scaleX:0,transformOrigin:'50% 50%',duration:1.1,ease:'power3.out'},0.2)
+    .from(dome,{yPercent:22,filter:'brightness(1.25)',duration:1.4,ease:'power3.out'},0.25)
+    .from(order.map(i=>leaves[i]),{scale:0,opacity:0,transformOrigin:'50% 100%',stagger:.06,duration:.9},0.55)
+    .from(['.h-sub','.h-cta'],{y:18,opacity:0,filter:'blur(6px)',duration:.9,stagger:.08},0.6)
+    .from('.nav .wm b',{yPercent:60,opacity:0,filter:'blur(6px)',duration:.9},0.35)
+    .from('.nav .wm small',{letterSpacing:'.6em',opacity:0,duration:1.1},0.5)
+    .from('.nav .apos',{scale:0,rotate:-70,duration:.9,ease:'back.out(2.2)'},0.85)
+    .from('.nav .links,.nav .nav-r,.nav .nav-call',{opacity:0,y:-8,duration:.7,stagger:.05},0.4);
+
+  /* ---------- scroll: dome opens onto the team ---------- */
+  const caps=gsap.utils.toArray('.cap'), rail=stage.querySelector('.rail i');
+  const sun=gsap.timeline({scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom bottom',scrub:true,invalidateOnRefresh:true}});
+  sun.fromTo(dome,{clipPath:()=>`circle(${r0()}px at 50% 100%)`},{clipPath:()=>`circle(${rMax()}px at 50% 100%)`,ease:'none',duration:.55},0)
+     .fromTo(domeImg,{yPercent:66,scale:1.12},{yPercent:0,scale:1,ease:'none',duration:.55},0)
+     .to('.h-copy',{y:()=>-innerHeight*.18,opacity:0,filter:'blur(8px)',ease:'none',duration:.3},0)
+     .to(rays,{scale:2.4,rotate:8,opacity:0,ease:'none',duration:.35},0)
+     .to(swoosh,{y:60,opacity:0,ease:'none',duration:.25},0)
+     .to('.sky',{opacity:0,duration:.4,ease:'none'},0.1)
+     .to(['.scrim','.rail'],{opacity:1,duration:.1,ease:'none'},0.5)
+     .fromTo(caps[0],{opacity:0,y:40,filter:'blur(8px)'},{opacity:1,y:0,filter:'blur(0px)',duration:.1,ease:'none'},0.58)
+     .to(caps[0],{opacity:0,y:-30,filter:'blur(8px)',duration:.08,ease:'none'},0.78)
+     .fromTo(caps[1],{opacity:0,y:40,filter:'blur(8px)'},{opacity:1,y:0,filter:'blur(0px)',duration:.1,ease:'none'},0.84)
+     .fromTo(rail,{scaleY:0},{scaleY:1,ease:'none',duration:.5},0.5);
+
+  /* ---------- reveals: blur to sharp ---------- */
+  gsap.utils.toArray('.rv').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:36,filter:'blur(8px)'},{opacity:1,y:0,filter:'blur(0px)',duration:1.1,ease:'expo.out',
+      scrollTrigger:{trigger:el,start:'top 88%',once:true}});
+  });
+
+  /* rating count-up + stars fill */
+  const rating=document.getElementById('rating');
+  ScrollTrigger.create({trigger:'.score',start:'top 80%',once:true,onEnter:()=>{
+    const o={v:0};gsap.to(o,{v:4.8,duration:1.6,ease:'power3.out',onUpdate:()=>rating.textContent=o.v.toFixed(1)});
+    gsap.from('.stars svg',{scale:0,rotate:-30,opacity:0,stagger:.12,duration:.7,ease:'back.out(2)',delay:.2});
+  }});
+  rating.textContent='0.0';
+
+  /* statement fills word by word */
+  const st=document.getElementById('statement'); let stTween=null;
+  function splitWords(){
+    if(stTween){stTween.scrollTrigger.kill();stTween.kill()}
+    st.innerHTML=st.textContent.trim().split(/\s+/).map(w=>`<span class="w">${w}</span>`).join(' ');
+    stTween=gsap.to(st.querySelectorAll('.w'),{opacity:1,stagger:.05,ease:'none',scrollTrigger:{trigger:st,start:'top 80%',end:'bottom 45%',scrub:true}});
+  }
+  splitWords();
+
+  /* clip-path wipes with inner parallax */
+  [['#provImg','inset(100% 0 0 0)'],['#deskImg','inset(0 0 0 100%)']].forEach(([sel,from])=>{
+    const box=document.querySelector(sel), img=box.querySelector('img');
+    gsap.fromTo(box,{clipPath:from},{clipPath:'inset(0% 0 0 0%)',duration:1.4,ease:'expo.out',scrollTrigger:{trigger:box.parentElement,start:'top 75%',once:true}});
+    gsap.fromTo(img,{yPercent:-8},{yPercent:0,ease:'none',scrollTrigger:{trigger:box,start:'top bottom',end:'bottom top',scrub:true}});
+  });
+
+  /* marquee driven by scroll velocity */
+  const mq=document.getElementById('marq');
+  const mqT=gsap.to(mq,{xPercent:-50,duration:38,ease:'none',repeat:-1});
+  ScrollTrigger.create({trigger:'.marq',start:'top bottom',end:'bottom top',
+    onToggle:s=>s.isActive?mqT.play():mqT.pause(),
+    onUpdate:s=>{const v=gsap.utils.clamp(-6,6,s.getVelocity()/300);gsap.to(mqT,{timeScale:v<0?Math.min(-1,v):Math.max(1,v),duration:.3,overwrite:true}).then(()=>gsap.to(mqT,{timeScale:1,duration:1}))}});
+
+  /* results: pinned horizontal gallery on desktop */
+  const mm=gsap.matchMedia();
+  mm.add('(min-width: 901px)',()=>{
+    const sec=document.getElementById('results'), track=document.getElementById('track');
+    sec.classList.add('pinx'); document.getElementById('dragHint').style.display='none';
+    const dist=()=>track.scrollWidth-innerWidth;
+    gsap.to(track,{x:()=>-dist(),ease:'none',scrollTrigger:{trigger:sec,start:'top top',end:()=>'+='+dist(),pin:true,scrub:.6,invalidateOnRefresh:true}});
+    return()=>{sec.classList.remove('pinx');document.getElementById('dragHint').style.display=''};
+  });
+
+  /* closing glow drifts up as it enters */
+  gsap.fromTo('.close .glow',{yPercent:20,scale:.85},{yPercent:-8,scale:1,ease:'none',scrollTrigger:{trigger:'.close',start:'top bottom',end:'bottom bottom',scrub:true}});
+
+  /* magnetic buttons + phone ring */
+  mm.add('(hover: hover) and (pointer: fine)',()=>{
+    document.querySelectorAll('.mag').forEach(b=>{
+      const x=gsap.quickTo(b,'x',{duration:.3,ease:'power3'}),y=gsap.quickTo(b,'y',{duration:.3,ease:'power3'});
+      b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();x((e.clientX-r.left-r.width/2)*.25);y((e.clientY-r.top-r.height/2)*.3)});
+      b.addEventListener('mouseleave',()=>{x(0);y(0)});
+    });
+  });
+  let rang=false;
+  new MutationObserver(()=>{if(!rang&&mbar.classList.contains('show')){rang=true;gsap.fromTo('.mbar .ring',{rotate:0},{keyframes:{rotate:[0,-16,14,-10,8,0]},duration:.7,ease:'power1.inOut',delay:.3})}}).observe(mbar,{attributes:true});
+
+  /* language swaps re-split text and remeasure */
+  document.addEventListener('langchange',()=>{splitWords();ScrollTrigger.refresh()});
+
+  addEventListener('resize',setR0);
+  document.fonts.ready.then(setR0);
+  document.fonts.ready.then(()=>ScrollTrigger.refresh());
+  Promise.all([...document.images].filter(i=>!i.loading||i.loading==='eager').map(i=>i.decode().catch(()=>{}))).then(()=>ScrollTrigger.refresh());
+  addEventListener('load',()=>ScrollTrigger.refresh());
+});
+</script>
+</body>
+</html>
