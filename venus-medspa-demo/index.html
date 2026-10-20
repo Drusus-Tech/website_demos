@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Venus Medspa · Laser, Injectables &amp; Skin Care in McAllen, Texas</title>
+<meta name="description" content="Venus Medspa in McAllen, Texas: laser hair removal, Botox and fillers, Hydrafacial, CoolSculpting, Evolve X and medical-grade facials. Book a consultation or call (956) 682-0255.">
+<meta name="theme-color" content="#1c1814">
+<meta property="og:title" content="Venus Medspa · McAllen, Texas">
+<meta property="og:description" content="Laser, injectables, facials and body contouring in North McAllen.">
+<meta property="og:image" content="images/hero-glow.jpg">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231c1814'/%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23c9a66b' stroke-width='3'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia,serif' font-size='44' fill='%23f2eadf'%3EV%3C/text%3E%3Ctext x='50' y='80' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='%23c9a66b'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=gambetta@400,401,500,501&amp;f[]=satoshi@400,500,700&amp;display=swap">
+<link rel="preload" as="image" href="images/hero-glow.webp" fetchpriority="high">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<style>
+:root{
+  --bg:#f5efe6; --surface:#ebe2d5; --surface-2:#e2d6c5;
+  --ink:#26211c; --ink-soft:#5f554b;
+  --dark:#1c1814; --dark-2:#26201a; --on-dark:#f2eadf; --on-dark-soft:#c8bba9;
+  --accent:#c9a66b; --accent-deep:#7a5e31; --accent-ink:#1f1a15;
+  --line:#d6c8b4; --line-dark:#3a3129;
+  --display:'Gambetta', 'Iowan Old Style', Georgia, serif;
+  --body:'Satoshi', 'Avenir Next', system-ui, sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gutter:clamp(20px, 4vw, 56px);
+  --max:1360px;
+  --ic-duo:var(--accent); --ic-duo-op:.28;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--accent) var(--dark)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:clamp(16px,1.05vw + 10px,18px);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--accent);color:var(--accent-ink)}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--dark)}::-webkit-scrollbar-thumb{background:#8a7350;border-radius:10px;border:2px solid var(--dark)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.025em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.4rem,5.2vw,5.25rem)}
+h3{font-size:clamp(1.6rem,2.4vw,2.25rem);letter-spacing:-.015em}
+em{font-style:italic}
+p{margin:0;text-wrap:pretty}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.ic{width:1.25em;height:1.25em;flex:none;vertical-align:-.22em}
+.skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--accent);color:var(--accent-ink);padding:12px 16px;border-radius:8px}
+.skip:focus{left:8px}
+
+/* concept bar */
+.concept{position:relative;z-index:60;background:#0f0c0a;color:var(--on-dark-soft);font-size:13px;line-height:1.4;text-align:center;padding:8px var(--gutter)}
+
+/* buttons */
+.btn{--h:52px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:var(--h);padding:0 26px;border-radius:999px;font:500 15px/1 var(--body);letter-spacing:.02em;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .15s var(--ease);will-change:transform}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--accent);color:var(--accent-ink)}
+.btn-gold:hover{background:#d8b77d}
+.btn-ghost-light{border-color:rgba(242,234,223,.35);color:var(--on-dark)}
+.btn-ghost-light:hover{border-color:var(--on-dark);background:rgba(242,234,223,.06)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn .ic-arrow{transition:transform .25s var(--ease)}
+.btn:hover .ic-arrow{transform:translateX(4px)}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:500;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .35s var(--ease);padding-block:10px}
+.link:hover{background-size:100% 1px}
+.link .ic{transition:transform .25s var(--ease)}
+.link:hover .ic{transform:translate(3px,-3px)}
+
+/* header */
+.site-header{position:fixed;inset:0 0 auto;z-index:50;transition:transform .45s var(--ease),background-color .35s ease,color .35s ease,box-shadow .35s ease;color:var(--on-dark)}
+.site-header.has-bar{top:0}
+.site-header .bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.site-header.solid{background:rgba(245,239,230,.86);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.site-header.hidden{transform:translateY(-100%)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-height:44px}
+.brand svg.mark{width:40px;height:40px}
+.wordmark{display:flex;align-items:center;gap:12px;white-space:nowrap}
+.wordmark .w1{font-family:var(--display);font-weight:500;font-size:21px;letter-spacing:.2em;padding-left:.2em}
+.wordmark .rule{width:1px;height:20px;background:currentColor;opacity:.35}
+.wordmark .w2{font-size:11px;font-weight:700;letter-spacing:.34em;color:var(--accent)}
+.site-header.solid .wordmark .w2{color:var(--accent-deep)}
+.nav{display:flex;align-items:center;gap:28px;font-size:15px}
+.nav a.nl{text-decoration:none;opacity:.85;padding:12px 0;background:linear-gradient(currentColor,currentColor) 0 calc(100% - 8px)/0 1px no-repeat;transition:background-size .35s var(--ease),opacity .2s}
+.nav a.nl:hover{opacity:1;background-size:100% 1px}
+.nav .btn{--h:44px;padding:0 20px;font-size:14px}
+.nav .tel{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:500;min-height:44px}
+@media (max-width:1060px){.nav a.nl{display:none}}
+@media (max-width:640px){.nav .tel span{display:none}.wordmark .w2,.wordmark .rule{display:none}.nav .btn{display:none}}
+
+/* hero: the halo */
+.hero{position:relative;height:250vh;background:var(--dark);color:var(--on-dark);--cx:68%;--cy:52%;--r0:min(35vh,23vw)}
+.hero-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:clip}
+.hero-glow{position:absolute;width:70vmax;height:70vmax;left:calc(var(--cx) - 35vmax);top:calc(var(--cy) - 35vmax);background:radial-gradient(closest-side,rgba(201,166,107,.22),rgba(201,166,107,0));pointer-events:none}
+.hero-media{position:absolute;inset:0;clip-path:circle(var(--r0) at var(--cx) var(--cy));will-change:clip-path}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform-origin:var(--cx) var(--cy)}
+.hero-media .flip{position:absolute;inset:0;transform:scaleX(-1)}
+.halo-ring{position:absolute;left:calc(var(--cx) - var(--r0) - 14px);top:calc(var(--cy) - var(--r0) - 14px);width:calc(var(--r0)*2 + 28px);height:calc(var(--r0)*2 + 28px);pointer-events:none;transform-origin:50% 50%}
+.halo-ring circle{fill:none;stroke:var(--accent);stroke-width:1;vector-effect:non-scaling-stroke}
+.hero-copy{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;pointer-events:none}
+.hero-copy .wrap{pointer-events:auto}
+.hero-copy .inner{max-width:min(560px,46vw)}
+.hero h1{font-size:clamp(3rem,6.4vw,6rem);line-height:.98;letter-spacing:-.03em}
+.hero h1 em{color:var(--accent)}
+.hero .lede{margin-top:28px;max-width:44ch;color:var(--on-dark-soft);font-size:clamp(16px,1.1vw + 8px,19px)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-meta{position:absolute;left:0;right:0;bottom:28px;font-size:13px;color:var(--on-dark-soft);letter-spacing:.04em}
+.hero-meta .wrap{display:flex;justify-content:space-between;gap:16px}
+.hero-meta .stars{display:inline-flex;align-items:center;gap:8px}
+.hero-meta .stars svg{width:14px;height:14px;color:var(--accent)}
+.hero-end{position:absolute;left:0;right:0;bottom:clamp(64px,10vh,120px);opacity:0;visibility:hidden}
+.hero-end p{font-family:var(--display);font-size:clamp(2.2rem,4.6vw,4.5rem);line-height:1.02;letter-spacing:-.025em;max-width:14ch;text-wrap:balance}
+.hero-end span{display:block;margin-top:16px;font-size:15px;color:var(--on-dark-soft);font-family:var(--body);letter-spacing:.02em}
+@media (max-width:767px){
+  .hero{--cx:50%;--cy:30%;--r0:min(34vw,19vh);height:220vh}
+  .hero-copy{align-items:flex-end;padding-bottom:max(96px,13vh)}
+  .hero-copy .inner{max-width:none}
+  .hero h1{font-size:clamp(2.6rem,11vw,3.6rem)}
+  .hero .lede{margin-top:16px}
+  .hero .ctas{margin-top:24px}
+  .hero-meta{display:none}
+  .hero-media .flip{bottom:-30%}
+  .hero-media img{transform:translateY(-29%)}
+}
+@media (max-width:767px) and (max-height:700px){.hero .lede{display:none}}
+
+/* marquee */
+.marquee{background:var(--dark);color:var(--on-dark-soft);border-top:1px solid var(--line-dark);overflow:clip;padding:26px 0}
+.marquee-track{display:flex;width:max-content;gap:0}
+.marquee-track ul{display:flex;list-style:none;margin:0;padding:0}
+.marquee-track li{font-family:var(--display);font-size:clamp(1.4rem,2.4vw,2.2rem);letter-spacing:-.01em;white-space:nowrap;display:flex;align-items:center}
+.marquee-track li::after{content:"";width:7px;height:7px;border:1px solid var(--accent);border-radius:50%;margin:0 clamp(24px,3vw,44px)}
+.marquee-note{font-size:12px;color:#9c8f7d;text-align:center;margin-top:14px;letter-spacing:.05em}
+
+/* proof */
+.proof{padding:clamp(96px,14vw,184px) 0 clamp(80px,10vw,136px)}
+.proof-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.score{grid-column:1 / span 6}
+.score .big{font-family:var(--display);font-size:clamp(7rem,17vw,15rem);line-height:.8;letter-spacing:-.04em;display:flex;align-items:flex-start;gap:.08em}
+.score .big small{font-size:.22em;letter-spacing:0;color:var(--ink-soft);margin-top:.5em}
+.stars-row{display:flex;gap:6px;margin-top:28px}
+.stars-row svg{width:26px;height:26px;color:var(--accent-deep);--ic-duo:var(--accent);--ic-duo-op:.9}
+.score p{margin-top:16px;color:var(--ink-soft)}
+.score .link{margin-top:8px;color:var(--ink)}
+.voices{grid-column:8 / span 5}
+.voices blockquote{margin:0;font-family:var(--display);font-style:italic;font-size:clamp(1.7rem,2.6vw,2.5rem);line-height:1.15;letter-spacing:-.015em}
+.voices cite{display:block;margin-top:16px;font-style:normal;font-size:14px;color:var(--ink-soft);letter-spacing:.03em}
+.themes{list-style:none;padding:0;margin:40px 0 0;border-top:1px solid var(--line)}
+.themes li{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.themes .ic{color:var(--accent-deep);width:22px;height:22px}
+.owned{margin-top:24px;font-size:14px;color:var(--ink-soft)}
+@media (max-width:900px){.score,.voices{grid-column:1 / -1}.voices{margin-top:56px}}
+
+/* treatments */
+.treat{padding:clamp(64px,8vw,120px) 0 clamp(96px,12vw,160px)}
+.treat-head{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-bottom:clamp(48px,7vw,104px)}
+.treat-head h2{grid-column:1 / span 7}
+.treat-head p{grid-column:9 / span 4;align-self:end;color:var(--ink-soft)}
+.goals{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.goal-frame{grid-column:1 / span 6;position:sticky;top:12vh;height:76vh;border-radius:16px;overflow:clip;background:var(--surface-2)}
+.goal-frame figure{position:absolute;inset:0;margin:0;clip-path:inset(100% 0 0 0)}
+.goal-frame figure:first-child{clip-path:inset(0 0 0 0)}
+.goal-frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.goal-frame figcaption{position:absolute;left:16px;bottom:16px;font-size:12px;letter-spacing:.04em;background:rgba(28,24,20,.66);color:var(--on-dark);padding:6px 12px;border-radius:999px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.goal-list{grid-column:8 / span 5}
+.goal{min-height:76vh;display:flex;flex-direction:column;justify-content:center;padding:48px 0;border-top:1px solid var(--line)}
+.goal:first-child{border-top:0}
+.goal .tag{display:flex;align-items:center;gap:12px;color:var(--accent-deep);margin-bottom:20px}
+.goal .tile{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--surface);color:var(--accent-deep)}
+.goal .tile .ic{width:28px;height:28px}
+.goal h3{font-size:clamp(2.2rem,3.4vw,3.25rem)}
+.goal p.d{margin-top:20px;color:var(--ink-soft);max-width:48ch}
+.goal ul{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.goal ul li{font-size:14px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.35)}
+.goal .fine{margin-top:20px;font-size:14px;color:var(--ink-soft)}
+.goal .link{margin-top:20px;align-self:flex-start;color:var(--accent-deep)}
+.goal-img-m{display:none}
+@media (max-width:900px){
+  .goal-frame{display:none}
+  .goal-list{grid-column:1 / -1}
+  .goal{min-height:0;padding:56px 0}
+  .goal-img-m{display:block;margin:0 0 28px;border-radius:14px;overflow:clip;aspect-ratio:4/5;position:relative}
+  .goal-img-m img{width:100%;height:100%;object-fit:cover}
+  .goal-img-m figcaption{position:absolute;left:12px;bottom:12px;font-size:12px;background:rgba(28,24,20,.66);color:var(--on-dark);padding:6px 12px;border-radius:999px}
+  .treat-head h2,.treat-head p{grid-column:1 / -1}
+}
+
+/* statement */
+.statement{position:relative;background:var(--dark);color:var(--on-dark);padding:clamp(120px,16vw,220px) 0;overflow:clip}
+.statement .bgimg{position:absolute;inset:-10% 0;opacity:.32}
+.statement .bgimg img{width:100%;height:100%;object-fit:cover;filter:saturate(.8)}
+.statement::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--dark) 15%,rgba(28,24,20,.55));z-index:1}
+.statement .wrap{position:relative;z-index:2}
+.statement p.say{font-family:var(--display);font-size:clamp(2rem,4.4vw,4.1rem);line-height:1.1;letter-spacing:-.022em;max-width:20ch}
+.statement p.say .w{opacity:.2}
+.no-js .statement p.say .w, .statement.static p.say .w{opacity:1}
+.statement .sig{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px 32px;color:var(--on-dark-soft);font-size:15px}
+.statement .sig span{display:inline-flex;align-items:center;gap:10px}
+.statement .sig .ic{color:var(--accent)}
+
+/* menu */
+.menu{padding:clamp(96px,13vw,176px) 0;background:var(--surface)}
+.menu-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.menu-photo{grid-column:1 / span 4;align-self:start;position:sticky;top:110px}
+.wipe{border-radius:16px;overflow:clip;aspect-ratio:3/4.4;clip-path:inset(0 0 0 0)}
+.wipe img{width:100%;height:118%;object-fit:cover;margin-top:-9%}
+.menu-photo figcaption{margin-top:12px;font-size:13px;color:var(--ink-soft)}
+.menu-main{grid-column:6 / span 7}
+.menu-main h2{max-width:12ch}
+.menu-main .intro{margin-top:20px;color:var(--ink-soft);max-width:52ch}
+.tabs{display:inline-flex;gap:4px;margin-top:40px;padding:4px;background:var(--bg);border-radius:999px;border:1px solid var(--line)}
+.tabs button{appearance:none;border:0;background:transparent;font:500 15px/1 var(--body);color:var(--ink-soft);min-height:44px;padding:0 20px;border-radius:999px;cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tabs button:hover:not([aria-selected="true"]){color:var(--ink)}
+.panel{margin-top:36px}
+.panel[hidden]{display:none}
+.prices{list-style:none;margin:0;padding:0;columns:2;column-gap:48px}
+.prices li{display:flex;align-items:baseline;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.prices li .n{flex:1;display:flex;align-items:baseline;gap:10px}
+.prices li .n::after{content:"";flex:1;border-bottom:1px dotted #b9a88f;transform:translateY(-4px)}
+.prices li .p{font-variant-numeric:tabular-nums lining-nums;font-weight:500}
+.prices li .t{font-size:13px;color:var(--ink-soft);margin-left:6px}
+details.more{margin-top:20px}
+details.more summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-weight:500;min-height:44px;color:var(--accent-deep)}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary .ic{transition:transform .3s var(--ease);transform:rotate(90deg)}
+details.more[open] summary .ic{transform:rotate(-90deg)}
+details.more .prices{margin-top:12px}
+.plans{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.plan-box{padding:28px;border-radius:16px;background:var(--bg)}
+.plan-box h3{font-size:1.6rem}
+.plan-box ul{list-style:none;margin:16px 0 0;padding:0}
+.plan-box li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;font-size:15px;border-bottom:1px solid var(--line)}
+.plan-box li:last-child{border-bottom:0}
+.plan-box p{margin-top:12px;font-size:15px;color:var(--ink-soft)}
+.plan-box .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.plan-box .chips span{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}
+.menu .fine{margin-top:24px;font-size:13px;color:var(--ink-soft)}
+@media (max-width:900px){
+  .menu-photo{grid-column:1 / -1;position:relative;top:0;max-width:420px}
+  .menu-main{grid-column:1 / -1;margin-top:40px}
+  .prices{columns:1}
+  .plans{grid-template-columns:1fr}
+}
+
+/* membership */
+.circle{padding:clamp(96px,13vw,176px) 0;position:relative;overflow:clip}
+.circle-head{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.circle-head h2{grid-column:1 / span 7}
+.circle-head h2 em{color:var(--accent-deep)}
+.circle-head p{grid-column:9 / span 4;color:var(--ink-soft)}
+.tiers{margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:1fr 1fr 1.15fr;border-top:1px solid var(--ink)}
+.tier{padding:36px 32px 40px 0;border-right:1px solid var(--line)}
+.tier + .tier{padding-left:32px}
+.tier:last-child{border-right:0;background:var(--dark);color:var(--on-dark);padding:36px 36px 40px;border-radius:0 0 16px 16px;position:relative}
+.tier .name{font-size:13px;font-weight:700;letter-spacing:.24em;color:var(--accent-deep)}
+.tier:last-child .name{color:var(--accent)}
+.tier .price{font-family:var(--display);font-size:clamp(3.4rem,5vw,4.6rem);line-height:1;letter-spacing:-.03em;margin-top:16px}
+.tier .price small{font-family:var(--body);font-size:15px;letter-spacing:0;color:var(--ink-soft);margin-left:6px}
+.tier:last-child .price small{color:var(--on-dark-soft)}
+.tier ul{list-style:none;padding:0;margin:24px 0 0}
+.tier li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;font-size:15px}
+.tier li .ic{color:var(--accent-deep);margin-top:4px;width:16px;height:16px}
+.tier:last-child li .ic{color:var(--accent)}
+.tier li.plus{color:var(--ink-soft);font-style:italic}
+.tier:last-child li.plus{color:var(--on-dark-soft)}
+.circle-foot{margin-top:40px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.circle-foot .terms{grid-column:1 / span 6;color:var(--ink-soft);font-size:15px}
+.circle-foot .loyal{grid-column:8 / span 5;display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:16px;background:var(--surface)}
+.circle-foot .loyal .tile{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--bg);color:var(--accent-deep);flex:none}
+.circle-foot .loyal .tile .ic{width:26px;height:26px}
+.circle-foot .loyal p{font-size:15px;color:var(--ink-soft)}
+.circle-foot .loyal strong{color:var(--ink);font-weight:500;display:block;margin-bottom:4px;font-size:16px}
+.ring-deco{position:absolute;right:-12vw;top:6%;width:40vw;height:40vw;border:1px solid var(--line);border-radius:50%;pointer-events:none}
+@media (max-width:900px){
+  .circle-head h2,.circle-head p{grid-column:1 / -1}
+  .tiers{grid-template-columns:1fr}
+  .tier,.tier + .tier{padding:32px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .tier:last-child{padding:32px 24px;border-radius:16px;margin-top:16px}
+  .circle-foot .terms,.circle-foot .loyal{grid-column:1 / -1}
+}
+
+/* visit */
+.visit{padding:clamp(96px,12vw,160px) 0;background:var(--bg);border-top:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.visit h2{grid-column:1 / span 6}
+.visit .addr{grid-column:1 / span 6;margin-top:40px}
+.visit .addr address{font-style:normal;font-family:var(--display);font-size:clamp(1.8rem,2.8vw,2.6rem);line-height:1.15;letter-spacing:-.015em}
+.visit .addr .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.visit .contact{margin-top:32px;display:grid;gap:4px}
+.visit .contact a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;min-height:44px;font-weight:500;width:max-content}
+.visit .contact a:hover span{text-decoration:underline}
+.visit .contact .ic{color:var(--accent-deep);width:22px;height:22px}
+.hours{grid-column:8 / span 5;grid-row:1 / span 2;align-self:end}
+.hours h3{font-size:1.5rem;display:flex;align-items:center;gap:12px}
+.hours h3 .ic{color:var(--accent-deep)}
+.hours table{width:100%;border-collapse:collapse;margin-top:20px;font-variant-numeric:tabular-nums lining-nums}
+.hours td{padding:14px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{font-weight:700}
+.hours tr.today td:first-child::after{content:"Today";margin-left:10px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent);padding:3px 8px;border-radius:999px;vertical-align:2px}
+.hours .closed{color:var(--ink-soft)}
+.hours p{margin-top:16px;font-size:14px;color:var(--ink-soft)}
+@media (max-width:900px){.visit h2,.visit .addr,.hours{grid-column:1 / -1;grid-row:auto}.hours{margin-top:56px}}
+
+/* closing */
+.closing{position:relative;background:var(--dark);color:var(--on-dark);padding:clamp(120px,16vw,220px) 0;text-align:center;overflow:clip}
+.closing .glow{position:absolute;left:50%;top:50%;width:min(900px,120vw);aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(closest-side,rgba(201,166,107,.28),rgba(201,166,107,0));pointer-events:none}
+.closing .ring{position:absolute;left:50%;top:50%;width:min(620px,86vw);aspect-ratio:1;translate:-50% -50%;border:1px solid rgba(201,166,107,.45);border-radius:50%;pointer-events:none}
+.closing .wrap{position:relative}
+.closing h2{font-size:clamp(3rem,7.4vw,6rem);max-width:12ch;margin-inline:auto}
+.closing h2 em{color:var(--accent)}
+.closing p{margin:28px auto 0;max-width:46ch;color:var(--on-dark-soft)}
+.closing .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:40px}
+
+/* footer */
+.footer{background:#14110e;color:var(--on-dark-soft);padding:72px 0 calc(40px + env(safe-area-inset-bottom));font-size:15px}
+.footer-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.footer .fbrand{grid-column:1 / span 4;color:var(--on-dark)}
+.footer .fbrand p{margin-top:16px;color:var(--on-dark-soft);max-width:30ch}
+.footer .col{grid-column:span 2}
+.footer .col.wide{grid-column:span 3}
+.footer h4{margin:0 0 12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.footer ul{list-style:none;margin:0;padding:0}
+.footer li a{display:inline-flex;align-items:center;gap:8px;min-height:40px;text-decoration:none}
+.footer li a:hover{color:var(--on-dark);text-decoration:underline}
+.footer .fine{margin-top:56px;padding-top:24px;border-top:1px solid var(--line-dark);font-size:13px;color:#9c8f7d;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (max-width:900px){.footer .fbrand{grid-column:1 / -1}.footer .col,.footer .col.wide{grid-column:span 6}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(28,24,20,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line-dark);transform:translateY(110%);transition:transform .5s var(--ease)}
+.mbar.show{transform:none}
+.mbar .btn{flex:1;--h:50px;padding:0 12px}
+.mbar .btn-ghost-light .ic{color:var(--accent)}
+@media (max-width:767px){.mbar{display:flex}.footer{padding-bottom:calc(110px + env(safe-area-inset-bottom))}}
+@keyframes ring-phone{0%,100%{transform:rotate(0)}20%{transform:rotate(-14deg)}40%{transform:rotate(12deg)}60%{transform:rotate(-8deg)}80%{transform:rotate(4deg)}}
+.mbar.show .ring-once{animation:ring-phone .7s .3s 1 var(--ease)}
+
+/* reveal states (only with JS) */
+.js [data-reveal]{opacity:0;transform:translateY(28px);filter:blur(6px)}
+.js .tiers .tier{opacity:0;transform:translateY(32px)}
+.js .hero h1,.js .hero .lede,.js .hero .ctas,.js .hero-meta{opacity:0}
+.js .halo-ring circle{stroke-dasharray:1;stroke-dashoffset:1}
+.no-motion [data-reveal],.no-motion .tiers .tier,.no-motion .hero h1,.no-motion .hero .lede,.no-motion .hero .ctas,.no-motion .hero-meta{opacity:1!important;transform:none!important;filter:none!important}
+.no-motion .halo-ring circle{stroke-dashoffset:0!important}
+@media (prefers-reduced-motion:reduce){
+  .hero{height:auto}
+  .hero-stage{position:relative}
+  .btn,.link,.site-header{transition:none}
+}
+@media (hover:hover) and (pointer:fine){
+  .zoom{overflow:clip}
+  .zoom img{transition:transform 1.2s var(--ease)}
+  .zoom:hover img{transform:scale(1.04)}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V88H40V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 256 256" fill="currentColor"><path d="M229.06,108.79l-48.7,42,14.88,62.79a8.4,8.4,0,0,1-12.52,9.17L128,189.09,73.28,222.74a8.4,8.4,0,0,1-12.52-9.17l14.88-62.79-48.7-42A8.46,8.46,0,0,1,31.73,94L95.64,88.8l24.62-59.6a8.36,8.36,0,0,1,15.48,0l24.62,59.6L224.27,94A8.46,8.46,0,0,1,229.06,108.79Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M216,128l-72,72V56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M192,64V168L88,64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M192,56H88a8,8,0,0,0-5.66,13.66L128.69,116,58.34,186.34a8,8,0,0,0,11.32,11.32L140,127.31l46.34,46.35A8,8,0,0,0,200,168V64A8,8,0,0,0,192,56Zm-8,92.69-38.34-38.34h0L107.31,72H184Z"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 256 256" fill="currentColor"><path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 256 256" fill="currentColor"><path d="M208,144a80,80,0,0,1-160,0c0-72,80-128,80-128S208,72,208,144Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+<symbol id="i-syringe" viewBox="0 0 256 256" fill="currentColor"><path d="M196,116l-89.66,89.66a8,8,0,0,1-5.65,2.34H48V155.31a8,8,0,0,1,2.34-5.65L140,60Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M237.66,66.34l-48-48a8,8,0,0,0-11.32,11.32L196.69,48,168,76.69,133.66,42.34a8,8,0,0,0-11.32,11.32L128.69,60l-84,84A15.86,15.86,0,0,0,40,155.31v49.38L18.34,226.34a8,8,0,0,0,11.32,11.32L51.31,216h49.38A15.86,15.86,0,0,0,112,211.31l84-84,6.34,6.35a8,8,0,0,0,11.32-11.32L179.31,88,208,59.31l18.34,18.35a8,8,0,0,0,11.32-11.32ZM100.69,200H56V155.31l18-18,20.34,20.35a8,8,0,0,0,11.32-11.32L85.31,126,98,113.31l20.34,20.35a8,8,0,0,0,11.32-11.32L109.31,102,140,71.31,184.69,116Z"/></symbol>
+<symbol id="i-lightning" viewBox="0 0 256 256" fill="currentColor"><path d="M96,240l16-80L48,136,160,16,144,96l64,24Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></symbol>
+<symbol id="i-person-simple-circle" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM112,80a16,16,0,1,1,16,16A16,16,0,0,1,112,80Zm72,32a8,8,0,0,1-8,8H136v13.58l30.66,46a8,8,0,0,1-13.32,8.88l-25.34-38-25.34,38a8,8,0,1,1-13.32-8.88l30.66-46V120H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,112Z"/></symbol>
+<symbol id="i-credit-card" viewBox="0 0 256 256" fill="currentColor"><path d="M232,96v96a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V96Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z"/></symbol>
+<symbol id="i-gift" viewBox="0 0 256 256" fill="currentColor"><path d="M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"/></symbol>
+<symbol id="i-seal-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232,128c0,12.51-17.82,21.95-22.68,33.69-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68c-11.32-4.68-30.65,1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/></symbol>
+<symbol id="i-instagram-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="i-navigation-arrow" viewBox="0 0 256 256" fill="currentColor"><path d="M234.35,129,152,152,129,234.35a8,8,0,0,1-15.21.27l-65.28-176A8,8,0,0,1,58.63,48.46l176,65.28A8,8,0,0,1,234.35,129Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z"/></symbol>
+<symbol id="i-envelope-simple" viewBox="0 0 256 256" fill="currentColor"><path d="M224,56l-96,88L32,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vm-mark" viewBox="0 0 100 100">
+    <circle class="mk-ring" cx="50" cy="50" r="46" fill="none" stroke="#c9a66b" stroke-width="1.6" pathLength="1"/>
+    <text x="50" y="60" text-anchor="middle" font-family="Gambetta, Georgia, serif" font-size="52" font-weight="500" fill="currentColor">V</text>
+    <text x="50.5" y="80" text-anchor="middle" font-family="Gambetta, Georgia, serif" font-size="27" font-weight="500" fill="#c9a66b">M</text>
+  </symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+<div class="concept" role="note">Design concept prepared for Venus Medspa by Drusus Technologies. Not the live site.</div>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#main" aria-label="Venus Medspa, back to top">
+      <svg class="mark" aria-hidden="true"><use href="#vm-mark"/></svg>
+      <span class="wordmark" aria-hidden="true"><span class="w1">VENUS</span><span class="rule"></span><span class="w2">MEDSPA</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="nl" href="#treatments">Treatments</a>
+      <a class="nl" href="#menu">Laser menu</a>
+      <a class="nl" href="#membership">Membership</a>
+      <a class="nl" href="#visit">Visit</a>
+      <a class="tel" href="tel:+19566820255"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(956) 682-0255</span></a>
+      <a class="btn btn-gold magnetic" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book a consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-stage">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-media">
+        <div class="flip"><img src="images/hero-glow.webp" width="1332" height="2000" alt="Close-up of a woman with glowing skin, eyes closed in warm golden light" fetchpriority="high" decoding="async"></div>
+      </div>
+      <svg class="halo-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49.5" pathLength="1"/></svg>
+      <div class="hero-copy">
+        <div class="wrap">
+          <div class="inner">
+            <h1 class="split-hero">Where health <em>&amp; beauty</em> meet.</h1>
+            <p class="lede">Laser hair removal, injectables, Hydrafacial and body contouring in North McAllen, delivered by licensed estheticians and registered nurses.</p>
+            <div class="ctas">
+              <a class="btn btn-gold magnetic" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book a consultation <svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <a class="btn btn-ghost-light" href="tel:+19566820255"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(956) 682-0255</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div class="wrap">
+          <span class="stars"><svg aria-hidden="true"><use href="#i-star"/></svg><span class="num">4.6 on Google · 125 reviews</span></span>
+          <span>5200 North McColl Road, Suite 3 · McAllen</span>
+        </div>
+      </div>
+      <div class="hero-end" aria-hidden="true">
+        <div class="wrap">
+          <p>Every plan starts with a conversation.<span>Book online or call (956) 682-0255.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Brands and technology used at Venus Medspa">
+    <div class="marquee-track">
+      <ul><li>CoolSculpting</li><li>Hydrafacial</li><li>ZO Skin Health</li><li>InMode Evolve X</li><li>Ultherapy</li><li>Botox</li><li>Juvéderm</li><li>Radiesse</li><li>Restylane</li><li>Alexandrite &amp; Nd:YAG lasers</li></ul>
+      <ul aria-hidden="true"><li>CoolSculpting</li><li>Hydrafacial</li><li>ZO Skin Health</li><li>InMode Evolve X</li><li>Ultherapy</li><li>Botox</li><li>Juvéderm</li><li>Radiesse</li><li>Restylane</li><li>Alexandrite &amp; Nd:YAG lasers</li></ul>
+    </div>
+  </div>
+
+  <section class="proof" aria-labelledby="proof-h">
+    <div class="wrap proof-grid">
+      <div class="score">
+        <h2 id="proof-h" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">What clients say</h2>
+        <div class="big num" aria-label="Rated 4.6 out of 5"><span class="count" data-to="4.6" data-dec="1">4.6</span><small>/ 5</small></div>
+        <div class="stars-row" aria-hidden="true">
+          <svg class="st"><use href="#i-star"/></svg><svg class="st"><use href="#i-star"/></svg><svg class="st"><use href="#i-star"/></svg><svg class="st"><use href="#i-star"/></svg><svg class="st"><use href="#i-star"/></svg>
+        </div>
+        <p data-reveal>Rated by <span class="num count" data-to="125">125</span> clients on Google, many of them coming back for years.</p>
+        <a class="link" href="https://www.google.com/maps/place/Venus+Medspa/@26.2483637,-98.2043898,17z/data=!3m1!4b1!4m6!3m5!1s0x86650a087e8bca53:0x22d2f8b1c8db9405!8m2!3d26.2483637!4d-98.2043898" target="_blank" rel="noopener">Read the reviews on Google <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+      <div class="voices">
+        <blockquote data-reveal>“Great service, very clean, and friendly customer service.”<cite>Google review</cite></blockquote>
+        <ul class="themes" data-reveal>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Friendly, attentive staff, even on a first facial</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Clean, calm treatment rooms</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-lightning"/></svg>Laser hair removal results that last</li>
+        </ul>
+        <p class="owned" data-reveal>Women-owned and Latino-owned, right here in McAllen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="treat" id="treatments" aria-labelledby="treat-h">
+    <div class="wrap">
+      <div class="treat-head">
+        <h2 id="treat-h" class="split">Treatments, chosen around your goal.</h2>
+        <p data-reveal>Start with what you want to change. Your provider will walk you through the options, the timeline and what to expect afterward.</p>
+      </div>
+      <div class="goals">
+        <div class="goal-frame" aria-hidden="true">
+          <figure><img src="images/face.webp" width="933" height="1400" alt="" loading="lazy"><figcaption>Placeholder photo</figcaption></figure>
+          <figure><img src="images/inject.webp" width="933" height="1400" alt="" loading="lazy"><figcaption>Placeholder photo</figcaption></figure>
+          <figure><img src="images/evolve-real.webp" width="1050" height="1400" alt="" loading="lazy"><figcaption>Evolve X session at Venus Medspa</figcaption></figure>
+          <figure><img src="images/laser-real.webp" width="795" height="1400" alt="" loading="lazy"><figcaption>Laser hair removal at Venus Medspa</figcaption></figure>
+        </div>
+        <div class="goal-list">
+          <article class="goal">
+            <figure class="goal-img-m"><img src="images/face.webp" width="933" height="1400" alt="Esthetician applying a facial treatment" loading="lazy"><figcaption>Placeholder photo</figcaption></figure>
+            <div class="tag"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg></span></div>
+            <h3>Face &amp; skin</h3>
+            <p class="d">Hydrafacial cleanses, extracts and hydrates in three steps and about 30 minutes, with booster serums for dark spots, fine lines or redness. Medical-grade facials start from a skin analysis and are built for you.</p>
+            <ul><li>Hydrafacial</li><li>Signature facials</li><li>Chemical peels</li><li>Microneedling with PRP</li><li>IPL photofacial</li><li>Laser Genesis</li><li>Fibroblast plasma pen</li></ul>
+            <a class="link" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book a facial <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </article>
+          <article class="goal">
+            <figure class="goal-img-m"><img src="images/inject.webp" width="933" height="1400" alt="Provider administering a cosmetic injection" loading="lazy"><figcaption>Placeholder photo</figcaption></figure>
+            <div class="tag"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-syringe"/></svg></span></div>
+            <h3>Injectables</h3>
+            <p class="d">Soften lines on the forehead, around the eyes and between the brows, or restore volume to cheeks and lips. Administered by our nurse injectors, tailored to the look you want.</p>
+            <ul><li>Botox</li><li>Xeomin</li><li>Dysport</li><li>Juvéderm, Voluma, Volbella</li><li>Radiesse</li><li>Restylane</li><li>Bellafill</li></ul>
+            <p class="fine">Neuromodulators usually take effect in 3 to 14 days and last about 4 months on average. Results vary.</p>
+            <a class="link" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book an injectables consult <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </article>
+          <article class="goal">
+            <figure class="goal-img-m"><img src="images/evolve-real.webp" width="1050" height="1400" alt="Client relaxing during an Evolve X body contouring session at Venus Medspa" loading="lazy"><figcaption>Evolve X at Venus Medspa</figcaption></figure>
+            <div class="tag"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-person-simple-circle"/></svg></span></div>
+            <h3>Body contouring</h3>
+            <p class="d">No surgery, no downtime. CoolSculpting freezes away stubborn fat in 35 to 45 minutes. Evolve X pairs radiofrequency heat with muscle stimulation to tighten skin and tone, hands-free.</p>
+            <ul><li>CoolSculpting</li><li>Evolve X</li><li>Ultherapy</li><li>Muscle stimulation</li><li>Cellulite treatments</li></ul>
+            <p class="fine">CoolSculpting is priced at your free consultation.</p>
+            <a class="link" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book a free consultation <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </article>
+          <article class="goal">
+            <figure class="goal-img-m"><img src="images/laser-real.webp" width="795" height="1400" alt="Client in protective glasses during laser hair removal at Venus Medspa" loading="lazy"><figcaption>Laser hair removal at Venus Medspa</figcaption></figure>
+            <div class="tag"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-lightning"/></svg></span></div>
+            <h3>Laser hair removal</h3>
+            <p class="d">Gold-standard Alexandrite and Nd:YAG lasers, safe on all skin types and FDA-cleared for permanent hair reduction. Most areas take a series of 6 to 8 sessions.</p>
+            <ul><li>Face</li><li>Underarms</li><li>Bikini &amp; Brazilian</li><li>Legs</li><li>Back &amp; chest</li><li>Full body plans</li></ul>
+            <a class="link" href="#menu">See laser prices <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" aria-label="Our approach">
+    <div class="bgimg" aria-hidden="true"><img src="images/ritual.webp" width="1400" height="905" alt="" loading="lazy"></div>
+    <div class="wrap">
+      <p class="say">We take the time to understand your skin, your goals and your schedule, then build a plan that fits your life.</p>
+      <div class="sig">
+        <span><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Open until 6:00 PM Tuesday through Friday</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Saturday appointments</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-credit-card"/></svg>0% in-house financing available</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" aria-labelledby="menu-h">
+    <div class="wrap menu-grid">
+      <figure class="menu-photo">
+        <div class="wipe"><img src="images/laser-real-2.webp" width="888" height="1400" alt="Laser hair removal treatment in progress at Venus Medspa" loading="lazy"></div>
+        <figcaption>Inside a laser session at Venus Medspa.</figcaption>
+      </figure>
+      <div class="menu-main">
+        <h2 id="menu-h" class="split">Clear prices, no guesswork.</h2>
+        <p class="intro" data-reveal>Pay per session or save with an unlimited plan. Packages of 6 or more qualify for 0% interest in-house financing with no credit check.</p>
+        <div class="tabs" role="tablist" aria-label="Price menus">
+          <button role="tab" id="tab-laser" aria-controls="panel-laser" aria-selected="true">Laser hair removal</button>
+          <button role="tab" id="tab-facial" aria-controls="panel-facial" aria-selected="false" tabindex="-1">Facials</button>
+        </div>
+
+        <div class="panel" id="panel-laser" role="tabpanel" aria-labelledby="tab-laser">
+          <ul class="prices">
+            <li><span class="n">Upper lip</span><span class="p">$20</span></li>
+            <li><span class="n">Eyebrows</span><span class="p">$20</span></li>
+            <li><span class="n">Chin</span><span class="p">$34</span></li>
+            <li><span class="n">Upper lip &amp; chin</span><span class="p">$40</span></li>
+            <li><span class="n">Neck</span><span class="p">$35</span></li>
+            <li><span class="n">Bikini</span><span class="p">$50</span></li>
+            <li><span class="n">Brazilian</span><span class="p">$80</span></li>
+            <li><span class="n">Face</span><span class="p">$89</span></li>
+            <li><span class="n">Arms (half)</span><span class="p">$70</span></li>
+            <li><span class="n">Arms (full)</span><span class="p">$120</span></li>
+            <li><span class="n">Legs (half)</span><span class="p">$90</span></li>
+            <li><span class="n">Legs (full)</span><span class="p">$170</span></li>
+          </ul>
+          <details class="more">
+            <summary>All 28 areas <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></summary>
+            <ul class="prices">
+              <li><span class="n">Ears</span><span class="p">$20</span></li>
+              <li><span class="n">Feet &amp; toes</span><span class="p">$34</span></li>
+              <li><span class="n">Hands</span><span class="p">$34</span></li>
+              <li><span class="n">Cheeks</span><span class="p">$40</span></li>
+              <li><span class="n">Sideburns</span><span class="p">$34</span></li>
+              <li><span class="n">Ab line</span><span class="p">$34</span></li>
+              <li><span class="n">Areola</span><span class="p">$34</span></li>
+              <li><span class="n">Perianal</span><span class="p">$34</span></li>
+              <li><span class="n">Beard</span><span class="p">$55</span></li>
+              <li><span class="n">Coccyx</span><span class="p">$60</span></li>
+              <li><span class="n">Shoulders</span><span class="p">$60</span></li>
+              <li><span class="n">Breast</span><span class="p">$70</span></li>
+              <li><span class="n">Abdomen</span><span class="p">$70</span></li>
+              <li><span class="n">Back (half)</span><span class="p">$70</span></li>
+              <li><span class="n">Chest</span><span class="p">$89</span></li>
+              <li><span class="n">Back &amp; shoulders</span><span class="p">$135</span></li>
+            </ul>
+          </details>
+          <div class="plans">
+            <div class="plan-box">
+              <h3>Unlimited for a year</h3>
+              <ul class="num">
+                <li><span>Underarms</span><span>$250</span></li>
+                <li><span>Legs</span><span>$495</span></li>
+                <li><span>Brazilian &amp; underarms</span><span>$495</span></li>
+                <li><span>Legs &amp; Brazilian</span><span>$750</span></li>
+                <li><span>Full body, 2 years + yearly touch-up</span><span>$2,200</span></li>
+              </ul>
+            </div>
+            <div class="plan-box">
+              <h3>Pay over time</h3>
+              <p>0% interest in-house financing on packages of 6 sessions or more. No credit check.</p>
+              <div class="chips"><span>Cherry</span><span>CareCredit</span><span>Affirm</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-facial" role="tabpanel" aria-labelledby="tab-facial" hidden>
+          <ul class="prices" style="columns:1">
+            <li><span class="n">Signature Facial <span class="t num">60 min</span></span><span class="p">$75</span></li>
+            <li><span class="n">AgeSmart Treatment <span class="t num">75 min</span></span><span class="p">$105</span></li>
+            <li><span class="n">Skin Brightening <span class="t num">60 min</span></span><span class="p">$95</span></li>
+            <li><span class="n">Medibac Clearing <span class="t num">60 min</span></span><span class="p">$85</span></li>
+            <li><span class="n">Ultra Calming <span class="t num">60 min</span></span><span class="p">$85</span></li>
+            <li><span class="n">Men’s Skin Treatment <span class="t num">45 min</span></span><span class="p">$55</span></li>
+          </ul>
+          <p class="fine">Hydrafacial booster serums, lymphatic therapy and red or blue LED light can be added to any Hydrafacial. Ask your esthetician which fits your skin.</p>
+        </div>
+        <p class="fine">Prices from the current Venus Medspa menu; confirm when you book. Individual results vary.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="circle" id="membership" aria-labelledby="circle-h">
+    <div class="ring-deco" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="circle-head">
+        <h2 id="circle-h" class="split">The Circle of <em>Beauty</em> membership.</h2>
+        <p data-reveal>Come in more often, target what matters most to you, and save. Every tier includes any 3 services of your choice each month, plus everyday discounts.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <div class="name">SILVER</div>
+          <div class="price num">$99<small>per month</small></div>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Signature Facial</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>LaserFacial</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Laser vein removal</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Non-surgical face lift</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Endermology</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <div class="name">GOLD</div>
+          <div class="price num">$149<small>per month</small></div>
+          <ul>
+            <li class="plus"><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Everything in Silver, plus</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>PhotoFacial</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Acne clearance</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <div class="name">PLATINUM</div>
+          <div class="price num">$199<small>per month</small></div>
+          <ul>
+            <li class="plus"><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Everything in Gold, plus</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Hydrafacial</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>IPL laser hair removal</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Dermaplaning</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Laser Genesis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="circle-foot">
+        <p class="terms" data-reveal>One-time enrollment fee of $250. Choose your tier at the front desk or when you book.</p>
+        <div class="loyal" data-reveal>
+          <span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg></span>
+          <p><strong>Loyalty points on every visit</strong>Earn $5 back for every $100 you spend and $25 for every friend you refer. Every client is enrolled automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <h2 id="visit-h" class="split">Find us in North McAllen.</h2>
+      <div class="addr" data-reveal>
+        <address>5200 North McColl Road, Suite 3<br>McAllen, Texas 78504</address>
+        <div class="row">
+          <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=Venus+Medspa,+5200+N+McColl+Rd+%233,+McAllen,+TX+78504" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-navigation-arrow"/></svg>Get directions</a>
+          <a class="btn btn-ghost" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+        </div>
+        <div class="contact">
+          <a href="tel:+19566820255"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(956) 682-0255</span></a>
+          <a href="mailto:venusldc@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-envelope-simple"/></svg><span>venusldc@gmail.com</span></a>
+        </div>
+      </div>
+      <div class="hours" data-reveal>
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Hours</h3>
+        <table>
+          <tbody>
+            <tr data-d="1"><td>Monday</td><td>9:00 AM – 3:00 PM</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="5"><td>Friday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>9:00 AM – 3:00 PM</td></tr>
+            <tr data-d="0" class="closed"><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="close-h">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="ring" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2 id="close-h" class="split">Your glow starts with <em>a conversation.</em></h2>
+      <p data-reveal>Tell us what you would like to change. We will walk you through your options and find a time that works for you.</p>
+      <div class="ctas" data-reveal>
+        <a class="btn btn-gold magnetic" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book a consultation <svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn-ghost-light" href="tel:+19566820255"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call <span class="num">(956) 682-0255</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="fbrand">
+        <span class="brand" style="min-height:auto">
+          <svg class="mark" width="44" height="44" aria-hidden="true"><use href="#vm-mark"/></svg>
+          <span class="wordmark"><span class="w1">VENUS</span><span class="rule"></span><span class="w2">MEDSPA</span></span>
+        </span>
+        <p>Where health &amp; beauty meet. Laser, injectables, facials and body contouring in McAllen, Texas.</p>
+      </div>
+      <div class="col wide">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Venus+Medspa,+5200+N+McColl+Rd+%233,+McAllen,+TX+78504" target="_blank" rel="noopener">5200 North McColl Road, Suite 3</a></li>
+          <li><a href="tel:+19566820255" class="num">(956) 682-0255</a></li>
+          <li><a href="mailto:venusldc@gmail.com">venusldc@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#menu">Laser menu</a></li>
+          <li><a href="#membership">Membership</a></li>
+        </ul>
+      </div>
+      <div class="col wide">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/venusmcallen" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg>@venusmcallen</a></li>
+          <li><a href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© <span class="num" id="yr">2026</span> Venus Medspa · Logo concept by Drusus Technologies</span>
+      <span>Placeholder photos from Unsplash (hero, facial, injectables, statement). Treatment-room photos are from Venus Medspa. Individual results vary.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn btn-ghost-light" href="tel:+19566820255"><svg class="ic ring-once" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-gold" href="https://www.joinblvd.com/b/venus-medspa/widget#/visit-type" target="_blank" rel="noopener">Book a consultation</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // today's hours
+  const today = new Date().getDay();
+  document.querySelector(`.hours tr[data-d="${today}"]`)?.classList.add('today');
+
+  // tabs
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const select = (t) => {
+    tabs.forEach(x => {
+      const on = x === t;
+      x.setAttribute('aria-selected', on);
+      x.tabIndex = on ? 0 : -1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+    });
+    window.ScrollTrigger && ScrollTrigger.refresh();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+      select(n); n.focus();
+    });
+  });
+
+  // header + mobile bar
+  const header = document.querySelector('.site-header');
+  const hero = document.querySelector('.hero');
+  const mbar = document.querySelector('.mbar');
+  const cbar = document.querySelector('.concept');
+  let lastY = scrollY;
+  const onScroll = () => {
+    const y = scrollY;
+    header.style.top = Math.max(0, cbar.offsetHeight - y) + 'px';
+    const past = y > hero.offsetTop + hero.offsetHeight - 90;
+    header.classList.toggle('solid', past);
+    header.classList.toggle('hidden', past && y > lastY + 2);
+    if (y < lastY - 2) header.classList.remove('hidden');
+    mbar.classList.toggle('show', y > innerHeight * .6);
+    lastY = y;
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  if (!window.gsap || !window.ScrollTrigger) { root.classList.remove('js'); root.classList.add('no-motion'); return; }
+  gsap.registerPlugin(ScrollTrigger, ...(window.SplitText ? [SplitText] : []));
+
+  const mm = gsap.matchMedia();
+
+  mm.add('(prefers-reduced-motion: reduce)', () => {
+    root.classList.add('no-motion');
+    document.querySelector('.statement').classList.add('static');
+  });
+
+  mm.add('(prefers-reduced-motion: no-preference)', () => {
+    // smooth scroll
+    let lenis;
+    if (window.Lenis) {
+      lenis = new Lenis({ duration: 1.25, easing: t => 1 - Math.pow(1 - t, 4) });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t * 1000));
+      gsap.ticker.lagSmoothing(0);
+      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length < 2) return;
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        lenis.scrollTo(el, { offset: id === '#main' ? 0 : -40 });
+      }));
+    }
+
+    // ---- hero: the halo opens ----
+    const media = hero.querySelector('.hero-media');
+    const img = media.querySelector('img');
+    const ring = hero.querySelector('.halo-ring');
+    const geom = () => {
+      const cs = getComputedStyle(hero);
+      const w = innerWidth, h = hero.querySelector('.hero-stage').clientHeight;
+      const cx = parseFloat(cs.getPropertyValue('--cx')) / 100 * w;
+      const cy = parseFloat(cs.getPropertyValue('--cy')) / 100 * h;
+      const r0 = ring.getBoundingClientRect().width / 2 - 14; // ring is r0 + 14px
+      const rEnd = Math.hypot(Math.max(cx, w - cx), Math.max(cy, h - cy)) + 2;
+      return { cx, cy, r0, rEnd };
+    };
+    let g = geom();
+    const state = { p: 0 };
+    const apply = () => {
+      const r = g.r0 + (g.rEnd - g.r0) * state.p;
+      media.style.clipPath = `circle(${r}px at ${g.cx}px ${g.cy}px)`;
+      gsap.set(ring, { scale: (r + 14) / (g.r0 + 14) });
+    };
+    ScrollTrigger.addEventListener('refreshInit', () => { gsap.set(ring, { scale: 1 }); g = geom(); apply(); });
+
+    const intro = gsap.timeline({ defaults: { ease: 'expo.out' } });
+    intro.fromTo(ring.querySelector('circle'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.2, ease: 'power3.inOut' }, 0)
+         .fromTo(img, { scale: 1.12, filter: 'brightness(.55)' }, { scale: 1, filter: 'brightness(1)', duration: 1.6 }, 0.1);
+    const h1 = hero.querySelector('h1');
+    if (window.SplitText) {
+      const s = SplitText.create(h1, { type: 'lines', mask: 'lines', linesClass: 'ln' });
+      gsap.set(h1, { opacity: 1 });
+      intro.from(s.lines, { yPercent: 110, duration: 1.1, stagger: .08 }, 0.2);
+    } else intro.to(h1, { opacity: 1, duration: .8 }, .2);
+    intro.fromTo('.hero .lede', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .9 }, .55)
+         .fromTo('.hero .ctas', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .9 }, .65)
+         .fromTo('.hero-meta', { opacity: 0 }, { opacity: 1, duration: .9 }, .8);
+
+    const heroTl = gsap.timeline({
+      scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom bottom', scrub: .8 }
+    });
+    heroTl.to(state, { p: 1, ease: 'power2.inOut', duration: 1, onUpdate: apply }, 0)
+          .to('.hero-copy .inner', { y: -60, opacity: 0, ease: 'power1.in', duration: .35 }, 0.05)
+          .to('.hero-meta', { opacity: 0, duration: .2 }, 0)
+          .to(ring, { opacity: 0, duration: .3, ease: 'none' }, .05)
+          .to(img, { objectPosition: '50% 40%', duration: 1, ease: 'none' }, 0)
+          .fromTo('.hero-end', { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: .25, ease: 'power2.out' }, .72);
+    // scrim under the end caption
+    const scrim = document.createElement('div');
+    scrim.style.cssText = 'position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,24,20,0) 40%,rgba(28,24,20,.78) 100%);opacity:0;pointer-events:none';
+    media.appendChild(scrim);
+    heroTl.to(scrim, { opacity: 1, duration: .3, ease: 'none' }, .6);
+
+    if (matchMedia('(max-width: 767px)').matches) heroTl.to(img, { y: 0, ease: 'none', duration: 1 }, 0);
+
+    // glow drift
+    gsap.to('.hero-glow', { xPercent: 6, yPercent: -5, duration: 9, ease: 'sine.inOut', yoyo: true, repeat: -1 });
+    gsap.to('.closing .glow', { scale: 1.08, duration: 7, ease: 'sine.inOut', yoyo: true, repeat: -1 });
+
+    // ---- marquee, velocity driven ----
+    const track = document.querySelector('.marquee-track');
+    const loop = gsap.to(track, { xPercent: -50, duration: 48, ease: 'none', repeat: -1 });
+    let boost = 1;
+    if (lenis) lenis.on('scroll', ({ velocity }) => { boost = 1 + Math.min(Math.abs(velocity) * .25, 4); });
+    gsap.ticker.add(() => { loop.timeScale(gsap.utils.interpolate(loop.timeScale(), boost, .08)); boost = gsap.utils.interpolate(boost, 1, .05); });
+    ScrollTrigger.create({ trigger: '.marquee', start: 'top bottom', end: 'bottom top', onToggle: s => s.isActive ? loop.play() : loop.pause() });
+
+    // ---- headings: masked lines ----
+    if (window.SplitText) document.fonts.ready.then(() => {
+      document.querySelectorAll('h2.split').forEach(h => {
+        const s = SplitText.create(h, { type: 'lines', mask: 'lines' });
+        gsap.from(s.lines, { yPercent: 105, duration: 1.1, stagger: .08, ease: 'expo.out',
+          scrollTrigger: { trigger: h, start: 'top 85%' } });
+      });
+      ScrollTrigger.refresh();
+    });
+
+    // ---- reveals: blur to sharp ----
+    gsap.utils.toArray('[data-reveal]').forEach(el => {
+      gsap.to(el, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1, ease: 'expo.out',
+        scrollTrigger: { trigger: el, start: 'top 88%' } });
+    });
+    gsap.to('.tiers .tier', { opacity: 1, y: 0, duration: 1, stagger: .12, ease: 'expo.out',
+      scrollTrigger: { trigger: '.tiers', start: 'top 80%' } });
+
+    // ---- proof: count-ups + stars ----
+    document.querySelectorAll('.count').forEach(el => {
+      const to = parseFloat(el.dataset.to), dec = +el.dataset.dec || 0, o = { v: 0 };
+      el.textContent = (0).toFixed(dec);
+      gsap.to(o, { v: to, duration: 1.8, ease: 'power3.out', onUpdate: () => el.textContent = o.v.toFixed(dec),
+        scrollTrigger: { trigger: el, start: 'top 85%' } });
+    });
+    gsap.from('.stars-row .st', { opacity: 0, scale: .4, rotate: -30, duration: .6, stagger: .1, ease: 'back.out(2)',
+      scrollTrigger: { trigger: '.stars-row', start: 'top 88%' } });
+
+    // ---- treatments: sticky frame swaps per goal ----
+    const frames = gsap.utils.toArray('.goal-frame figure');
+    const goalMM = gsap.matchMedia();
+    goalMM.add('(min-width: 901px)', () => {
+      let current = 0;
+      const show = i => {
+        if (i === current) return;
+        frames.forEach((f, j) => {
+          gsap.to(f, { clipPath: j <= i ? 'inset(0% 0 0 0)' : 'inset(100% 0 0 0)', duration: 1.1, ease: 'expo.out', overwrite: true });
+          gsap.to(f.querySelector('img'), { scale: j === i ? 1 : 1.08, duration: 1.6, ease: 'expo.out', overwrite: true });
+        });
+        current = i;
+      };
+      gsap.set(frames[0].querySelector('img'), { scale: 1 });
+      gsap.utils.toArray('.goal').forEach((goal, i) => {
+        ScrollTrigger.create({ trigger: goal, start: 'top 55%', end: 'bottom 55%',
+          onEnter: () => show(i), onEnterBack: () => show(i) });
+      });
+    });
+
+    // ---- statement: words fill in ----
+    const say = document.querySelector('.statement .say');
+    say.innerHTML = say.textContent.split(' ').map(w => `<span class="w">${w}</span>`).join(' ');
+    gsap.to(say.querySelectorAll('.w'), { opacity: 1, stagger: .1, ease: 'none',
+      scrollTrigger: { trigger: say, start: 'top 75%', end: 'bottom 40%', scrub: true } });
+    gsap.fromTo('.statement .bgimg', { yPercent: -6 }, { yPercent: 6, ease: 'none',
+      scrollTrigger: { trigger: '.statement', start: 'top bottom', end: 'bottom top', scrub: true } });
+
+    // ---- menu photo: clip wipe with inner parallax ----
+    gsap.fromTo('.wipe', { clipPath: 'inset(0 0 100% 0)' }, { clipPath: 'inset(0 0 0% 0)', ease: 'none',
+      scrollTrigger: { trigger: '.menu', start: 'top 85%', end: 'top 25%', scrub: true } });
+    gsap.fromTo('.wipe img', { yPercent: -6 }, { yPercent: 6, ease: 'none',
+      scrollTrigger: { trigger: '.menu', start: 'top bottom', end: 'bottom top', scrub: true } });
+
+    // ---- closing ring parallax ----
+    gsap.fromTo('.closing .ring', { scale: .8, opacity: 0 }, { scale: 1, opacity: 1, ease: 'none',
+      scrollTrigger: { trigger: '.closing', start: 'top bottom', end: 'center center', scrub: true } });
+
+    // ---- magnetic buttons (fine pointer only) ----
+    if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      document.querySelectorAll('.magnetic').forEach(b => {
+        const xTo = gsap.quickTo(b, 'x', { duration: .3, ease: 'power3' });
+        const yTo = gsap.quickTo(b, 'y', { duration: .3, ease: 'power3' });
+        b.addEventListener('pointermove', e => {
+          const r = b.getBoundingClientRect();
+          xTo((e.clientX - r.left - r.width / 2) * .25);
+          yTo((e.clientY - r.top - r.height / 2) * .3);
+        });
+        b.addEventListener('pointerleave', () => { xTo(0); yTo(0); });
+      });
+    }
+
+    const hImg = document.querySelector('.hero-media img');
+    Promise.all([document.fonts.ready, hImg.decode ? hImg.decode().catch(() => {}) : null]).then(() => ScrollTrigger.refresh());
+    addEventListener('load', () => ScrollTrigger.refresh());
+
+    return () => { lenis && lenis.destroy(); };
+  });
+});
+</script>
+</body>
+</html>
