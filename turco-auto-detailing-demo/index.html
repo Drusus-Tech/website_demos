@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tur-Co Auto Detailing &amp; Supplies | Ceramic Coating &amp; Detailing in Pharr, Texas</title>
+<meta name="description" content="Ceramic coating, paint correction and full detailing by an IDA-certified detailer in Pharr, Texas. Plus a detailing supply store, hands-on training and self-serve bay rental.">
+<meta name="theme-color" content="#07090d">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero-detailer.jpg">
+<style>
+:root{
+  --ink:#07090d;
+  --ink-2:#0d1118;
+  --ink-3:#141a24;
+  --line:rgba(214,222,235,.12);
+  --line-2:rgba(214,222,235,.22);
+  --text:#eef1f6;
+  --muted:#a9b2c1;
+  --silver:#d1d2d4;
+  --navy:#17477a;
+  --navy-hi:#4f8fd6;
+  --red:#c63b27;
+  --red-hi:#e0513a;
+  --ic-duo:#4f8fd6;
+  --ic-duo-op:.28;
+  --radius:14px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --wrap:1200px;
+  --display:"Archivo",system-ui,sans-serif;
+  --body:"Hanken Grotesk",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--navy-hi);color:#fff}
+:focus-visible{outline:2px solid var(--navy-hi);outline-offset:3px;border-radius:6px}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:#262f3d;border-radius:10px;border:2px solid var(--ink)}
+html{scrollbar-color:#262f3d var(--ink)}
+.ic{width:1.25em;height:1.25em;flex:none;vertical-align:-.22em}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:8px 14px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+
+h1,h2,h3{font-family:var(--display);font-stretch:118%;line-height:1.02;letter-spacing:-.025em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,5.4vw,3.6rem);font-weight:800}
+h3{font-size:1.35rem;font-weight:750;letter-spacing:-.015em;line-height:1.15}
+p{margin:0}
+.lede{color:var(--muted);font-size:1.125rem;max-width:60ch}
+
+/* concept bar */
+.concept{background:#000;color:#9aa3b2;font-size:.78rem;text-align:center;padding:7px 16px;letter-spacing:.01em;position:relative;z-index:60}
+
+/* buttons */
+.btn{--bg:var(--red);display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:50px;padding:0 22px;border-radius:999px;background:var(--bg);color:#fff;font:700 1rem/1 var(--body);text-decoration:none;border:0;cursor:pointer;transition:transform .2s var(--ease),background-color .2s,box-shadow .25s var(--ease);box-shadow:0 10px 24px -12px rgba(0,0,0,.8);touch-action:manipulation;white-space:nowrap}
+.btn:hover{background:#a92f1e;transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(0,0,0,.9)}
+.btn:active{transform:scale(.97)}
+.btn .ic-arrow{transition:transform .25s var(--ease)}
+.btn:hover .ic-arrow{transform:translateX(4px)}
+.btn.ghost{background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.sm{min-height:42px;padding:0 16px;font-size:.92rem}
+
+.ulink{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .3s var(--ease);padding-bottom:2px}
+.ulink:hover{background-size:100% 1px}
+
+/* header */
+.hdr{position:fixed;inset:var(--cb,31px) 0 auto 0;z-index:50;transition:transform .35s var(--ease),background-color .35s var(--ease)}
+.hdr-in{display:flex;align-items:center;gap:20px;height:72px;transition:height .35s var(--ease)}
+.hdr::before{content:"";position:absolute;inset:0;background:rgba(7,9,13,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 10px 30px -12px rgba(0,0,0,.7);border-bottom:1px solid var(--line);opacity:0;transition:opacity .35s var(--ease)}
+.hdr.solid{transform:translateY(calc(-1 * var(--cb,31px)))}
+.hdr.solid::before{opacity:1}
+.hdr.solid{background:rgba(7,9,13,.9)}
+.hdr.solid .hdr-in{height:62px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;position:relative}
+.brand-mark{width:40px;height:48px;background:#fff;border-radius:9px;display:grid;place-items:center;padding:5px 6px;box-shadow:0 6px 18px -8px rgba(0,0,0,.8)}
+.brand-mark img{width:100%;height:100%;object-fit:contain}
+.brand-name{font:800 1.05rem/1 var(--display);font-stretch:120%;letter-spacing:-.01em}
+.brand-name small{display:block;font:500 .72rem/1.3 var(--body);color:var(--muted);letter-spacing:.02em;margin-top:3px}
+.nav{display:none;margin-left:auto;gap:26px;position:relative}
+.nav a{font-weight:600;font-size:.95rem;color:#d7dce5}
+.nav a:hover{color:#fff}
+.hdr-cta{display:none;gap:10px;position:relative}
+.menu-btn{margin-left:auto;position:relative;width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid var(--line-2);color:#fff;display:grid;place-items:center;cursor:pointer}
+.menu-btn .ic{width:22px;height:22px}
+.drawer{position:fixed;inset:0;z-index:70;background:rgba(5,7,10,.97);display:flex;flex-direction:column;padding:22px 20px 30px;opacity:0;visibility:hidden;transition:opacity .25s var(--ease),visibility 0s .25s}
+.drawer.open{opacity:1;visibility:visible;transition:opacity .25s var(--ease)}
+.drawer-top{display:flex;justify-content:space-between;align-items:center}
+.drawer nav{display:flex;flex-direction:column;margin-top:34px}
+.drawer nav a{font:800 1.9rem/1.1 var(--display);font-stretch:115%;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line);transform:translateY(12px);opacity:0;transition:transform .45s var(--ease),opacity .45s var(--ease)}
+.drawer.open nav a{transform:none;opacity:1}
+.drawer.open nav a:nth-child(2){transition-delay:.04s}.drawer.open nav a:nth-child(3){transition-delay:.08s}.drawer.open nav a:nth-child(4){transition-delay:.12s}.drawer.open nav a:nth-child(5){transition-delay:.16s}.drawer.open nav a:nth-child(6){transition-delay:.2s}
+.drawer .btn{margin-top:auto}
+@media (min-width:1020px){
+  .nav,.hdr-cta{display:flex}
+  .menu-btn{display:none}
+  .nav{margin-left:auto}
+}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;background:var(--ink)}
+.hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-media img{width:100%;height:115%;object-fit:cover;object-position:40% 30%;will-change:transform}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,9,13,.55) 0%,rgba(7,9,13,.15) 30%,rgba(7,9,13,.75) 62%,#07090d 92%)}
+.hero-copy{padding-block:150px 44px;width:100%}
+.hero h1{font-size:clamp(2.5rem,11.4vw,6rem);font-weight:850;font-stretch:100%;letter-spacing:-.035em;line-height:.94}
+.line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.line > span{display:block}
+.line .accent{color:var(--silver)}
+.line .red{color:var(--red-hi)}
+.hero-sub{margin-top:22px;font-size:1.15rem;color:#c9d0db;max-width:34ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rating{display:inline-flex;align-items:center;gap:12px;margin-top:28px;text-decoration:none;padding:10px 16px 10px 12px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--line-2);transition:background-color .2s}
+.rating:hover{background:rgba(255,255,255,.1)}
+.stars{display:flex;gap:2px;color:#f5b83d;--ic-duo:#f5b83d;--ic-duo-op:1}
+.stars .ic{width:18px;height:18px}
+.rating b{font:800 1.15rem/1 var(--display)}
+.rating span{color:var(--muted);font-size:.92rem}
+@media (min-width:900px){
+  .hero{align-items:center}
+  .hero-media{left:44%}
+  .hero-media img{object-position:30% 30%}
+  .hero::after{background:linear-gradient(90deg,#07090d 40%,rgba(7,9,13,.6) 58%,rgba(7,9,13,.05) 80%),linear-gradient(0deg,#07090d 0%,transparent 22%)}
+  .hero-copy{padding-block:140px 80px}
+  .hero-sub{max-width:40ch}
+  .hero h1{font-stretch:122%}
+}
+
+/* hero load sequence */
+@media (prefers-reduced-motion:no-preference){
+  .js .hero .line > span{transform:translateY(105%);animation:rise .9s var(--ease) forwards}
+  .js .hero .line:nth-child(2) > span{animation-delay:.08s}
+  .js .hero .line:nth-child(3) > span{animation-delay:.16s}
+  .js .hero-media img{animation:settle 1.4s var(--ease) both}
+  .js .hero .fade{opacity:0;transform:translateY(14px);animation:fadeup .7s var(--ease) forwards}
+  .js .hero .fade.d1{animation-delay:.42s}.js .hero .fade.d2{animation-delay:.52s}.js .hero .fade.d3{animation-delay:.62s}
+  .js .hdr{animation:fadein .8s .2s var(--ease) both}
+}
+@keyframes rise{to{transform:none}}
+@keyframes settle{from{scale:1.06;filter:brightness(.55)}to{scale:1;filter:brightness(1)}}
+@keyframes fadeup{to{opacity:1;transform:none}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+
+/* facts ribbon */
+.facts{border-block:1px solid var(--line);background:var(--ink-2)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr}
+.facts li{display:flex;align-items:center;gap:12px;padding:18px 14px;font-weight:600;font-size:.95rem;line-height:1.3;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts li:nth-child(2n){border-right:0}
+.facts li:nth-last-child(-n+2){border-bottom:0}
+.facts .ic{width:26px;height:26px;color:#fff}
+@media (min-width:900px){
+  .facts ul{grid-template-columns:repeat(4,1fr)}
+  .facts li{border-bottom:0;padding:22px 20px}
+  .facts li:nth-child(2n){border-right:1px solid var(--line)}
+  .facts li:last-child{border-right:0}
+}
+
+section{position:relative}
+.sec{padding:96px 0}
+.sec-head{display:grid;gap:18px;margin-bottom:48px}
+@media (min-width:900px){.sec{padding:128px 0}.sec-head{grid-template-columns:1.1fr .9fr;align-items:end;gap:48px}}
+
+/* ceramic warranty ladder */
+.coat{background:radial-gradient(1200px 500px at 85% 0%,rgba(23,71,122,.35),transparent 60%),var(--ink)}
+.coat-grid{display:grid;gap:40px}
+@media (min-width:1000px){.coat-grid{grid-template-columns:1.25fr .75fr;gap:56px;align-items:start}}
+.ladder{border-top:1px solid var(--line-2)}
+.tier{display:grid;grid-template-columns:1fr auto;gap:6px 18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.tier h3{font-size:1.25rem}
+.tier .price{font:800 1.35rem/1 var(--display);font-stretch:110%;text-align:right}
+.tier .price small{display:block;font:500 .75rem/1.3 var(--body);color:var(--muted);margin-bottom:4px;text-align:right}
+.tier p{grid-column:1/-1;color:var(--muted);font-size:.98rem}
+.track{grid-column:1/-1;position:relative;height:10px;border-radius:10px;background:rgba(255,255,255,.07);margin-top:10px;overflow:hidden}
+.track i{position:absolute;inset:0;transform-origin:left;transform:scaleX(var(--w));border-radius:inherit;background:linear-gradient(90deg,var(--navy),var(--navy-hi))}
+.tier.top .track i{background:linear-gradient(90deg,var(--navy),var(--navy-hi) 70%,#cfe2ff)}
+.track-lbl{grid-column:1/-1;display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted);margin-top:2px}
+.track-lbl b{color:#fff;font-weight:700}
+.axis{display:flex;justify-content:space-between;font-size:.75rem;color:#7f8898;padding-top:10px}
+@media (prefers-reduced-motion:no-preference){
+  .js .ladder .track i{transform:scaleX(0);transition:transform 1.1s var(--ease)}
+  .js .ladder.in .track i{transform:scaleX(var(--w))}
+  .js .ladder.in .tier:nth-child(2) .track i{transition-delay:.12s}
+  .js .ladder.in .tier:nth-child(3) .track i{transition-delay:.24s}
+  .js .ladder.in .tier:nth-child(4) .track i{transition-delay:.36s}
+  .tier.top .track i::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.65) 50%,transparent 70%);transform:translateX(-100%)}
+  .js .ladder.in .tier.top .track i::after{animation:sheen 1.2s 1.4s var(--ease) forwards}
+}
+@keyframes sheen{to{transform:translateX(100%)}}
+.coat-side{display:grid;gap:18px}
+.photo{position:relative;overflow:hidden;border-radius:var(--radius);background:var(--ink-3)}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.photo:hover img{transform:scale(1.04)}
+.coat-photo{aspect-ratio:4/3}
+.addon{display:flex;gap:16px;padding:20px;border-radius:var(--radius);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+.addon h3{font-size:1.05rem}
+.addon p{color:var(--muted);font-size:.95rem;margin-top:4px}
+.addon .num{color:#fff;font-weight:700}
+.tile{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:rgba(79,143,214,.14);color:#fff;flex:none;transition:transform .3s var(--ease)}
+.tile .ic{width:26px;height:26px;transition:transform .3s var(--ease)}
+.addon:hover .tile,.inc li:hover .tile{transform:translateY(-3px)}
+.addon:hover .tile .ic,.inc li:hover .tile .ic{transform:scale(1.1) rotate(-6deg);--ic-duo-op:.5}
+.fine{font-size:.85rem;color:#8d96a6;margin-top:16px}
+
+/* services sticky stage */
+.svc-sec{background:var(--ink-2);border-block:1px solid var(--line)}
+.svc-grid{display:grid;gap:0}
+.stage{display:none}
+.svc{padding:34px 0;border-top:1px solid var(--line)}
+.svc:first-child{border-top:0;padding-top:0}
+.svc-img{aspect-ratio:16/10;margin-bottom:22px}
+.svc h3{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800}
+.svc .from{display:inline-flex;align-items:baseline;gap:8px;margin:12px 0 14px;color:var(--muted);font-size:.95rem}
+.svc .from b{font:800 1.6rem/1 var(--display);color:#fff;font-stretch:110%}
+.svc p{color:var(--muted);max-width:52ch}
+.ticks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:9px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;font-size:.98rem;color:#d4dae4}
+.ticks .ic{color:var(--navy-hi);--ic-duo:var(--navy-hi);margin-top:.15em}
+.meter{margin-top:22px;display:grid;gap:14px}
+.meter-row{display:grid;gap:6px}
+.meter-row div:first-child{display:flex;justify-content:space-between;font-size:.9rem;color:#d4dae4}
+.meter-row b{font-weight:700;color:#fff}
+.mtrack{position:relative;height:10px;border-radius:10px;background:rgba(255,255,255,.07)}
+.mtrack i{position:absolute;top:0;bottom:0;left:var(--a);width:calc(var(--b) - var(--a));border-radius:10px;background:linear-gradient(90deg,var(--navy-hi),#a8ccf5);transform-origin:left}
+@media (prefers-reduced-motion:no-preference){
+  .js .meter .mtrack i{transform:scaleX(0);transition:transform .9s .15s var(--ease)}
+  .js .meter.in .mtrack i{transform:none}
+  .js .meter.in .meter-row:nth-child(2) .mtrack i{transition-delay:.3s}
+}
+.svc-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:700;color:#fff;text-decoration:none}
+.svc-link .ic{transition:transform .25s var(--ease)}
+.svc-link:hover .ic{transform:translateX(4px)}
+@media (min-width:1000px){
+  .svc-grid{grid-template-columns:1fr 1fr;gap:64px}
+  .stage{display:block;position:sticky;top:92px;height:calc(100vh - 124px);max-height:760px;border-radius:18px;overflow:hidden;background:var(--ink-3)}
+  .stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(0 0 100% 0);transform:scale(1.08);transition:clip-path .8s var(--ease),transform 1.2s var(--ease)}
+  .stage img.on{clip-path:inset(0 0 0 0);transform:none;z-index:1}
+  .stage img.was{clip-path:inset(0 0 0 0);transform:none}
+  .stage-cap{position:absolute;left:18px;bottom:18px;z-index:3;display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:999px;background:rgba(7,9,13,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-weight:700;font-size:.9rem}
+  .stage-cap .num{color:var(--muted);font-weight:600}
+  .svc-img{display:none}
+  .svc{min-height:72vh;display:flex;flex-direction:column;justify-content:center;padding:56px 0;opacity:.55;transition:opacity .5s var(--ease)}
+  .svc.active{opacity:1}
+  .svc:first-child{padding-top:56px}
+}
+
+/* price menu */
+.tabs{display:inline-flex;gap:4px;padding:5px;border-radius:999px;background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line);max-width:100%;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+@media (max-width:599px){.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;border-radius:18px}.tabs .tab{white-space:normal;line-height:1.15;padding:8px 6px;font-size:.86rem;border-radius:14px}}
+.tab{appearance:none;border:0;background:transparent;color:var(--muted);font:700 .95rem/1 var(--body);padding:12px 18px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:color .2s,background-color .25s var(--ease);min-height:44px}
+.tab[aria-selected="true"]{background:#fff;color:var(--ink)}
+.tab:not([aria-selected="true"]):hover{color:#fff}
+.menu-list{margin-top:30px;border-top:1px solid var(--line-2)}
+.mrow{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.mrow h3{font-size:1.1rem;font-weight:700;font-stretch:105%;letter-spacing:-.01em}
+.mrow span{grid-column:1;color:var(--muted);font-size:.92rem}
+.mrow .p{grid-row:1/span 2;grid-column:2;font:800 1.45rem/1 var(--display);font-stretch:110%;text-align:right}
+.mrow .p small{display:block;font:500 .72rem/1.3 var(--body);color:var(--muted);margin-bottom:4px}
+.price-panel{transition:opacity .2s var(--ease),transform .25s var(--ease)}
+.price-panel.swap{opacity:0;transform:translateX(10px)}
+@media (min-width:900px){.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}}
+
+/* owner */
+.owner{background:var(--ink-2);border-block:1px solid var(--line);overflow:hidden}
+.owner-grid{display:grid;gap:40px;align-items:center}
+@media (min-width:1000px){.owner-grid{grid-template-columns:.9fr 1.1fr;gap:72px}}
+.owner-photo{aspect-ratio:4/5}
+.motto{font:850 clamp(2.2rem,6vw,4rem)/.98 var(--display);font-stretch:122%;letter-spacing:-.035em;margin:20px 0 22px}
+.motto span{display:block}
+.motto span:nth-child(2){color:var(--silver)}
+.motto span:nth-child(3){color:var(--red-hi)}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--line-2);font-size:.9rem;font-weight:600}
+.chip .ic{width:20px;height:20px}
+
+/* reviews */
+.reviews-grid{display:grid;gap:36px;align-items:center}
+@media (min-width:1000px){.reviews-grid{grid-template-columns:auto 1fr;gap:80px}}
+.big-rating{display:flex;align-items:center;gap:22px}
+.big-rating .score{font:850 clamp(5rem,16vw,8.5rem)/.85 var(--display);font-stretch:120%;letter-spacing:-.04em}
+.big-rating .stars .ic{width:28px;height:28px}
+.big-rating p{color:var(--muted);margin-top:10px}
+.big-rating p b{color:#fff}
+.star-fill .ic{opacity:1;transform:none}
+@media (prefers-reduced-motion:no-preference){
+  .js .star-fill .ic{opacity:.15;transform:scale(.6);transition:opacity .3s var(--ease),transform .45s var(--ease)}
+  .js .star-fill.in .ic{opacity:1;transform:none}
+  .js .star-fill.in .ic:nth-child(2){transition-delay:.12s}.js .star-fill.in .ic:nth-child(3){transition-delay:.24s}.js .star-fill.in .ic:nth-child(4){transition-delay:.36s}.js .star-fill.in .ic:nth-child(5){transition-delay:.48s}
+}
+.quote{font:700 clamp(1.5rem,3.4vw,2.3rem)/1.18 var(--display);font-stretch:108%;letter-spacing:-.02em;margin:0}
+.quote-by{color:var(--muted);margin-top:14px;font-size:.95rem}
+.themes{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+
+/* supply store / training / bay */
+.trio{display:grid;gap:22px}
+@media (min-width:1000px){.trio{grid-template-columns:repeat(3,1fr)}}
+.panel{display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+.panel .photo{border-radius:0;aspect-ratio:16/11}
+.panel-body{padding:26px 24px 28px;display:flex;flex-direction:column;flex:1}
+.panel-body h3{font-size:1.5rem;font-weight:800;display:flex;align-items:center;gap:12px}
+.panel-body h3 .ic{width:30px;height:30px;color:#fff}
+.panel-body > p{color:var(--muted);margin-top:10px}
+.panel .price-line{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px}
+.panel .price-line div{font:800 1.5rem/1 var(--display);font-stretch:110%}
+.panel .price-line small{display:block;font:500 .78rem/1.3 var(--body);color:var(--muted);margin-bottom:5px}
+.panel .ticks{margin-top:18px}
+.panel .svc-link{margin-top:auto;padding-top:22px}
+
+/* training detail */
+.inc{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+@media (min-width:700px){.inc{grid-template-columns:1fr 1fr}}
+.inc li{display:flex;gap:14px;align-items:center;padding:14px;border-radius:var(--radius);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line);font-weight:600;font-size:.98rem}
+.inc .tile{width:42px;height:42px;border-radius:13px}
+.inc .tile .ic{width:22px;height:22px}
+
+/* visit */
+.visit{background:radial-gradient(900px 400px at 10% 100%,rgba(198,59,39,.18),transparent 60%),var(--ink)}
+.visit-grid{display:grid;gap:36px}
+@media (min-width:1000px){.visit-grid{grid-template-columns:1fr 1fr;gap:64px}}
+.contact{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.contact li{display:flex;gap:16px;align-items:flex-start;padding:16px;border-radius:var(--radius);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+.contact b{display:block;font-weight:700;margin-bottom:2px}
+.contact span,.contact a{color:#d4dae4}
+.hours{display:grid;grid-template-columns:auto auto;gap:2px 18px;font-size:.98rem;color:#d4dae4}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0;white-space:nowrap}
+.map{margin-top:16px;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/10;background:var(--ink-3);box-shadow:inset 0 0 0 1px var(--line)}
+.map iframe{width:100%;height:100%;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.6) brightness(.95)}
+.pin-drop .tile{transform-origin:bottom}
+@media (prefers-reduced-motion:no-preference){
+  .js .pin-drop .tile .ic{transform:translateY(-14px);opacity:0}
+  .js .pin-drop.in .tile .ic{animation:drop .6s .2s cubic-bezier(.3,1.6,.5,1) forwards}
+}
+@keyframes drop{to{transform:none;opacity:1}}
+
+form.book{padding:26px 22px;border-radius:18px;background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line-2), 0 30px 60px -30px rgba(0,0,0,.8)}
+form.book h3{font-size:1.6rem;font-weight:800}
+form.book > p{color:var(--muted);margin:8px 0 20px;font-size:.98rem}
+.fgrid{display:grid;gap:14px}
+@media (min-width:600px){.fgrid{grid-template-columns:1fr 1fr}.fgrid .full{grid-column:1/-1}}
+label{display:grid;gap:6px;font-weight:600;font-size:.92rem}
+input,select,textarea{width:100%;font:500 1rem/1.4 var(--body);color:var(--text);background:var(--ink);border:1px solid var(--line-2);border-radius:12px;padding:12px 14px;min-height:48px;transition:border-color .2s,box-shadow .2s}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--navy-hi);box-shadow:0 0 0 3px rgba(79,143,214,.25)}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#a9b2c1 50%),linear-gradient(135deg,#a9b2c1 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+form.book .btn{width:100%;margin-top:18px}
+.form-note{margin-top:14px;font-size:.88rem;color:var(--muted);min-height:1.4em}
+.form-note.ok{color:#9fd3a8}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 120px;background:#05070a}
+.foot{display:grid;gap:30px}
+@media (min-width:900px){.foot{grid-template-columns:1.3fr 1fr 1fr;gap:48px}footer{padding-bottom:56px}}
+.foot h4{font:700 .95rem/1 var(--body);margin:0 0 14px;color:#fff}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;color:var(--muted);font-size:.95rem}
+.foot a{text-decoration:none}
+.foot a:hover{color:#fff}
+.social{display:flex;gap:10px;margin-top:18px}
+.social a{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--line);transition:transform .25s var(--ease),background-color .2s}
+.social a:hover{transform:translateY(-3px);background:rgba(255,255,255,.12)}
+.social .ic{width:22px;height:22px}
+.fineprint{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);font-size:.82rem;color:#7f8898;display:flex;flex-wrap:wrap;gap:6px 20px}
+
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(7,9,13,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .45s var(--ease)}
+.mbar.show{transform:none}
+.mbar .btn{min-height:50px;width:100%}
+.mbar.show .ring{animation:ring .7s .35s var(--ease) 1}
+@keyframes ring{0%,100%{transform:rotate(0)}20%{transform:rotate(-16deg)}40%{transform:rotate(14deg)}60%{transform:rotate(-9deg)}80%{transform:rotate(5deg)}}
+@media (min-width:1020px){.mbar{display:none}}
+
+/* scroll reveals */
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .js .rv.in{opacity:1;transform:none}
+  .js .rv-h{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .js .rv-h.in{opacity:1;transform:none}
+  .js .wipe > .photo,.js .wipe > img{clip-path:inset(100% 0 0 0);transition:clip-path 1s var(--ease)}
+  .js .wipe.in > .photo,.js .wipe.in > img{clip-path:inset(0 0 0 0)}
+  .js .stag > *{opacity:0;transform:translateY(16px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
+  .js .stag.in > *{opacity:1;transform:none}
+  .js .pop .tile{opacity:0;transform:scale(.8);transition:opacity .45s var(--ease),transform .45s var(--ease)}
+  .js .pop.in .tile{opacity:1;transform:none}
+  @supports (animation-timeline:view()){
+    .drift{animation:drift linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+    @keyframes drift{from{transform:translateY(30px)}to{transform:translateY(-30px)}}
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V88H40V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 256 256" fill="currentColor"><path d="M229.06,108.79l-48.7,42,14.88,62.79a8.4,8.4,0,0,1-12.52,9.17L128,189.09,73.28,222.74a8.4,8.4,0,0,1-12.52-9.17l14.88-62.79-48.7-42A8.46,8.46,0,0,1,31.73,94L95.64,88.8l24.62-59.6a8.36,8.36,0,0,1,15.48,0l24.62,59.6L224.27,94A8.46,8.46,0,0,1,229.06,108.79Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M216,128l-72,72V56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 256 256" fill="currentColor"><path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 256 256" fill="currentColor"><path d="M208,144a80,80,0,0,1-160,0c0-72,80-128,80-128S208,72,208,144Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+<symbol id="i-shield-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56v56c0,96-88,120-88,120S40,208,40,112V56a8,8,0,0,1,8-8H208A8,8,0,0,1,216,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"/></symbol>
+<symbol id="i-car-profile" viewBox="0 0 256 256" fill="currentColor"><path d="M88,176a24,24,0,1,1-24-24A24,24,0,0,1,88,176Zm104-24a24,24,0,1,0,24,24A24,24,0,0,0,192,152ZM162.34,74.34A8,8,0,0,0,156.69,72H44.28a8,8,0,0,0-6.66,3.56L8,120H208Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M240,112H211.31L168,68.69A15.86,15.86,0,0,0,156.69,64H44.28A16,16,0,0,0,31,71.12L1.34,115.56A8.07,8.07,0,0,0,0,120v48a16,16,0,0,0,16,16H33a32,32,0,0,0,62,0h66a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V128A16,16,0,0,0,240,112ZM44.28,80H156.69l32,32H23ZM64,192a16,16,0,1,1,16-16A16,16,0,0,1,64,192Zm128,0a16,16,0,1,1,16-16A16,16,0,0,1,192,192Zm48-24H223a32,32,0,0,0-62,0H95a32,32,0,0,0-62,0H16V128H240Z"/></symbol>
+<symbol id="i-spray-bottle" viewBox="0 0 256 256" fill="currentColor"><path d="M200,211.47V224a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V167.38a32,32,0,0,1,12-25l16-12.78a32,32,0,0,0,12-25V72h40A263.14,263.14,0,0,1,200,211.47Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M200,80a8,8,0,0,0,8-8,56.06,56.06,0,0,0-56-56H80A16,16,0,0,0,64,32V80a24,24,0,0,1-24,24,8,8,0,0,0,0,16A40,40,0,0,0,80,80h32v24.62a23.87,23.87,0,0,1-9,18.74L87,136.15a39.79,39.79,0,0,0-15,31.23V224a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V211.47A270.88,270.88,0,0,0,174,80ZM80,32h72a40.08,40.08,0,0,1,39.2,32H80ZM192,211.47V224H88V167.38a23.87,23.87,0,0,1,9-18.74l16-12.79a39.79,39.79,0,0,0,15-31.23V80h27.52A254.86,254.86,0,0,1,192,211.47Z"/></symbol>
+<symbol id="i-steering-wheel" viewBox="0 0 256 256" fill="currentColor"><path d="M222.4,145.55A96.6,96.6,0,0,1,218.54,160h-53a8,8,0,0,0-7.5,5.19l-21.9,58.47c-2.69.22-5.41.34-8.15.34s-5.5-.12-8.2-.35L97.94,165.2a8,8,0,0,0-7.49-5.2h-53a96.6,96.6,0,0,1-3.86-14.45,128,128,0,0,1,188.8,0Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,152a12,12,0,1,1,12-12A12,12,0,0,1,128,152Zm104-24A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128ZM40,128v.33a135.93,135.93,0,0,1,176,0V128a88,88,0,0,0-176,0Zm67.5,85.58L90.45,168H49.63A88.35,88.35,0,0,0,107.5,213.58ZM128,216c.83,0,1.66,0,2.49,0l20.07-53.57a16.07,16.07,0,0,1,15-10.39h47.12c.38-1.31.72-2.64,1-4a120,120,0,0,0-171.4,0c.31,1.34.65,2.67,1,4H90.45a16.08,16.08,0,0,1,15,10.4l20,53.56C126.31,216,127.15,216,128,216Zm78.37-48H165.55l-17.09,45.59A88.34,88.34,0,0,0,206.37,168Z"/></symbol>
+<symbol id="i-headlights" viewBox="0 0 256 256" fill="currentColor"><path d="M136,64V192a8,8,0,0,1-8,8H88a72,72,0,0,1-72-72.55C16.3,87.75,49.2,56,88.9,56H128A8,8,0,0,1,136,64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M160,80a8,8,0,0,1,8-8h72a8,8,0,0,1,0,16H168A8,8,0,0,1,160,80Zm80,88H168a8,8,0,0,0,0,16h72a8,8,0,0,0,0-16Zm0-64H168a8,8,0,0,0,0,16h72a8,8,0,0,0,0-16Zm0,32H168a8,8,0,0,0,0,16h72a8,8,0,0,0,0-16ZM144,64V192a16,16,0,0,1-16,16H88A80,80,0,0,1,8,127.39C8.33,83.62,44.62,48,88.9,48H128A16,16,0,0,1,144,64Zm-16,0H88.9C53.38,64,24.26,92.49,24,127.51A64,64,0,0,0,88,192h40Z"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 256 256" fill="currentColor"><path d="M216,113.07v53.22a8,8,0,0,1-2,5.31c-11.3,12.59-38.9,36.4-86,36.4s-74.68-23.81-86-36.4a8,8,0,0,1-2-5.31V113.07L128,160Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"/></symbol>
+<symbol id="i-garage" viewBox="0 0 256 256" fill="currentColor"><path d="M184,136v64H72V136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M240,192h-8V98.67a16,16,0,0,0-7.12-13.31l-88-58.67a16,16,0,0,0-17.75,0l-88,58.67A16,16,0,0,0,24,98.67V192H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM40,98.67,128,40l88,58.66V192H192V136a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8v56H40ZM176,144v16H136V144Zm-56,16H80V144h40ZM80,176h40v16H80Zm56,0h40v16H136Z"/></symbol>
+<symbol id="i-storefront" viewBox="0 0 256 256" fill="currentColor"><path d="M224,96v16a32,32,0,0,1-64,0V96H96v16a32,32,0,0,1-64,0V96L46.34,45.8A8,8,0,0,1,54,40H202a8,8,0,0,1,7.69,5.8Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M231.69,93.81,217.35,43.6A16.07,16.07,0,0,0,202,32H54A16.07,16.07,0,0,0,38.65,43.6L24.31,93.81A7.94,7.94,0,0,0,24,96v16a40,40,0,0,0,16,32v72a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V144a40,40,0,0,0,16-32V96A7.94,7.94,0,0,0,231.69,93.81ZM54,48H202l11.42,40H42.61Zm98,56v8a24,24,0,0,1-48,0v-8ZM51.06,132.2A24,24,0,0,1,40,112v-8H88v8a24,24,0,0,1-35.12,21.26A7.88,7.88,0,0,0,51.06,132.2ZM200,208H56V151.2a40.57,40.57,0,0,0,8,.8,40,40,0,0,0,32-16,40,40,0,0,0,64,0,40,40,0,0,0,32,16,40.57,40.57,0,0,0,8-.8Zm16-96a24,24,0,0,1-11.07,20.2,8.08,8.08,0,0,0-1.8,1.05A24,24,0,0,1,168,112v-8h48Z"/></symbol>
+<symbol id="i-instagram-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="i-facebook-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+<symbol id="i-envelope" viewBox="0 0 256 256" fill="currentColor"><path d="M224,56l-96,88L32,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,85.66l-96,96a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L104,164.69l90.34-90.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+<symbol id="i-seal-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232,128c0,12.51-17.82,21.95-22.68,33.69-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68c-11.32-4.68-30.65,1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/></symbol>
+<symbol id="i-certificate" viewBox="0 0 256 256" fill="currentColor"><path d="M224,56V90.06h0a44,44,0,1,0-56,67.88h0V192H40a8,8,0,0,1-8-8V56a8,8,0,0,1,8-8H216A8,8,0,0,1,224,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,136a8,8,0,0,1-8,8H72a8,8,0,0,1,0-16h48A8,8,0,0,1,128,136Zm-8-40H72a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm112,65.47V224A8,8,0,0,1,220,231l-24-13.74L172,231A8,8,0,0,1,160,224V200H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216a16,16,0,0,1,16,16V86.53a51.88,51.88,0,0,1,0,74.94ZM160,184V161.47A52,52,0,0,1,216,76V56H40V184Zm56-12a51.88,51.88,0,0,1-40,0v38.22l16-9.16a8,8,0,0,1,7.94,0l16,9.16Zm16-48a36,36,0,1,0-36,36A36,36,0,0,0,232,124Z"/></symbol>
+<symbol id="i-list" viewBox="0 0 256 256" fill="currentColor"><path d="M216,64V192H40V64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-x" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56V200a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V56A16,16,0,0,1,56,40H200A16,16,0,0,1,216,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+<div class="concept">Design concept prepared for Tur-Co Auto Detailing &amp; Supplies by Drusus Technologies. Not the live site.</div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Tur-Co Auto Detailing home">
+      <span class="brand-mark"><img src="images/logo.png" alt="" width="40" height="48"></span>
+      <span class="brand-name">TUR-CO<small>Auto Detailing &amp; Supplies</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="ulink" href="#ceramic">Ceramic Coating</a>
+      <a class="ulink" href="#services">Services</a>
+      <a class="ulink" href="#prices">Prices</a>
+      <a class="ulink" href="#shop">Store &amp; Training</a>
+      <a class="ulink" href="#visit">Visit</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="btn ghost sm" href="tel:+19563229999"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(956) 322-9999</span></a>
+      <a class="btn sm" href="#book">Book a Detail</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <span class="brand"><span class="brand-mark"><img src="images/logo.png" alt="" width="40" height="48"></span><span class="brand-name">TUR-CO<small>Auto Detailing &amp; Supplies</small></span></span>
+    <button class="menu-btn" id="menuClose" aria-label="Close menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="#ceramic">Ceramic Coating</a>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#shop">Store &amp; Training</a>
+    <a href="#bay">Bay Rental</a>
+    <a href="#visit">Visit &amp; Hours</a>
+  </nav>
+  <a class="btn" href="tel:+19563229999"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call (956) 322-9999</a>
+</div>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-media"><img id="heroImg" src="images/hero-detailer.jpg" alt="Detailer machine-polishing the glossy black paint of a car" width="1500" height="2000" fetchpriority="high"></div>
+  <div class="wrap hero-copy">
+    <h1>
+      <span class="line"><span>Premium.</span></span>
+      <span class="line"><span class="accent">Personalized.</span></span>
+      <span class="line"><span class="red">Professional.</span></span>
+    </h1>
+    <p class="hero-sub fade d1">Ceramic coating, paint correction and full detailing by an IDA-certified detailer in Pharr, plus a fully stocked detailing supply store under the same roof.</p>
+    <div class="hero-actions fade d2">
+      <a class="btn" href="#book"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book a Detail<svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      <a class="btn ghost" href="tel:+19563229999"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call <span class="num">(956) 322-9999</span></a>
+    </div>
+    <a class="rating fade d3" href="https://www.google.com/maps/search/?api=1&amp;query=Tur-Co+Auto+Detailing+And+Supplies+Pharr+TX" target="_blank" rel="noopener">
+      <span class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+      <b class="num">4.9</b><span><span class="num">102</span> Google reviews</span>
+    </a>
+  </div>
+</section>
+
+<div class="facts">
+  <ul class="wrap stag" style="padding:0">
+    <li><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>IDA Skill Validated certified detailer</li>
+    <li><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg>Opti-Coat ceramic coatings, warranties up to lifetime</li>
+    <li><svg class="ic" aria-hidden="true"><use href="#i-storefront"/></svg>Walk-in detailing supply store</li>
+    <li><svg class="ic" aria-hidden="true"><use href="#i-garage"/></svg>Hands-on training and bay rental</li>
+  </ul>
+</div>
+
+<!-- CERAMIC -->
+<section class="sec coat" id="ceramic">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv-h">Protection measured in years, not weeks.</h2>
+      <p class="lede rv">Every Opti-Coat package starts with a full wash and chemical and mechanical paint decontamination, and comes with warranty registration and CARFAX reporting. Pick how long you want it to last.</p>
+    </div>
+    <div class="coat-grid">
+      <div>
+        <div class="ladder" id="ladder">
+          <div class="tier">
+            <h3>Opti-Coat Ultra Shine</h3>
+            <div class="price num"><small>Starting at</small>$499</div>
+            <p>SiO2 ceramic with serious slickness and gloss. Fills and hides light swirls, with or without polishing.</p>
+            <div class="track" aria-hidden="true"><i style="--w:.2"></i></div>
+            <div class="track-lbl"><span>Up to 3 years of protection</span><b class="num">2-year warranty</b></div>
+          </div>
+          <div class="tier">
+            <h3>Opti-Coat Pro</h3>
+            <div class="price num"><small>Starting at</small>$1,300</div>
+            <p>A permanent coating that bonds with your factory clear coat. Includes an ultra-fine gloss polish and coats the paint and wheel faces.</p>
+            <div class="track" aria-hidden="true"><i style="--w:.5"></i></div>
+            <div class="track-lbl"><span>5 to 10 years of longevity</span><b class="num">5-year warranty</b></div>
+          </div>
+          <div class="tier">
+            <h3>Opti-Coat Pro Plus</h3>
+            <div class="price num"><small>Starting at</small>$1,700</div>
+            <p>A two-step system: a 9H ceramic clear coat, then a gloss layer on top for extra depth and slickness.</p>
+            <div class="track" aria-hidden="true"><i style="--w:.7"></i></div>
+            <div class="track-lbl"><span>7 to 10 years of longevity</span><b class="num">7-year warranty</b></div>
+          </div>
+          <div class="tier top">
+            <h3>Opti-Coat Pro3</h3>
+            <div class="price num"><small>Starting at</small>$3,400</div>
+            <p>The most advanced coating Opti-Coat makes: four times the thickness of Pro, with the most chemical and environmental resistance.</p>
+            <div class="track" aria-hidden="true"><i style="--w:1"></i></div>
+            <div class="track-lbl"><span>Protection for the life of your car</span><b>Limited lifetime warranty</b></div>
+          </div>
+          <div class="axis num" aria-hidden="true"><span>Warranty: 0 years</span><span>5</span><span>10+ years</span></div>
+        </div>
+        <p class="fine">SUVs, trucks and minivans add $100 to $150. Paint correction before coating is available for an additional fee.</p>
+      </div>
+      <div class="coat-side">
+        <div class="wipe"><div class="photo coat-photo"><img src="images/coating-beading.jpg" alt="Water beading on the dark hood of a coated car" width="1400" height="933" loading="lazy"></div></div>
+        <div class="addon pop rv">
+          <span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-steering-wheel"/></svg></span>
+          <div><h3>Opti-Guard Leather &amp; Fabric</h3><p>Coats seats, carpets, mats, door panels and dash against stains and fading. 5-year warranty. <span class="num">2 to 5 seats from $700, 6 to 9 seats from $800.</span></p></div>
+        </div>
+        <div class="addon pop rv">
+          <span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
+          <div><h3>Motorcycle Protection</h3><p>Paint, metal and seat coated, with a 5-year warranty. <span class="num">Sport bikes from $900, cruisers from $950.</span></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (sticky stage) -->
+<section class="sec svc-sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv-h">Every level of clean, done by hand.</h2>
+      <p class="lede rv">From a quick maintenance wash to multi-stage paint correction. Every interior is steam cleaned, and every exterior is finished with ceramic protection.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="stage" aria-hidden="true">
+        <img src="images/full-foam.jpg" alt="" data-k="0" class="on">
+        <img src="images/correction-polisher.jpg" alt="" data-k="1" loading="lazy">
+        <img src="images/interior-leather.jpg" alt="" data-k="2" loading="lazy">
+        <img src="images/wash-suds.jpg" alt="" data-k="3" loading="lazy">
+        <img src="images/wheel-brush.jpg" alt="" data-k="4" loading="lazy">
+        <img src="images/headlight.jpg" alt="" data-k="5" loading="lazy">
+        <div class="stage-cap"><span class="num" id="capN">1 / 6</span><span id="capT">Full Detailing</span></div>
+      </div>
+      <div>
+        <article class="svc active" data-k="0" data-t="Full Detailing">
+          <div class="photo svc-img"><img src="images/full-foam.jpg" alt="Foam pre-wash on a black sports car" width="1400" height="1400" loading="lazy"></div>
+          <h3>Full Detailing, Inside &amp; Out</h3>
+          <div class="from">From <b class="num">$499</b></div>
+          <p>Choose Entry for a complete refresh, or Advanced for owners who want their car kept in exceptional condition.</p>
+          <ul class="ticks">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>pH-balanced, mar-free wash, clay bar and ceramic sealant</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Steam-cleaned dash, vents, carpets, mats and leather</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Advanced adds a gloss-enhancement polish, clean rims and a steamed headliner</li>
+          </ul>
+        </article>
+        <article class="svc" data-k="1" data-t="Paint Correction">
+          <div class="photo svc-img"><img src="images/correction-polisher.jpg" alt="Dual-action polisher working on car paint" width="1120" height="1400" loading="lazy"></div>
+          <h3>Paint Correction</h3>
+          <div class="from">From <b class="num">$600</b></div>
+          <p>Swirls, haze and micro-scratches removed by machine polishing, bringing the finish back to factory or better. Every job includes a prep wash, clay bar, wheels and tires degreased, and trim dressed.</p>
+          <div class="meter" aria-label="Typical defect removal">
+            <div class="meter-row"><div><span>Level 1, light polish (from $600)</span><b class="num">50–70%</b></div><div class="mtrack"><i style="--a:50%;--b:70%"></i></div></div>
+            <div class="meter-row"><div><span>Multi-stage polish (from $1,000)</span><b class="num">85–95%</b></div><div class="mtrack"><i style="--a:85%;--b:95%"></i></div></div>
+          </div>
+        </article>
+        <article class="svc" data-k="2" data-t="Interior Steam Detailing">
+          <div class="photo svc-img"><img src="images/interior-leather.jpg" alt="Clean black leather car interior" width="933" height="1400" loading="lazy"></div>
+          <h3>Interior Steam Detailing</h3>
+          <div class="from">From <b class="num">$249</b></div>
+          <p>A deep, steam-powered clean of every surface, with a complimentary 30-minute ozone treatment that knocks out odors, mold and bacteria.</p>
+          <ul class="ticks">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Carpets, upholstery and mats steamed, with hot-water extraction when needed</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Leather deep cleaned and conditioned, headliner cleaned</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>UV protectant on all plastics, windows cleaned</li>
+          </ul>
+        </article>
+        <article class="svc" data-k="3" data-t="Proper Wash &amp; Protect">
+          <div class="photo svc-img"><img src="images/wash-suds.jpg" alt="Car covered in wash foam" width="933" height="1400" loading="lazy"></div>
+          <h3>Proper Wash &amp; Protect</h3>
+          <div class="from">From <b class="num">$299</b></div>
+          <p>For deep gloss and real protection: clay bar and iron decontamination leave the paint glass-smooth, then a SiO2 ceramic sealant protects it for up to 12 months.</p>
+        </article>
+        <article class="svc" data-k="4" data-t="Maintenance Wash">
+          <div class="photo svc-img"><img src="images/wheel-brush.jpg" alt="Brush cleaning a car wheel" width="933" height="1400" loading="lazy"></div>
+          <h3>Maintenance Wash</h3>
+          <div class="from">From <b class="num">$110</b></div>
+          <p>A mini detail for well-kept vehicles. Wheels and tires, a ceramic sealant finish, vacuum, interior wipe-down, door jambs and windows inside and out.</p>
+        </article>
+        <article class="svc" data-k="5" data-t="Headlight Restoration">
+          <div class="photo svc-img"><img src="images/headlight.jpg" alt="Clear car headlight" width="1400" height="785" loading="lazy"></div>
+          <h3>Headlight Restoration</h3>
+          <div class="from"><b class="num">$75</b> per light</div>
+          <p>Multi-step sanding and polishing back to original clarity, sealed with Opti-Lens, a ceramic hybrid coating with UV blockers to keep them from yellowing again.</p>
+          <a class="svc-link ulink" href="#book">Book a service<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="sec" id="prices">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv-h">Every price, one place.</h2>
+      <p class="lede rv">Pick your vehicle size. These are starting prices: every vehicle is inspected first, and the final price depends on its size and condition.</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Vehicle size">
+      <button class="tab" role="tab" aria-selected="true" data-size="0">Cars</button>
+      <button class="tab" role="tab" aria-selected="false" data-size="1">Trucks &amp; SUVs</button>
+      <button class="tab" role="tab" aria-selected="false" data-size="2">Large &amp; minivans</button>
+    </div>
+    <div class="price-panel" id="pricePanel" role="tabpanel">
+      <div class="menu-cols stag" id="menuCols">
+        <div class="menu-list">
+          <div class="mrow"><h3>Maintenance Wash</h3><span>Mini detail for well-kept vehicles</span><div class="p num" data-p="110,140,150"><small>From</small>$110</div></div>
+          <div class="mrow"><h3>Interior Steam Detailing</h3><span>Includes 30-minute ozone treatment</span><div class="p num" data-p="249,269,269"><small>From</small>$249</div></div>
+          <div class="mrow"><h3>Proper Wash &amp; Protect</h3><span>Decon plus 12-month ceramic sealant</span><div class="p num" data-p="299,399,399"><small>From</small>$299</div></div>
+          <div class="mrow"><h3>Headlight Restoration</h3><span>With Opti-Lens protection</span><div class="p num" data-p="75,75,75" data-u="per light"><small>Per light</small>$75</div></div>
+        </div>
+        <div class="menu-list">
+          <div class="mrow"><h3>Full Detailing, Entry</h3><span>Inside and out</span><div class="p num" data-p="499,599,649"><small>From</small>$499</div></div>
+          <div class="mrow"><h3>Full Detailing, Advanced</h3><span>Adds gloss polish and headliner</span><div class="p num" data-p="950,1100,1200"><small>From</small>$950</div></div>
+          <div class="mrow"><h3>Paint Correction, Level 1</h3><span>50–70% defect removal</span><div class="p num" data-p="600,700,800"><small>From</small>$600</div></div>
+          <div class="mrow"><h3>Paint Correction, Multi-Stage</h3><span>85–95% defect removal</span><div class="p num" data-p="1000,1200,1300"><small>From</small>$1,000</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="fine">Pet hair, bug removal and heavily soiled interiors may add to the price. Paint correction jobs can add a basic interior clean for $25 to $40.</p>
+  </div>
+</section>
+
+<!-- OWNER -->
+<section class="sec owner" id="about">
+  <div class="wrap owner-grid">
+    <div class="wipe drift"><div class="photo owner-photo"><img src="images/night-headlights.jpg" alt="Gleaming headlights of a black car in a dark garage" width="1400" height="933" loading="lazy"></div></div>
+    <div>
+      <h2 class="rv-h">Built by a detailer who still teaches the craft.</h2>
+      <p class="lede rv" style="margin-top:22px">Eray Akcoban started Tur-Co with one goal: premium, personalized, professional work. He's a certified paint correction and ceramic coating specialist, validated by the International Detailing Association, and he trains other detailers right here in the shop. That means current industry methods on every car and a finish you'll be proud of.</p>
+      <div class="creds stag">
+        <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-certificate"/></svg>IDA Skill Validated</span>
+        <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Paint correction specialist</span>
+        <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg>Ceramic coating specialist</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews">
+  <div class="wrap reviews-grid">
+    <div class="big-rating rv">
+      <div class="score num" id="score" data-to="4.9">4.9</div>
+      <div>
+        <div class="stars star-fill" id="starFill" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+        <p><b class="num" id="count" data-to="102">102</b> reviews on Google</p>
+      </div>
+    </div>
+    <div>
+      <blockquote class="quote rv-h">“Clean store, plus awesome customer service super friendly &amp; helpful employees!”</blockquote>
+      <p class="quote-by rv">A Google reviewer</p>
+      <div class="themes stag">
+        <span style="flex-basis:100%;color:var(--muted);font-size:.92rem">What customers mention most</span>
+        <span class="chip">Product selection</span>
+        <span class="chip">Helpful owner</span>
+        <span class="chip">Thorough interior steam cleaning</span>
+        <span class="chip">Product recommendations</span>
+      </div>
+      <a class="svc-link ulink rv" href="https://www.google.com/maps/search/?api=1&amp;query=Tur-Co+Auto+Detailing+And+Supplies+Pharr+TX" target="_blank" rel="noopener">Read all reviews on Google<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- STORE / TRAINING / BAY -->
+<section class="sec svc-sec" id="shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv-h">More than a detail shop.</h2>
+      <p class="lede rv">Shop the products the pros use, learn to detail like one, or rent a fully equipped bay and do the work yourself.</p>
+    </div>
+    <div class="trio">
+      <article class="panel rv">
+        <div class="photo"><img src="images/interior-clean.jpg" alt="Hand wiping a car dashboard with a microfiber towel" width="1120" height="1400" loading="lazy"></div>
+        <div class="panel-body">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-storefront"/></svg>Supply Store</h3>
+          <p>Walk in for professional-grade detailing products, tools and honest advice on what your vehicle actually needs. Product selection is the number one thing reviewers mention.</p>
+          <a class="svc-link ulink" href="#visit">Store hours &amp; directions<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </article>
+      <article class="panel rv" id="training">
+        <div class="photo"><img src="images/training-hands.jpg" alt="Gloved hands working on a black car" width="1050" height="1400" loading="lazy"></div>
+        <div class="panel-body">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-graduation-cap"/></svg>Hands-On Training</h3>
+          <p>A hands-on detailing course for beginners and working pros, taught by Eray. Washing, polishing, paint correction and ceramic coating application on real cars.</p>
+          <div class="price-line"><div class="num"><small>Course</small>$599</div><div class="num"><small>Store credit, same day</small>$50</div></div>
+          <ul class="ticks">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>All chemicals and tools provided, lunch included</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Certificate, plus Nasiol PRO Club registration for businesses</li>
+          </ul>
+          <a class="svc-link ulink" href="tel:+19563229999">Call for the next class date<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </article>
+      <article class="panel rv" id="bay">
+        <div class="photo"><img src="images/bay-garage.jpg" alt="Black sports car parked in a clean garage bay" width="933" height="1400" loading="lazy"></div>
+        <div class="panel-body">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-garage"/></svg>Rent a Detail Bay</h3>
+          <p>No room at home, or HOA rules in the way? Book a bay with free water and electricity. Great for DIYers, car clubs and mobile detailers.</p>
+          <div class="price-line"><div class="num"><small>9 hours, 9 AM – 6 PM</small>$100</div><div class="num"><small>24 hours</small>$125</div></div>
+          <ul class="ticks">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Tool rental: RUPES polishers $30, extractor and steamer $30, pressure washer and air tools $20</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Or rent the full equipment bundle for $50</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Reserve online with a $25 non-refundable deposit</li>
+          </ul>
+          <a class="svc-link ulink" href="#book">Reserve a bay<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT + BOOK -->
+<section class="sec visit" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <h2 class="rv-h">Come see us in Pharr.</h2>
+      <ul class="contact stag">
+        <li class="pin-drop" id="pin"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg></span><div><b>Address</b><a class="ulink" href="https://www.google.com/maps/search/?api=1&amp;query=Tur-Co+Auto+Detailing+And+Supplies+Pharr+TX" target="_blank" rel="noopener">1101 West Ferguson Avenue, Suite H<br>Pharr, Texas 78577</a></div></li>
+        <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><div><b>Hours</b>
+          <dl class="hours num"><dt>Monday – Friday</dt><dd>9:00 AM – 6:00 PM</dd><dt>Saturday</dt><dd>9:00 AM – 3:00 PM</dd><dt>Sunday</dt><dd>Closed</dd></dl></div></li>
+        <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><div><b>Phone</b><a class="ulink num" href="tel:+19563229999">(956) 322-9999</a></div></li>
+        <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-envelope"/></svg></span><div><b>Email</b><a class="ulink" href="mailto:info@turcoautodetailing.com">info@turcoautodetailing.com</a></div></li>
+      </ul>
+      <div class="map"><iframe title="Map to Tur-Co Auto Detailing and Supplies" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Tur-Co+Auto+Detailing+And+Supplies,+1101+W+Ferguson+Ave,+Pharr,+TX+78577&amp;output=embed"></iframe></div>
+    </div>
+    <div id="book">
+      <form class="book rv" id="bookForm" novalidate>
+        <h3>Request an appointment</h3>
+        <p>Tell us about your vehicle and we'll confirm a time. Prefer to talk? Call <a class="ulink num" href="tel:+19563229999">(956) 322-9999</a>.</p>
+        <div class="fgrid">
+          <label>First name<input name="first" autocomplete="given-name" required></label>
+          <label>Last name<input name="last" autocomplete="family-name"></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email"></label>
+          <label class="full">Service
+            <select name="service">
+              <option>Ceramic coating</option>
+              <option>Full detailing</option>
+              <option>Paint correction</option>
+              <option>Interior steam detailing</option>
+              <option>Proper Wash &amp; Protect</option>
+              <option>Maintenance wash</option>
+              <option>Headlight restoration</option>
+              <option>Bay rental</option>
+              <option>Hands-on training</option>
+            </select>
+          </label>
+          <label class="full">Vehicle and details<textarea name="details" placeholder="Year, make, model, and anything we should know"></textarea></label>
+        </div>
+        <button class="btn" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Send Request</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        <p class="fine" style="margin-top:6px">Need to change plans? Please give at least 24 hours' notice to cancel or reschedule.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <span class="brand"><span class="brand-mark"><img src="images/logo.png" alt="" width="40" height="48"></span><span class="brand-name">TUR-CO<small>Auto Detailing &amp; Supplies</small></span></span>
+        <p style="color:var(--muted);margin-top:16px;max-width:38ch;font-size:.95rem">Ceramic coating, paint correction, detailing, supplies, training and bay rental in Pharr, Texas.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/turcoautodetailing" target="_blank" rel="noopener" aria-label="Tur-Co on Instagram"><svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg></a>
+          <a href="https://www.facebook.com/turcoautodetailing" target="_blank" rel="noopener" aria-label="Tur-Co on Facebook"><svg class="ic" aria-hidden="true"><use href="#i-facebook-logo"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a class="ulink" href="#ceramic">Ceramic Coating</a></li><li><a class="ulink" href="#services">Full Detailing</a></li><li><a class="ulink" href="#services">Paint Correction</a></li><li><a class="ulink" href="#prices">Price Menu</a></li><li><a class="ulink" href="#training">Hands-On Training</a></li><li><a class="ulink" href="#bay">Bay Rental</a></li></ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul><li>1101 West Ferguson Avenue, Suite H<br>Pharr, Texas 78577</li><li><a class="ulink num" href="tel:+19563229999">(956) 322-9999</a></li><li class="num">Monday – Friday, 9:00 AM – 6:00 PM<br>Saturday, 9:00 AM – 3:00 PM</li></ul>
+      </div>
+    </div>
+    <div class="fineprint">
+      <span>© 2026 Tur-Co Auto Detailing LLC. All rights reserved.</span>
+      <span>Placeholder photos from Unsplash.</span>
+      <span>Design concept by Drusus Technologies.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="btn ghost" href="tel:+19563229999"><svg class="ic ring" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn" href="#book"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book</a>
+</div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cb = document.querySelector('.concept');
+  const setCb = () => document.documentElement.style.setProperty('--cb', cb.offsetHeight + 'px');
+  setCb(); addEventListener('resize', setCb);
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+  // staggered children
+  $$('.stag').forEach(g => [...g.children].forEach((c, i) => c.style.transitionDelay = (i * 55) + 'ms'));
+
+  // reveals (observe parents of clip-path wipes)
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    io.unobserve(e.target);
+    if (e.target.id === 'starFill') countUp();
+  }), {rootMargin: '0px 0px -12% 0px', threshold: .12});
+  let pending = $$('.rv,.rv-h,.wipe,.stag,.pop,.ladder,.meter,.star-fill,.pin-drop');
+  pending.forEach(el => io.observe(el));
+  // fallback for jumps (anchor links, fast flicks) that skip past a target entirely
+  function sweep() {
+    pending = pending.filter(el => {
+      if (el.classList.contains('in')) return false;
+      if (el.getBoundingClientRect().top < innerHeight) {
+        el.classList.add('in'); io.unobserve(el);
+        if (el.id === 'starFill') countUp();
+        return false;
+      }
+      return true;
+    });
+  }
+
+  // count-ups
+  let counted = false;
+  function countUp() {
+    if (counted || reduce) return; counted = true;
+    [['#score', 1], ['#count', 0]].forEach(([sel, dec]) => {
+      const el = $(sel), to = parseFloat(el.dataset.to), t0 = performance.now(), dur = 1200;
+      const step = t => {
+        const p = Math.min(1, (t - t0) / dur), v = to * (1 - Math.pow(1 - p, 4));
+        el.textContent = v.toFixed(dec);
+        if (p < 1) requestAnimationFrame(step); else el.textContent = to.toFixed(dec);
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  // header + mobile bar + hero parallax
+  const hdr = $('#hdr'), mbar = $('#mbar'), hero = $('.hero'), heroImg = $('#heroImg');
+  let ticking = false;
+  function onScroll() {
+    const y = scrollY, h = hero.offsetHeight;
+    hdr.classList.toggle('solid', y > 40);
+    mbar.classList.toggle('show', y > h * .7);
+    sweep();
+    if (!reduce && y < h) heroImg.style.transform = `translate3d(0,${y * .2}px,0)`;
+    ticking = false;
+  }
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, {passive: true});
+  onScroll();
+
+  // drawer
+  const drawer = $('#drawer'), mb = $('#menuBtn');
+  const setDrawer = open => {
+    drawer.classList.toggle('open', open);
+    mb.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) $('#menuClose').focus(); else mb.focus();
+  };
+  mb.addEventListener('click', () => setDrawer(true));
+  $('#menuClose').addEventListener('click', () => setDrawer(false));
+  $$('#drawer nav a').forEach(a => a.addEventListener('click', () => setDrawer(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape' && drawer.classList.contains('open')) setDrawer(false); });
+
+  // sticky service stage
+  const stageImgs = $$('.stage img'), svcs = $$('.svc'), capN = $('#capN'), capT = $('#capT');
+  let cur = 0;
+  const sio = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const k = +e.target.dataset.k;
+    svcs.forEach(s => s.classList.toggle('active', s === e.target));
+    if (k === cur) return;
+    stageImgs.forEach(img => img.classList.remove('was'));
+    stageImgs[cur].classList.replace('on', 'was');
+    stageImgs[k].classList.add('on');
+    cur = k;
+    capN.textContent = (k + 1) + ' / ' + svcs.length;
+    capT.innerHTML = e.target.dataset.t;
+  }), {rootMargin: '-45% 0px -45% 0px'});
+  svcs.forEach(s => sio.observe(s));
+
+  // price tabs
+  const tabs = $$('.tab'), panel = $('#pricePanel');
+  const fmt = n => '$' + Number(n).toLocaleString('en-US');
+  function setSize(i) {
+    tabs.forEach((t, j) => { t.setAttribute('aria-selected', j === i); t.tabIndex = j === i ? 0 : -1; });
+    const apply = () => $$('[data-p]').forEach(el => {
+      el.innerHTML = `<small>${el.dataset.u ? 'Per light' : 'From'}</small>${fmt(el.dataset.p.split(',')[i])}`;
+    });
+    if (reduce) return apply();
+    panel.classList.add('swap');
+    setTimeout(() => { apply(); panel.classList.remove('swap'); }, 180);
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => setSize(i));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const n = (i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
+      tabs[n].focus(); setSize(n);
+    });
+  });
+  tabs.forEach((t, j) => t.tabIndex = j === 0 ? 0 : -1);
+
+  // demo form
+  $('#bookForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target, note = $('#formNote');
+    const miss = ['first', 'phone'].filter(n => !f[n].value.trim());
+    if (miss.length) { note.className = 'form-note'; note.textContent = 'Please add your first name and phone number so we can confirm your time.'; f[miss[0]].focus(); return; }
+    note.className = 'form-note ok';
+    note.textContent = 'Thanks! This is a design concept, so requests are not sent yet. On the live site, this goes straight to the Tur-Co team.';
+  });
+})();
+</script>
+</body>
+</html>
