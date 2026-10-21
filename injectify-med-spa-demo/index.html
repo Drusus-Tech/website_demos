@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add('js')</script>
+<title>Injectify Med Spa · Botox, Lip Filler &amp; Medical Weight Loss in McAllen, TX</title>
+<meta name="description" content="Injectify is a McAllen med spa led by Adriana Moreno, DNP, FNP. Tox, lip filler, facial balancing, Morpheus8, semaglutide and tirzepatide memberships, IV therapy and hormone care. Rated 4.9 on Google.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#141214">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Injectify · Confidence starts here">
+<meta property="og:description" content="Medical aesthetics, weight loss and wellness in McAllen, Texas. Two locations, one team. Book online.">
+<meta property="og:image" content="images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Injectify · Confidence starts here">
+<meta name="twitter:description" content="Medical aesthetics, weight loss and wellness in McAllen, Texas.">
+<meta name="twitter:image" content="images/og.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=supreme@400,500,700&display=swap">
+<link rel="preload" as="image" href="images/hero-building.webp" imagesrcset="images/hero-building-sm.webp 900w, images/hero-building.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<style>
+:root{
+  --bg:#F5F1EC;          /* their stucco */
+  --surface:#ECE5DD;
+  --paper:#FBF9F6;
+  --ink:#141214;         /* their sign and steel doors */
+  --ink-soft:#4E474B;
+  --night:#141214;
+  --night-2:#1F1B1E;
+  --on-night:#F5F1EC;
+  --on-night-soft:#BDB3B6;
+  --accent:#EE3E98;      /* the pink from their InjectiSculpt flyers */
+  --accent-hover:#F660AC;
+  --accent-pressed:#D62D85;
+  --accent-ink:#141214;
+  --line:rgba(20,18,20,.14);
+  --line-night:rgba(245,241,236,.16);
+  --display:'Clash Display', 'Supreme', system-ui, sans-serif;
+  --text:'Supreme', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --step--1:clamp(.875rem,.84rem + .15vw,.95rem);
+  --step-0:clamp(1rem,.96rem + .2vw,1.125rem);
+  --step-1:clamp(1.25rem,1.15rem + .45vw,1.5rem);
+  --step-2:clamp(1.55rem,1.35rem + .9vw,2.1rem);
+  --step-3:clamp(2rem,1.6rem + 1.8vw,3.1rem);
+  --step-4:clamp(2.6rem,1.9rem + 3.4vw,4.6rem);
+  --step-5:clamp(2.9rem,1.8rem + 5.2vw,6rem);
+  --gutter:clamp(1rem,.5rem + 2.6vw,3rem);
+  --max:1320px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --bar-h:34px;
+  --head-h:68px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--head-h) + 12px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:var(--step-0);line-height:1.6;font-feature-settings:"kern";-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+a:hover{text-decoration-color:var(--accent)}
+::selection{background:var(--accent);color:var(--ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.night :focus-visible{outline-color:var(--accent)}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1;margin:0;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--accent);color:var(--ink);padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+.ic{width:1.15em;height:1.15em;flex:none;--ic-duo:currentColor;--ic-duo-op:.22}
+.night{background:var(--night);color:var(--on-night)}
+.night ::selection{color:var(--ink)}
+
+/* concept bar */
+.concept{min-height:var(--bar-h);display:block;padding:9px 12px;background:var(--surface);color:var(--ink-soft);font-size:13px;line-height:1.2;text-align:center;border-bottom:1px solid var(--line)}
+.concept b{color:var(--ink);font-weight:600}
+
+/* header: the awning */
+.head{position:sticky;top:0;z-index:40;background:var(--night);color:var(--on-night)}
+.head::after{content:"";position:absolute;inset:auto 0 -6px 0;height:6px;background:linear-gradient(rgba(20,18,20,.18),transparent);pointer-events:none}
+.head .wrap{height:var(--head-h);display:flex;align-items:center;gap:clamp(12px,2vw,28px)}
+.brand{display:flex;align-items:center;flex:none;padding:8px 0;margin-right:auto}
+.brand img{width:auto;height:24px}
+.nav{display:flex;gap:clamp(14px,1.8vw,28px)}
+.nav a{font-size:15px;font-weight:500;text-decoration:none;color:var(--on-night-soft);padding:12px 2px;transition:color .2s}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--on-night)}
+.head-call{display:inline-flex;align-items:center;gap:8px;font-weight:500;font-size:15px;text-decoration:none;color:var(--on-night);padding:10px 4px;white-space:nowrap}
+.btn{--b:var(--accent);display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid transparent;background:var(--b);color:var(--accent-ink);font:600 16px/1 var(--text);text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .2s, transform .15s var(--ease), border-color .2s, color .2s}
+.btn:hover{--b:var(--accent-hover)}
+.btn:active{--b:var(--accent-pressed);transform:scale(.97)}
+.btn .ic{width:18px;height:18px}
+.btn--sm{min-height:44px;padding:0 18px;font-size:15px}
+.btn--ghost{background:transparent;border-color:currentColor;color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.night .btn--ghost{color:var(--on-night)}
+.night .btn--ghost:hover{background:var(--on-night);color:var(--ink);border-color:var(--on-night)}
+.menu-btn{display:none;width:44px;height:44px;border:0;border-radius:10px;background:transparent;color:var(--on-night);align-items:center;justify-content:center;cursor:pointer}
+.menu-btn .ic{width:24px;height:24px}
+@media (max-width:1060px){.nav{display:none}.menu-btn{display:inline-flex}}
+@media (max-width:640px){
+  :root{--head-h:60px;--bar-h:40px}
+  .head-call{display:none}
+  .brand img{height:19px}
+  .concept{font-size:12px}
+}
+@media (max-width:360px){.brand img{height:16px}.head .btn--sm{padding:0 14px}}
+
+/* mobile menu */
+.drawer{position:fixed;inset:0;z-index:60;background:var(--night);color:var(--on-night);display:flex;flex-direction:column;padding:16px var(--gutter) 28px;visibility:hidden;opacity:0;transition:opacity .3s var(--ease),visibility 0s linear .3s}
+.drawer.open{visibility:visible;opacity:1;transition:opacity .3s var(--ease)}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;min-height:48px}
+.drawer-top img{height:19px;width:auto}
+.drawer nav{display:flex;flex-direction:column;margin-top:5vh}
+.drawer nav a{font:600 clamp(2rem,9vw,3rem)/1.15 var(--display);letter-spacing:-.02em;text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line-night);transform:translateY(12px);opacity:0;transition:transform .5s var(--ease),opacity .5s var(--ease)}
+.drawer.open nav a{transform:none;opacity:1}
+.drawer.open nav a:nth-child(2){transition-delay:.04s}.drawer.open nav a:nth-child(3){transition-delay:.08s}.drawer.open nav a:nth-child(4){transition-delay:.12s}.drawer.open nav a:nth-child(5){transition-delay:.16s}.drawer.open nav a:nth-child(6){transition-delay:.2s}
+.drawer-cta{margin-top:auto;display:grid;gap:10px}
+.drawer-cta .btn{width:100%}
+
+/* hero */
+.hero{padding-top:clamp(20px,3.5vh,44px);position:relative}
+.hero-copy{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end;padding-bottom:clamp(18px,2.6vh,32px)}
+.hero h1{grid-column:1 / span 7;font-size:clamp(2.7rem,1.6rem + 4.2vw,5.4rem);line-height:.95;letter-spacing:-.03em}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.hero h1 .line > span{display:block}
+.hero-side{grid-column:8 / -1;padding-bottom:.4em}
+.hero-side p{color:var(--ink-soft);margin-bottom:18px;max-width:40ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font-size:15px;color:var(--ink);text-decoration:none;padding:6px 0}
+.rating .stars{display:inline-flex;color:var(--ink)}
+.rating .stars .ic{width:16px;height:16px;--ic-duo-op:1}
+.rating b{font-weight:700}
+.rating span{color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:.22em}
+.rating:hover span{text-decoration-color:var(--accent)}
+.facade{position:relative;margin:0;overflow:hidden;aspect-ratio:2000/760;max-height:78svh;background:#c9d6e3}
+.facade img{width:100%;height:100%;object-fit:cover;object-position:50% 66%;transform-origin:50% 60%}
+.facade figcaption{position:absolute;right:var(--gutter);bottom:14px;font-size:13px;color:#fff;background:rgba(20,18,20,.62);padding:6px 10px;border-radius:6px}
+@media (max-width:1180px){
+  .hero-copy{grid-template-columns:1fr}
+  .hero h1,.hero-side{grid-column:1/-1}
+  .hero-side{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 32px;align-items:end}
+  .hero-side p{margin:0;grid-row:1 / span 2}
+  .hero-side .rating{margin-top:0}
+}
+@media (max-width:760px){
+  .hero-side{display:block}
+  .hero-side p{margin-bottom:18px}
+  .hero-side .rating{margin-top:12px}
+}
+@media (max-width:640px){
+  .hero{padding-top:28px}
+  .hero h1{font-size:clamp(2.6rem,12.4vw,3.6rem)}
+  .hero-actions .btn{flex:1 1 100%}
+  .facade{height:auto;aspect-ratio:4/3.1}
+  .facade img{object-position:50% 52%}
+}
+/* hero entrance */
+.js .hero h1 .line > span{transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.js .hero h1 .line:nth-child(2) > span{animation-delay:.12s}
+.js .hero-side{opacity:0;transform:translateY(14px);animation:fade .8s var(--ease) .45s forwards}
+.js .hero .hero-actions{opacity:0;transform:translateY(10px);animation:fade .7s var(--ease) .75s forwards}
+.js .facade img{transform:scale(1.06);animation:settle 2.2s var(--ease) .1s forwards}
+@keyframes rise{to{transform:none}}
+@keyframes fade{to{opacity:1;transform:none}}
+@keyframes settle{to{transform:scale(1)}}
+
+/* section rhythm */
+section{position:relative}
+.sec{padding-block:clamp(72px,11vw,148px)}
+.sec-head{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-bottom:clamp(36px,5vw,64px);align-items:end}
+.sec-head h2{grid-column:1 / span 7;font-size:var(--step-4)}
+.sec-head p{grid-column:9 / span 4;color:var(--ink-soft);margin:0}
+.night .sec-head p{color:var(--on-night-soft)}
+@media (max-width:900px){.sec-head{grid-template-columns:1fr}.sec-head h2,.sec-head p{grid-column:1/-1}.sec-head p{margin-top:16px}}
+
+/* founder */
+.founder{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:center}
+.founder-photo{grid-column:1 / span 5;margin:0;position:relative;background:var(--surface)}
+.founder-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.founder-copy{grid-column:7 / span 6}
+.founder-copy h2{font-size:var(--step-4);margin-bottom:.45em}
+.founder-copy .lede{font-size:var(--step-1);line-height:1.45;color:var(--ink);max-width:34ch}
+.creds{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.creds li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.creds li span:last-child{color:var(--ink-soft);font-size:var(--step--1);text-align:right}
+.team{margin-top:40px}
+.team h3{font-size:var(--step-1);margin-bottom:14px}
+.team ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.team li{font-size:var(--step--1);color:var(--ink-soft);line-height:1.5}
+.team li b{display:block;color:var(--ink);font-size:var(--step-0);font-weight:600;margin-bottom:2px}
+@media (max-width:900px){
+  .founder{grid-template-columns:1fr}
+  .founder-photo,.founder-copy{grid-column:1/-1}
+  .founder-photo{margin-inline:calc(var(--gutter) * -1);margin-bottom:36px}
+  .founder-photo img{aspect-ratio:1/1.05}
+  .team ul{grid-template-columns:1fr}
+}
+
+/* proof */
+.proof{padding-block:clamp(72px,10vw,128px)}
+.proof-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.proof-score{grid-column:1 / span 6}
+.proof-score .big{font:600 clamp(6rem,4rem + 10vw,13rem)/.82 var(--display);letter-spacing:-.04em;display:block}
+.proof-score .big small{font-size:.3em;letter-spacing:-.01em;color:var(--on-night-soft);margin-left:.15em}
+.proof-score p{font-size:var(--step-1);line-height:1.4;margin:26px 0 22px;max-width:26ch}
+.proof-score .stars{display:flex;gap:4px;color:var(--accent);margin-top:22px}
+.proof-score .stars .ic{width:22px;height:22px;--ic-duo-op:1}
+.proof-themes{grid-column:8 / span 5;list-style:none;margin:0;padding:0;border-top:1px solid var(--line-night)}
+.proof-themes li{padding:20px 0;border-bottom:1px solid var(--line-night)}
+.proof-themes h3{font-size:var(--step-1);letter-spacing:-.01em;margin-bottom:6px}
+.proof-themes p{margin:0;color:var(--on-night-soft);font-size:var(--step--1)}
+.text-link{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;min-height:44px}
+.text-link .ic{transition:transform .25s var(--ease)}
+.text-link:hover .ic{transform:translate(2px,-2px)}
+.text-link u{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:.3em}
+@media (max-width:900px){.proof-grid{grid-template-columns:1fr}.proof-score,.proof-themes{grid-column:1/-1}.proof-themes{margin-top:44px}}
+
+/* treatments directory */
+.directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,5vw,72px) clamp(32px,5vw,88px)}
+.group h3{display:flex;align-items:center;gap:14px;font-size:var(--step-2);padding-bottom:16px;border-bottom:2px solid var(--ink)}
+.group h3 .tile{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--surface);flex:none}
+.group h3 .tile .ic{width:24px;height:24px;--ic-duo:var(--accent);--ic-duo-op:.55}
+.group .for{color:var(--ink-soft);font-size:var(--step--1);margin:14px 0 6px}
+.group ul{list-style:none;margin:0;padding:0}
+.group li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-weight:500}
+.group li span:last-child{color:var(--ink-soft);font-weight:400;font-size:var(--step--1);text-align:right}
+.directory-foot{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;margin-top:clamp(40px,5vw,64px);padding:24px 28px;background:var(--paper);border-radius:16px}
+.directory-foot p{margin:0;max-width:56ch;color:var(--ink-soft)}
+.directory-foot p b{color:var(--ink)}
+@media (max-width:820px){.directory{grid-template-columns:1fr}.directory-foot{padding:22px 20px}.directory-foot .btn{width:100%}}
+
+/* memberships */
+.sculpt{background:var(--surface)}
+.sculpt-top{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end;margin-bottom:clamp(32px,4vw,52px)}
+.sculpt-top h2{grid-column:1 / span 7;font-size:var(--step-4)}
+.sculpt-top h2 em{font-style:normal;color:#B3186C}
+.sculpt-top .side{grid-column:9 / span 4}
+.sculpt-top .side p{color:var(--ink-soft);margin-bottom:18px}
+.tabs{display:inline-flex;padding:4px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.tabs button{min-height:44px;padding:0 20px;border:0;border-radius:999px;background:transparent;color:var(--ink-soft);font:600 15px/1 var(--text);cursor:pointer;transition:background-color .25s var(--ease),color .25s}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tabs button:hover:not([aria-selected="true"]){color:var(--ink)}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+.plan{padding:28px clamp(18px,2.4vw,36px) 32px;border-right:1px solid var(--line);position:relative}
+.plan:first-child{padding-left:0}
+.plan:last-child{border-right:0;padding-right:0}
+.plan h3{font-size:var(--step-2);display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.plan .term{font:500 var(--step--1)/1.3 var(--text);letter-spacing:0;color:var(--ink-soft)}
+.plan .price{display:flex;align-items:baseline;gap:6px;margin:22px 0 4px}
+.plan .price b{font:600 clamp(3rem,2.2rem + 2.6vw,4.6rem)/1 var(--display);letter-spacing:-.03em}
+.plan .price span{color:var(--ink-soft);font-size:var(--step--1)}
+.plan .dose{font-weight:600;margin:0 0 16px;min-height:1.6em}
+.plan ul{list-style:none;margin:0;padding:0;font-size:var(--step--1);color:var(--ink-soft)}
+.plan li{display:flex;gap:10px;padding:6px 0}
+.plan li .ic{color:var(--ink);margin-top:.2em;width:16px;height:16px;--ic-duo-op:0}
+.plan .flag{position:absolute;top:-2px;left:clamp(18px,2.4vw,36px);transform:translateY(-100%);background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:700;padding:5px 10px;border-radius:6px 6px 0 0}
+.plan:first-child .flag{left:0}
+.panel[hidden]{display:none}
+.js .panel.show .plan{animation:fade .6s var(--ease) both}
+.js .panel.show .plan:nth-child(2){animation-delay:.06s}
+.js .panel.show .plan:nth-child(3){animation-delay:.12s}
+.panel .plan{opacity:1}
+.sculpt-note{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;margin-top:36px;padding-top:24px;border-top:1px solid var(--line)}
+.sculpt-note p{margin:0;font-size:var(--step--1);color:var(--ink-soft);max-width:62ch}
+@media (max-width:900px){
+  .sculpt-top{grid-template-columns:1fr}.sculpt-top h2,.sculpt-top .side{grid-column:1/-1}.sculpt-top .side{margin-top:18px}
+  .plans{grid-template-columns:1fr;border-top:0}
+  .plan,.plan:first-child,.plan:last-child{padding:26px 0 24px;border-right:0;border-top:2px solid var(--ink)}
+  .plan .flag,.plan:first-child .flag{left:auto;right:0}
+  .plan .price{margin-top:14px}
+  .tabs{display:flex}.tabs button{flex:1}
+  .sculpt-note .btn{width:100%}
+}
+
+/* results */
+.results-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,24px);align-items:start}
+.result{margin:0}
+.result img{width:100%;border-radius:4px;background:var(--surface)}
+.result figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:12px;font-size:var(--step--1);color:var(--ink-soft)}
+.result figcaption b{color:var(--ink);font-weight:600}
+.result--a{grid-column:1 / span 5}
+.result--b{grid-column:6 / span 4;margin-top:clamp(40px,8vw,120px)}
+.result--c{grid-column:10 / span 3;margin-top:clamp(12px,3vw,40px)}
+.results-foot{margin-top:28px;font-size:var(--step--1);color:var(--ink-soft);max-width:70ch}
+@media (max-width:820px){
+  .results-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);gap:14px;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scrollbar-width:none;padding-bottom:6px}
+  .results-grid::-webkit-scrollbar{display:none}
+  .result{flex:0 0 78%;scroll-snap-align:start;margin-top:0 !important}
+}
+
+/* InjectifyU */
+.u{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:center}
+.u-photos{grid-column:1 / span 5;position:relative;margin:0}
+.u-photos img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.u-copy{grid-column:7 / span 6}
+.u-copy h2{font-size:var(--step-4);margin-bottom:.4em}
+.u-copy .lede{color:var(--on-night-soft);max-width:52ch}
+.courses{list-style:none;margin:30px 0 26px;padding:0;border-top:1px solid var(--line-night)}
+.courses li{padding:18px 0;border-bottom:1px solid var(--line-night)}
+.courses h3{font-size:var(--step-1);letter-spacing:-.01em;margin-bottom:6px}
+.courses p{margin:0;color:var(--on-night-soft);font-size:var(--step--1)}
+.u-included{font-size:var(--step--1);color:var(--on-night-soft);margin-bottom:26px}
+.u-actions{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){.u{grid-template-columns:1fr}.u-photos,.u-copy{grid-column:1/-1}.u-photos{margin-bottom:40px}.u-photos img{aspect-ratio:1/1}.u-actions .btn{flex:1 1 100%}}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(32px,4vw,48px) 24px}
+.locs{grid-column:1 / span 7;display:grid;gap:0}
+.loc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;padding:26px 0;border-top:2px solid var(--ink)}
+.loc:last-child{border-bottom:1px solid var(--line)}
+.loc h3{font-size:var(--step-2);grid-column:1/-1}
+.loc address{font-style:normal;color:var(--ink-soft)}
+.loc .text-link{grid-row:2 / span 2;grid-column:2;align-self:end}
+.loc small{color:var(--ink-soft);font-size:var(--step--1)}
+.hours{grid-column:9 / span 4}
+.hours h3{font-size:var(--step-1);margin-bottom:12px}
+.hours table{width:100%;border-collapse:collapse;font-size:var(--step--1)}
+.hours th,.hours td{padding:10px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours td{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.today th,.hours tr.today td{font-weight:700;color:var(--ink)}
+.hours tr.today th::after{content:" · Today";font-weight:500;color:var(--ink-soft)}
+.contact-lines{margin-top:28px;display:grid;gap:4px}
+.contact-lines a{display:inline-flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;font-weight:500}
+.contact-lines a:hover span{text-decoration:underline;text-decoration-color:var(--accent)}
+@media (max-width:900px){.visit-grid{grid-template-columns:1fr}.locs,.hours{grid-column:1/-1}.loc{grid-template-columns:1fr}.loc .text-link{grid-row:auto;grid-column:1}}
+
+/* closing */
+.close{position:relative;overflow:hidden;padding-block:clamp(88px,13vw,180px);text-align:center}
+.close h2{font-size:var(--step-5);letter-spacing:-.03em;max-width:13ch;margin:0 auto .35em}
+.close p{color:var(--on-night-soft);max-width:46ch;margin:0 auto 32px}
+.close .hero-actions{justify-content:center}
+.close .doors{position:absolute;inset:auto 0 0 0;height:100%;pointer-events:none;opacity:.06;background:url(images/syringe.png) center 120%/auto 92% no-repeat}
+@media (max-width:640px){.close .hero-actions .btn{flex:1 1 100%}}
+
+/* footer */
+.foot{background:var(--night);color:var(--on-night);padding:clamp(56px,7vw,88px) 0 calc(28px + env(safe-area-inset-bottom))}
+.foot-logo{width:100%;max-width:1100px;height:auto;margin:0 auto clamp(40px,6vw,72px);opacity:.96}
+.foot-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:32px 24px;padding-top:36px;border-top:1px solid var(--line-night)}
+.foot-col{grid-column:span 3}
+.foot-col.wide{grid-column:span 4}
+.foot-col.narrow{grid-column:span 2}
+.foot h3{font:600 14px/1.2 var(--text);letter-spacing:.06em;text-transform:uppercase;color:var(--on-night-soft);margin-bottom:14px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li a,.foot address a{display:inline-flex;align-items:center;gap:10px;min-height:40px;text-decoration:none;color:var(--on-night)}
+.foot li a:hover{color:var(--accent-hover)}
+.foot address{font-style:normal;color:var(--on-night-soft);line-height:1.5}
+.foot address p{margin:0 0 12px}
+.fine{margin-top:48px;padding-top:22px;border-top:1px solid var(--line-night);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px;color:var(--on-night-soft)}
+.fine a{color:var(--on-night)}
+@media (max-width:900px){.foot-col,.foot-col.wide,.foot-col.narrow{grid-column:span 6}}
+@media (max-width:560px){.foot-col,.foot-col.wide,.foot-col.narrow{grid-column:1/-1}.foot{padding-bottom:calc(96px + env(safe-area-inset-bottom))}}
+
+/* signature: the syringe I from their sign fills as you scroll */
+.dose{position:fixed;right:clamp(14px,1.6vw,26px);top:50%;z-index:30;width:20px;height:76px;transform:translateY(-50%);pointer-events:none;
+  -webkit-mask:url(images/syringe.png) center/contain no-repeat;mask:url(images/syringe.png) center/contain no-repeat;
+  background:linear-gradient(to top,var(--accent) 0 var(--p,0%),rgba(128,118,124,.55) var(--p,0%) 100%);transition:opacity .4s}
+.dose.hide{opacity:0}
+@media (max-width:1100px),(hover:none){.dose{display:none}}
+
+/* phone action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:35;display:none;grid-template-columns:1fr 1.25fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,18,20,.96);transform:translateY(110%);transition:transform .4s var(--ease)}
+.mbar.on{transform:none}
+.mbar .btn{width:100%}
+@media (max-width:640px){.mbar{display:grid}}
+
+/* reveals */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv-d1{transition-delay:.08s}.js .rv-d2{transition-delay:.16s}
+
+@media (hover:hover) and (pointer:fine){
+  .result img{transition:transform .6s var(--ease)}
+  .result:hover img{transform:scale(1.015)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js .hero h1 .line > span,.js .hero-side,.js .hero .hero-actions,.js .facade img,.js .rv{opacity:1 !important;transform:none !important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V88H40V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 256 256" fill="currentColor"><path d="M229.06,108.79l-48.7,42,14.88,62.79a8.4,8.4,0,0,1-12.52,9.17L128,189.09,73.28,222.74a8.4,8.4,0,0,1-12.52-9.17l14.88-62.79-48.7-42A8.46,8.46,0,0,1,31.73,94L95.64,88.8l24.62-59.6a8.36,8.36,0,0,1,15.48,0l24.62,59.6L224.27,94A8.46,8.46,0,0,1,229.06,108.79Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M192,64V168L88,64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M192,56H88a8,8,0,0,0-5.66,13.66L128.69,116,58.34,186.34a8,8,0,0,0,11.32,11.32L140,127.31l46.34,46.35A8,8,0,0,0,200,168V64A8,8,0,0,0,192,56Zm-8,92.69-38.34-38.34h0L107.31,72H184Z"/></symbol>
+<symbol id="i-syringe" viewBox="0 0 256 256" fill="currentColor"><path d="M196,116l-89.66,89.66a8,8,0,0,1-5.65,2.34H48V155.31a8,8,0,0,1,2.34-5.65L140,60Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M237.66,66.34l-48-48a8,8,0,0,0-11.32,11.32L196.69,48,168,76.69,133.66,42.34a8,8,0,0,0-11.32,11.32L128.69,60l-84,84A15.86,15.86,0,0,0,40,155.31v49.38L18.34,226.34a8,8,0,0,0,11.32,11.32L51.31,216h49.38A15.86,15.86,0,0,0,112,211.31l84-84,6.34,6.35a8,8,0,0,0,11.32-11.32L179.31,88,208,59.31l18.34,18.35a8,8,0,0,0,11.32-11.32ZM100.69,200H56V155.31l18-18,20.34,20.35a8,8,0,0,0,11.32-11.32L85.31,126,98,113.31l20.34,20.35a8,8,0,0,0,11.32-11.32L109.31,102,140,71.31,184.69,116Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 256 256" fill="currentColor"><path d="M208,144a80,80,0,0,1-160,0c0-72,80-128,80-128S208,72,208,144Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 256 256" fill="currentColor"><path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></symbol>
+<symbol id="i-heartbeat" viewBox="0 0 256 256" fill="currentColor"><path d="M232,102c0,66-104,122-104,122S24,168,24,102A54,54,0,0,1,78,48c22.59,0,41.94,12.31,50,32,8.06-19.69,27.41-32,50-32A54,54,0,0,1,232,102Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M72,144H32a8,8,0,0,1,0-16H67.72l13.62-20.44a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,128h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,126.42l-9.34,14A8,8,0,0,1,72,144ZM178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40Z"/></symbol>
+<symbol id="i-instagram-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 256 256" fill="currentColor"><path d="M216,113.07v53.22a8,8,0,0,1-2,5.31c-11.3,12.59-38.9,36.4-86,36.4s-74.68-23.81-86-36.4a8,8,0,0,1-2-5.31V113.07L128,160Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"/></symbol>
+<symbol id="i-list" viewBox="0 0 256 256" fill="currentColor"><path d="M216,64V192H40V64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-x" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56V200a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V56A16,16,0,0,1,56,40H200A16,16,0,0,1,216,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,85.66l-96,96a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L104,164.69l90.34-90.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+<symbol id="i-envelope-simple" viewBox="0 0 256 256" fill="currentColor"><path d="M224,56l-96,88L32,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+<div class="concept" role="note">Design concept prepared for <b>Injectify</b> by Drusus Technologies. Not the live site.</div>
+
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Injectify, back to top"><img src="images/logo-white.png" alt="Injectify" width="1989" height="335"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#treatments">Treatments</a>
+      <a href="#weight-loss">Weight loss</a>
+      <a href="#results">Results</a>
+      <a href="#provider">Your provider</a>
+      <a href="#injectifyu">InjectifyU</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="head-call num" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>(956) 997-1057</a>
+    <a class="btn btn--sm" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener">Book online</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <img src="images/logo-white.png" alt="Injectify" width="1989" height="335">
+    <button class="menu-btn" type="button" data-close aria-label="Close menu" style="display:inline-flex"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Menu">
+    <a href="#treatments">Treatments</a>
+    <a href="#weight-loss">Weight loss</a>
+    <a href="#results">Results</a>
+    <a href="#provider">Your provider</a>
+    <a href="#injectifyu">InjectifyU</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="drawer-cta">
+    <a class="btn" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+    <a class="btn btn--ghost" style="color:var(--on-night)" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call (956) 997-1057</a>
+  </div>
+</div>
+
+<main id="main">
+<!-- HERO: their own line, set like the letters on their wall, over the real building -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-copy">
+    <h1 id="hero-title"><span class="line"><span>Confidence</span></span><span class="line"><span>starts here.</span></span></h1>
+    <div class="hero-side">
+      <p>Tox, filler, skin, medical weight loss and wellness in McAllen, planned with you by a nurse practitioner with more than 18 years in nursing.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+        <a class="btn btn--ghost num" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call (956) 997-1057</a>
+      </div>
+      <a class="rating" href="https://www.google.com/maps/search/?api=1&amp;query=Injectify%20McAllen%20TX&amp;query_place_id=ChIJSYW4iJOnZYYRlh7KUpuAC-E" target="_blank" rel="noopener">
+        <span class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+        <b class="num">4.9<span class="sr-only"> out of 5 stars from</span></b><span class="num">205 Google reviews</span>
+      </a>
+    </div>
+  </div>
+  <figure class="facade">
+    <img src="images/hero-building.webp" srcset="images/hero-building-sm.webp 900w, images/hero-building.webp 2000w" sizes="100vw" width="2000" height="1330" alt="The Injectify building on South 12th Street in McAllen: white stucco, black steel doors, black awnings and the Injectify sign across the front." fetchpriority="high">
+    <figcaption>812 S 12th St, McAllen</figcaption>
+  </figure>
+</section>
+
+<!-- PROVIDER -->
+<section class="sec" id="provider" aria-labelledby="provider-title">
+  <div class="wrap founder">
+    <figure class="founder-photo rv">
+      <img src="images/adriana.webp" width="1100" height="1375" loading="lazy" decoding="async" alt="Adriana Moreno, owner of Injectify, in a red dress against a pale stucco wall.">
+    </figure>
+    <div class="founder-copy">
+      <h2 id="provider-title" class="rv">Meet Adriana Moreno, the provider behind every plan.</h2>
+      <p class="lede rv rv-d1">Adriana founded Injectify in 2022 to bring medical expertise, aesthetics and wellness under one roof, so every patient can look, feel and live their best.</p>
+      <ul class="creds rv rv-d2">
+        <li><span>Doctor of Nursing Practice</span><span>Degree</span></li>
+        <li><span>Board-Certified Family Nurse Practitioner</span><span>Certification</span></li>
+        <li><span>Emergency Trauma Nurse Practitioner</span><span>Specialty</span></li>
+        <li><span>Nursing and advanced practice</span><span class="num">18+ years</span></li>
+      </ul>
+      <div class="team rv">
+        <h3>And the team you’ll see on every visit</h3>
+        <ul>
+          <li><b>Kayla</b>Seven years in the medical field; a favorite in reviews for lip flips and tox.</li>
+          <li><b>Ashley Gonzalez, LVN</b>Weight loss consultations, weight management and IV therapy.</li>
+          <li><b>Priscilla</b>PDRN and microneedling specialist for radiant, rejuvenated skin.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="night proof" aria-labelledby="proof-title">
+  <div class="wrap proof-grid">
+    <div class="proof-score rv">
+      <h2 id="proof-title" class="sr-only">What patients say</h2>
+      <span class="big num" aria-hidden="true">4.9<small>/5</small></span>
+      <div class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+      <p>Rated 4.9 out of 5 across <span class="num">205</span> Google reviews.</p>
+      <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Injectify%20McAllen%20TX&amp;query_place_id=ChIJSYW4iJOnZYYRlh7KUpuAC-E" target="_blank" rel="noopener"><u>Read the reviews on Google</u><svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+    </div>
+    <ul class="proof-themes">
+      <li class="rv"><h3>Everything gets explained</h3><p>Patients say Dr. Moreno and Kayla take time for every question before anything starts.</p></li>
+      <li class="rv rv-d1"><h3>Comfortable from the first minute</h3><p>A gentle hand and a welcoming front desk come up again and again, even from first-timers.</p></li>
+      <li class="rv rv-d2"><h3>Results that look like you</h3><p>Natural-looking lips and tox are the most-mentioned outcome.</p></li>
+      <li class="rv"><h3>Promos worth coming back for</h3><p>Regulars mention the monthly specials by name.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- TREATMENTS: a suite directory -->
+<section class="sec" id="treatments" aria-labelledby="treat-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="treat-title" class="rv">Every treatment, grouped by what you want to change.</h2>
+      <p class="rv rv-d1">Not sure where to start? Book a consultation and Adriana’s team will build the plan with you.</p>
+    </div>
+    <div class="directory">
+      <div class="group rv">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-syringe"/></svg></span>Face &amp; lips</h3>
+        <p class="for">Soften lines, restore volume, balance your profile.</p>
+        <ul>
+          <li><span>Tox (neurotoxin)</span><span>Forehead, frown lines, crow’s feet</span></li>
+          <li><span>Lip flip</span><span>Tox for a fuller-looking top lip</span></li>
+          <li><span>Lip filler</span><span>Shape and volume</span></li>
+          <li><span>Lip dissolver</span><span>Reset old filler</span></li>
+          <li><span>Masseter tox</span><span>Jaw slimming and clenching</span></li>
+          <li><span>Chin filler &amp; facial balancing</span><span>Profile and proportion</span></li>
+          <li><span>Liquid rhinoplasty</span><span>Non-surgical nose shaping</span></li>
+          <li><span>Radiesse &amp; Sculptra</span><span>Collagen-building fillers</span></li>
+        </ul>
+      </div>
+      <div class="group rv rv-d1">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg></span>Skin</h3>
+        <p class="for">Texture, scars, tone and glow.</p>
+        <ul>
+          <li><span>Morpheus8</span><span>Radiofrequency microneedling</span></li>
+          <li><span>SkinPen microneedling</span><span>Texture and acne scars</span></li>
+          <li><span>PDRN</span><span>Skin repair and rejuvenation</span></li>
+          <li><span>Botox facials</span><span>Smooth, refined skin</span></li>
+          <li><span>Keloid treatment</span><span>Raised scars</span></li>
+          <li><span>Hydrinity skincare</span><span>Take-home products</span></li>
+        </ul>
+      </div>
+      <div class="group rv">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg></span>Body &amp; weight</h3>
+        <p class="for">Medically guided weight loss and body shaping.</p>
+        <ul>
+          <li><span>Semaglutide</span><span>InjectiSculpt memberships</span></li>
+          <li><span>Tirzepatide</span><span>InjectiSculpt memberships</span></li>
+          <li><span>Weight loss consultation</span><span>With Ashley Gonzalez, LVN</span></li>
+          <li><span>Peptide therapy</span><span>Goal-based plans</span></li>
+          <li><span>Liquid BBL</span><span>Non-surgical contouring</span></li>
+        </ul>
+      </div>
+      <div class="group rv rv-d1">
+        <h3><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-heartbeat"/></svg></span>Wellness &amp; medical</h3>
+        <p class="for">Energy, hormones and everyday medical care.</p>
+        <ul>
+          <li><span>IV hydration</span><span>Vitamins and fluids</span></li>
+          <li><span>Hormone replacement therapy</span><span>Consultation and follow-up</span></li>
+          <li><span>Testosterone injections</span><span>Ongoing care</span></li>
+          <li><span>Wellness pod</span><span>Recovery and relaxation</span></li>
+          <li><span>Lab work &amp; physicals</span><span>Medical consultations</span></li>
+          <li><span>Skin tag &amp; ingrown toenail removal</span><span>Quick in-office procedures</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="directory-foot rv">
+      <p><b>Pricing depends on your plan,</b> so it’s set at your consultation. Weight loss memberships are the exception, and they’re listed right below.</p>
+      <a class="btn" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book a consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- WEIGHT LOSS MEMBERSHIPS -->
+<section class="sec sculpt" id="weight-loss" aria-labelledby="sculpt-title">
+  <div class="wrap">
+    <div class="sculpt-top">
+      <h2 id="sculpt-title" class="rv">InjectiSculpt: weight loss with <em>one flat monthly price.</em></h2>
+      <div class="side rv rv-d1">
+        <p>Monthly injections or a take-home supply, guided by the Injectify team. Commit longer, pay less each month.</p>
+        <div class="tabs" role="tablist" aria-label="Medication">
+          <button type="button" role="tab" id="tab-sema" aria-controls="panel-sema" aria-selected="true">Semaglutide</button>
+          <button type="button" role="tab" id="tab-tirz" aria-controls="panel-tirz" aria-selected="false" tabindex="-1">Tirzepatide</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel show" id="panel-sema" role="tabpanel" aria-labelledby="tab-sema" tabindex="0">
+      <div class="plans">
+        <article class="plan">
+          <h3>Essential <span class="term">3-month plan</span></h3>
+          <p class="price num"><b>$275</b><span>per month</span></p>
+          <p class="dose">Same price at any dose</p>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Made for first-timers who want flexibility</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Take-home option available</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Monthly auto-pay or pay all 3 months up front</li>
+          </ul>
+        </article>
+        <article class="plan">
+          <span class="flag">Most popular</span>
+          <h3>Signature <span class="term">6-month plan</span></h3>
+          <p class="price num"><b>$225</b><span>per month</span></p>
+          <p class="dose">Same price at any dose</p>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Bigger savings for steady progress</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Monthly injections or take-home supply</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Pay monthly or all 6 months up front</li>
+          </ul>
+        </article>
+        <article class="plan">
+          <h3>Elite <span class="term">12-month plan</span></h3>
+          <p class="price num"><b>$199</b><span>per month</span></p>
+          <p class="dose">Same price at any dose</p>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Lowest monthly rate for long-term results</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Take-home option included</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Monthly billing or 12-month prepay</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-tirz" role="tabpanel" aria-labelledby="tab-tirz" tabindex="0" hidden>
+      <div class="plans">
+        <article class="plan">
+          <h3>Essential <span class="term">3-month plan</span></h3>
+          <p class="price num"><b>$249</b><span>per month</span></p>
+          <p class="dose num">Dose 2.5 mg – 5 mg</p>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Flat rate for 3 months</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Take-home option available</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Monthly auto-pay or pay all 3 months up front</li>
+          </ul>
+        </article>
+        <article class="plan">
+          <h3>Signature <span class="term">3-month plan</span></h3>
+          <p class="price num"><b>$349</b><span>per month</span></p>
+          <p class="dose num">Dose 7.5 mg – 10 mg</p>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Flat rate for 3 months</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Monthly injections or take-home supply</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Pay monthly or all 3 months up front</li>
+          </ul>
+        </article>
+        <article class="plan">
+          <h3>Elite <span class="term">3-month plan</span></h3>
+          <p class="price num"><b>$449</b><span>per month</span></p>
+          <p class="dose num">Dose 12.5 mg – 15 mg</p>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Same price within your dose range</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Take-home option included</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Monthly billing or 3-month prepay</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="sculpt-note">
+      <p>Each month’s supply is picked up the week before the new month and used within that month. An early termination fee applies. Prices are from Injectify’s current membership flyers; your plan is confirmed at your consultation.</p>
+      <a class="btn" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book a weight loss consult</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec" id="results" aria-labelledby="results-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="results-title" class="rv">Real patients. Real Injectify results.</h2>
+      <p class="rv rv-d1">Before-and-after photos of Injectify patients, from Injectify’s own work. Individual results vary.</p>
+    </div>
+    <div class="results-grid" tabindex="0" aria-label="Before and after photos. Swipe sideways on a phone to see more.">
+      <figure class="result result--a rv">
+        <img src="images/result-balancing.webp" width="1121" height="1400" loading="lazy" decoding="async" alt="Facial balancing before and after: the same patient side by side, with a more defined chin and jawline after.">
+        <figcaption><b>Facial balancing</b><span>Before / after</span></figcaption>
+      </figure>
+      <figure class="result result--b rv rv-d1">
+        <img src="images/result-lips.webp" width="1102" height="1400" loading="lazy" decoding="async" alt="Lip filler result on a patient, with a small inset photo of her lips before treatment.">
+        <figcaption><b>Lip filler</b><span>Before inset</span></figcaption>
+      </figure>
+      <figure class="result result--c rv rv-d2">
+        <img src="images/result-lips-trio.webp" width="1112" height="1400" loading="lazy" decoding="async" alt="Three close-ups of a patient’s lips after lip filler, glossy and evenly shaped.">
+        <figcaption><b>Lip filler</b><span>Three angles</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- INJECTIFYU -->
+<section class="night sec" id="injectifyu" aria-labelledby="u-title">
+  <div class="wrap u">
+    <figure class="u-photos rv">
+      <img src="images/injectifyu-class.webp" width="1100" height="1272" loading="lazy" decoding="async" alt="InjectifyU students holding their training certificates in the Injectify office.">
+    </figure>
+    <div class="u-copy">
+      <h2 id="u-title" class="rv">InjectifyU: learn to inject from the injectors.</h2>
+      <p class="lede rv rv-d1">One-on-one, hands-on training in McAllen for nurses and medical professionals. Dates are set around your schedule and your instructor’s.</p>
+      <ul class="courses">
+        <li class="rv"><h3>Fundamental Tox Course</h3><p>Current tox trends and techniques, from head to toe.</p></li>
+        <li class="rv rv-d1"><h3>Advanced Facial Rejuvenation</h3><p>Full-face balancing: temples, cheeks, mid-face, nasolabial folds and chin.</p></li>
+        <li class="rv rv-d2"><h3>Lip Filler &amp; Lip Flip Masterclass</h3><p>Lip anatomy, signature technique, managing complications, and a live patient demo with hands-on practice.</p></li>
+      </ul>
+      <p class="u-included rv">Materials and models are included, and students keep getting mentorship after class.</p>
+      <div class="u-actions rv">
+        <a class="btn" href="https://injectifymedspa.com/injectifyu/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-graduation-cap"/></svg>Request course dates</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/injectifyu" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg>@injectifyu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="sec" id="visit" aria-labelledby="visit-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="visit-title" class="rv">Two doors in McAllen. One team.</h2>
+      <p class="rv rv-d1">Choose your location when you book online, or call and we’ll find you a time.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="locs">
+        <div class="loc rv">
+          <h3>South 12th Street</h3>
+          <address>812 South 12th Street<br>McAllen, Texas 78501</address>
+          <small>The white building with the black awnings</small>
+          <a class="text-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Injectify%20Wellness%20%2B%20Med%20Spa%20812%20S%2012th%20St%20McAllen%20TX%2078501&amp;destination_place_id=ChIJL2tCAYynZYYR2NMDExhio2g" target="_blank" rel="noopener"><u>Get directions</u><svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+        <div class="loc rv rv-d1">
+          <h3>North 23rd Street</h3>
+          <address>4400 North 23rd Street, Suite 302<br>McAllen, Texas 78504</address>
+          <small>Home of the 205 Google reviews</small>
+          <a class="text-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Injectify%204400%20N%2023rd%20St%20Ste%20302%20McAllen%20TX%2078504&amp;destination_place_id=ChIJSYW4iJOnZYYRlh7KUpuAC-E" target="_blank" rel="noopener"><u>Get directions</u><svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+      </div>
+      <div class="hours rv rv-d1">
+        <h3>Hours</h3>
+        <table>
+          <caption class="sr-only">Opening hours</caption>
+          <tbody>
+            <tr data-d="1"><th scope="row">Monday</th><td>10:00 AM – 3:00 PM</td></tr>
+            <tr data-d="2"><th scope="row">Tuesday</th><td>10:00 AM – 5:00 PM</td></tr>
+            <tr data-d="3"><th scope="row">Wednesday</th><td>10:00 AM – 7:00 PM</td></tr>
+            <tr data-d="4"><th scope="row">Thursday</th><td>10:00 AM – 5:00 PM</td></tr>
+            <tr data-d="5"><th scope="row">Friday</th><td>10:00 AM – 5:00 PM</td></tr>
+            <tr data-d="6"><th scope="row">Saturday</th><td>9:00 AM – 3:00 PM</td></tr>
+            <tr data-d="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="contact-lines">
+          <a class="num" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>(956) 997-1057</span></a>
+          <a href="mailto:injectifymedspa@yahoo.com"><svg class="ic" aria-hidden="true"><use href="#i-envelope-simple"/></svg><span>injectifymedspa@yahoo.com</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="night close" aria-labelledby="close-title">
+  <div class="doors" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 id="close-title" class="rv">Your plan starts with one conversation.</h2>
+    <p class="rv rv-d1">Book a consultation online in a minute, or call and talk to the team directly.</p>
+    <div class="hero-actions rv rv-d2">
+      <a class="btn" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book a consultation</a>
+      <a class="btn btn--ghost num" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call (956) 997-1057</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img class="foot-logo" src="images/logo-white.png" alt="Injectify" width="1989" height="335" loading="lazy">
+    <div class="foot-grid">
+      <div class="foot-col wide">
+        <h3>Visit</h3>
+        <address>
+          <p>812 South 12th Street<br>McAllen, Texas 78501</p>
+          <p>4400 North 23rd Street, Suite 302<br>McAllen, Texas 78504</p>
+          <a class="num" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>(956) 997-1057</a><br>
+          <a href="mailto:injectifymedspa@yahoo.com">injectifymedspa@yahoo.com</a>
+        </address>
+      </div>
+      <div class="foot-col">
+        <h3>Hours</h3>
+        <address class="num">
+          <p>Monday 10:00 AM – 3:00 PM<br>Tuesday 10:00 AM – 5:00 PM<br>Wednesday 10:00 AM – 7:00 PM<br>Thursday &amp; Friday 10:00 AM – 5:00 PM<br>Saturday 9:00 AM – 3:00 PM<br>Sunday closed</p>
+        </address>
+      </div>
+      <div class="foot-col narrow">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#weight-loss">Weight loss</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#injectifyu">InjectifyU</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/injectifywellness_medspa" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg>@injectifywellness_medspa</a></li>
+          <li><a href="https://www.instagram.com/injectifyu" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg>@injectifyu</a></li>
+          <li><a href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>Design concept by Drusus Technologies for Injectify. Photos from Injectify’s own website. Not the live site.</span>
+      <span><a href="logo.html">Compare logo ideas</a> · © <span class="num">2026</span> Injectify</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dose" aria-hidden="true"></div>
+
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn btn--ghost" style="color:var(--on-night)" href="tel:+19569971057"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn" href="https://injectify-106823.square.site/s/appointments" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+</div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // section reveals
+  // checked on every scroll frame (more dependable than IntersectionObserver during fast flicks)
+  let pending = [...document.querySelectorAll('.rv')];
+  if (reduce) { pending.forEach(el => el.classList.add('in')); pending = []; }
+  function reveal() {
+    if (!pending.length) return;
+    const limit = innerHeight * 0.94;
+    pending = pending.filter(el => {
+      if (el.getBoundingClientRect().top < limit) { el.classList.add('in'); return false; }
+      return true;
+    });
+  }
+
+  // today's hours
+  const today = new Date().getDay();
+  document.querySelector(`.hours tr[data-d="${today}"]`)?.classList.add('today');
+
+  // mobile menu with focus trap
+  const drawer = document.getElementById('drawer');
+  const openBtn = document.querySelector('.head .menu-btn');
+  let lastFocus = null;
+  const focusables = () => drawer.querySelectorAll('a,button');
+  function openMenu() {
+    lastFocus = document.activeElement;
+    drawer.classList.add('open');
+    openBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => drawer.querySelector('[data-close]').focus(), 50);
+  }
+  function closeMenu() {
+    drawer.classList.remove('open');
+    openBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    lastFocus?.focus();
+  }
+  openBtn.addEventListener('click', openMenu);
+  drawer.querySelector('[data-close]').addEventListener('click', closeMenu);
+  drawer.querySelectorAll('nav a').forEach(a => a.addEventListener('click', closeMenu));
+  drawer.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+    if (e.key === 'Tab') {
+      const f = focusables(), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  // membership tabs
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  function select(tab) {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      const p = document.getElementById(t.getAttribute('aria-controls'));
+      p.hidden = !on;
+      p.classList.toggle('show', on);
+    });
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+        select(n); n.focus(); e.preventDefault();
+      }
+    });
+  });
+
+  // scroll: the syringe fills, nav highlights, phone bar appears after the hero
+  const dose = document.querySelector('.dose');
+  const mbar = document.querySelector('.mbar');
+  const hero = document.querySelector('.hero');
+  const foot = document.querySelector('.foot');
+  const links = [...document.querySelectorAll('.nav a')];
+  const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+  let ticking = false;
+  function onScroll() {
+    ticking = false;
+    reveal();
+    const y = scrollY, max = document.documentElement.scrollHeight - innerHeight;
+    dose.style.setProperty('--p', (Math.min(1, y / max) * 100).toFixed(1) + '%');
+    const pastHero = y > hero.offsetHeight * 0.75;
+    const atFoot = foot.getBoundingClientRect().top < innerHeight * 0.9;
+    dose.classList.toggle('hide', !pastHero || atFoot);
+    mbar.classList.toggle('on', pastHero && !atFoot);
+    let cur = -1, best = -Infinity;
+    secs.forEach((s, i) => {
+      const t = s.getBoundingClientRect().top;
+      if (t < innerHeight * 0.4 && t > best) { best = t; cur = i; }
+    });
+    if (cur > -1 && secs[cur].getBoundingClientRect().bottom < innerHeight * 0.3) cur = -1;
+    links.forEach((a, i) => i === cur ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
+  }
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
