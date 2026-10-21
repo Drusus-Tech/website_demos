@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Ivy Med Spa · Physician-led aesthetics in Edinburg, Texas</title>
+<meta name="description" content="Ivy Med Spa in Edinburg, Texas: Botox, dermal fillers, PDO threads, Morpheus8, laser, medical facials, IV therapy and physician-supervised weight loss. Rated 5.0 on Google.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1B16">
+<meta property="og:title" content="Ivy Med Spa · Edinburg, Texas">
+<meta property="og:description" content="Physician-led injectables, laser, skin and wellness treatments. Rated 5.0 from 164 Google reviews.">
+<meta property="og:image" content="images/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2313241E'/%3E%3Csvg x='8' y='8' width='48' height='48' viewBox='50 55 160 160'%3E%3Cpath fill='%2393BBA5' d='M130 57Q152 80 159 115L130 192L101 115Q108 80 130 57Z'/%3E%3Cpath fill='%23C2D9CB' d='M53 119L94 131L123 213C95 211 70 195 60 170C55 157 53 145 53 119Z'/%3E%3Cpath fill='%23C2D9CB' d='M207 119L166 131L137 213C165 211 190 195 200 170C205 157 207 145 207 119Z'/%3E%3C/svg%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+<link rel="preload" as="image" href="images/glow.webp" media="(min-width: 761px)" fetchpriority="high">
+<link rel="preload" as="image" href="images/hero-light.webp" media="(max-width: 760px)" fetchpriority="high">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<style>
+:root{
+  --bg:#F4F0E8; --surface:#E9DFCE; --oak:#D9C29C;
+  --ink:#13241E; --ink-soft:#4A5A52; --line:rgba(19,36,30,.14);
+  --dark:#0E1B16; --dark-2:#16271F; --cream:#F4F0E8; --cream-soft:#C9CFC6; --line-d:rgba(244,240,232,.14);
+  --accent:#C29A5C; --accent-hi:#D4AE72; --accent-ink:#13241E; --sage:#9DB0A3;
+  --serif:"Instrument Serif", "Times New Roman", serif;
+  --sans:"Hanken Grotesk", system-ui, sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gut:clamp(20px, 4vw, 56px);
+  --max:1360px;
+  --ic-duo:currentColor; --ic-duo-op:.22;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scrollbar-color:var(--ink-soft) var(--bg)}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:clip}
+::selection{background:var(--accent); color:var(--accent-ink)}
+::-webkit-scrollbar{width:10px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:#8d9890; border-radius:10px; border:2px solid var(--bg)}
+img{display:block; max-width:100%; height:auto}
+a{color:inherit; text-decoration-thickness:1px; text-underline-offset:.22em}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:6px}
+h1,h2,h3{font-family:var(--serif); font-weight:400; line-height:1; letter-spacing:-.02em; margin:0; text-wrap:balance}
+p{margin:0}
+.ic{width:22px; height:22px; flex:none}
+.wrap{width:100%; max-width:var(--max); margin:0 auto; padding:0 var(--gut)}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+
+/* buttons */
+.btn{--h:52px; display:inline-flex; align-items:center; gap:10px; min-height:var(--h); padding:0 24px; border-radius:999px; font:600 15.5px/1 var(--sans); letter-spacing:.01em; text-decoration:none; border:1px solid transparent; transition:background-color .2s, color .2s, border-color .2s, transform .15s var(--ease); cursor:pointer; white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn .ic{width:19px; height:19px; transition:transform .25s var(--ease)}
+.btn:hover .ic-arrow{transform:translateX(4px)}
+.btn-primary{background:var(--accent); color:var(--accent-ink); box-shadow:0 8px 22px -12px rgba(0,0,0,.45)}
+.btn-primary:hover{background:var(--accent-hi)}
+.btn-ghost{border-color:currentColor; color:inherit}
+.btn-ghost:hover{background:rgba(244,240,232,.12)}
+.on-light .btn-ghost:hover{background:rgba(19,36,30,.06)}
+
+/* concept bar + header */
+.site-head{position:fixed; inset:0 0 auto; z-index:50; transition:transform .45s var(--ease)}
+.site-head.is-hidden{transform:translateY(-100%)}
+.concept{background:var(--dark); color:var(--cream-soft); font-size:12.5px; line-height:1.3; text-align:center; padding:7px 16px; letter-spacing:.01em}
+.nav{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:16px; padding:14px var(--gut); transition:background-color .35s, box-shadow .35s, padding .35s}
+.site-head.is-solid .nav{background:rgba(244,240,232,.86); -webkit-backdrop-filter:blur(14px) saturate(1.2); backdrop-filter:blur(14px) saturate(1.2); box-shadow:0 1px 0 var(--line); padding-block:10px}
+.nav-links{display:flex; gap:28px; font-size:15px; font-weight:500}
+.nav-links a{text-decoration:none; position:relative; padding:12px 0}
+.nav-links a::after{content:""; position:absolute; left:0; right:0; bottom:6px; height:1px; background:currentColor; transform:scaleX(0); transform-origin:right; transition:transform .35s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1); transform-origin:left}
+.nav-cta{display:flex; justify-content:flex-end; align-items:center; gap:18px}
+.nav-phone{display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:600; font-size:15px; min-height:44px}
+.nav .btn{--h:46px; padding:0 20px; font-size:14.5px}
+
+/* logo */
+.logo{display:inline-flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink)}
+.logo-mark{width:46px; height:46px; flex:none; overflow:visible}
+.logo{--lc:#2C5E48; --ls:#5E9479}
+.logo-type{display:flex; flex-direction:column; align-items:center; line-height:1}
+.logo-name{font:600 35px/.9 "Cinzel", serif; letter-spacing:.06em; margin-right:-.06em}
+.logo-tag{display:flex; align-items:center; gap:7px; font:700 11.5px/1 var(--sans); letter-spacing:.32em; margin-top:6px; color:var(--ink)}
+.logo-tag span{margin-right:-.32em}
+.logo-tag i{display:block; width:10px; height:1.5px; background:#B08646}
+.logo.on-dark{color:var(--cream); --lc:#93BBA5; --ls:#C2D9CB} .logo.on-dark .logo-tag{color:var(--cream)} .logo.on-dark .logo-tag i{background:var(--accent)}
+
+/* HERO: the louvers */
+.hero{position:relative; height:100vh; height:100svh; min-height:620px; overflow:clip; background:var(--dark); color:var(--cream)}
+.hero-media{position:absolute; inset:0}
+.hero-media img{width:100%; height:100%; object-fit:cover; object-position:70% 40%; transform-origin:60% 50%}
+.hero-scrim{position:absolute; inset:0; background:linear-gradient(90deg, rgba(14,27,22,.84) 0%, rgba(14,27,22,.6) 38%, rgba(14,27,22,.08) 72%), linear-gradient(0deg, rgba(14,27,22,.5), transparent 40%)}
+.louvers{display:none; position:absolute; inset:0; perspective:1600px; pointer-events:none}
+.js .louvers{display:flex}
+.slat{flex:1 1 0; height:100%; transform-style:preserve-3d; will-change:transform;
+  background:
+   linear-gradient(90deg, rgba(90,62,28,.28) 0, rgba(90,62,28,0) 7%, rgba(255,246,226,.22) 22%, rgba(255,246,226,0) 46%, rgba(90,62,28,.06) 80%, rgba(70,48,20,.34) 100%),
+   linear-gradient(180deg, #E4D0AD 0%, #D8C098 46%, #CFB58A 100%)}
+.hero-copy{position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; padding-top:96px; padding-bottom:48px}
+.hero h1{font-size:clamp(3.1rem, 7.4vw, 6.4rem); line-height:.95; letter-spacing:-.025em; max-width:9.6em}
+.hero h1 em{font-style:italic; color:var(--accent)}
+.hero-sub{margin-top:26px; max-width:34ch; font-size:clamp(17px, 1.35vw, 19.5px); color:var(--cream-soft)}
+.hero-ctas{display:flex; flex-wrap:wrap; gap:12px; margin-top:34px}
+.hero-rating{display:inline-flex; align-items:center; gap:10px; margin-top:28px; font-size:14.5px; color:var(--cream-soft); text-decoration:none}
+.hero-rating .stars{display:inline-flex; gap:2px; color:var(--accent)} .hero-rating .stars .ic{width:16px; height:16px; --ic-duo-op:1}
+.hero-rating:hover span{text-decoration:underline}
+.hero-cue{position:absolute; z-index:2; right:var(--gut); bottom:28px; font-size:12.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--cream-soft); display:flex; align-items:center; gap:12px}
+.hero-cue i{display:block; width:1px; height:44px; background:linear-gradient(var(--accent), transparent)}
+
+/* PROOF */
+.proof{padding:clamp(96px, 12vw, 168px) 0 clamp(80px, 10vw, 140px)}
+.proof .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px; align-items:end}
+.score{grid-column:1 / span 5}
+.score-num{font-family:var(--serif); font-size:clamp(7rem, 15vw, 13rem); line-height:.8; letter-spacing:-.04em; display:block}
+.score-stars{display:flex; gap:6px; margin:22px 0 12px; color:var(--accent)}
+.score-stars .ic{width:30px; height:30px; --ic-duo-op:1}
+.score-meta{font-size:16px; color:var(--ink-soft)}
+.proof-copy{grid-column:7 / span 6}
+.proof-copy h2{font-size:clamp(2.3rem, 4.2vw, 3.6rem)}
+.themes{list-style:none; padding:0; margin:34px 0 0; border-top:1px solid var(--line)}
+.themes li{display:flex; gap:16px; align-items:center; padding:18px 0; border-bottom:1px solid var(--line); font-size:17.5px}
+.themes .ic{width:26px; height:26px; color:#2E5444}
+.quote{margin-top:30px; font-family:var(--serif); font-style:italic; font-size:clamp(1.5rem, 2.2vw, 1.9rem); line-height:1.2}
+.quote-by{margin-top:10px; font-size:14px; color:var(--ink-soft)}
+.text-link{display:inline-flex; align-items:center; gap:8px; margin-top:26px; font-weight:600; text-decoration:none; min-height:44px; border-bottom:1px solid currentColor}
+.text-link .ic{width:18px; height:18px; transition:transform .25s var(--ease)}
+.text-link:hover .ic{transform:translate(3px,-3px)}
+
+/* STATEMENT */
+.statement{background:var(--dark); color:var(--cream); padding:clamp(100px, 12vw, 170px) 0; position:relative; overflow:clip}
+.statement .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px; align-items:center}
+.statement-copy{grid-column:1 / span 7; position:relative; z-index:2}
+.motto{font-size:clamp(3.2rem, 7.6vw, 6.4rem); line-height:1; letter-spacing:-.03em}
+.motto .w{opacity:1}
+.motto em{color:var(--accent)}
+.motto-by{margin-top:22px; font-size:15px; color:var(--cream-soft)}
+.statement-body{margin-top:44px; max-width:44ch; font-size:18.5px; color:var(--cream-soft)}
+.statement-media{grid-column:8 / span 5; margin-left:-12%; position:relative; z-index:1; aspect-ratio:4/5.4; overflow:hidden; border-radius:4px}
+.statement-media img{width:100%; height:118%; object-fit:cover; margin-top:-9%}
+.statement-media figcaption{position:absolute; left:16px; bottom:14px; font-size:12.5px; color:rgba(244,240,232,.85)}
+
+/* TREATMENTS */
+.treat{padding:clamp(100px, 12vw, 160px) 0 clamp(60px, 8vw, 110px)}
+.treat-head{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px; margin-bottom:clamp(48px, 6vw, 88px)}
+.treat-head h2{grid-column:1 / span 8; font-size:clamp(2.6rem, 5.4vw, 4.8rem)}
+.treat-head p{grid-column:9 / span 4; align-self:end; color:var(--ink-soft)}
+.treat-body{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px; position:relative}
+.treat-media{grid-column:1 / span 5; position:sticky; top:110px; height:calc(100vh - 150px); max-height:760px; border-radius:4px; overflow:hidden; background:var(--surface)}
+.treat-media img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.06); transition:opacity .9s var(--ease), transform 1.6s var(--ease)}
+.treat-media img.is-on{opacity:1; transform:scale(1)}
+.treat-media .tm-label{position:absolute; left:20px; bottom:18px; z-index:2; color:var(--cream); font-family:var(--serif); font-size:2rem; line-height:1; text-shadow:0 2px 20px rgba(0,0,0,.35)}
+.treat-media::after{content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(14,27,22,.5), transparent 35%); pointer-events:none}
+.treat-list{grid-column:6 / span 6; padding-left:clamp(0px, 3vw, 48px)}
+.vine{grid-column:12; position:relative}
+.vine svg{position:absolute; inset:0 auto 0 50%; transform:translateX(-50%); width:64px; height:100%; overflow:visible}
+.vine .stem{fill:none; stroke:#2E5444; stroke-width:1.6; stroke-linecap:round}
+.vine .lf{fill:#2E5444; transform-box:fill-box}
+.group{padding:8px 0 clamp(64px, 8vw, 110px)}
+.group-img{display:none}
+.group h3{font-size:clamp(2.4rem, 3.8vw, 3.4rem)}
+.group-lede{margin-top:12px; color:var(--ink-soft); font-size:18px}
+.items{list-style:none; margin:30px 0 0; padding:0; border-top:1px solid var(--line)}
+.items li{display:grid; grid-template-columns:minmax(0, 15rem) 1fr; gap:6px 28px; padding:20px 0; border-bottom:1px solid var(--line)}
+.items b{font-weight:600; font-size:17.5px; line-height:1.35}
+.items span{color:var(--ink-soft); font-size:16px}
+.group-head{display:flex; align-items:center; gap:18px}
+.group-tile{display:inline-grid; place-items:center; width:52px; height:52px; flex:none; border-radius:16px; background:var(--surface); color:#2E5444}
+.group-tile .ic{width:28px; height:28px; --ic-duo-op:.3}
+.treat-cta{margin-top:8px; display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+.treat-cta p{color:var(--ink-soft); font-size:15.5px; margin-right:12px}
+
+/* TEAM */
+.team{background:var(--surface); padding:clamp(100px, 12vw, 160px) 0; position:relative}
+.team .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px; align-items:center}
+.team-photo{grid-column:1 / span 6; position:relative; border-radius:4px; overflow:hidden; background:#ECEBE8; aspect-ratio:1/1}
+.team-photo img{width:100%; height:100%; object-fit:cover}
+.team-photo figcaption{position:absolute; left:18px; bottom:14px; font-size:13px; color:var(--ink-soft); background:rgba(244,240,232,.86); padding:5px 10px; border-radius:6px}
+.team-copy{grid-column:7 / span 6; padding-left:clamp(0px, 3vw, 40px)}
+.team-copy h2{font-size:clamp(2.5rem, 4.8vw, 4.3rem)}
+.team-intro{margin-top:20px; color:var(--ink-soft); max-width:46ch}
+.bio{margin-top:34px; padding:28px 30px; background:var(--bg); border-radius:14px; box-shadow:0 18px 44px -26px rgba(19,36,30,.45)}
+.bio + .bio{margin-top:16px}
+.bio:first-of-type{margin-left:clamp(0px, -6vw, 0px)}
+.bio h3{font-size:2rem; letter-spacing:-.01em}
+.bio-role{margin-top:6px; font-size:14px; font-weight:600; color:#7A5A27; letter-spacing:.01em}
+.bio p:last-child{margin-top:12px; color:var(--ink-soft); font-size:16px}
+.team-also{margin-top:22px; font-size:15px; color:var(--ink-soft)}
+
+/* SPACE */
+.space{position:relative; height:110vh; min-height:640px; background:var(--bg)}
+.space-clip{position:sticky; top:0; height:100vh; overflow:hidden; clip-path:inset(0 0 0 0)}
+.js .space-clip{clip-path:inset(9% 14% 9% 14% round 6px)}
+.space-clip img{position:absolute; inset:-8% 0; width:100%; height:116%; object-fit:cover}
+.space-clip::after{content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(14,27,22,.78), rgba(14,27,22,.1) 55%)}
+.space-cap{position:absolute; z-index:2; left:0; right:0; bottom:clamp(36px, 6vw, 72px); color:var(--cream)}
+.space-cap h2{font-size:clamp(2.4rem, 5vw, 4.6rem); max-width:12em}
+.space-cap p{margin-top:14px; font-size:15px; color:var(--cream-soft)}
+
+/* MARQUEE */
+.marq{background:var(--dark); color:var(--cream); padding:34px 0; overflow:hidden; border-top:1px solid var(--line-d)}
+.marq-label{text-align:center; font-size:13.5px; color:var(--cream-soft); margin-bottom:14px}
+.marq-track{display:flex; width:max-content; will-change:transform}
+.marq-row{display:flex; align-items:center; gap:36px; padding-right:36px; font-family:var(--serif); font-style:italic; font-size:clamp(2rem, 3.6vw, 3.2rem); white-space:nowrap}
+.marq-row .ic{width:22px; height:22px; color:var(--accent); --ic-duo-op:.5}
+
+/* VISIT */
+.visit{padding:clamp(100px, 12vw, 160px) 0}
+.visit .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px}
+.visit-main{grid-column:1 / span 5}
+.visit-main h2{font-size:clamp(2.6rem, 5vw, 4.4rem)}
+.addr{margin-top:26px; font-size:19px; line-height:1.5; font-style:normal}
+.contact-list{list-style:none; padding:0; margin:30px 0 0; display:grid; gap:6px}
+.contact-list a{display:inline-flex; align-items:center; gap:14px; min-height:48px; text-decoration:none; font-weight:500}
+.contact-list a:hover span{text-decoration:underline}
+.tile{display:inline-grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--surface); color:#2E5444; transition:transform .3s var(--ease)}
+.contact-list a:hover .tile{transform:translateY(-3px) rotate(-6deg) scale(1.08)}
+.visit-hours{grid-column:7 / span 6}
+.hours{width:100%; border-collapse:collapse; font-size:17px}
+.hours caption{text-align:left; font-family:var(--serif); font-size:2rem; padding-bottom:14px}
+.hours th, .hours td{padding:15px 0; border-bottom:1px solid var(--line); text-align:left; font-weight:500}
+.hours td{text-align:right; color:var(--ink-soft)}
+.hours tr.today th, .hours tr.today td{color:var(--ink); font-weight:700}
+.hours tr.today th::after{content:"Today"; margin-left:10px; font-size:12px; font-weight:700; letter-spacing:.04em; background:var(--accent); color:var(--accent-ink); padding:3px 9px; border-radius:99px; vertical-align:2px}
+.directions{margin-top:30px; display:flex; flex-wrap:wrap; gap:12px}
+
+/* CLOSING */
+.closing{position:relative; background:var(--dark); color:var(--cream); padding:clamp(120px, 15vw, 210px) 0; text-align:center; overflow:hidden}
+.glow{position:absolute; width:70vmax; height:70vmax; left:50%; top:50%; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(194,154,92,.32), rgba(194,154,92,0) 60%); pointer-events:none}
+.closing h2{position:relative; font-size:clamp(3.2rem, 8vw, 6.6rem); max-width:11em; margin:0 auto}
+.closing h2 em{color:var(--accent)}
+.closing p{position:relative; margin:26px auto 0; max-width:40ch; color:var(--cream-soft); font-size:18.5px}
+.closing .ctas{position:relative; display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:40px}
+
+/* FOOTER */
+.foot{background:var(--dark-2); color:var(--cream-soft); padding:72px 0 120px; font-size:15px}
+.foot .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:24px}
+.foot-brand{grid-column:1 / span 4}
+.foot-brand p{margin-top:18px; max-width:30ch}
+.foot-col{grid-column:span 2}
+.foot-col:nth-of-type(2){grid-column:6 / span 2}
+.foot h3{font-family:var(--sans); font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--cream); margin-bottom:14px}
+.foot ul{list-style:none; padding:0; margin:0; display:grid; gap:4px}
+.foot ul a{text-decoration:none; display:inline-flex; align-items:center; min-height:40px; gap:10px}
+.foot ul a:hover{color:var(--cream); text-decoration:underline}
+.fine{margin-top:56px; padding-top:22px; border-top:1px solid var(--line-d); font-size:13px; display:flex; flex-wrap:wrap; gap:8px 22px; justify-content:space-between}
+.fine a{color:var(--accent)}
+
+/* MOBILE BAR */
+.mbar{display:none}
+@media (max-width: 900px){
+  .nav{grid-template-columns:auto 1fr; padding-block:10px}
+  .nav-links, .nav-phone{display:none}
+  .nav .logo{justify-self:start}
+  .logo-mark{width:36px; height:36px} .logo-name{font-size:27px} .logo-tag{font-size:11px; gap:5px} .logo-tag i{width:7px}
+  .proof .grid, .statement .grid, .treat-head, .treat-body, .team .grid, .visit .grid, .foot .grid{grid-template-columns:1fr}
+  .score, .proof-copy, .statement-copy, .statement-media, .treat-head h2, .treat-head p, .treat-list, .team-photo, .team-copy, .visit-main, .visit-hours, .foot-brand, .foot-col, .foot-col:nth-of-type(2){grid-column:1 / -1}
+  .proof-copy{margin-top:40px}
+  .statement-media{margin:48px 0 0; aspect-ratio:4/4.6}
+  .treat-media, .vine{display:none}
+  .treat-list{padding-left:0}
+  .group-img{display:block; margin:0 0 24px; border-radius:4px; aspect-ratio:16/11; object-fit:cover; width:100%}
+  .items li{grid-template-columns:1fr; gap:4px}
+  .team-copy{padding-left:0; margin-top:36px}
+  .bio{padding:24px 22px}
+  .visit-hours{margin-top:48px}
+  .space{height:auto; min-height:0}
+  .space-clip{position:relative; height:86vh; min-height:520px}
+  .mbar{display:grid; grid-template-columns:1fr 1.4fr; gap:10px; position:fixed; z-index:60; left:12px; right:12px; bottom:12px; padding:8px; border-radius:999px; background:rgba(14,27,22,.9); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); box-shadow:0 14px 34px -12px rgba(0,0,0,.5); transform:translateY(140%); transition:transform .5s var(--ease)}
+  .mbar.is-on{transform:none}
+  .mbar .btn{justify-content:center; --h:50px; padding:0 14px}
+  .mbar .btn-ghost{color:var(--cream); border-color:rgba(244,240,232,.35)}
+}
+@media (max-width: 760px){
+  body{font-size:16.5px}
+  .concept{font-size:12px; padding:6px 12px}
+  .hero-media img{object-position:50% 30%}
+  .hero-scrim{background:linear-gradient(0deg, rgba(14,27,22,.92) 0%, rgba(14,27,22,.7) 42%, rgba(14,27,22,.1) 72%)}
+  .hero-copy{justify-content:flex-end; padding-bottom:40px}
+  .hero h1{font-size:clamp(2.9rem, 13vw, 4rem)}
+  .hero-sub{margin-top:18px}
+  .hero-ctas{margin-top:26px}
+  .hero-ctas .btn{flex:1 1 auto; justify-content:center}
+  .hero-cue{display:none}
+  .score-num{font-size:8.5rem}
+  .closing h2{font-size:clamp(2.8rem, 12vw, 4rem)}
+}
+/* reveal + reduced motion */
+.js .rv{opacity:0; transform:translateY(28px); filter:blur(6px)}
+@media (prefers-reduced-motion: reduce){
+  .js .rv{opacity:1; transform:none; filter:none}
+  .js .louvers{display:none}
+  .js .space-clip{clip-path:none}
+  *{scroll-behavior:auto !important; transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V88H40V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 256 256" fill="currentColor"><path d="M229.06,108.79l-48.7,42,14.88,62.79a8.4,8.4,0,0,1-12.52,9.17L128,189.09,73.28,222.74a8.4,8.4,0,0,1-12.52-9.17l14.88-62.79-48.7-42A8.46,8.46,0,0,1,31.73,94L95.64,88.8l24.62-59.6a8.36,8.36,0,0,1,15.48,0l24.62,59.6L224.27,94A8.46,8.46,0,0,1,229.06,108.79Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M216,128l-72,72V56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M192,64V168L88,64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M192,56H88a8,8,0,0,0-5.66,13.66L128.69,116,58.34,186.34a8,8,0,0,0,11.32,11.32L140,127.31l46.34,46.35A8,8,0,0,0,200,168V64A8,8,0,0,0,192,56Zm-8,92.69-38.34-38.34h0L107.31,72H184Z"/></symbol>
+<symbol id="i-whatsapp-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M128,32A96,96,0,0,0,44.89,176.07L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47A96,96,0,1,0,128,32Zm24,152a80,80,0,0,1-80-80,32,32,0,0,1,32-32l16,32-12.32,18.47a48.19,48.19,0,0,0,25.85,25.85L152,136l32,16A32,32,0,0,1,152,184Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.62-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+<symbol id="i-envelope-simple" viewBox="0 0 256 256" fill="currentColor"><path d="M224,56l-96,88L32,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+<symbol id="i-instagram-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="i-facebook-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+<symbol id="i-syringe" viewBox="0 0 256 256" fill="currentColor"><path d="M196,116l-89.66,89.66a8,8,0,0,1-5.65,2.34H48V155.31a8,8,0,0,1,2.34-5.65L140,60Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M237.66,66.34l-48-48a8,8,0,0,0-11.32,11.32L196.69,48,168,76.69,133.66,42.34a8,8,0,0,0-11.32,11.32L128.69,60l-84,84A15.86,15.86,0,0,0,40,155.31v49.38L18.34,226.34a8,8,0,0,0,11.32,11.32L51.31,216h49.38A15.86,15.86,0,0,0,112,211.31l84-84,6.34,6.35a8,8,0,0,0,11.32-11.32L179.31,88,208,59.31l18.34,18.35a8,8,0,0,0,11.32-11.32ZM100.69,200H56V155.31l18-18,20.34,20.35a8,8,0,0,0,11.32-11.32L85.31,126,98,113.31l20.34,20.35a8,8,0,0,0,11.32-11.32L109.31,102,140,71.31,184.69,116Z"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 256 256" fill="currentColor"><path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 256 256" fill="currentColor"><path d="M208,144a80,80,0,0,1-160,0c0-72,80-128,80-128S208,72,208,144Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 256 256" fill="currentColor"><path d="M63.81,192.19c-47.89-79.81,16-159.62,151.64-151.64C223.43,176.23,143.62,240.08,63.81,192.19Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z"/></symbol>
+<symbol id="i-flower-lotus" viewBox="0 0 256 256" fill="currentColor"><path d="M128,200c-15.37,0-40.77-.18-70-17.64S19.31,143,16.28,131.82A7.94,7.94,0,0,1,21.74,122a69.59,69.59,0,0,1,30.82-.64h0c-7.63-23.88-4-42.44-1-51.71A8.2,8.2,0,0,1,61,64.18C68.56,65.79,81.28,70,94.6,80.8v0A108.49,108.49,0,0,0,88,119.18C88,178,128,200,128,200Zm106.26-78a69.59,69.59,0,0,0-30.82-.64h0c7.63-23.88,4-42.44,1-51.71A8.2,8.2,0,0,0,195,64.18c-7.52,1.61-20.24,5.8-33.56,16.62v0A108.49,108.49,0,0,1,168,119.18C168,178,128,200,128,200c15.37,0,40.77-.18,70-17.64s38.69-39.34,41.72-50.54A7.94,7.94,0,0,0,234.26,122Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M245.83,121.63a15.53,15.53,0,0,0-9.52-7.33,73.51,73.51,0,0,0-22.17-2.22c4-19.85,1-35.55-2.06-44.86a16.15,16.15,0,0,0-18.79-10.88,85.53,85.53,0,0,0-28.55,12.12,94.58,94.58,0,0,0-27.11-33.25,16.05,16.05,0,0,0-19.26,0A94.48,94.48,0,0,0,91.26,68.46,85.53,85.53,0,0,0,62.71,56.34,16.15,16.15,0,0,0,43.92,67.22c-3,9.31-6,25-2.06,44.86a73.51,73.51,0,0,0-22.17,2.22,15.53,15.53,0,0,0-9.52,7.33,16,16,0,0,0-1.6,12.27c3.39,12.57,13.8,36.48,45.33,55.32S113.13,208,128.05,208s42.67,0,74-18.78c31.53-18.84,41.94-42.75,45.33-55.32A16,16,0,0,0,245.83,121.63ZM59.14,72.14a.2.2,0,0,1,.23-.15A70.43,70.43,0,0,1,85.18,83.66,118.65,118.65,0,0,0,80,119.17c0,18.74,3.77,34,9.11,46.28A123.59,123.59,0,0,1,69.57,140C51.55,108.62,55.3,84,59.14,72.14Zm3,103.35C35.47,159.57,26.82,140.05,24,129.7a59.82,59.82,0,0,1,22.5-1.17,129.08,129.08,0,0,0,9.15,19.41,142.28,142.28,0,0,0,34,39.56A114.92,114.92,0,0,1,62.1,175.49ZM128,190.4c-9.33-6.94-32-28.23-32-71.23C96,76.7,118.38,55.24,128,48c9.62,7.26,32,28.72,32,71.19C160,162.17,137.33,183.46,128,190.4ZM170.82,83.66A70.43,70.43,0,0,1,196.63,72a.2.2,0,0,1,.23.15C200.7,84,204.45,108.62,186.43,140a123.32,123.32,0,0,1-19.54,25.48c5.34-12.26,9.11-27.54,9.11-46.28A118.65,118.65,0,0,0,170.82,83.66ZM232,129.72c-2.77,10.25-11.4,29.81-38.09,45.77a114.92,114.92,0,0,1-27.55,12,142.28,142.28,0,0,0,34-39.56,129.08,129.08,0,0,0,9.15-19.41A59.69,59.69,0,0,1,232,129.71Z"/></symbol>
+<symbol id="i-heartbeat" viewBox="0 0 256 256" fill="currentColor"><path d="M232,102c0,66-104,122-104,122S24,168,24,102A54,54,0,0,1,78,48c22.59,0,41.94,12.31,50,32,8.06-19.69,27.41-32,50-32A54,54,0,0,1,232,102Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M72,144H32a8,8,0,0,1,0-16H67.72l13.62-20.44a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,128h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,126.42l-9.34,14A8,8,0,0,1,72,144ZM178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40Z"/></symbol>
+<symbol id="i-x" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56V200a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V56A16,16,0,0,1,56,40H200A16,16,0,0,1,216,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+<symbol id="i-list" viewBox="0 0 256 256" fill="currentColor"><path d="M216,64V192H40V64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+</svg>
+
+<header class="site-head" id="head">
+  <div class="concept">Design concept prepared for Ivy Med Spa by Drusus Technologies. Not the live site.</div>
+  <nav class="nav on-light" aria-label="Main">
+    <div class="nav-links">
+      <a href="#treatments">Treatments</a>
+      <a href="#team">Our team</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="logo" href="#top" aria-label="Ivy Med Spa, back to top">
+      <svg class="logo-mark" viewBox="50 55 160 160" aria-hidden="true"><path class="lm-c" style="fill:var(--lc)" d="M130 57Q152 80 159 115L130 192L101 115Q108 80 130 57Z"/><path class="lm-l" style="fill:var(--ls)" d="M53 119L94 131L123 213C95 211 70 195 60 170C55 157 53 145 53 119Z"/><path class="lm-r" style="fill:var(--ls)" d="M207 119L166 131L137 213C165 211 190 195 200 170C205 157 207 145 207 119Z"/></svg>
+      <span class="logo-type"><span class="logo-name">IVY</span><span class="logo-tag"><i></i><span>MED SPA</span><i></i></span></span>
+    </a>
+    <div class="nav-cta">
+      <a class="nav-phone num" href="tel:+19563318366"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>(956) 331-8366</a>
+      <a class="btn btn-primary magnetic" href="https://na02.envisiongo.com/a/ivymedspa/OnlineBooking.aspx" target="_blank" rel="noopener">Book a consultation</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Welcome">
+    <picture class="hero-media">
+      <source media="(max-width: 760px)" srcset="images/hero-light.webp" width="1333" height="2000">
+      <img src="images/glow.webp" width="1400" height="933" alt="A woman with glowing skin, eyes closed, in warm sunlight" fetchpriority="high">
+    </picture>
+    <div class="hero-scrim"></div>
+    <div class="louvers" aria-hidden="true"></div>
+    <div class="hero-copy wrap">
+      <h1 class="hero-title">Natural beauty, brought into <em>the light.</em></h1>
+      <p class="hero-sub">Physician-led injectables, laser, skin and wellness treatments on West Trenton Road in Edinburg.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary magnetic" href="https://na02.envisiongo.com/a/ivymedspa/OnlineBooking.aspx" target="_blank" rel="noopener">Book a consultation<svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn-ghost num" href="tel:+19563318366"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>(956) 331-8366</a>
+      </div>
+      <a class="hero-rating num" href="https://www.google.com/maps/place/Ivy+Medspa/@26.2647558,-98.197713,17z" target="_blank" rel="noopener">
+        <span class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+        <span>5.0 on Google · 164 reviews</span>
+      </a>
+    </div>
+    <div class="hero-cue" aria-hidden="true">Scroll<i></i></div>
+  </section>
+
+  <section class="proof on-light" aria-labelledby="proof-h">
+    <div class="wrap grid">
+      <div class="score rv">
+        <span class="score-num num" data-count="5.0">5.0</span>
+        <div class="score-stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+        <p class="score-meta num">Average of <span data-count="164">164</span> Google reviews</p>
+      </div>
+      <div class="proof-copy">
+        <h2 id="proof-h" class="rv">Rated five stars by the people who keep coming back.</h2>
+        <ul class="themes">
+          <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>A friendly team that makes you feel at ease</li>
+          <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-flower-lotus"/></svg>A calm, beautiful space to unwind</li>
+          <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Facials and laser care that clients ask for by name</li>
+        </ul>
+        <p class="quote rv">“Amazing customer service, attention detailed and relaxing atmosphere.”</p>
+        <p class="quote-by rv">From a Google review</p>
+        <a class="text-link rv" href="https://www.google.com/maps/place/Ivy+Medspa/@26.2647558,-98.197713,17z" target="_blank" rel="noopener">Read all 164 reviews on Google<svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" aria-labelledby="motto">
+    <div class="wrap grid">
+      <div class="statement-copy">
+        <h2 class="motto" id="motto">Look fantastic, <em>not plastic.</em></h2>
+        <p class="motto-by rv">The motto of Laura Kasper, our licensed medical esthetician</p>
+        <p class="statement-body rv">Ivy is where art meets science. Our physician-led team takes the time to understand what you want, then plans treatments that enhance the face you already have, never replace it.</p>
+      </div>
+      <figure class="statement-media" style="margin-top:0">
+        <img src="images/hero-light.webp" width="1333" height="2000" loading="lazy" alt="Close-up of a woman's face in a stripe of warm light">
+        <figcaption>Placeholder photo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="treat on-light" id="treatments" aria-labelledby="treat-h">
+    <div class="wrap">
+      <div class="treat-head">
+        <h2 id="treat-h" class="rv">Treatments, organized by what you'd like to change.</h2>
+        <p class="rv">Not sure where to start? Book a consultation and we'll build a plan around your goals.</p>
+      </div>
+      <div class="treat-body">
+        <div class="treat-media" aria-hidden="true">
+          <img src="images/inject.webp" width="1400" height="933" alt="" class="is-on" data-g="0" loading="lazy">
+          <img src="images/skin.webp" width="1400" height="931" alt="" data-g="1" loading="lazy">
+          <img src="images/laser.webp" width="1120" height="1400" alt="" data-g="2" loading="lazy">
+          <img src="images/iv.webp" width="1400" height="933" alt="" data-g="3" loading="lazy">
+          <span class="tm-label">Face</span>
+        </div>
+        <div class="treat-list">
+          <article class="group" data-g="0" data-label="Face">
+            <img class="group-img" src="images/inject.webp" width="1400" height="933" loading="lazy" alt="Skin treatment being performed on a client's cheek (placeholder photo)">
+            <div class="group-head rv"><span class="group-tile"><svg class="ic" aria-hidden="true"><use href="#i-syringe"/></svg></span><h3>Face &amp; injectables</h3></div>
+            <p class="group-lede rv">Soften lines, restore volume and define your profile.</p>
+            <ul class="items">
+              <li class="rv"><b>Botox, Dysport &amp; Xeomin</b><span>Smooths frown lines, forehead lines and crow's feet. Results show in 5 to 10 days and last 3 to 4 months.</span></li>
+              <li class="rv"><b>Dermal fillers &amp; Radiesse</b><span>Lips, cheeks, jawline, chin, smile lines and under-eyes. Results are immediate and last 6 to 18 months.</span></li>
+              <li class="rv"><b>PDO thread lift</b><span>Dissolvable threads that lift the mid-face, neck and brows, with results lasting up to 18 months.</span></li>
+              <li class="rv"><b>Kybella</b><span>An FDA-approved injection that permanently dissolves stubborn fat under the chin.</span></li>
+              <li class="rv"><b>Medical tox</b><span>Relief for jaw clenching and grinding, excessive sweating and chronic migraines.</span></li>
+            </ul>
+          </article>
+          <article class="group" data-g="1" data-label="Skin">
+            <img class="group-img" src="images/skin.webp" width="1400" height="931" loading="lazy" alt="A client receiving a facial treatment (placeholder photo)">
+            <div class="group-head rv"><span class="group-tile"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg></span><h3>Skin &amp; laser</h3></div>
+            <p class="group-lede rv">Even tone, smoother texture, firmer skin.</p>
+            <ul class="items">
+              <li class="rv"><b>Morpheus8</b><span>Radiofrequency microneedling that remodels the deeper layers of skin on the face and body.</span></li>
+              <li class="rv"><b>Microneedling &amp; PRP</b><span>Collagen induction for acne scars, pores and fine lines, with your own platelets for added renewal.</span></li>
+              <li class="rv"><b>Lumecca IPL</b><span>Intense pulsed light for sun spots, freckles, melasma, redness and spider veins.</span></li>
+              <li class="rv"><b>Forma</b><span>Gentle radiofrequency skin tightening, suitable for all skin types.</span></li>
+              <li class="rv"><b>Laser hair removal</b><span>Any area or the whole body, with built-in cooling for comfort and long-lasting results.</span></li>
+              <li class="rv"><b>Medical-grade facials</b><span>The Ivy Facial, Oxygenating, Skin Brightening, Acne + Oil Control and back facials, plus dermaplaning, peels and microdermabrasion.</span></li>
+            </ul>
+          </article>
+          <article class="group" data-g="2" data-label="Body">
+            <img class="group-img" src="images/laser.webp" width="1120" height="1400" loading="lazy" alt="Laser hair removal on a leg (placeholder photo)">
+            <div class="group-head rv"><span class="group-tile"><svg class="ic" aria-hidden="true"><use href="#i-flower-lotus"/></svg></span><h3>Body</h3></div>
+            <p class="group-lede rv">Contour, tighten and smooth.</p>
+            <ul class="items">
+              <li class="rv"><b>T-Shape 2</b><span>Radiofrequency, laser and vacuum therapy for cellulite, firmer skin and a more defined contour.</span></li>
+              <li class="rv"><b>Forma &amp; Morpheus8 body</b><span>Tightening and remodeling for the abdomen, back, thighs, knees, chest, scars and stretch marks.</span></li>
+              <li class="rv"><b>Other spa services</b><span>Waxing, spider vein treatment and nail fungus treatment.</span></li>
+            </ul>
+          </article>
+          <article class="group" data-g="3" data-label="Wellness">
+            <img class="group-img" src="images/iv.webp" width="1400" height="933" loading="lazy" alt="An IV drip line (placeholder photo)">
+            <div class="group-head rv"><span class="group-tile"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg></span><h3>Wellness</h3></div>
+            <p class="group-lede rv">Feel as good as you look.</p>
+            <ul class="items">
+              <li class="rv"><b>Medical weight loss</b><span>A physician-supervised program with a medical evaluation by Dr. Llinas, an easy-to-follow nutrition plan and one month of Lipo-Mino-Mix injections included.</span></li>
+              <li class="rv"><b>IV nutritional therapy</b><span>Six drips: Alleviate, Get Up and Go, Immunity, Inner Beauty, Recovery &amp; Performance, and Quench.</span></li>
+              <li class="rv"><b>PRP &amp; PEP Factor for hair</b><span>Platelet-rich plasma and peptide treatments that support thicker, healthier hair growth.</span></li>
+              <li class="rv"><b>O-Shot &amp; P-Shot</b><span>Private PRP treatments for women's and men's intimate wellness.</span></li>
+            </ul>
+          </article>
+          <div class="treat-cta rv">
+            <p>Every treatment starts with a conversation.</p>
+            <a class="btn btn-primary magnetic" href="https://na02.envisiongo.com/a/ivymedspa/OnlineBooking.aspx" target="_blank" rel="noopener">Book a consultation<svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+        <div class="vine" aria-hidden="true"><svg><path class="stem"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team on-light" id="team" aria-labelledby="team-h">
+    <div class="wrap grid">
+      <figure class="team-photo rv" style="margin:0">
+        <img src="images/team.webp" width="1394" height="1400" loading="lazy" alt="Two members of the Ivy Med Spa team in black scrubs, arms crossed and smiling">
+        <figcaption>The Ivy Med Spa team</figcaption>
+      </figure>
+      <div class="team-copy">
+        <h2 id="team-h" class="rv">Know exactly who's caring for you.</h2>
+        <p class="team-intro rv">Ivy is physician-led. Your treatment is planned and performed by trained, licensed providers who take the time to explain every step.</p>
+        <div class="bio rv">
+          <h3>Dr. Jose Llinas</h3>
+          <p class="bio-role">Physician Injector &amp; Medical Director</p>
+          <p>Trained through the American Academy of Procedural Medicine, with certifications in Botox, dermal fillers, PRP, PDO thread lifts and complete facial aesthetics.</p>
+        </div>
+        <div class="bio rv">
+          <h3>Laura Kasper, LE</h3>
+          <p class="bio-role">Licensed Medical Esthetician · Licensed Laser Technician · Certified Injector</p>
+          <p>More than 13 years in medical aesthetics, trained with the Allergan Institute, Merz Academy and Avante Laser Institute, with a master certification in microneedling.</p>
+        </div>
+        <p class="team-also rv">With Marilia Gerlein, Manager, and Virginia Avalos at the front desk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="space" aria-labelledby="space-h">
+    <div class="space-clip">
+      <img src="images/reception.webp" width="1400" height="1039" loading="lazy" alt="Ivy Med Spa's reception: white oak slat walls, a marble front desk and the brass IVY sign">
+      <div class="space-cap wrap">
+        <h2 id="space-h">Warm oak, soft light and a quiet place to exhale.</h2>
+        <p>Our studio at 2500 West Trenton Road, Suite 5</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="marq" aria-label="Treatments and technology we offer">
+    <p class="marq-label">Treatments and technology you'll find at Ivy</p>
+    <div class="marq-track">
+      <div class="marq-row">Botox<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Dysport<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Xeomin<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Radiesse<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Kybella<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Morpheus8<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Forma<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Lumecca<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>T-Shape 2<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>ZO Skincare<svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></div>
+    </div>
+  </section>
+
+  <section class="visit on-light" id="visit" aria-labelledby="visit-h">
+    <div class="wrap grid">
+      <div class="visit-main">
+        <h2 id="visit-h" class="rv">Visit us in Edinburg.</h2>
+        <address class="addr rv">2500 West Trenton Road, Suite 5<br>Edinburg, Texas 78539</address>
+        <ul class="contact-list rv">
+          <li><a href="tel:+19563318366" class="num"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><span>Call (956) 331-8366</span></a></li>
+          <li><a href="https://wa.me/19566701497" target="_blank" rel="noopener" class="num"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg></span><span>WhatsApp (956) 670-1497</span></a></li>
+          <li><a href="mailto:info@ivy-medspa.com"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-envelope-simple"/></svg></span><span>info@ivy-medspa.com</span></a></li>
+        </ul>
+      </div>
+      <div class="visit-hours rv">
+        <table class="hours num">
+          <caption>Hours</caption>
+          <tbody>
+            <tr data-d="1"><th scope="row">Monday</th><td>2:00 PM – 6:00 PM</td></tr>
+            <tr data-d="2"><th scope="row">Tuesday</th><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="3"><th scope="row">Wednesday</th><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="4"><th scope="row">Thursday</th><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="5"><th scope="row">Friday</th><td>9:00 AM – 6:00 PM</td></tr>
+            <tr data-d="6"><th scope="row">Saturday</th><td>9:00 AM – 2:00 PM</td></tr>
+            <tr data-d="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="directions">
+          <a class="btn btn-primary magnetic" href="https://www.google.com/maps/search/?api=1&amp;query=Ivy+Medspa+2500+W+Trenton+Rd+Suite+5+Edinburg+TX+78539" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg>Get directions</a>
+          <a class="btn btn-ghost" href="https://na02.envisiongo.com/a/ivymedspa/OnlineBooking.aspx" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="close-h">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2 id="close-h" class="rv">Your first step is a <em>conversation.</em></h2>
+      <p class="rv">Tell us what you'd like to feel better about, and we'll walk you through your options.</p>
+      <div class="ctas rv">
+        <a class="btn btn-primary magnetic" href="https://na02.envisiongo.com/a/ivymedspa/OnlineBooking.aspx" target="_blank" rel="noopener">Book a consultation<svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn-ghost num" href="tel:+19563318366"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>(956) 331-8366</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap grid">
+    <div class="foot-brand">
+      <a class="logo on-dark" href="#top" aria-label="Ivy Med Spa, back to top">
+        <svg class="logo-mark" viewBox="50 55 160 160" aria-hidden="true"><path style="fill:var(--lc)" d="M130 57Q152 80 159 115L130 192L101 115Q108 80 130 57Z"/><path style="fill:var(--ls)" d="M53 119L94 131L123 213C95 211 70 195 60 170C55 157 53 145 53 119Z"/><path style="fill:var(--ls)" d="M207 119L166 131L137 213C165 211 190 195 200 170C205 157 207 145 207 119Z"/></svg>
+        <span class="logo-type"><span class="logo-name">IVY</span><span class="logo-tag"><i></i><span>MED SPA</span><i></i></span></span>
+      </a>
+      <p>Physician-led aesthetics and wellness in Edinburg, Texas.</p>
+    </div>
+    <div class="foot-col">
+      <h3>Visit</h3>
+      <ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ivy+Medspa+2500+W+Trenton+Rd+Suite+5+Edinburg+TX+78539" target="_blank" rel="noopener">2500 West Trenton Road, Suite 5, Edinburg</a></li></ul>
+    </div>
+    <div class="foot-col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a class="num" href="tel:+19563318366">(956) 331-8366</a></li>
+        <li><a class="num" href="https://wa.me/19566701497" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:info@ivy-medspa.com">info@ivy-medspa.com</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h3>Follow</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/ivymedspa" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg>Instagram</a></li>
+        <li><a href="https://facebook.com/theivymedspa" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-facebook-logo"/></svg>Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="fine">
+      <span>Design concept by Drusus Technologies. The logo shown is a refined version of Ivy Med Spa's original, redrawn as a concept. <a href="logo.html">Compare logo ideas</a></span>
+      <span>Reception and team photos are Ivy Med Spa's own. Other photos are placeholders from Unsplash.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="btn btn-ghost" href="tel:+19563318366"><svg class="ic ring" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-primary" href="https://na02.envisiongo.com/a/ivymedspa/OnlineBooking.aspx" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book a consultation</a>
+</div>
+
+<script>
+// Today's hours highlight (works without GSAP)
+(function(){var d=new Date().getDay();var r=document.querySelector('.hours tr[data-d="'+d+'"]');if(r)r.classList.add('today')})();
+
+window.addEventListener('DOMContentLoaded', function(){
+  if(!window.gsap){document.documentElement.classList.remove('js');return}
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+  var head=document.getElementById('head'), mbar=document.getElementById('mbar');
+  var phone=matchMedia('(max-width: 760px)').matches;
+
+  // Header: solid after the top, hides on the way down, returns on the way up
+  var lastY=0;
+  function onScroll(y){
+    head.classList.toggle('is-solid', y>40);
+    if(y>lastY+6 && y>400) head.classList.add('is-hidden');
+    else if(y<lastY-6) head.classList.remove('is-hidden');
+    lastY=y;
+    if(mbar){var on=y>window.innerHeight*.6; if(on && !mbar.classList.contains('is-on')){mbar.classList.add('is-on'); ring()} else if(!on) mbar.classList.remove('is-on')}
+  }
+  function ring(){var r=mbar.querySelector('.ring'); if(r && window.gsap && !matchMedia('(prefers-reduced-motion: reduce)').matches) gsap.fromTo(r,{rotate:0},{keyframes:{rotate:[0,-14,12,-10,8,0]},duration:.7,delay:.35,ease:'none'})}
+
+  // Today chip in hours and the anchor links
+  var mm=gsap.matchMedia();
+
+  mm.add('(prefers-reduced-motion: no-preference)', function(){
+    var lenis=new Lenis({duration:1.25, easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t))}});
+    lenis.on('scroll', function(e){ScrollTrigger.update(); onScroll(e.scroll)});
+    gsap.ticker.add(function(t){lenis.raf(t*1000)}); gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href'); if(id.length<2)return; var el=document.querySelector(id); if(!el && id!=='#top')return; e.preventDefault(); lenis.scrollTo(id==='#top'?0:el,{offset:id==='#top'?0:-70,duration:1.6})})});
+
+    // Louvers: oak slats, like the wall in their reception
+    var lv=document.querySelector('.louvers'), n=phone?6:12;
+    for(var i=0;i<n;i++){var s=document.createElement('div'); s.className='slat'; lv.appendChild(s)}
+    var slats=gsap.utils.toArray('.slat');
+    var title=document.querySelector('.hero-title');
+    var split=SplitText.create(title,{type:'lines', mask:'lines', linesClass:'ln'});
+    var heroImg=document.querySelector('.hero-media img');
+    var fade=['.hero-sub','.hero-ctas','.hero-rating'];
+    gsap.set(['.hero-title','.hero-sub','.hero-rating'],{color:'#13241E'});
+    gsap.set('.hero-title em',{color:'#7A5A27'});
+    gsap.set('.hero-ctas .btn-ghost',{color:'#13241E'});
+    gsap.set('.hero-rating .stars',{color:'#7A5A27'});
+    gsap.set('.hero-scrim',{opacity:0}); gsap.set('.hero-cue',{color:'#4A5A52'});
+    gsap.set(heroImg,{scale:1.14, filter:'brightness(.7)'});
+    gsap.set(slats,{rotationY:0});
+    gsap.set('.lm-c,.lm-l,.lm-r',{scale:0, transformOrigin:'50% 100%'});
+    gsap.set('.logo-name,.logo-tag',{yPercent:110, opacity:0});
+    gsap.set(fade,{opacity:0, y:18});
+    gsap.set('.nav-links a, .nav-cta > *',{opacity:0, y:-8});
+
+    var load=gsap.timeline({defaults:{ease:'expo.out'}});
+    load.to('.lm-c',{scale:1, duration:1}, .1)
+        .to('.lm-l,.lm-r',{scale:1, duration:1, stagger:.08}, .25)
+        .to('.logo-name',{yPercent:0, opacity:1, duration:.9}, .3)
+        .to('.logo-tag',{yPercent:0, opacity:1, duration:.9}, .42)
+        .from(split.lines,{yPercent:105, duration:1.1, stagger:.09}, .35)
+        .to(slats,{rotationY:-16, duration:1.6, ease:'power3.out', stagger:{each:.05, from:'start'}}, .3)
+        .to(fade,{opacity:1, y:0, duration:.9, stagger:.08}, .75)
+        .to('.nav-links a, .nav-cta > *',{opacity:1, y:0, duration:.7, stagger:.05}, .6);
+
+    load.eventCallback('onComplete', function(){
+      var tl=gsap.timeline({scrollTrigger:{trigger:'.hero', start:'top top', end:'+=120%', pin:true, scrub:1, anticipatePin:1}});
+      tl.to(slats,{rotationY:-90, ease:'none', duration:1, stagger:{each:.06, from:'start'}}, 0)
+        .to(heroImg,{scale:1, filter:'brightness(1)', ease:'none', duration:1.4}, 0)
+        .to('.hero-scrim',{opacity:1, ease:'none', duration:.8}, .3)
+        .to(['.hero-title','.hero-ctas .btn-ghost'],{color:'#F4F0E8', ease:'none', duration:.6}, .35)
+        .to('.hero-title em',{color:'#C29A5C', ease:'none', duration:.6}, .35)
+        .to(['.hero-sub','.hero-rating'],{color:'#C9CFC6', ease:'none', duration:.6}, .35)
+        .to('.hero-rating .stars',{color:'#C29A5C', ease:'none', duration:.6}, .35)
+        .to('.hero-cue',{opacity:0, duration:.3}, 0)
+        .to(slats,{opacity:0, duration:.2}, 1.4);
+      ScrollTrigger.refresh();
+    });
+
+    // Generic reveals: blur to sharp, rising
+    ScrollTrigger.batch('.rv',{start:'top 88%', once:true, onEnter:function(els){gsap.to(els,{opacity:1, y:0, filter:'blur(0px)', duration:1.1, ease:'expo.out', stagger:.08})}});
+
+    // Count-ups (real numbers only)
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var to=parseFloat(el.dataset.count), dec=(el.dataset.count.split('.')[1]||'').length, o={v:0};
+      gsap.to(o,{v:to, duration:dec?1.6:2, ease:'power3.out', scrollTrigger:{trigger:el, start:'top 85%', once:true}, onUpdate:function(){el.textContent=o.v.toFixed(dec)}});
+    });
+    gsap.from('.score-stars .ic',{scale:0, rotate:-30, opacity:0, duration:.6, ease:'back.out(2)', stagger:.12, scrollTrigger:{trigger:'.score-stars', start:'top 88%', once:true}});
+
+    // Motto fills word by word
+    var ms=SplitText.create('.motto',{type:'words'});
+    gsap.fromTo(ms.words,{opacity:.16},{opacity:1, ease:'none', stagger:.3, scrollTrigger:{trigger:'.motto', start:'top 80%', end:'bottom 45%', scrub:true}});
+    gsap.fromTo('.statement-media',{clipPath:'inset(18% 0 18% 0)'},{clipPath:'inset(0% 0 0% 0)', ease:'none', scrollTrigger:{trigger:'.statement-media', start:'top 95%', end:'center 55%', scrub:true}});
+    gsap.to('.statement-media img',{yPercent:-12, ease:'none', scrollTrigger:{trigger:'.statement', start:'top bottom', end:'bottom top', scrub:true}});
+
+    // Treatments: sticky photo swaps per goal
+    var tImgs=gsap.utils.toArray('.treat-media img'), tLabel=document.querySelector('.tm-label');
+    gsap.utils.toArray('.group').forEach(function(g){
+      ScrollTrigger.create({trigger:g, start:'top 55%', end:'bottom 55%', onToggle:function(st){ if(!st.isActive)return; tImgs.forEach(function(im){im.classList.toggle('is-on', im.dataset.g===g.dataset.g)}); tLabel.textContent=g.dataset.label; gsap.fromTo(tLabel,{yPercent:60, opacity:0},{yPercent:0, opacity:1, duration:.8, ease:'expo.out'}) }});
+    });
+
+    // The ivy climbs: stem draws down beside the menu, leaves unfurl as it passes
+    var vine=document.querySelector('.vine svg');
+    function buildVine(){
+      if(getComputedStyle(document.querySelector('.vine')).display==='none')return null;
+      var h=vine.parentNode.offsetHeight, d='M32 0', x=32, leaves=[], step=60, side=1;
+      for(var y=step;y<=h;y+=step){var nx=32+Math.sin(y/140)*12; d+=' Q'+(x+(nx-x)/2+side*10)+' '+(y-step/2)+' '+nx+' '+y; x=nx; if(y%180===0){leaves.push([nx,y,side]); side*=-1}}
+      vine.querySelector('.stem').setAttribute('d', d);
+      vine.querySelectorAll('.lf').forEach(function(l){l.remove()});
+      leaves.forEach(function(L){var p=document.createElementNS('http://www.w3.org/2000/svg','path'); p.setAttribute('class','lf'); p.setAttribute('d','M0 0c'+(L[2]*6)+' -9 '+(L[2]*18)+' -11 '+(L[2]*24)+' -6c'+(-L[2]*4)+' 9 '+(-L[2]*14)+' 12 '+(-L[2]*24)+' 6z'); p.setAttribute('transform','translate('+L[0]+' '+L[1]+')'); p.dataset.y=L[1]; vine.appendChild(p)});
+      return h;
+    }
+    var vh=buildVine();
+    if(vh){
+      var stem=vine.querySelector('.stem'), len=stem.getTotalLength();
+      gsap.set(stem,{strokeDasharray:len, strokeDashoffset:len});
+      gsap.set('.vine .lf',{scale:0, transformOrigin:'0% 100%'});
+      ScrollTrigger.create({trigger:'.vine', start:'top 60%', end:'bottom 60%', scrub:true, onUpdate:function(st){
+        stem.style.strokeDashoffset=len*(1-st.progress);
+        var reach=st.progress*vh;
+        vine.querySelectorAll('.lf').forEach(function(l){var on=+l.dataset.y<reach; if(on!==!!l._on){l._on=on; gsap.to(l,{scale:on?1:0, duration:.9, ease:'expo.out'})}});
+      }});
+    }
+
+    // Reception photo opens from a framed window to full-bleed
+    var spaceMQ=!matchMedia('(max-width: 900px)').matches;
+    gsap.fromTo('.space-clip',{clipPath:'inset(9% 14% 9% 14% round 6px)'},{clipPath:'inset(0% 0% 0% 0% round 0px)', ease:'none', scrollTrigger:{trigger:'.space', start:spaceMQ?'top 85%':'top 95%', end:spaceMQ?'top top':'center 60%', scrub:true}});
+    gsap.fromTo('.space-clip img',{yPercent:-4, scale:1.08},{yPercent:4, scale:1, ease:'none', scrollTrigger:{trigger:'.space', start:'top bottom', end:'bottom top', scrub:true}});
+    gsap.from('.space-cap > *',{y:40, opacity:0, duration:1.1, ease:'expo.out', stagger:.12, scrollTrigger:{trigger:'.space-cap', start:'top 90%', once:true}});
+
+    // Marquee drifts, quickens with scroll speed
+    var track=document.querySelector('.marq-track'), row=track.querySelector('.marq-row');
+    track.appendChild(row.cloneNode(true)).setAttribute('aria-hidden','true');
+    var mx=0, vel=0, w=row.offsetWidth;
+    ScrollTrigger.create({trigger:'.marq', start:'top bottom', end:'bottom top', onUpdate:function(st){vel=Math.min(Math.abs(st.getVelocity())/300, 6)}});
+    var visible=false; new IntersectionObserver(function(e){visible=e[0].isIntersecting}).observe(track);
+    gsap.ticker.add(function(){ if(!visible)return; mx-=(0.5+vel); vel*=.92; if(-mx>=w)mx+=w; track.style.transform='translate3d('+mx+'px,0,0)' });
+    window.addEventListener('resize', function(){w=row.offsetWidth});
+
+    // Closing glow drifts slowly
+    gsap.to('.glow',{xPercent:-38, yPercent:-58, duration:9, ease:'sine.inOut', yoyo:true, repeat:-1});
+
+    // Refresh once fonts and images settle
+    document.fonts.ready.then(function(){ScrollTrigger.refresh()});
+    window.addEventListener('load', function(){vh=buildVine()||vh; ScrollTrigger.refresh()});
+    return function(){lenis.destroy()};
+  });
+
+  mm.add('(prefers-reduced-motion: reduce)', function(){
+    window.addEventListener('scroll', function(){onScroll(window.scrollY)}, {passive:true});
+    gsap.set('.rv',{clearProps:'all'});
+  });
+
+  // Magnetic buttons, fine pointers only
+  mm.add('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)', function(){
+    document.querySelectorAll('.magnetic').forEach(function(b){
+      var xT=gsap.quickTo(b,'x',{duration:.3, ease:'power3'}), yT=gsap.quickTo(b,'y',{duration:.3, ease:'power3'});
+      b.addEventListener('pointermove', function(e){var r=b.getBoundingClientRect(); xT((e.clientX-r.left-r.width/2)*.25); yT((e.clientY-r.top-r.height/2)*.35)});
+      b.addEventListener('pointerleave', function(){xT(0); yT(0)});
+    });
+  });
+});
+</script>
+</body>
+</html>
