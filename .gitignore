@@ -11,3 +11,5 @@ out/
 *.log
 package-lock.json
 pnpm-lock.yaml
+# Local pipeline notes (never publish)
+demo_pipeline.md
