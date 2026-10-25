@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cytech Heating &amp; Cooling | 24/7 AC Repair &amp; Lennox Systems in Edinburg, TX</title>
+<meta name="description" content="Cytech Heating & Cooling has kept the Rio Grande Valley cool since 1991. AC repair, maintenance and new Lennox systems, 24 hours a day, 365 days a year. Call 956-553-3265.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Cytech Heating & Cooling | Edinburg, TX">
+<meta property="og:description" content="AC repair, maintenance and Lennox installs across the Valley since 1991. Open 24 hours. 4.9 stars from 737 Google reviews.">
+<meta property="og:image" content="images/hero-crew.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#01A0C7">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,100..150,500..900;1,100..150,500..900&family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero-crew.webp">
+<style>
+:root{
+  --cyan:#01A0C7;        /* their logo */
+  --cyan-lg:#0090B5;     /* cyan for large text on white */
+  --cyan-ink:#006F8C;    /* cyan for small text on white */
+  --red:#D2232A;         /* van pinstripe + sign frame */
+  --red-dk:#B01A20;
+  --ink:#0B2433;
+  --ink-2:#3C5463;
+  --night:#08202D;
+  --paper:#FFFFFF;
+  --cool:#EEF5F8;
+  --cool-2:#DCEBF1;
+  --line:#CFE0E7;
+  --display:"Anybody",system-ui,sans-serif;
+  --body:"Schibsted Grotesk",system-ui,sans-serif;
+  --wrap:1320px;
+  --slant:-11deg;
+  --ic-duo:currentColor; --ic-duo-op:.22;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:96px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body);overflow-x:clip}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.ic{width:1.25em;height:1.25em;flex:none;vertical-align:middle}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:100;border-radius:6px}
+.skip:focus{top:12px}
+
+/* ---------- concept bar ---------- */
+.concept{background:var(--night);color:#C9DCE5;font-size:.8125rem;text-align:center;padding:7px 16px;line-height:1.4}
+.concept b{color:#fff;font-weight:600}
+
+/* ---------- pinstripe (their van's double red line) ---------- */
+.stripe{height:9px;position:relative;pointer-events:none}
+.stripe::before,.stripe::after{content:"";position:absolute;left:0;right:0;background:var(--red);transform-origin:left center}
+.stripe::before{top:0;height:4px}
+.stripe::after{bottom:0;height:2px}
+.js .stripe.draw::before,.js .stripe.draw::after{transform:scaleX(0);transition:transform 1s cubic-bezier(.65,0,.2,1)}
+.js .stripe.draw::after{transition-delay:.12s}
+.js .stripe.draw.on::before,.js .stripe.draw.on::after{transform:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:52px;padding:0 1.35em;border-radius:6px;font:700 1.0625rem/1 var(--body);text-decoration:none;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .18s;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn .num{font-family:var(--display);font-style:italic;font-weight:800;font-stretch:110%;letter-spacing:.01em}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:50;background:#fff}
+.hdr-in{display:flex;align-items:center;gap:24px;height:78px}
+.hdr .logo img{height:46px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:.9688rem;padding:10px 12px;border-radius:6px;color:var(--ink)}
+.nav a:hover{background:var(--cool)}
+.hdr-call{margin-left:8px;min-height:48px}
+.hdr .stripe{height:7px}
+.hdr .stripe::before{height:3px}.hdr .stripe::after{height:2px}
+.menu-btn,.call-ic{display:none}
+@media (max-width:1060px){.nav{display:none}.hdr-call{margin-left:auto}}
+@media (max-width:640px){
+  .hdr-in{height:66px;gap:10px}
+  .hdr .logo img{height:36px}
+  .hdr-call{display:none}
+  .call-ic,.menu-btn{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:8px;border:0;cursor:pointer}
+  .call-ic{margin-left:auto;background:var(--red);color:#fff}
+  .menu-btn{background:var(--cool);color:var(--ink)}
+  .call-ic .ic,.menu-btn .ic{width:24px;height:24px}
+}
+.sheet{position:fixed;inset:0;z-index:60;background:var(--night);color:#fff;display:flex;flex-direction:column;padding:16px 20px 28px;transform:translateY(-100%);visibility:hidden;transition:transform .32s cubic-bezier(.65,0,.2,1),visibility 0s .32s}
+.sheet.open{transform:none;visibility:visible;transition:transform .32s cubic-bezier(.65,0,.2,1)}
+.sheet-top{display:flex;justify-content:space-between;align-items:center;height:50px}
+.sheet-top img{height:34px;width:auto}
+.sheet-close{width:46px;height:46px;border:0;border-radius:8px;background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center;cursor:pointer}
+.sheet nav{display:flex;flex-direction:column;margin:28px 0 auto}
+.sheet nav a{font:italic 800 2rem/1.15 var(--display);font-stretch:112%;text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.sheet .btn{justify-content:center;margin-top:12px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:clamp(28px,5vw,64px) 0 0;overflow:clip}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);grid-template-areas:"top shot" "copy shot";column-gap:clamp(28px,4vw,64px);align-items:end}
+.hero-top{grid-area:top}
+.hero-copy{grid-area:copy;align-self:start}
+.shot{grid-area:shot;align-self:center}
+.live{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.9375rem;color:var(--ink);background:var(--cool);padding:7px 14px 7px 12px;border-radius:999px}
+.live i{width:10px;height:10px;border-radius:50%;background:#16A34A;box-shadow:0 0 0 3px rgba(22,163,74,.18)}
+.hero h1{font-style:italic;font-weight:900;font-stretch:118%;font-size:clamp(2.5rem,4.7vw,4.25rem);line-height:.92;margin:18px 0 clamp(18px,2vw,26px);text-transform:uppercase;letter-spacing:-.015em}
+.hero h1 span{display:block;color:var(--cyan-lg)}
+.hero .lede{font-size:clamp(1.0625rem,1.4vw,1.25rem);color:var(--ink-2);max-width:34em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 26px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;font-size:.9375rem;color:var(--ink-2)}
+.proof a{text-decoration:none;display:inline-flex;align-items:center;gap:10px;color:var(--ink)}
+.proof a:hover .rate-n{text-decoration:underline}
+.stars{display:inline-flex;gap:1px;color:#F2A900;--ic-duo-op:1}
+.stars .ic{width:17px;height:17px}
+.rate-n{font:italic 800 1.375rem/1 var(--display);font-stretch:110%}
+.proof .sep{width:1px;height:26px;background:var(--line)}
+.proof .tag{display:inline-flex;align-items:center;gap:8px}
+.proof .tag .ic{color:var(--cyan-ink)}
+
+.shot{position:relative;padding:0 0 26px;}
+.shot::before{content:"";position:absolute;left:-7%;right:-50vw;bottom:0;height:44%;background:var(--cyan);transform:skewX(var(--slant));transform-origin:bottom left}
+.shot figure{margin:0;position:relative}
+.shot img{width:100%;aspect-ratio:1000/579;object-fit:cover;border-radius:4px;box-shadow:0 30px 60px -30px rgba(8,32,45,.55)}
+.shot figcaption{position:absolute;right:14px;bottom:-14px;background:var(--ink);color:#fff;font-size:.8125rem;font-weight:600;padding:7px 12px;border-radius:4px}
+.hero > .stripe{margin-top:clamp(36px,5vw,64px)}
+.js .hero .shot{opacity:0;transform:translateX(40px)}
+.js .hero.on .shot{opacity:1;transform:none;transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .hero .rise{opacity:0;transform:translateY(16px)}
+.js .hero.on .rise{opacity:1;transform:none;transition:opacity .5s ease,transform .6s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 90ms)}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;grid-template-areas:"top" "copy" "shot"}
+  .shot{max-width:680px;margin-top:36px}
+}
+@media (max-width:640px){
+  .hero{padding-top:22px}
+  .hero h1{margin:16px 0 16px}
+  .hero-cta .btn{flex:1 1 100%;justify-content:center}
+  .hero-cta{margin:22px 0 20px}
+  .proof .sep{display:none}
+}
+
+/* ---------- trust band (the logo's slanted band) ---------- */
+.band{background:var(--cyan);color:var(--ink);position:relative}
+.band-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 28px;padding-block:20px}
+.band-item{display:flex;align-items:center;gap:10px;font:italic 800 clamp(.95rem,1.3vw,1.125rem)/1.1 var(--display);font-stretch:108%;text-transform:uppercase;letter-spacing:.01em}
+.band-item .ic{width:26px;height:26px}
+@media (max-width:640px){.band-in{display:grid;grid-template-columns:1fr 1fr}.band-item{font-size:.95rem}}
+
+/* ---------- section heads ---------- */
+.sec{padding:clamp(64px,9vw,120px) 0}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:700 .8125rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-ink)}
+.kicker::before{content:"";width:28px;height:6px;border-top:3px solid var(--red);border-bottom:2px solid var(--red)}
+.h2{font-style:italic;font-weight:900;font-stretch:115%;text-transform:uppercase;font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:.95;margin:14px 0 16px}
+.sub{color:var(--ink-2);max-width:40em;font-size:1.0625rem}
+.js .reveal{opacity:0;transform:translateY(22px)}
+.js .reveal.on{opacity:1;transform:none;transition:opacity .55s ease,transform .6s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 80ms)}
+
+/* ---------- symptom picker ---------- */
+.diag{background:var(--cool)}
+.diag-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:40px;align-items:start}
+.symptoms{display:flex;flex-direction:column;gap:8px}
+.sym{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#fff;border:2px solid transparent;border-radius:8px;padding:14px 16px;font:600 1.0625rem/1.3 var(--body);color:var(--ink);cursor:pointer;transition:border-color .18s,background .18s,transform .18s}
+.sym:hover{border-color:var(--cool-2);transform:translateX(3px)}
+.sym .n{font:italic 900 1rem/1 var(--display);font-stretch:120%;color:var(--cyan-ink);min-width:26px}
+.sym .ic{margin-left:auto;color:var(--ink-2);opacity:.5;transition:opacity .18s,transform .18s}
+.sym[aria-selected="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
+.sym[aria-selected="true"] .n{color:#7FD6EE}
+.sym[aria-selected="true"] .ic{color:#fff;opacity:1;transform:translateX(3px)}
+.panel{background:#fff;border-radius:10px;padding:clamp(24px,3.4vw,40px);position:relative;overflow:hidden;box-shadow:0 24px 50px -36px rgba(8,32,45,.5);position:sticky;top:110px}
+.panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:26px;background:var(--cyan);clip-path:polygon(0 0,100% 0,45% 100%,0 100%)}
+.panel > *{position:relative;margin-left:18px}
+.panel h3{font-style:italic;font-weight:900;font-stretch:112%;font-size:clamp(1.6rem,2.6vw,2.2rem);text-transform:uppercase;line-height:1}
+.panel .lbl{display:block;font:700 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-ink);margin:22px 0 8px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.panel li{display:flex;gap:10px;align-items:flex-start}
+.panel li .ic{color:var(--cyan-ink);margin-top:.18em}
+.panel .tip{margin-top:22px;padding:14px 16px;border-radius:8px;background:var(--cool);font-size:.9688rem}
+.panel .tip b{color:var(--red-dk)}
+.panel .btn{margin-top:24px}
+.js .panel[hidden]{display:none}
+.js .panel.swap{animation:swap .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes swap{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.diag-note{font-size:.875rem;color:var(--ink-2);margin-top:14px}
+@media (max-width:900px){.diag-grid{grid-template-columns:1fr}.panel{position:relative;top:0}
+  .symptoms{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin-inline:calc(-1 * clamp(16px,4vw,40px));padding-inline:clamp(16px,4vw,40px);scroll-padding-inline:clamp(16px,4vw,40px);scrollbar-width:none}
+  .symptoms::-webkit-scrollbar{display:none}
+  .sym{flex:0 0 auto;width:auto;scroll-snap-align:start;white-space:nowrap}
+  .sym .ic{display:none}
+}
+
+/* ---------- services ---------- */
+.svc-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
+.svc-cols{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(28px,5vw,72px);margin-top:44px}
+.svc-col h3{font-style:italic;font-weight:900;font-stretch:115%;text-transform:uppercase;font-size:1.5rem;display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:3px solid var(--ink)}
+.svc-col h3 .ic{width:30px;height:30px;color:var(--cyan-ink)}
+.svc{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.svc .tile{grid-row:span 2;width:52px;height:52px;border-radius:10px;background:var(--cool);color:var(--cyan-ink);display:grid;place-items:center;transition:background .2s,color .2s,transform .2s}
+.svc .tile .ic{width:28px;height:28px}
+.svc:hover .tile{background:var(--cyan);color:var(--ink);transform:rotate(-6deg)}
+.svc b{font-size:1.125rem;font-weight:700}
+.svc p{color:var(--ink-2);font-size:.9688rem}
+.svc-2 .svc-list{display:grid;grid-template-columns:1fr 1fr;column-gap:32px}
+.svc-1 .svc-list{display:grid;grid-template-columns:1fr 1fr;column-gap:32px}
+.biz-card{margin-top:28px;background:var(--night);color:#DCEAF0;border-radius:10px;padding:24px;position:relative;overflow:hidden}
+.biz-card b{color:#fff;font:italic 800 1.25rem/1.1 var(--display);font-stretch:110%;text-transform:uppercase;display:block;margin-bottom:8px}
+.biz-card::after{content:"";position:absolute;right:-20px;top:0;bottom:0;width:40px;background:var(--red);transform:skewX(var(--slant))}
+@media (max-width:980px){.svc-cols{grid-template-columns:1fr}.svc-head{grid-template-columns:1fr}}
+@media (max-width:640px){.svc-1 .svc-list,.svc-2 .svc-list{grid-template-columns:1fr}}
+
+/* ---------- reviews ---------- */
+.rev{background:var(--night);color:#fff;position:relative;overflow:clip}
+.rev .kicker{color:#7FD6EE}
+.rev-grid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.score{position:relative}
+.score .big{font:italic 900 clamp(7rem,15vw,12.5rem)/.8 var(--display);font-stretch:125%;color:var(--cyan);letter-spacing:-.03em}
+.score .stars{margin-top:18px}
+.score .stars .ic{width:28px;height:28px}
+.score .cnt{margin-top:10px;font-weight:600;color:#C9DCE5}
+.quote{font:italic 700 clamp(1.5rem,2.8vw,2.3rem)/1.15 var(--display);font-stretch:105%;margin:16px 0 8px;max-width:22em}
+.quote-src{color:#A9C3CF;font-size:.9375rem}
+.themes{display:grid;gap:14px;margin:34px 0 30px;max-width:560px}
+.theme{display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center;font-weight:600}
+.theme small{color:#A9C3CF;font-weight:500;font-size:.875rem}
+.bar{grid-column:1 / -1;height:8px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--cyan);border-radius:99px;transform-origin:left;width:var(--w)}
+.js .bar i{transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.js .themes.on .bar i{transform:none}
+.rev .stripe{position:absolute;left:0;right:0;bottom:0}
+@media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* ---------- story ---------- */
+.story-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,88px);align-items:center}
+.collage{position:relative;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto;gap:14px}
+.collage figure{margin:0;position:relative}
+.collage img{border-radius:4px;width:100%;object-fit:cover}
+.c1{grid-column:1 / 8;grid-row:1 / 3;position:relative}
+.c1::before{content:"";position:absolute;inset:8% -18px -18px 18px;background:var(--cyan);transform:skewX(var(--slant));border-radius:4px}
+.c1 img{position:relative;aspect-ratio:538/800}
+.c2{grid-column:8 / 13;align-self:end}
+.c2 img{aspect-ratio:4/3;object-position:30% 40%}
+.c3{grid-column:8 / 13;align-self:start}
+.c3 img{aspect-ratio:1;object-position:50% 30%}
+.collage figcaption{font-size:.8125rem;color:var(--ink-2);margin-top:6px;line-height:1.35}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:34px 0;border-top:3px solid var(--ink)}
+.stat{padding:18px 16px 0 0}
+.stat + .stat{padding-left:16px;border-left:1px solid var(--line)}
+.stat b{display:block;font:italic 900 clamp(2rem,3.6vw,2.9rem)/1 var(--display);font-stretch:118%;color:var(--ink)}
+.stat span{font-size:.9375rem;color:var(--ink-2)}
+.story p + p{margin-top:14px}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.creds span{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1.5px solid var(--line);border-radius:999px;font-size:.875rem;font-weight:600}
+.creds .ic{color:var(--cyan-ink);width:18px;height:18px}
+@media (max-width:900px){.story-grid{grid-template-columns:1fr}.collage{max-width:620px}}
+@media (max-width:480px){.stats{grid-template-columns:1fr}.stat + .stat{padding-left:0;border-left:0;border-top:1px solid var(--line)}.stat{padding:14px 0}}
+
+/* ---------- plans + financing ---------- */
+.plans{background:var(--cool)}
+.plans-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);margin-top:44px;align-items:stretch}
+/* the service tag techs hang on a condenser */
+.tag-card{position:relative;background:#fff;border-radius:14px 14px 14px 14px;padding:clamp(26px,3.5vw,44px);padding-top:clamp(56px,6vw,70px);box-shadow:0 30px 60px -40px rgba(8,32,45,.55)}
+.tag-card::before{content:"";position:absolute;left:50%;top:22px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--cool);box-shadow:inset 0 2px 3px rgba(0,0,0,.15)}
+.tag-top{position:absolute;left:0;right:0;top:0;height:10px;background:var(--cyan);border-radius:14px 14px 0 0}
+.tag-card h3,.fin h3{font-style:italic;font-weight:900;font-stretch:115%;text-transform:uppercase;font-size:clamp(1.6rem,2.6vw,2.1rem)}
+.freq{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:22px 0}
+.freq span{text-align:center;padding:12px 6px;border:2px dashed var(--line);border-radius:8px;font:italic 800 1rem/1 var(--display);font-stretch:110%;text-transform:uppercase}
+.checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:.9688rem}
+.checks .ic{color:#16834A;margin-top:.15em}
+.tag-foot{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:28px;padding-top:20px;border-top:2px dashed var(--line)}
+.tag-foot small{color:var(--ink-2)}
+.fin{background:var(--ink);color:#DCEAF0;border-radius:14px;padding:clamp(26px,3.5vw,44px);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.fin h3{color:#fff}
+.fin::after{content:"";position:absolute;right:-40px;bottom:-60px;width:220px;height:220px;border:22px solid rgba(1,160,199,.18);border-radius:50%}
+.lenders{display:grid;gap:12px;margin:22px 0 auto}
+.lender{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;background:rgba(255,255,255,.06);border-radius:8px}
+.lender .ic{color:var(--cyan);width:26px;height:26px}
+.lender b{color:#fff;display:block}
+.lender span{font-size:.9375rem}
+.fin .btn{margin-top:26px;align-self:flex-start;position:relative;z-index:1}
+@media (max-width:900px){.plans-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.checks{grid-template-columns:1fr}.freq span{font-size:.85rem}}
+
+/* ---------- area ---------- */
+.area{background:var(--cyan);color:var(--ink);overflow:clip;position:relative}
+.area .kicker{color:var(--ink)}
+.area .kicker::before{border-color:var(--ink)}
+.towns{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:40px;font:italic 900 clamp(1.6rem,3.7vw,3.1rem)/1.08 var(--display);font-stretch:118%;text-transform:uppercase}
+.towns li{list-style:none;display:flex;align-items:center;gap:18px}
+.towns li::after{content:"/";color:rgba(11,36,51,.35);font-weight:500}
+.towns li:last-child::after{content:none}
+.towns .home{position:relative}
+.towns .home span{background:#fff;padding:0 .18em 0 .1em}
+.towns .home small{font:700 .75rem/1 var(--body);letter-spacing:.12em;background:var(--ink);color:#fff;padding:5px 8px;border-radius:4px;position:absolute;left:4px;top:-18px;font-style:normal}
+.towns{padding:0;margin-bottom:0}
+.area-note{margin-top:28px;font-weight:600;max-width:46em}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.rows{margin-top:30px;border-top:3px solid var(--ink)}
+.row{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center;text-decoration:none}
+.row .tile{width:44px;height:44px;border-radius:10px;background:var(--cool);display:grid;place-items:center;color:var(--cyan-ink);grid-row:span 2}
+.row small{font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.row b{font-size:1.125rem}
+a.row:hover b{text-decoration:underline}
+.mapcard{position:relative;background:var(--night);border-radius:12px;overflow:hidden;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;color:#fff;text-decoration:none}
+.mapcard svg.road{position:absolute;inset:0;width:100%;height:100%}
+.mapcard .pin{position:absolute;left:58%;top:38%;transform:translate(-50%,-100%);color:var(--red)}
+.mapcard .pin .ic{width:54px;height:54px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.4))}
+.mapcard .addr{position:relative;font:italic 800 clamp(1.4rem,2.6vw,2rem)/1.1 var(--display);font-stretch:110%;text-transform:uppercase}
+.mapcard .go{position:relative;display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-weight:700;color:#7FD6EE}
+.mapcard:hover .go{text-decoration:underline}
+@media (max-width:900px){.visit-grid{grid-template-columns:1fr}.mapcard{min-height:320px}}
+
+/* ---------- close ---------- */
+.close{background:var(--night);color:#fff;text-align:center;padding:clamp(72px,10vw,128px) 0 0;position:relative;overflow:clip}
+.close .eyebrow{font-weight:700;color:#7FD6EE;letter-spacing:.14em;text-transform:uppercase;font-size:.8125rem}
+.close h2{font-style:italic;font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(2.2rem,5vw,4rem);margin:16px auto 10px;max-width:16em}
+.bignum{display:inline-block;white-space:nowrap;font:italic 900 clamp(2rem,9.2vw,7.5rem)/1 var(--display);font-stretch:125%;color:var(--cyan);text-decoration:none;letter-spacing:-.01em;margin:18px 0 6px;transition:color .2s}
+.bignum:hover{color:#fff}
+.close p{color:#C9DCE5}
+.close .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:30px 0 clamp(64px,8vw,96px)}
+
+/* ---------- footer ---------- */
+.ftr{background:#051720;color:#B5CBD5;padding:56px 0 110px;font-size:.9375rem}
+.ftr-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
+.ftr img.flogo{width:220px;height:auto}
+.ftr h4{color:#fff;font:700 .8125rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;margin:4px 0 14px}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ftr a{text-decoration:none}
+.ftr a:hover{color:#fff;text-decoration:underline}
+.ftr .motto{font:italic 700 1.125rem/1.3 var(--display);color:#fff;margin:18px 0 6px}
+.social{display:flex;gap:8px;margin-top:16px}
+.social a{width:42px;height:42px;border-radius:8px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:#fff}
+.social a:hover{background:var(--cyan);color:var(--ink)}
+.fine{margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:.8125rem;color:#8EA8B4}
+.fine a{text-decoration:underline}
+@media (max-width:900px){.ftr-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.ftr-grid{grid-template-columns:1fr}}
+
+/* ---------- sticky phone bar ---------- */
+.mbar{display:none}
+@media (max-width:640px){
+  .mbar{display:grid;grid-template-columns:1.25fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s}
+  .mbar.show{transform:none}
+  .mbar .btn{justify-content:center;min-height:50px;font-size:1rem;padding:0 12px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal,.js .hero .shot,.js .hero .rise{opacity:1!important;transform:none!important}
+  .js .stripe.draw::before,.js .stripe.draw::after,.js .bar i{transform:none!important}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 256 256" fill="currentColor"><path d="M229.06,108.79l-48.7,42,14.88,62.79a8.4,8.4,0,0,1-12.52,9.17L128,189.09,73.28,222.74a8.4,8.4,0,0,1-12.52-9.17l14.88-62.79-48.7-42A8.46,8.46,0,0,1,31.73,94L95.64,88.8l24.62-59.6a8.36,8.36,0,0,1,15.48,0l24.62,59.6L224.27,94A8.46,8.46,0,0,1,229.06,108.79Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M216,128l-72,72V56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"/></symbol>
+<symbol id="i-snowflake" viewBox="0 0 256 256" fill="currentColor"><path d="M220,128a92,92,0,1,1-92-92A92.1,92.1,0,0,1,220,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M223.77,150.09a8,8,0,0,1-5.86,9.68l-24.64,6,6.46,24.11a8,8,0,0,1-5.66,9.8A8.25,8.25,0,0,1,192,200a8,8,0,0,1-7.72-5.93l-7.72-28.8L136,141.86v46.83l21.66,21.65a8,8,0,0,1-11.32,11.32L128,203.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L120,188.69V141.86L79.45,165.27l-7.72,28.8A8,8,0,0,1,64,200a8.25,8.25,0,0,1-2.08-.27,8,8,0,0,1-5.66-9.8l6.46-24.11-24.64-6a8,8,0,0,1,3.82-15.54l29.45,7.23L112,128,71.36,104.54l-29.45,7.23A7.85,7.85,0,0,1,40,112a8,8,0,0,1-1.91-15.77l24.64-6L56.27,66.07a8,8,0,0,1,15.46-4.14l7.72,28.8L120,114.14V67.31L98.34,45.66a8,8,0,0,1,11.32-11.32L128,52.69l18.34-18.35a8,8,0,0,1,11.32,11.32L136,67.31v46.83l40.55-23.41,7.72-28.8a8,8,0,0,1,15.46,4.14l-6.46,24.11,24.64,6A8,8,0,0,1,216,112a7.85,7.85,0,0,1-1.91-.23l-29.45-7.23L144,128l40.64,23.46,29.45-7.23A8,8,0,0,1,223.77,150.09Z"/></symbol>
+<symbol id="i-thermometer-hot" viewBox="0 0 256 256" fill="currentColor"><path d="M152,138V48a32,32,0,0,0-64,0v90a56,56,0,1,0,64,0Zm-32,70a24,24,0,1,1,24-24A24,24,0,0,1,120,208Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,153V48a8,8,0,0,0-16,0V153a32,32,0,1,0,16,0Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,120,200Zm40-66V48a40,40,0,0,0-80,0v86a64,64,0,1,0,80,0Zm-40,98a48,48,0,0,1-27.42-87.4A8,8,0,0,0,96,138V48a24,24,0,0,1,48,0v90a8,8,0,0,0,3.42,6.56A48,48,0,0,1,120,232ZM177.3,80.77a8,8,0,0,1,2.33-11.07c15-9.79,26.87-4.75,35.51-1.06C223,72,227.76,74,235.63,68.89a8,8,0,0,1,8.74,13.41C237.88,86.53,232,88,226.69,88c-7,0-12.92-2.54-17.83-4.63C201,80,196.24,78,188.37,83.11A8,8,0,0,1,177.3,80.77Zm69.4,22.46a8,8,0,0,1-2.33,11.07C237.88,118.53,232,120,226.69,120c-7,0-12.92-2.54-17.83-4.63-7.87-3.36-12.62-5.38-20.49-.25a8,8,0,0,1-8.74-13.41c15-9.79,26.87-4.75,35.51-1.06,7.87,3.36,12.62,5.39,20.49.25A8,8,0,0,1,246.7,103.23Z"/></symbol>
+<symbol id="i-fan" viewBox="0 0 256 256" fill="currentColor"><path d="M136.5,150.45A52,52,0,1,1,33,155.13l71.91-20.54h0A24,24,0,0,0,128,152a23.75,23.75,0,0,0,8.5-1.56Zm-32.19-26.31h0a24,24,0,0,1,29.52-19.42h0L152,32.17a52,52,0,1,0-47.69,92ZM201,105.5a52,52,0,0,0-57.84,3.91h0a24,24,0,0,1,2.06,35.26h0l53.74,52a52,52,0,0,0,2-91.2Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M233,135a60,60,0,0,0-89.62-35.45l16.39-65.44a8,8,0,0,0-3.45-8.68A60,60,0,1,0,95.69,128.91L30.82,147.44a8,8,0,0,0-5.8,7.32,60,60,0,0,0,44.42,60.66,60.52,60.52,0,0,0,15.62,2.07,60.07,60.07,0,0,0,59.88-62l48.48,46.92a8,8,0,0,0,9.25,1.35A60,60,0,0,0,233,135Zm-121-7a16,16,0,1,1,16,16A16,16,0,0,1,112,128ZM80,76a44,44,0,0,1,62.75-39.82L127.77,96A32,32,0,0,0,99.85,112.8,43.85,43.85,0,0,1,80,76Zm27,119.57a44,44,0,0,1-65.86-34.43l59.31-16.94A32,32,0,0,0,128,160l.91,0A43.82,43.82,0,0,1,107,195.57Zm106.17-23a43.92,43.92,0,0,1-13,14.14l-44.32-42.89a31.91,31.91,0,0,0-.59-32.57,44,44,0,0,1,57.91,61.32Z"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 256 256" fill="currentColor"><path d="M224,96a64,64,0,0,1-94.94,56L73,217A24,24,0,0,1,39,183L104,126.94a64,64,0,0,1,80-90.29L144,80l5.66,26.34L176,112l43.35-40A63.8,63.8,0,0,1,224,96Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 256 256" fill="currentColor"><path d="M208,144a80,80,0,0,1-160,0c0-72,80-128,80-128S208,72,208,144Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+<symbol id="i-wind" viewBox="0 0 256 256" fill="currentColor"><path d="M120,96a24,24,0,1,1,24-24A24,24,0,0,1,120,96Zm88-16a24,24,0,1,0,24,24A24,24,0,0,0,208,80Zm-56,80a24,24,0,1,0,24,24A24,24,0,0,0,152,160Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M184,184a32,32,0,0,1-32,32c-13.7,0-26.95-8.93-31.5-21.22a8,8,0,0,1,15-5.56C137.74,195.27,145,200,152,200a16,16,0,0,0,0-32H40a8,8,0,0,1,0-16H152A32,32,0,0,1,184,184Zm-64-80a32,32,0,0,0,0-64c-13.7,0-26.95,8.93-31.5,21.22a8,8,0,0,0,15,5.56C105.74,60.73,113,56,120,56a16,16,0,0,1,0,32H24a8,8,0,0,0,0,16Zm88-32c-13.7,0-26.95,8.93-31.5,21.22a8,8,0,0,0,15,5.56C193.74,92.73,201,88,208,88a16,16,0,0,1,0,32H32a8,8,0,0,0,0,16H208a32,32,0,0,0,0-64Z"/></symbol>
+<symbol id="i-lightning" viewBox="0 0 256 256" fill="currentColor"><path d="M96,240l16-80L48,136,160,16,144,96l64,24Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></symbol>
+<symbol id="i-house-line" viewBox="0 0 256 256" fill="currentColor"><path d="M216,116.69V216H152V152H104v64H40V116.69l82.34-82.35a8,8,0,0,1,11.32,0Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"/></symbol>
+<symbol id="i-buildings" viewBox="0 0 256 256" fill="currentColor"><path d="M136,32V216H40V85.35a8,8,0,0,1,3.56-6.66l80-53.33A8,8,0,0,1,136,32Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"/></symbol>
+<symbol id="i-shield-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56v56c0,96-88,120-88,120S40,208,40,112V56a8,8,0,0,1,8-8H208A8,8,0,0,1,216,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"/></symbol>
+<symbol id="i-seal-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232,128c0,12.51-17.82,21.95-22.68,33.69-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68c-11.32-4.68-30.65,1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V88H40V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-envelope-simple" viewBox="0 0 256 256" fill="currentColor"><path d="M224,56l-96,88L32,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+<symbol id="i-currency-dollar" viewBox="0 0 256 256" fill="currentColor"><path d="M192,168a40,40,0,0,1-40,40H128V128h24A40,40,0,0,1,192,168ZM112,48a40,40,0,0,0,0,80h16V48Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 256 256" fill="currentColor"><path d="M184,128a56,56,0,1,1-56-56A56,56,0,0,1,184,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-broom" viewBox="0 0 256 256" fill="currentColor"><path d="M192.8,165.12,43.93,105.57A110.88,110.88,0,0,1,61.47,82.38a8,8,0,0,1,8.67-1.81L95.52,90.85a16,16,0,0,0,20.82-9l21-53.1c4.15-10,15.47-15.33,25.63-11.53a20,20,0,0,1,11.51,26.39L153.13,96.71a16,16,0,0,0,8.93,20.75L187,127.3a8,8,0,0,1,5,7.43V152A104.58,104.58,0,0,0,192.8,165.12Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M235.5,216.81c-22.56-11-35.5-34.58-35.5-64.8V134.73a15.94,15.94,0,0,0-10.09-14.87L165,110a8,8,0,0,1-4.48-10.34l21.32-53a28,28,0,0,0-16.1-37,28.14,28.14,0,0,0-35.82,16,.61.61,0,0,0,0,.12L108.9,79a8,8,0,0,1-10.37,4.49L73.11,73.14A15.89,15.89,0,0,0,55.74,76.8C34.68,98.45,24,123.75,24,152a111.45,111.45,0,0,0,31.18,77.53A8,8,0,0,0,61,232H232a8,8,0,0,0,3.5-15.19ZM67.14,88l25.41,10.3a24,24,0,0,0,31.23-13.45l21-53c2.56-6.11,9.47-9.27,15.43-7a12,12,0,0,1,6.88,15.92L145.69,93.76a24,24,0,0,0,13.43,31.14L184,134.73V152c0,.33,0,.66,0,1L55.77,101.71A108.84,108.84,0,0,1,67.14,88Zm48,128a87.53,87.53,0,0,1-24.34-42,8,8,0,0,0-15.49,4,105.16,105.16,0,0,0,18.36,38H64.44A95.54,95.54,0,0,1,40,152a85.9,85.9,0,0,1,7.73-36.29l137.8,55.12c3,18,10.56,33.48,21.89,45.16Z"/></symbol>
+<symbol id="i-stack" viewBox="0 0 256 256" fill="currentColor"><path d="M224,80l-96,56L32,80l96-56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M230.91,172A8,8,0,0,1,228,182.91l-96,56a8,8,0,0,1-8.06,0l-96-56A8,8,0,0,1,36,169.09l92,53.65,92-53.65A8,8,0,0,1,230.91,172ZM220,121.09l-92,53.65L36,121.09A8,8,0,0,0,28,134.91l96,56a8,8,0,0,0,8.06,0l96-56A8,8,0,1,0,220,121.09ZM24,80a8,8,0,0,1,4-6.91l96-56a8,8,0,0,1,8.06,0l96,56a8,8,0,0,1,0,13.82l-96,56a8,8,0,0,1-8.06,0l-96-56A8,8,0,0,1,24,80Zm23.88,0L128,126.74,208.12,80,128,33.26Z"/></symbol>
+<symbol id="i-cube" viewBox="0 0 256 256" fill="currentColor"><path d="M128,129.09V232a8,8,0,0,1-3.84-1l-88-48.16a8,8,0,0,1-4.16-7V80.2a8,8,0,0,1,.7-3.27Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M223.68,66.15,135.68,18h0a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32h0l80.34,44L128,120,47.66,76ZM40,90l80,43.78v85.79L40,175.82Zm96,129.57V133.82L216,90v85.78Z"/></symbol>
+<symbol id="i-speaker-high" viewBox="0 0 256 256" fill="currentColor"><path d="M80,88v80H32a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM32,96H72v64H32ZM144,207.64,88,164.09V91.91l56-43.55Zm54-106.08a40,40,0,0,1,0,52.88,8,8,0,0,1-12-10.58,24,24,0,0,0,0-31.72,8,8,0,0,1,12-10.58ZM248,128a79.9,79.9,0,0,1-20.37,53.34,8,8,0,0,1-11.92-10.67,64,64,0,0,0,0-85.33,8,8,0,1,1,11.92-10.67A79.83,79.83,0,0,1,248,128Z"/></symbol>
+<symbol id="i-list" viewBox="0 0 256 256" fill="currentColor"><path d="M216,64V192H40V64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-x" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56V200a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V56A16,16,0,0,1,56,40H200A16,16,0,0,1,216,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+<symbol id="i-facebook-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+<symbol id="i-linkedin-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M224,40V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8H216A8,8,0,0,1,224,40Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></symbol>
+<symbol id="i-x-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M208,216H160L48,40H96Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"/></symbol>
+<symbol id="i-gauge" viewBox="0 0 256 256" fill="currentColor"><path d="M232,152v24a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V153.13C24,95.65,70.15,48.2,127.63,48A104,104,0,0,1,232,152Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M207.06,72.67A111.24,111.24,0,0,0,128,40h-.4C66.07,40.21,16,91,16,153.13V176a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V152A111.25,111.25,0,0,0,207.06,72.67ZM224,176H119.71l54.76-75.3a8,8,0,0,0-12.94-9.42L99.92,176H32V153.13c0-3.08.15-6.12.43-9.13H56a8,8,0,0,0,0-16H35.27c10.32-38.86,44-68.24,84.73-71.66V80a8,8,0,0,0,16,0V56.33A96.14,96.14,0,0,1,221,128H200a8,8,0,0,0,0,16h23.67c.21,2.65.33,5.31.33,8Z"/></symbol>
+<symbol id="i-thermometer-simple" viewBox="0 0 256 256" fill="currentColor"><path d="M160,138V48a32,32,0,0,0-64,0v90a56,56,0,1,0,64,0Zm-32,70a24,24,0,1,1,24-24A24,24,0,0,1,128,208Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M136,153V88a8,8,0,0,0-16,0v65a32,32,0,1,0,16,0Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,128,200Zm40-66V48a40,40,0,0,0-80,0v86a64,64,0,1,0,80,0Zm-40,98a48,48,0,0,1-27.42-87.4A8,8,0,0,0,104,138V48a24,24,0,0,1,48,0v90a8,8,0,0,0,3.42,6.56A48,48,0,0,1,128,232Z"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 256 256" fill="currentColor"><path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M192,64V168L88,64Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M192,56H88a8,8,0,0,0-5.66,13.66L128.69,116,58.34,186.34a8,8,0,0,0,11.32,11.32L140,127.31l46.34,46.35A8,8,0,0,0,200,168V64A8,8,0,0,0,192,56Zm-8,92.69-38.34-38.34h0L107.31,72H184Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Z" style="fill:var(--ic-duo,currentColor);opacity:var(--ic-duo-op,.22)"/><path d="M205.66,85.66l-96,96a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L104,164.69l90.34-90.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="concept" role="note">Design concept prepared for <b>Cytech Heating &amp; Cooling</b> by Drusus Technologies. Not the live site.</div>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#top" aria-label="Cytech Heating and Cooling, back to top"><img src="images/logo.png" alt="Cytech Heating &amp; Cooling" width="1046" height="296"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#help">Get help</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#plans">Plans &amp; financing</a>
+      <a href="#visit">Contact</a>
+    </nav>
+    <a class="btn btn-red hdr-call" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">956-553-3265</span></a>
+    <a class="call-ic" href="tel:+19565533265" aria-label="Call 956-553-3265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg></button>
+  </div>
+  <div class="stripe" aria-hidden="true"></div>
+</header>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="sheet-top">
+    <img src="images/logo-white.png" alt="Cytech Heating &amp; Cooling" width="1046" height="296">
+    <button class="sheet-close" type="button" aria-label="Close menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="#help">Get help</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#plans">Plans &amp; financing</a>
+    <a href="#visit">Contact</a>
+  </nav>
+  <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call <span class="num">956-553-3265</span></a>
+</div>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div class="hero-top">
+      <span class="live rise" style="--d:0"><i aria-hidden="true"></i>Open 24 hours, 365 days a year</span>
+      <h1 id="hero-h" class="rise" style="--d:1">Keeping the<br> Valley cool <span>since 1991.</span></h1>
+    </div>
+    <div class="hero-copy">
+      <p class="lede rise" style="--d:2">AC repair, tune-ups and new Lennox<sup>®</sup> systems for homes and businesses across the Rio Grande Valley, from a crew based in Edinburg.</p>
+      <div class="hero-cta rise" style="--d:3">
+        <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call <span class="num">956-553-3265</span></a>
+        <a class="btn btn-line" href="https://www.cytechheatingandcooling.com/contact-us/" rel="noopener">Request service<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="proof rise" style="--d:4">
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJqf8FEJSjZYYRf-vxerFAMdc" target="_blank" rel="noopener">
+          <span class="rate-n">4.9</span>
+          <span class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+          <span>737 Google reviews</span>
+        </a>
+        <span class="sep" aria-hidden="true"></span>
+        <span class="tag"><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Lennox Premier Dealer</span>
+      </div>
+    </div>
+    <div class="shot">
+      <figure>
+        <img src="images/hero-crew.webp" alt="The Cytech Heating and Cooling crew, about forty people in blue work shirts, standing in front of a Cytech van and their shop" width="2000" height="1158" fetchpriority="high">
+        <figcaption>The Cytech crew</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="stripe draw" aria-hidden="true"></div>
+</section>
+
+<div class="band" role="list" aria-label="Why Cytech">
+  <div class="wrap band-in">
+    <span class="band-item" role="listitem"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Since 1991</span>
+    <span class="band-item" role="listitem"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>24/7, 365 days</span>
+    <span class="band-item" role="listitem"><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Lennox Premier Dealer</span>
+    <span class="band-item" role="listitem"><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg>Most techs NATE-certified</span>
+  </div>
+</div>
+
+<section class="sec diag" id="help" aria-labelledby="help-h">
+  <div class="wrap">
+    <span class="kicker reveal">Start here</span>
+    <h2 class="h2 reveal" id="help-h">What's your AC doing?</h2>
+    <p class="sub reveal">Pick what you're seeing. We'll tell you what it usually means, one thing you can check yourself, and what we'd do about it.</p>
+
+    <div class="diag-grid">
+      <div class="symptoms" role="tablist" aria-label="Symptoms" aria-orientation="vertical">
+        <button class="sym" role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="n">01</span>Running, but blowing warm air<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="sym" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">02</span>Water around the indoor unit<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="sym" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">03</span>Buzzing, grinding or banging<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="sym" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="n">04</span>Light bill keeps climbing<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="sym" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><span class="n">05</span>Dusty, stuffy or sticky air<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="sym" role="tab" id="t6" aria-controls="p6" aria-selected="false" tabindex="-1"><span class="n">06</span>It's old and keeps breaking<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+      </div>
+
+      <div>
+        <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+          <h3>Warm air from the vents</h3>
+          <span class="lbl">Usually means</span>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Dirty indoor or outdoor coils</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Low refrigerant from a leak</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>A worn capacitor or contactor</li>
+          </ul>
+          <span class="lbl">What we do</span>
+          <p>AC repair: find the cause, explain your options, and get it cooling again.</p>
+          <p class="tip"><b>Check first:</b> thermostat set to Cool, and a clean filter. A clogged filter alone can choke airflow.</p>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call for a repair</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+          <h3>Water where it shouldn't be</h3>
+          <span class="lbl">Usually means</span>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>A clogged condensate drain line</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>A frozen evaporator coil thawing out</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>A cracked or rusted drain pan</li>
+          </ul>
+          <span class="lbl">What we do</span>
+          <p>Clear the line, find why it backed up or froze, and protect your ceiling and floors.</p>
+          <p class="tip"><b>Check first:</b> if you see ice on the copper lines, turn the system off and let it thaw before it runs again.</p>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call about a leak</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+          <h3>New noises</h3>
+          <span class="lbl">Usually means</span>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>A failing fan or blower motor</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Loose panels, mounts or parts</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>An electrical part struggling to start</li>
+          </ul>
+          <span class="lbl">What we do</span>
+          <p>Diagnose it before a small part takes out a big one like the compressor.</p>
+          <p class="tip"><b>Check first:</b> grinding or a burning smell? Shut it off at the thermostat and call.</p>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+          <h3>Bills creeping up</h3>
+          <span class="lbl">Usually means</span>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Missed tune-ups and dirty coils</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Dirty or leaky ductwork</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Thin attic insulation working against you</li>
+          </ul>
+          <span class="lbl">What we do</span>
+          <p>A maintenance visit, duct cleaning, or blown-in Owens Corning<sup>®</sup> insulation. Insulation evaluations are free.</p>
+          <p class="tip"><b>Good to know:</b> a comfort plan keeps tune-ups on the calendar so you don't have to remember.</p>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Book a check-up</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+          <h3>The air feels off</h3>
+          <span class="lbl">Usually means</span>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Dust and debris built up in the ducts</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Too much humidity for the system to pull out</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Not enough filtration or fresh air</li>
+          </ul>
+          <span class="lbl">What we do</span>
+          <p>Indoor air quality: duct cleaning and sanitation, air filtration, dehumidifiers and ventilation.</p>
+          <p class="tip"><b>Check first:</b> when was the filter last changed? In Valley summers it goes fast.</p>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Ask about air quality</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p6" aria-labelledby="t6" hidden>
+          <h3>Time for a new system?</h3>
+          <span class="lbl">Signs it might be</span>
+          <ul>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Repairs keep stacking up</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Parts for it are hard to find</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Some rooms never get comfortable</li>
+          </ul>
+          <span class="lbl">What we do</span>
+          <p>Help you pick the right Lennox<sup>®</sup> AC, heat pump or mini-split for your home and budget, with financing options.</p>
+          <p class="tip"><b>Good to know:</b> 0% financing options are available through Service Finance for qualified buyers.</p>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Talk about a new system</a>
+        </div>
+        <p class="diag-note">General guidance only. A technician confirms the real cause on site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <span class="kicker reveal">Services</span>
+        <h2 class="h2 reveal" id="svc-h">Heating, cooling &amp; everything between</h2>
+      </div>
+      <a class="btn btn-line reveal" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Not sure? Just call</a>
+    </div>
+
+    <div class="svc-cols">
+      <div class="svc-col svc-1 reveal">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-house-line"/></svg>For your home</h3>
+        <div class="svc-list">
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span><b>AC repair</b><p>Any make, day or night, including emergencies.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-gauge"/></svg></span><b>AC maintenance</b><p>Tune-ups that keep it efficient and running longer.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-snowflake"/></svg></span><b>AC installation</b><p>New Lennox<sup>®</sup> systems sized for your home and budget.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-thermometer-simple"/></svg></span><b>Heat pumps</b><p>Repair, maintenance and installation.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-fan"/></svg></span><b>Mini-splits</b><p>Ductless cooling for additions, garages and hot rooms.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-wind"/></svg></span><b>Indoor air quality</b><p>Filtration, humidity control and ventilation.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-broom"/></svg></span><b>Duct cleaning</b><p>Cleaning and sanitation for cleaner airflow.</p></div>
+          <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-stack"/></svg></span><b>Blown-in insulation</b><p>Owens Corning<sup>®</sup> PINK, with a free evaluation.</p></div>
+        </div>
+      </div>
+      <div class="svc-col svc-2 reveal" style="--d:1">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-buildings"/></svg>For your business</h3>
+        <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-buildings"/></svg></span><b>Commercial HVAC</b><p>Service, maintenance and replacement for offices, shops and restaurants.</p></div>
+        <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-cube"/></svg></span><b>Refrigeration &amp; ice machines</b><p>Commercial refrigeration and ice machine repair.</p></div>
+        <div class="svc"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg></span><b>Planned maintenance</b><p>Monthly, quarterly or twice-a-year visits.</p></div>
+        <div class="biz-card">
+          <b>Down at 2 a.m.?</b>
+          A walk-in cooler or rooftop unit doesn't wait for Monday. Neither do we: service runs 24 hours a day, 365 days a year.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec rev" id="reviews" aria-labelledby="rev-h">
+  <div class="wrap rev-grid">
+    <div class="score reveal">
+      <h2 class="sr-only" id="rev-h">Google reviews</h2>
+      <div class="big" aria-hidden="true">4.9</div>
+      <div class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+      <p class="cnt">4.9 out of 5 from 737 Google reviews</p>
+    </div>
+    <div>
+      <span class="kicker reveal">What neighbors say</span>
+      <p class="quote reveal">"They quickly diagnosed the problem and communicated clearly about options."</p>
+      <p class="quote-src reveal">From Cytech's Google review highlights</p>
+      <div class="themes reveal" aria-label="Most mentioned in reviews">
+        <div class="theme"><span>Knowledgeable technicians</span><small>135 reviews</small><span class="bar" aria-hidden="true"><i style="--w:100%"></i></span></div>
+        <div class="theme"><span>Courteous staff</span><small>26 reviews</small><span class="bar" aria-hidden="true"><i style="--w:19%"></i></span></div>
+      </div>
+      <a class="btn btn-ghost reveal" href="https://www.google.com/maps/place/?q=place_id:ChIJqf8FEJSjZYYRf-vxerFAMdc" target="_blank" rel="noopener">Read all 737 on Google<svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+    </div>
+  </div>
+  <div class="stripe draw" aria-hidden="true"></div>
+</section>
+
+<section class="sec story" id="about" aria-labelledby="about-h">
+  <div class="wrap story-grid">
+    <div class="collage">
+      <figure class="c1 reveal"><img src="images/leaders.webp" alt="Five members of the Cytech team standing in front of a red-framed Cytech Heating and Cooling sign" width="941" height="1400" loading="lazy"></figure>
+      <figure class="c2 reveal" style="--d:1"><img src="images/techs.webp" alt="Four Cytech technicians in blue uniforms beside a Cytech trailer" width="1400" height="931" loading="lazy"></figure>
+      <figure class="c3 reveal" style="--d:2"><img src="images/lennox-origins.webp" alt="A Cytech team member between two antique Lennox Torrid Zone furnaces" width="1400" height="1072" loading="lazy"><figcaption>On the Lennox Origins tour, 2013.</figcaption></figure>
+    </div>
+    <div>
+      <span class="kicker reveal">About Cytech</span>
+      <h2 class="h2 reveal" id="about-h">Comfort, quality &amp; value. Every time.</h2>
+      <div class="reveal">
+        <p>That line has been painted on Cytech vans for years, and it's still the plan. Cytech has served the Valley since 1991. Today it's a full crew covering homes and businesses from Mission to Mercedes.</p>
+        <p>Most of the technicians are NATE-certified and keep training on new Lennox<sup>®</sup> equipment. And everyone works safety-first, protecting your home before and after every install or repair.</p>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><b>1991</b><span>Serving the Valley since</span></div>
+        <div class="stat"><b>24/7</b><span>365 days a year</span></div>
+        <div class="stat"><b>14</b><span>Valley towns served</span></div>
+      </div>
+      <div class="creds reveal">
+        <span><svg class="ic" aria-hidden="true"><use href="#i-seal-check"/></svg>Lennox Premier Dealer</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg>BBB accredited</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>ACCA member</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>License TACLA029045C</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec plans" id="plans" aria-labelledby="plans-h">
+  <div class="wrap">
+    <span class="kicker reveal">Plans &amp; financing</span>
+    <h2 class="h2 reveal" id="plans-h">Stay ahead of the heat</h2>
+    <p class="sub reveal">A maintenance plan keeps your system checked before the Valley summer hits. And when it's time for new equipment, there are ways to spread out the cost.</p>
+    <div class="plans-grid">
+      <article class="tag-card reveal">
+        <span class="tag-top" aria-hidden="true"></span>
+        <h3>Comfort plan</h3>
+        <p style="color:var(--ink-2);margin-top:8px">Planned maintenance on a schedule that fits your home or business.</p>
+        <div class="freq" aria-label="Visit options"><span>Monthly</span><span>Quarterly</span><span>Twice a year</span></div>
+        <ul class="checks">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Full inspection by a Cytech tech</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>New filters installed</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Efficiency kept where it should be</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Fewer emergency repairs</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Works with all makes and models</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Exclusive discounts on parts and labor</li>
+        </ul>
+        <div class="tag-foot">
+          <small>Call to set up your plan.</small>
+          <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Start a plan</a>
+        </div>
+      </article>
+      <article class="fin reveal" style="--d:1">
+        <h3>Financing</h3>
+        <p style="margin-top:8px">Options for every budget on a new system.</p>
+        <div class="lenders">
+          <div class="lender"><svg class="ic" aria-hidden="true"><use href="#i-currency-dollar"/></svg><div><b>Service Finance</b><span>0% financing options for homes</span></div></div>
+          <div class="lender"><svg class="ic" aria-hidden="true"><use href="#i-house-line"/></svg><div><b>Mariner Finance</b><span>Residential financing</span></div></div>
+          <div class="lender"><svg class="ic" aria-hidden="true"><use href="#i-buildings"/></svg><div><b>Lennox Commercial Financing</b><span>Low or no down payment on high-efficiency equipment</span></div></div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.cytechheatingandcooling.com/financing/" rel="noopener">See financing options<svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec area" aria-labelledby="area-h">
+  <div class="wrap">
+    <span class="kicker reveal">Service area</span>
+    <h2 class="h2 reveal" id="area-h">All over the Valley</h2>
+    <ul class="towns reveal" aria-label="Towns served">
+      <li class="home"><small>HOME BASE</small><span>Edinburg</span></li><li>McAllen</li><li>Mission</li><li>Pharr</li><li>San Juan</li><li>Alamo</li><li>Donna</li><li>Weslaco</li><li>Mercedes</li><li>Hidalgo</li><li>Sharyland</li><li>Palmhurst</li><li>Alton</li><li>Elsa</li>
+    </ul>
+    <p class="area-note reveal">Plus the rest of Hidalgo County and the Upper Valley. Not sure if you're in range? Call and ask.</p>
+  </div>
+</section>
+
+<section class="sec" id="visit" aria-labelledby="visit-h">
+  <div class="wrap visit-grid">
+    <div>
+      <span class="kicker reveal">Contact</span>
+      <h2 class="h2 reveal" id="visit-h">Call any hour</h2>
+      <p class="sub reveal">Nights, weekends and holidays included.</p>
+      <div class="rows reveal">
+        <a class="row" href="tel:+19565533265"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><small>Phone</small><b>956-553-3265</b></a>
+        <div class="row"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><small>Hours</small><b>Open 24 hours, every day</b></div>
+        <a class="row" href="https://www.google.com/maps/dir/?api=1&amp;destination=Cytech+Heating+%26+Cooling+6840+N+Interstate+69C+Edinburg+TX+78542" target="_blank" rel="noopener"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg></span><small>Shop</small><b>6840 N Interstate 69C, Edinburg, TX 78542</b></a>
+        <a class="row" href="mailto:info@cytechheatingandcooling.com"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-envelope-simple"/></svg></span><small>Email</small><b>info@cytechheatingandcooling.com</b></a>
+      </div>
+    </div>
+    <a class="mapcard reveal" style="--d:1" href="https://www.google.com/maps/dir/?api=1&amp;destination=Cytech+Heating+%26+Cooling+6840+N+Interstate+69C+Edinburg+TX+78542" target="_blank" rel="noopener" aria-label="Get directions to Cytech on Google Maps">
+      <svg class="road" viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(127,214,238,.08)" stroke-width="1"/></pattern></defs>
+        <rect width="600" height="440" fill="url(#g)"/>
+        <path d="M-20 300 C 140 280, 220 230, 600 210" stroke="rgba(127,214,238,.16)" stroke-width="10" fill="none"/>
+        <path d="M120 -20 L 170 460" stroke="rgba(127,214,238,.12)" stroke-width="6" fill="none"/>
+        <path d="M352 -20 C 350 120, 345 260, 340 460" stroke="#01A0C7" stroke-width="18" fill="none" opacity=".55"/>
+        <path d="M352 -20 C 350 120, 345 260, 340 460" stroke="#fff" stroke-width="2" stroke-dasharray="14 14" fill="none" opacity=".6"/>
+        <text x="372" y="70" fill="rgba(255,255,255,.5)" font-family="Schibsted Grotesk, sans-serif" font-size="14" font-weight="700" letter-spacing="2">I-69C</text>
+      </svg>
+      <span class="pin" aria-hidden="true"><svg class="ic"><use href="#i-map-pin"/></svg></span>
+      <span class="addr">6840 N Interstate 69C<br>Edinburg, TX</span>
+      <span class="go">Get directions<svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="wrap">
+    <p class="eyebrow">Day or night</p>
+    <h2 id="close-h">AC out? We're up.</h2>
+    <a class="bignum" href="tel:+19565533265">956-553-3265</a>
+    <p>Repairs, tune-ups and new Lennox<sup>®</sup> systems across the Rio Grande Valley.</p>
+    <div class="btns">
+      <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+      <a class="btn btn-ghost" href="https://www.cytechheatingandcooling.com/contact-us/" rel="noopener">Request service<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    </div>
+  </div>
+  <div class="stripe draw" aria-hidden="true"></div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <img class="flogo" src="images/logo-white.png" alt="Cytech Heating &amp; Cooling" width="1046" height="296" loading="lazy">
+        <p class="motto">Comfort, Quality, Value… Everytime!</p>
+        <p>Cytech Heating &amp; Cooling L.C. · License TACLA029045C</p>
+        <div class="social">
+          <a href="https://www.facebook.com/cytechheatingandcooling" target="_blank" rel="noopener" aria-label="Cytech on Facebook"><svg class="ic" aria-hidden="true"><use href="#i-facebook-logo"/></svg></a>
+          <a href="https://twitter.com/cytechheating" target="_blank" rel="noopener" aria-label="Cytech on X"><svg class="ic" aria-hidden="true"><use href="#i-x-logo"/></svg></a>
+          <a href="https://www.linkedin.com/company/cytech-heating-and-cooling-l.c." target="_blank" rel="noopener" aria-label="Cytech on LinkedIn"><svg class="ic" aria-hidden="true"><use href="#i-linkedin-logo"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+19565533265">956-553-3265</a></li>
+          <li><a href="mailto:info@cytechheatingandcooling.com">info@cytechheatingandcooling.com</a></li>
+          <li>6840 N Interstate 69C<br>Edinburg, TX 78542</li>
+          <li>Open 24 hours, every day</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">AC repair &amp; maintenance</a></li>
+          <li><a href="#services">New Lennox<sup>®</sup> systems</a></li>
+          <li><a href="#services">Heat pumps &amp; mini-splits</a></li>
+          <li><a href="#services">Air quality &amp; ducts</a></li>
+          <li><a href="#services">Commercial &amp; refrigeration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Cytech</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#plans">Plans &amp; financing</a></li>
+          <li><a href="https://www.cytechheatingandcooling.com/careers/" rel="noopener">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© <span id="yr">2026</span> Cytech Heating &amp; Cooling L.C. Lennox<sup>®</sup> is a registered trademark of Lennox Industries Inc.</span>
+      <span>Design concept by Drusus Technologies · Photos from Cytech's website · <a href="logo.html">Compare logo ideas</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn btn-red" href="tel:+19565533265"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call 24/7</a>
+  <a class="btn btn-line" href="https://www.cytechheatingandcooling.com/contact-us/" rel="noopener">Request service</a>
+</div>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+  // entrance + pinstripes
+  setTimeout(() => {
+    $('.hero').classList.add('on');
+    $('.hero .stripe').classList.add('on');
+  }, 60);
+
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('on'); io.unobserve(e.target);
+  }), { rootMargin: '0px 0px -8% 0px' });
+  $$('.reveal, .stripe.draw:not(.hero .stripe)').forEach(el => io.observe(el));
+
+  // mobile menu
+  const sheet = $('#sheet'), mbtn = $('.menu-btn');
+  const setMenu = open => {
+    sheet.classList.toggle('open', open);
+    mbtn.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    (open ? $('.sheet-close') : mbtn).focus();
+  };
+  mbtn.addEventListener('click', () => setMenu(true));
+  $('.sheet-close').addEventListener('click', () => setMenu(false));
+  $$('#sheet nav a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.classList.contains('open')) setMenu(false); });
+
+  // symptom tabs
+  const tabs = $$('.sym');
+  const select = (t, focus) => {
+    tabs.forEach(x => {
+      const on = x === t;
+      x.setAttribute('aria-selected', on);
+      x.tabIndex = on ? 0 : -1;
+      const p = document.getElementById(x.getAttribute('aria-controls'));
+      p.hidden = !on;
+      if (on) { p.classList.remove('swap'); void p.offsetWidth; p.classList.add('swap'); }
+    });
+    if (focus) t.focus();
+    if (matchMedia('(max-width:900px)').matches) t.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      const k = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+      if (k) { e.preventDefault(); select(tabs[(i + k + tabs.length) % tabs.length], true); }
+      if (e.key === 'Home') { e.preventDefault(); select(tabs[0], true); }
+      if (e.key === 'End') { e.preventDefault(); select(tabs[tabs.length - 1], true); }
+    });
+  });
+
+  // sticky phone bar after the hero
+  const bar = $('.mbar');
+  new IntersectionObserver(([e]) => bar.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0)).observe($('.hero-cta'));
+
+  $('#yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
