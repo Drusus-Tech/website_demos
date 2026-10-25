@@ -17,7 +17,7 @@ tailwind.config = { theme: { extend: {
 } } };
 </script>
 <style>
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
   body { background: #0A0A0B; }
   .font-display { letter-spacing: .012em; }
   h2.font-display { text-wrap: balance; }
@@ -44,20 +44,25 @@ tailwind.config = { theme: { extend: {
 
 <!-- Nav -->
 <header class="sticky top-0 z-50 bg-mad-ink/85 backdrop-blur border-b border-white/10">
-  <nav class="max-w-7xl mx-auto px-5 sm:px-8 py-3 sm:py-4 flex items-center justify-between gap-6">
-    <a href="#top" class="flex items-center shrink-0" aria-label="Mad Guys Auto Detailing home">
-      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing logo" class="h-[52px] sm:h-16 w-auto drop-shadow-[0_2px_12px_rgba(224,38,45,.35)]" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-display text-4xl sm:text-5xl tracking-wide leading-none',innerHTML:'MAD<span style=&quot;color:#E0262D&quot;>GUYS</span>'}))">
-    </a>
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
+  <!-- Logo's black wings/lettering need a light plate; it hangs below the bar like a dealer badge -->
+  <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] md:h-[76px] flex md:grid md:grid-cols-[1fr_auto_1fr] items-center justify-between gap-6">
+    <div class="hidden md:flex items-center gap-8 text-[13px] font-semibold uppercase tracking-[.18em] text-white/75">
       <a href="#packages" class="hover:text-mad-yellow transition-colors">Packages</a>
       <a href="#services" class="hover:text-mad-yellow transition-colors">Services</a>
-      <a href="#reviews" class="hover:text-mad-yellow transition-colors">Reviews</a>
-      <a href="#visit" class="hover:text-mad-yellow transition-colors">Visit</a>
     </div>
+    <a href="#top" class="self-start shrink-0 relative z-10 bg-white rounded-b-2xl px-4 md:px-6 pt-2 pb-2.5 md:pt-3 md:pb-3.5 shadow-[0_14px_40px_-12px_rgba(0,0,0,.85)] ring-1 ring-black/5 border-b-[3px] border-mad-redhi hover:-translate-y-0.5 transition-all duration-300" aria-label="Mad Guys Auto Detailing home">
+      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing logo" class="h-[64px] md:h-[84px] w-auto" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-display text-4xl sm:text-5xl tracking-wide leading-none text-mad-ink',innerHTML:'MAD<span style=&quot;color:#E0262D&quot;>GUYS</span>'}))">
+    </a>
+    <div class="flex items-center justify-end gap-8">
+      <div class="hidden md:flex items-center gap-8 text-[13px] font-semibold uppercase tracking-[.18em] text-white/75">
+        <a href="#reviews" class="hover:text-mad-yellow transition-colors">Reviews</a>
+        <a href="#visit" class="hover:text-mad-yellow transition-colors">Visit</a>
+      </div>
     <a href="tel:+19566182321" class="inline-flex items-center gap-2 bg-mad-red hover:bg-mad-redhi transition-all duration-300 rounded-full px-4 py-2 text-sm font-bold">
       <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.3a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.3 1.1a11 11 0 005.5 5.5l1.1-2.3a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.7.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z"/></svg>
-      <span class="hidden sm:inline">(956) 618-2321</span><span class="sm:hidden">Call</span>
+      <span class="hidden lg:inline">(956) 618-2321</span><span class="lg:hidden">Call</span>
     </a>
+    </div>
   </nav>
 </header>
 
@@ -282,7 +287,7 @@ tailwind.config = { theme: { extend: {
 <footer class="bg-mad-ink border-t border-white/10 px-4 sm:px-6 pt-16">
   <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
     <div>
-      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing" class="h-16 w-auto" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'font-display text-4xl uppercase',innerHTML:'Mad<span style=&quot;color:#E0262D&quot;>Guys</span>'}))">
+      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing" class="h-[72px] w-auto bg-white rounded-xl px-3 py-2 border-b-[3px] border-mad-redhi" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'font-display text-4xl uppercase',innerHTML:'Mad<span style=&quot;color:#E0262D&quot;>Guys</span>'}))">
       <p class="text-white/60 text-sm mt-4">Top-of-the-line auto detailing in McAllen, founded by professional detailers and car fanatics.</p>
       <div class="flex gap-3 mt-6">
         <a href="https://www.facebook.com/MadGuysAutoDetailing/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 grid place-items-center rounded-full border border-white/15 hover:border-mad-yellow hover:text-mad-yellow transition-all duration-300"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
