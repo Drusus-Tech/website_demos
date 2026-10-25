@@ -19,15 +19,17 @@ tailwind.config = { theme: { extend: {
 <style>
   html { scroll-behavior: smooth; }
   body { background: #0A0A0B; }
+  .font-display { letter-spacing: .012em; }
+  h2.font-display { text-wrap: balance; }
   .grain::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .07;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-  .stripe { background: repeating-linear-gradient(-45deg, #F0D30E 0 14px, #0A0A0B 14px 28px); }
   .marquee { animation: marquee 30s linear infinite; }
   @keyframes marquee { to { transform: translateX(-50%); } }
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
   .reveal.in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { .marquee { animation: none; } .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
-  .map-dark { filter: grayscale(1) invert(.92) contrast(.9) hue-rotate(180deg); }
+  .ticket-cut { background-image: radial-gradient(circle at 0 50%, #141416 10px, transparent 11px), radial-gradient(circle at 100% 50%, #141416 10px, transparent 11px); }
+  .hours-row[data-today] { color: #fff; background: rgba(181,32,37,.18); box-shadow: inset 3px 0 0 #E0262D; }
 </style>
 </head>
 <body class="font-sans text-white antialiased">
@@ -42,9 +44,9 @@ tailwind.config = { theme: { extend: {
 
 <!-- Nav -->
 <header class="sticky top-0 z-50 bg-mad-ink/85 backdrop-blur border-b border-white/10">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-2" aria-label="Mad Guys Auto Detailing home">
-      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing logo" class="h-11 w-auto" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-display text-2xl tracking-wide',innerHTML:'MAD<span style=&quot;color:#E0262D&quot;>GUYS</span>'}))">
+  <nav class="max-w-7xl mx-auto px-5 sm:px-8 py-3 sm:py-4 flex items-center justify-between gap-6">
+    <a href="#top" class="flex items-center shrink-0" aria-label="Mad Guys Auto Detailing home">
+      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing logo" class="h-[52px] sm:h-16 w-auto drop-shadow-[0_2px_12px_rgba(224,38,45,.35)]" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-display text-4xl sm:text-5xl tracking-wide leading-none',innerHTML:'MAD<span style=&quot;color:#E0262D&quot;>GUYS</span>'}))">
     </a>
     <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
       <a href="#packages" class="hover:text-mad-yellow transition-colors">Packages</a>
@@ -138,7 +140,6 @@ tailwind.config = { theme: { extend: {
 
 <!-- Services -->
 <section id="services" class="py-24 px-4 sm:px-6 bg-mad-coal relative">
-  <div class="stripe absolute top-0 inset-x-0 h-2" aria-hidden="true"></div>
   <div class="max-w-7xl mx-auto">
     <div class="reveal max-w-2xl mb-14">
       <p class="text-mad-yellow text-xs font-bold tracking-[.25em] uppercase mb-3">One-Stop Shop</p>
@@ -210,7 +211,7 @@ tailwind.config = { theme: { extend: {
 <!-- Quote form + Map -->
 <section id="visit" class="py-24 px-4 sm:px-6 bg-mad-coal">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8">
-    <div id="quote" class="reveal rounded-3xl bg-mad-ink border border-white/10 p-7 sm:p-10 scroll-mt-24">
+    <div id="quote" class="reveal rounded-3xl bg-mad-ink border border-white/10 p-7 sm:p-10 scroll-mt-32">
       <p class="text-mad-yellow text-xs font-bold tracking-[.25em] uppercase mb-3">Free Quote</p>
       <h2 class="font-display uppercase text-4xl leading-none">Tell us about your ride.</h2>
       <form class="mt-8 grid gap-4" onsubmit="event.preventDefault();this.innerHTML='<p class=&quot;text-lg font-semibold&quot;>Thanks! We\'ll reach out shortly. Need it sooner? Call <a class=&quot;text-mad-yellow&quot; href=&quot;tel:+19566182321&quot;>(956) 618-2321</a>.</p>';">
@@ -228,20 +229,34 @@ tailwind.config = { theme: { extend: {
       </form>
     </div>
 
-    <div class="reveal relative rounded-3xl overflow-hidden border border-white/10 min-h-[460px] bg-mad-steel">
-      <iframe class="map-dark absolute inset-0 w-full h-full" title="Map to Mad Guys Auto Detailing" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=121+S+McColl+Rd,+McAllen,+TX+78501&output=embed"></iframe>
-      <div class="absolute left-4 right-4 bottom-4 sm:left-6 sm:right-auto sm:bottom-6 sm:max-w-xs rounded-2xl bg-mad-ink/90 backdrop-blur border border-white/15 p-6 shadow-2xl">
-        <p class="font-display uppercase text-2xl">Mad Guys Shop</p>
-        <p class="text-white/70 text-sm mt-2">121 S McColl Rd<br>McAllen, TX 78501</p>
-        <dl class="text-sm mt-4 grid grid-cols-[auto,1fr] gap-x-4 gap-y-1 text-white/70">
-          <dt class="text-white">Mon–Fri</dt><dd>9AM – 6PM</dd>
-          <dt class="text-white">Sat</dt><dd>9AM – 2PM</dd>
-          <dt class="text-white">Sun</dt><dd>Closed</dd>
-        </dl>
-        <div class="mt-5 flex gap-2">
-          <a href="https://maps.google.com/?cid=16164786297213101927" target="_blank" rel="noopener" class="flex-1 text-center bg-mad-yellow text-mad-ink font-bold text-sm rounded-full py-2.5 hover:brightness-110 transition-all duration-300">Directions</a>
-          <a href="tel:+19566182321" class="flex-1 text-center border border-white/25 font-bold text-sm rounded-full py-2.5 hover:border-mad-yellow hover:text-mad-yellow transition-all duration-300">Call</a>
+    <!-- Shop "work order" ticket: location, hours, contact -->
+    <div class="reveal flex flex-col rounded-3xl bg-mad-red text-white overflow-hidden shadow-[0_30px_80px_-30px_#B52025]">
+      <div class="p-7 sm:p-10">
+        <div class="flex items-start justify-between gap-4">
+          <p class="text-mad-yellow text-xs font-bold tracking-[.25em] uppercase">Drop-Off Ticket</p>
+          <p class="font-display text-white/40 text-lg tracking-wider">No. 121</p>
+        </div>
+        <h2 class="font-display uppercase text-5xl sm:text-6xl leading-[.9] mt-4">Pull in on<br>McColl Rd.</h2>
+        <address class="not-italic mt-5 text-lg text-white/90 leading-snug">121 S McColl Rd<br>McAllen, TX 78501</address>
+        <p class="mt-2 text-sm text-white/70">Drop it off in the morning, pick it up showroom-ready.</p>
+      </div>
+      <div class="ticket-cut relative h-6" aria-hidden="true"><div class="absolute inset-x-6 top-1/2 border-t-2 border-dashed border-white/30"></div></div>
+      <div class="p-7 sm:p-10 pt-4 sm:pt-6 grid sm:grid-cols-[1fr,auto] gap-8 bg-[#9e1b20] flex-1">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <p class="text-xs font-bold tracking-[.25em] uppercase text-white/70">Shop Hours</p>
+            <span id="open-status" class="hidden text-[11px] font-extrabold uppercase tracking-wider rounded-full px-2.5 py-0.5"></span>
+          </div>
+          <dl class="text-sm divide-y divide-white/10 text-white/75">
+            <div class="hours-row flex justify-between gap-6 px-3 py-2 rounded" data-days="1,2,3,4,5"><dt class="font-semibold">Mon – Fri</dt><dd>9:00 AM – 6:00 PM</dd></div>
+            <div class="hours-row flex justify-between gap-6 px-3 py-2 rounded" data-days="6"><dt class="font-semibold">Saturday</dt><dd>9:00 AM – 2:00 PM</dd></div>
+            <div class="hours-row flex justify-between gap-6 px-3 py-2 rounded" data-days="0"><dt class="font-semibold">Sunday</dt><dd>Closed</dd></div>
+          </dl>
+        </div>
+        <div class="grid content-start gap-3 sm:min-w-[200px]">
+          <a href="tel:+19566182321" class="text-center bg-mad-ink hover:bg-black hover:-translate-y-0.5 transition-all duration-300 rounded-full px-6 py-3.5 font-bold">(956) 618-2321</a>
+          <a href="https://maps.google.com/?cid=16164786297213101927" target="_blank" rel="noopener" class="text-center bg-mad-yellow text-mad-ink hover:brightness-110 hover:-translate-y-0.5 transition-all duration-300 rounded-full px-6 py-3.5 font-bold">Get Directions →</a>
+          <a href="mailto:information.madguys@gmail.com" class="text-center text-sm text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 transition-colors break-all">information.madguys@gmail.com</a>
         </div>
       </div>
     </div>
@@ -250,7 +265,6 @@ tailwind.config = { theme: { extend: {
 
 <!-- Pre-footer CTA -->
 <section class="relative overflow-hidden bg-mad-yellow text-mad-ink">
-  <div class="stripe absolute top-0 inset-x-0 h-2" aria-hidden="true"></div>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
     <div>
       <h2 class="font-display uppercase text-4xl sm:text-6xl leading-none">Join the MAD VIP club.</h2>
@@ -268,7 +282,7 @@ tailwind.config = { theme: { extend: {
 <footer class="bg-mad-ink border-t border-white/10 px-4 sm:px-6 pt-16">
   <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
     <div>
-      <p class="font-display text-3xl uppercase">Mad<span class="text-mad-redhi">Guys</span></p>
+      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing" class="h-16 w-auto" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'font-display text-4xl uppercase',innerHTML:'Mad<span style=&quot;color:#E0262D&quot;>Guys</span>'}))">
       <p class="text-white/60 text-sm mt-4">Top-of-the-line auto detailing in McAllen, founded by professional detailers and car fanatics.</p>
       <div class="flex gap-3 mt-6">
         <a href="https://www.facebook.com/MadGuysAutoDetailing/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 grid place-items-center rounded-full border border-white/15 hover:border-mad-yellow hover:text-mad-yellow transition-all duration-300"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
@@ -318,6 +332,18 @@ tailwind.config = { theme: { extend: {
 <script>
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Highlight today's hours + open/closed badge, using shop time (McAllen = America/Chicago)
+  (() => {
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', weekday: 'short', hour: 'numeric', hourCycle: 'h23' }).formatToParts(new Date()).map(x => [x.type, x.value]));
+    const day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday), hr = +p.hour;
+    const close = day === 0 ? 0 : day === 6 ? 14 : 18;
+    document.querySelectorAll('.hours-row').forEach(r => { if (r.dataset.days.split(',').includes(String(day))) r.dataset.today = ''; });
+    const open = hr >= 9 && hr < close, s = document.getElementById('open-status');
+    s.textContent = open ? 'Open now' : 'Closed now';
+    s.className += open ? ' bg-mad-yellow text-mad-ink' : ' bg-white/15 text-white';
+    s.classList.remove('hidden');
+  })();
 </script>
 </body>
 </html>
