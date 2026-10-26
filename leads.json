@@ -100,7 +100,7 @@
     "emailSubject": "Palominos McAllen, over mesquite fire (built you a preview)",
     "emailBody": "Hola Palominos team,\n\nI'm a local web designer here in the Valley. Your photos and 50-year Sonoran story deserve a site that feels as good as dinner at your place, and the current Squarespace template keeps both hidden. So I built a free preview of what a new homepage could look like:\n\nhttps://demos.drusustechnologies.com/palominos-mcallen-demo/\n\nIt opens on the mesquite grill with a live 'Open now' indicator, tells the 1974 Don César story using the original 'El Palomino' photo, features the Black Onyx, Rib Eye Aguachile and Filete a la Bacanora, puts the full menu in tabs instead of buried pages, and gives phone visitors a one-tap Call / Reserve bar plus a real reservation request form.\n\nHappy to walk you through it or tailor it further, no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
     "previewLink": "https://demos.drusustechnologies.com/palominos-mcallen-demo/",
-    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add palominos-mcallen-demo/index.html leads.json && git commit -m \"Palominos demo: centered header logo, remove map\" && git push origin main",
+    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add palominos-mcallen-demo/index.html && git commit -m \"Palominos demo: update\" && git push origin main",
     "problems": [
       "Generic Squarespace template with leftover placeholder blocks ('Recent Awards — Description text goes here')",
       "Menu split across Menu/Eat/Drink pages with no direct path from the homepage",
