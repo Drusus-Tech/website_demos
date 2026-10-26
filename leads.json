@@ -59,5 +59,35 @@
       "Visit card with studio photo, address link, hours and call CTA beside a call-back form; sticky mobile Call/Book bar; studio gallery",
       "Full dark footer: Book/Call CTA, brand blurb + socials, quick links, treatments, address, phone and hours"
     ]
+  },
+  {
+    "business": "Ericka's SomaBel Med Spa",
+    "city": "Edinburg, TX",
+    "folder": "erickas-somabel-med-spa-demo",
+    "contact": "Ericka",
+    "email": "",
+    "status": "demo-built",
+    "emailSubject": "A gilded new look for SomaBel (built you a preview)",
+    "emailBody": "Hi Ericka,\n\nI came across Ericka's SomaBel Med Spa while looking at med spas in Edinburg — your gold-and-black brand and treatment photos are beautiful, but the current Wix site doesn't do them justice, especially on phones. So I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/erickas-somabel-med-spa-demo/\n\nIt leads with your SomaBel wordmark and \"Enhancing your mind, body & soul,\" puts your patient favorites and starting prices (cheek + under-eye filler, lip filler, $12/unit neurotoxins) front and center, organizes all 20+ treatments into one clean menu, and gives mobile visitors a one-tap Call / Book bar.\n\nHappy to walk you through it or tailor it further — no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "previewLink": "https://drusus-tech.github.io/website_demos/erickas-somabel-med-spa-demo/",
+    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add erickas-somabel-med-spa-demo/index.html leads.json && git commit -m \"Add Ericka's SomaBel Med Spa demo\" && git push origin main",
+    "problems": [
+      "Dated 2021 Wix template with a 'Mercedes' placeholder menu item and empty 'Coming soon' pages",
+      "Logo is a low-res PNG on white that clashes with the dark brand",
+      "Slogan shown as a flat image instead of real text",
+      "Instagram feed widget shows '@wix' placeholder",
+      "No visible booking form; only a mailing-list signup",
+      "25+ item dropdown nav is hard to use on mobile; no sticky call CTA",
+      "Inconsistent page slugs (copy-of-filler, general-8) hurt SEO"
+    ],
+    "improvements": [
+      "Black-lacquer and champagne-gold art direction built from the existing SomaBel wordmark",
+      "Hero with gilded oval 'mirror' portrait echoing the spa's gold mirror, script and Bodoni type",
+      "Scroll-scrubbed 'Soma is the body, Bel is beauty' manifesto",
+      "Patient Favorites arch cards with real starting prices",
+      "Tabbed treatment menu: Injectables, Skin, Body & Laser, Day Spa",
+      "Mind / Body / Soul parallax triptych and founder section",
+      "VIP, payment plans and mailing-list perks; appointment form and sticky mobile Call/Book bar"
+    ]
   }
 ]
