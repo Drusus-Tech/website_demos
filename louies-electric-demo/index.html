@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Louie's Electric — Residential Electrician in the Rio Grande Valley</title>
+<meta name="description" content="Licensed master electrician serving Alamo, McAllen and the RGV. Panel upgrades, troubleshooting, ceiling fans, Tesla chargers. Free estimates. Call (956) 420-2868.">
+<link rel="icon" href="https://louieselectric.com/wp-content/uploads/2024/11/cropped-ggggggggg-1-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Archivo+Narrow:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0d0e; --ink-2:#17191c; --ink-3:#24272c;
+  --paper:#f6f3ec; --paper-2:#ebe6da;
+  --volt:#2ec4ff; --volt-deep:#0a9fe0;
+  --volt-grad:linear-gradient(120deg,#0b1f2e 0%,#0d3f5f 45%,#1a86b8 100%);
+  --muted:#8a9099; --line:rgba(255,255,255,.12);
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Archivo,system-ui,sans-serif;background:var(--ink);color:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.eyebrow{font:700 .78rem/1 "Archivo Narrow",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--volt);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:800;padding:1rem 1.5rem;border-radius:999px;transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn-volt{background:var(--volt);color:var(--ink);box-shadow:0 10px 30px -10px rgba(46,196,255,.6)}
+.btn-volt:hover{background:#6ad6ff;transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid var(--line);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* top bar */
+.strip{background:var(--volt-grad);color:#fff;font:700 .8rem/1 "Archivo Narrow",sans-serif;letter-spacing:.12em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
+.strip .track{display:inline-flex;gap:3rem;padding:.7rem 0;animation:marq 28s linear infinite}
+.strip span::before{content:"⚡ ";}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(12,13,14,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;height:88px}
+.brand{grid-column:2;grid-row:1}
+.nav-links{grid-column:1;grid-row:1}
+.nav .btn{grid-column:3;grid-row:1;justify-self:end}
+.brand img{height:60px;width:auto;filter:invert(1)}
+.nav-links{display:flex;gap:2rem;font-weight:600;font-size:.95rem;color:#cfd3d8}
+.nav-links a:hover{color:var(--volt)}
+.nav .btn{padding:.8rem 1.2rem}
+
+/* hero */
+.hero{position:relative;padding:clamp(3rem,7vw,6rem) 0 0;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:70vw;height:70vw;background:radial-gradient(circle,rgba(46,196,255,.18),transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center;position:relative}
+h1{font-weight:900;font-size:clamp(2.6rem,6.4vw,5.4rem);line-height:.95;letter-spacing:-.035em;margin:1.2rem 0 1.4rem}
+h1 em{font-style:normal;color:var(--volt);position:relative}
+.lede{font-size:clamp(1.05rem,1.4vw,1.2rem);color:#c3c8cf;max-width:34rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.trust{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.trust div{font-size:.85rem;color:var(--muted)}
+.trust b{display:block;font-size:1.6rem;color:#fff;font-weight:900;letter-spacing:-.02em}
+.hero-media{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:62% center}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(12,13,14,.55),transparent 45%)}
+.badge{position:absolute;left:1rem;bottom:1rem;z-index:2;background:var(--ink);border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;display:flex;gap:.8rem;align-items:center;font-size:.85rem}
+.badge i{width:38px;height:38px;border-radius:50%;background:var(--volt);display:grid;place-items:center;color:var(--ink);font-style:normal;font-weight:900}
+.badge b{display:block;font-size:.95rem}
+
+/* services */
+section{padding:clamp(4.5rem,9vw,8rem) 0}
+h2{font-weight:900;font-size:clamp(2rem,4.4vw,3.6rem);line-height:1;letter-spacing:-.03em;margin-top:1rem;max-width:18ch}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.sec-head p{max-width:30rem;color:#aab0b8}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.svc{background:var(--ink-2);padding:2rem 1.5rem 1.8rem;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:background .25s}
+.svc:hover{background:var(--ink-3)}
+.svc .n{font:700 .8rem "Archivo Narrow";color:var(--muted);letter-spacing:.1em}
+.svc svg{width:34px;height:34px;color:var(--volt);margin:1.4rem 0 1rem}
+.svc h3{font-size:1.15rem;font-weight:800;letter-spacing:-.01em}
+.svc p{font-size:.9rem;color:#9aa0a8;margin-top:.35rem}
+.svc.feature{background:var(--volt-grad);color:#fff;border-color:rgba(46,196,255,.35)}
+.svc.feature svg{color:var(--volt)}
+.svc.feature p,.svc.feature .n{color:rgba(255,255,255,.75)}
+
+/* why — light band */
+.light{background:var(--paper);color:var(--ink)}
+.light .eyebrow{color:#9a6f00}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.why-img{border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;background:var(--paper-2);position:relative}
+.why-img img{width:100%;height:100%;object-fit:cover}
+.quote{font-size:clamp(1.2rem,2vw,1.5rem);font-weight:500;line-height:1.4;margin:1.6rem 0;letter-spacing:-.01em}
+.quote mark{background:linear-gradient(transparent 60%,var(--volt) 60%);color:inherit}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.5rem;margin-top:1.8rem}
+.checks li{list-style:none;display:flex;gap:.6rem;font-weight:700}
+.checks li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232ec4ff' stroke-width='3'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/12px no-repeat;margin-top:1px}
+
+/* area */
+.area{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
+.area span{border:1px solid var(--line);border-radius:999px;padding:.55rem 1rem;font-weight:600;font-size:.92rem;color:#d4d8dd}
+.area span.on{background:var(--volt);color:var(--ink);border-color:var(--volt)}
+
+/* faq + form */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+details{border-bottom:1px solid var(--line);padding:1.3rem 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;font-weight:800;font-size:1.08rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--volt);font-size:1.5rem;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:#aab0b8;margin-top:.8rem;max-width:36rem}
+.form-card{background:var(--ink-2);border:1px solid var(--line);border-radius:20px;padding:clamp(1.5rem,3vw,2.4rem);position:sticky;top:110px}
+.form-card h3{font-size:1.7rem;font-weight:900;letter-spacing:-.02em}
+.form-card > p{color:#9aa0a8;margin:.4rem 0 1.5rem}
+.field{display:grid;gap:.4rem;margin-bottom:1rem}
+.field label{font:700 .75rem "Archivo Narrow";letter-spacing:.14em;text-transform:uppercase;color:#aab0b8}
+.field input,.field select,.field textarea{font:inherit;color:#fff;background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--volt);outline-offset:1px;border-color:transparent}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-card .btn{width:100%;justify-content:center;margin-top:.4rem;border:0;cursor:pointer;font-size:1rem}
+.or{text-align:center;color:var(--muted);font-size:.9rem;margin-top:1rem}
+.or a{color:var(--volt);font-weight:800}
+
+/* cta band */
+.band{background:var(--volt-grad);color:#fff;padding:clamp(3.5rem,7vw,6rem) 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+.band h2{max-width:none}
+.band a.tel{font-weight:900;font-size:clamp(2.2rem,6vw,4.8rem);letter-spacing:-.04em;line-height:1;border-bottom:4px solid var(--volt)}
+
+footer{padding:3.5rem 0 7rem;color:var(--muted);font-size:.9rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+.foot img{height:56px;width:auto;filter:invert(1);margin-bottom:1rem}
+.foot h4{color:#fff;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.8rem}
+.foot a:hover{color:var(--volt)}
+
+/* sticky mobile call */
+.mcall{display:none;position:fixed;inset:auto 12px 12px;z-index:60;gap:.6rem}
+.mcall a{flex:1;justify-content:center}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.strip .track{animation:none}}
+
+@media (max-width:980px){
+  .hero-grid,.why-grid,.split{grid-template-columns:1fr}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+  .form-card{position:static}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .nav{height:72px}
+  .brand img{height:48px}
+  .nav .btn{display:none}
+  .services{grid-template-columns:1fr}
+  .svc{min-height:0}
+  .checks,.row2{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .mcall{display:flex}
+  .cta-row .btn{flex:1;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<div class="strip" aria-hidden="true"><div class="track">
+  <span>Free Estimates</span><span>1-Year Service Warranty</span><span>Licensed Master Electrician</span><span>Se Habla Español</span><span>Upfront Pricing</span><span>Insured</span>
+  <span>Free Estimates</span><span>1-Year Service Warranty</span><span>Licensed Master Electrician</span><span>Se Habla Español</span><span>Upfront Pricing</span><span>Insured</span>
+</div></div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Louie's Electric home"><img src="https://louieselectric.com/wp-content/uploads/2023/08/LOUIES-eLECTRIC-lOGO-e1691403331257.png" alt="Louie's Electric Residential Service"></a>
+    <nav class="nav-links"><a href="#services">Services</a><a href="#why">Why Louie's</a><a href="#faq">FAQ</a><a href="#estimate">Estimate</a></nav>
+    <a class="btn btn-volt" href="tel:+19564202868"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>(956) 420-2868</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-bottom:clamp(4rem,8vw,7rem)">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Alamo · McAllen · Rio Grande Valley</span>
+      <h1>The RGV's go-to <em>residential</em> electrician.</h1>
+      <p class="lede">Panel upgrades, troubleshooting, fans, outlets and Tesla chargers — done right by a licensed master electrician who answers the phone and backs every job with a 1-year warranty.</p>
+      <div class="cta-row">
+        <a class="btn btn-volt" href="tel:+19564202868"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>Call (956) 420-2868</a>
+        <a class="btn btn-ghost" href="#estimate">Get a free estimate →</a>
+      </div>
+      <div class="trust">
+        <div><b>Free</b>Estimates</div>
+        <div><b>1-Yr</b>Service warranty</div>
+        <div><b>Master</b>Licensed &amp; insured</div>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <img src="https://louieselectric.com/wp-content/uploads/2023/08/Front-Final-cropped.jpg" alt="Louie's Electric service truck parked outside a home with a smiling electrician" fetchpriority="high">
+      <div class="badge"><i>⚡</i><div><b>Friendly, local service</b>Based at 1813 Cortez Dr, Alamo</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">What we do</span><h2>Every circuit in your home, covered.</h2></div>
+      <p>Residential-only means we know RGV homes inside and out — from older panels that can't keep up to new EV chargers in the garage.</p>
+    </div>
+    <div class="services reveal">
+      <div class="svc feature"><span class="n">01</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h3M8 11h3M8 15h3M14 7h2M14 11h2M14 15h2"/></svg><h3>Panel Upgrades</h3><p>More capacity, safer breakers, code-compliant.</p></div></div>
+      <div class="svc"><span class="n">02</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 7v10M8 12h8"/></svg><h3>Panel Installation</h3><p>New service panels for builds &amp; remodels.</p></div></div>
+      <div class="svc"><span class="n">03</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M11 8l-2 3h4l-2 3"/></svg><h3>Troubleshooting</h3><p>Flickering, tripping or dead circuits found fast.</p></div></div>
+      <div class="svc"><span class="n">04</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M12 11l-2 3h4l-2 3"/></svg><h3>Indoor / Outdoor</h3><p>Installation &amp; repairs inside and out.</p></div></div>
+      <div class="svc"><span class="n">05</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M12 7v4"/><circle cx="12" cy="16" r="1.5"/></svg><h3>Circuit Breakers</h3><p>Replacement, AFCI/GFCI and new circuits.</p></div></div>
+      <div class="svc"><span class="n">06</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="10" cy="10" r="1"/><circle cx="14" cy="10" r="1"/><path d="M11 15h2"/></svg><h3>Switches &amp; Outlets</h3><p>Dimmers, USB, GFCI and added outlets.</p></div></div>
+      <div class="svc"><span class="n">07</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="2"/><path d="M12 10c0-4 1-7 4-7-1 3-2 5-4 7zM14 12c4 0 7 1 7 4-3-1-5-2-7-4zM12 14c0 4-1 7-4 7 1-3 2-5 4-7zM10 12c-4 0-7-1-7-4 3 1 5 2 7 4z"/></svg><h3>Ceiling Fans</h3><p>Install, swap and wire with remote or wall control.</p></div></div>
+      <div class="svc"><span class="n">08</span><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="10" height="18" rx="2"/><path d="M10 7l-2 4h4l-2 4M15 9h2a2 2 0 012 2v5a1.5 1.5 0 003 0V8"/></svg><h3>Tesla &amp; EV Chargers</h3><p>Level 2 home charging, permitted and clean.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="light">
+  <div class="wrap why-grid">
+    <div class="why-img reveal"><img src="https://louieselectric.com/wp-content/uploads/2023/08/electrician-1080573-scaled-e1691494243665.jpg" alt="Electrician wiring a residential breaker panel" loading="lazy"></div>
+    <div class="reveal">
+      <span class="eyebrow">Why Louie's</span>
+      <h2>Trusted by RGV homeowners — and we want every review.</h2>
+      <p class="quote">Unlike other companies, we <mark>embrace all reviews</mark>. Our commitment is to always do what's right — and to keep getting better at it.</p>
+      <ul class="checks">
+        <li>Licensed master electrician</li>
+        <li>Fully insured</li>
+        <li>Upfront pricing</li>
+        <li>1-year service warranty</li>
+        <li>Certified technicians</li>
+        <li>Se habla español</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <span class="eyebrow">Service area</span>
+    <h2>Right here in the Valley.</h2>
+    <div class="area">
+      <span class="on">Alamo</span><span>McAllen</span><span>Pharr</span><span>San Juan</span><span>Donna</span><span>Weslaco</span><span>Edinburg</span><span>Mission</span><span>Mercedes</span><span>Hidalgo County</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good questions.</h2>
+      <div style="margin-top:2rem">
+        <details open><summary>Do you offer free estimates?</summary><p>Yes — every project starts with a free estimate so you can plan with real numbers, not guesses.</p></details>
+        <details><summary>Are you licensed and insured?</summary><p>Absolutely. We hold licenses as a master electrician and electrical contractor, are authorized by the city to perform electrical work, and carry full insurance.</p></details>
+        <details><summary>What kinds of properties do you work on?</summary><p>Residential only. That focus means tailored solutions for homeowners and work done to fit how your house is actually used.</p></details>
+        <details><summary>What are your hours?</summary><p>Monday to Thursday, 10 AM – 7 PM. Call (956) 420-2868 to schedule.</p></details>
+        <details><summary>Can you install a Tesla or EV charger?</summary><p>Yes. We assess your panel capacity, run the dedicated circuit and install the charger so it's ready to go.</p></details>
+      </div>
+    </div>
+
+    <form id="estimate" class="form-card reveal" onsubmit="return sendEstimate(event)">
+      <h3>Free estimate</h3>
+      <p>Tell us what you need — Louie will get back to you fast.</p>
+      <div class="row2">
+        <div class="field"><label for="n">Name</label><input id="n" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="s">Service</label>
+        <select id="s" name="service"><option>Panel upgrade</option><option>Panel installation</option><option>Troubleshooting</option><option>Breakers / switches / outlets</option><option>Ceiling fan</option><option>Tesla / EV charger</option><option>Something else</option></select>
+      </div>
+      <div class="field"><label for="m">Details</label><textarea id="m" name="msg" rows="3" placeholder="City, what's going on, best time to call…"></textarea></div>
+      <button class="btn btn-volt" type="submit">Request my estimate →</button>
+      <p class="or">or call now: <a href="tel:+19564202868">(956) 420-2868</a></p>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Lights out? Breaker tripping?<br>Talk to Louie.</h2>
+    <a class="tel" href="tel:+19564202868">(956) 420-2868</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><img src="https://louieselectric.com/wp-content/uploads/2023/08/LOUIES-eLECTRIC-lOGO-e1691403331257.png" alt="Louie's Electric" loading="lazy"><p>Residential electrical service for the Rio Grande Valley. Licensed master electrician · Insured · Se habla español.</p></div>
+    <div><h4>Visit</h4><p>1813 Cortez Dr<br>Alamo, TX 78516</p></div>
+    <div><h4>Contact</h4><p><a href="tel:+19564202868">(956) 420-2868</a><br>Mon–Thu · 10 AM – 7 PM</p></div>
+  </div>
+  <div class="wrap" style="margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line)">© <span id="y"></span> Louie's Electric. All rights reserved.</div>
+</footer>
+
+<div class="mcall">
+  <a class="btn btn-volt" href="tel:+19564202868">Call now</a>
+  <a class="btn btn-ghost" style="background:var(--ink)" href="#estimate">Free estimate</a>
+</div>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+// shortcut: no backend — form hands off to an SMS to the shop; swap for Formspree/CF Worker when going live
+function sendEstimate(e){
+  e.preventDefault();
+  const f=e.target, body=`Estimate request — ${f.name.value} (${f.phone.value}): ${f.service.value}. ${f.msg.value}`;
+  location.href='sms:+19564202868?&body='+encodeURIComponent(body);
+  return false;
+}
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
