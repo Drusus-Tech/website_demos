@@ -8,7 +8,7 @@
     "previewLink": "https://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/",
     "localPath": "~/Documents/GitHub/website_demos/slim-secret-med-spa-demo/index.html",
     "subjectLine": "A sharper site for Slim Secret's GLP-1 program (built a preview)",
-    "pitchBody": "Hi Dr. Rodriguez,\n\nI came across Slim Secret Med Spa while looking at med spas in McAllen — your Google reviews are excellent, and patients clearly love the GLP-1 program. Your current site undersells that, so I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/\n\nIt leads with your physician-led Tirzepatide & Semaglutide program and your dual board certification, puts real patient results (English y Español) front and center, and gives mobile visitors a one-tap Call / Book Consult bar so more phone traffic turns into consultations.\n\nHappy to walk you through it or tailor it further — no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "pitchBody": "Hi Dr. Rodriguez,\n\nI came across Slim Secret Med Spa while looking at med spas in McAllen \u2014 your Google reviews are excellent, and patients clearly love the GLP-1 program. Your current site undersells that, so I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/\n\nIt leads with your physician-led Tirzepatide & Semaglutide program and your dual board certification, puts real patient results (English y Espa\u00f1ol) front and center, and gives mobile visitors a one-tap Call / Book Consult bar so more phone traffic turns into consultations.\n\nHappy to walk you through it or tailor it further \u2014 no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
     "problems": [
       "Generic WordPress template; brand (lime/gray S mark) looks dated and low-res",
       "Hero doesn't explain the GLP-1 offer or physician credentials above the fold",
@@ -29,5 +29,23 @@
     "gitCommands": "cd ~/Documents/GitHub/website_demos && git add slim-secret-med-spa-demo/index.html leads.json && git commit -m \"Add Slim Secret Med Spa demo\" && git push origin main",
     "status": "demo-built",
     "updated": "2026-10-26"
+  },
+  {
+    "business": "Slim Secret Med Spa",
+    "city": "McAllen, TX",
+    "folder": "slim-secret-med-spa-demo",
+    "contact": "Contact via site / Instagram DM",
+    "email": "",
+    "status": "ready",
+    "emailSubject": "A faster, phone-first site for Slim Secret Med Spa",
+    "emailBody": "Hey Slim Secret Med Spa team! \ud83d\udc4b\n\nI'm Jose with Drusus Technologies over in Pharr.\n\nI was looking over local med spa sites in the area and put together a quick, mobile-friendly mockup of what an updated site for Slim Secret Med Spa could look like. You can preview it live on your phone right here:\n\ud83d\udc49 https://website-demos-er2.pages.dev/slim-secret-med-spa-demo/\n\nI made sure your services grid, booking signals, and brand logo are crisp and front-and-center for phone users.\n\nJust a quick demo to show what's possible. If you'd like me to send the full breakdown over to an email or discuss updating things down the road, just let me know!\n\nThanks,\n\nJose Garcia\nDrusus Technologies\n956-929-7706\n703 W Nolana Loop, Pharr, TX 78577",
+    "previewLink": "https://website-demos-er2.pages.dev/slim-secret-med-spa-demo/",
+    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add slim-secret-med-spa-demo/index.html leads.json && git commit -m \"Add Slim Secret Med Spa demo\" && git push origin main",
+    "improvements": [
+      "Mobile-optimized hero layout",
+      "Clean service cards & pricing structure",
+      "Tap-to-book call to action",
+      "Crisp brand SVG assets"
+    ]
   }
 ]
