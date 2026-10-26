@@ -46,7 +46,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,13,14,.86);backdrop-f
 .brand{grid-column:2;grid-row:1}
 .nav-links{grid-column:1;grid-row:1}
 .nav .btn{grid-column:3;grid-row:1;justify-self:end}
-.brand img{height:60px;width:auto;filter:invert(1)}
+.brand img{height:60px;width:auto;filter:invert(1);mix-blend-mode:screen} /* screen drops the inverted PNG's black box into the dark header */
 .nav-links{display:flex;gap:2rem;font-weight:600;font-size:.95rem;color:#cfd3d8}
 .nav-links a:hover{color:var(--volt)}
 .nav .btn{padding:.8rem 1.2rem}
@@ -130,7 +130,7 @@ details p{color:#aab0b8;margin-top:.8rem;max-width:36rem}
 
 footer{padding:3.5rem 0 7rem;color:var(--muted);font-size:.9rem}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
-.foot img{height:56px;width:auto;filter:invert(1);margin-bottom:1rem}
+.foot img{height:56px;width:auto;filter:invert(1);mix-blend-mode:screen;margin-bottom:1rem}
 .foot h4{color:#fff;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.8rem}
 .foot a:hover{color:var(--volt)}
 
