@@ -1,0 +1,33 @@
+[
+  {
+    "businessName": "Slim Secret Med Spa",
+    "city": "McAllen, TX",
+    "website": "https://slimsecretmedspa.com/",
+    "phone": "(956) 537-5136",
+    "email": "slimsecretmedspa@yahoo.com",
+    "previewLink": "https://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/",
+    "localPath": "~/Documents/GitHub/website_demos/slim-secret-med-spa-demo/index.html",
+    "subjectLine": "A sharper site for Slim Secret's GLP-1 program (built a preview)",
+    "pitchBody": "Hi Dr. Rodriguez,\n\nI came across Slim Secret Med Spa while looking at med spas in McAllen — your Google reviews are excellent, and patients clearly love the GLP-1 program. Your current site undersells that, so I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/\n\nIt leads with your physician-led Tirzepatide & Semaglutide program and your dual board certification, puts real patient results (English y Español) front and center, and gives mobile visitors a one-tap Call / Book Consult bar so more phone traffic turns into consultations.\n\nHappy to walk you through it or tailor it further — no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "problems": [
+      "Generic WordPress template; brand (lime/gray S mark) looks dated and low-res",
+      "Hero doesn't explain the GLP-1 offer or physician credentials above the fold",
+      "Heavy third-party review widget and many social-logo images slow the page",
+      "No persistent mobile call/booking CTA; contact form buried",
+      "Bilingual patient base not reflected in the UX",
+      "Stock banner image with logo baked into the photo"
+    ],
+    "improvements": [
+      "Editorial hero: 'The secret is medicine.' with Tirzepatide/Semaglutide chips and dual CTAs",
+      "Trust strip: dual board-certified, Google-verified reviews, bilingual care, financing",
+      "3-step GLP-1 program explainer (consult & labs, custom plan, guided check-ins)",
+      "Services grid for Body, Face, Health & Wellness plus Appetite Crush shop card",
+      "Dr. Ofelia Rodriguez founder section with credentials",
+      "Bilingual review marquee using real Google reviews",
+      "Cherry + CareCredit financing block, map, hours, consult form and sticky mobile call bar"
+    ],
+    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add slim-secret-med-spa-demo/index.html leads.json && git commit -m \"Add Slim Secret Med Spa demo\" && git push origin main",
+    "status": "demo-built",
+    "updated": "2026-10-26"
+  }
+]
