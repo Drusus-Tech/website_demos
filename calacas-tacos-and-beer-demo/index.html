@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calacas Tacos &amp; Beer · Matamoros-style street tacos in the Rio Grande Valley</title>
+<meta name="description" content="Calacas Tacos & Beer: Matamoros-style street tacos from $1.89, cold chili-rimmed beer and painted calavera dining rooms in Brownsville, Harlingen, San Benito, Pharr and South Padre Island.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FFF4DE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23FFD21A' stroke='%2316110F' stroke-width='5'/%3E%3Ctext x='32' y='43' font-family='Arial Black,sans-serif' font-size='30' text-anchor='middle' fill='%23D4127C'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Knewave&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  Demo by Drusus Technologies. Photography and logo: Calacas Tacos & Beer (calacastacosandbeer.com),
+  photographed by Karen Loza and the Calacas team. Hotlinked from the client's own media CDN for this preview only.
+-->
+<style>
+/* build: mood=playful-loud · macro=wrapper-paper collage + pinned beer runway · palette from logo (sun yellow, rosa, ink) */
+:root{
+  --cream:#FFF4DE; --paper:#FFFBF2; --ink:#16110F; --ink-2:#3A2F2A; --sun:#FFD21A; --sun-deep:#F2B705;
+  --rosa:#D4127C; --rosa-hot:#FF2E93; --teal:#0E6E62; --line:rgba(22,17,15,.14);
+  --display:"Dela Gothic One",system-ui,sans-serif; --brush:"Knewave",cursive; --body:"Outfit",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1); --r:22px; --gut:clamp(16px,4vw,56px); --max:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--rosa);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;z-index:200}
+.skip:focus{left:16px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* taco-paper pattern, after the yellow-ring wrapper in their photos */
+.paper{background-color:var(--paper);
+  background-image:radial-gradient(circle at 50% 50%,transparent 0 17px,var(--sun) 18px 22px,transparent 23px),
+  radial-gradient(circle at 50% 50%,var(--rosa-hot) 0 2.5px,transparent 3.5px);
+  background-size:84px 84px,84px 84px;background-position:0 0,42px 42px}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto;z-index:100;transition:background .35s var(--ease),box-shadow .35s var(--ease),backdrop-filter .35s}
+.hdr::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;opacity:0;transition:opacity .35s;
+  background:linear-gradient(90deg,transparent,var(--sun) 20%,var(--rosa-hot) 50%,var(--sun) 80%,transparent)}
+.hdr.scrolled{background:rgba(255,244,222,.78);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 10px 30px -18px rgba(22,17,15,.35)}
+.hdr.scrolled::after{opacity:1}
+.hdr-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;max-width:var(--max);margin:0 auto;padding:10px var(--gut)}
+.nav{display:flex;gap:clamp(14px,2vw,30px);align-items:center}
+.nav a{position:relative;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:var(--rosa-hot);transform:scaleX(0);transform-origin:right;transition:transform .3s var(--ease)}
+@media (hover:hover){.nav a:hover::after{transform:scaleX(1);transform-origin:left}}
+.logo{display:block;justify-self:center;line-height:0}
+.logo img{height:112px;width:auto;transition:height .35s var(--ease),transform .35s var(--ease)}
+.hdr.scrolled .logo img{height:78px}
+@media (hover:hover){.logo:hover img{transform:rotate(-4deg) scale(1.03)}}
+.hdr-cta{justify-self:end;display:flex;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;white-space:nowrap;text-decoration:none;font-weight:800;font-size:15px;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:14px 24px;border:2.5px solid var(--ink);transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-rosa{background:var(--rosa);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+.btn-sun{background:var(--sun);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+@media (hover:hover){.btn-rosa:hover,.btn-sun:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)} .btn-ghost:hover{background:var(--ink);color:var(--cream)}}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.icon-btn{display:none;width:48px;height:48px;border-radius:50%;border:2.5px solid var(--ink);background:var(--sun);align-items:center;justify-content:center;color:var(--ink)}
+.icon-btn svg{width:22px;height:22px}
+.burger span{display:block;width:20px;height:2.5px;background:var(--ink);border-radius:2px;position:relative;transition:transform .3s,opacity .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2.5px;background:var(--ink);border-radius:2px;transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] span::after{transform:translateY(-6px) rotate(-45deg)}
+.drawer{position:fixed;inset:0;z-index:90;background:var(--sun);display:flex;flex-direction:column;justify-content:center;gap:8px;padding:120px var(--gut) 40px;clip-path:circle(0 at calc(100% - 40px) 40px);transition:clip-path .55s var(--ease);visibility:hidden}
+.drawer.open{clip-path:circle(150% at calc(100% - 40px) 40px);visibility:visible}
+.drawer a{font-family:var(--display);font-size:clamp(34px,9vw,56px);line-height:1.15;text-decoration:none}
+.drawer small{margin-top:24px;font-weight:600}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;padding:170px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.28;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--cream);padding:8px 16px;border-radius:999px}
+.dot{width:9px;height:9px;border-radius:50%;background:#3BD16F;box-shadow:0 0 0 4px rgba(59,209,111,.25)}
+.dot.closed{background:#FF5A5A;box-shadow:0 0 0 4px rgba(255,90,90,.25)}
+h1,.h2{font-family:var(--display);font-weight:400;line-height:.98;letter-spacing:-.01em}
+h1{font-size:clamp(44px,6.2vw,100px);margin:20px 0 20px}
+h1 .brush,.h2 .brush{font-family:var(--brush);color:var(--rosa);display:inline-block;transform:rotate(-3deg);letter-spacing:0}
+.word{display:inline-block;will-change:transform}
+.lede{font-size:clamp(18px,1.5vw,21px);max-width:34ch;color:var(--ink-2)}
+.lede b{color:var(--ink)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.price-pin{display:flex;align-items:baseline;gap:10px;margin-top:34px;font-weight:600}
+.price-pin strong{font-family:var(--display);font-size:46px;line-height:1;color:var(--ink)}
+.stack{position:relative;aspect-ratio:4/4.4;max-width:620px;justify-self:end;width:100%}
+.ph{position:absolute;border:8px solid #fff;border-radius:18px;box-shadow:0 30px 60px -25px rgba(22,17,15,.55);overflow:hidden;background:#eee}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph-a{inset:6% 4% 18% 8%;transform:rotate(3deg);z-index:1}
+.ph-b{width:42%;aspect-ratio:2/3;left:-6%;bottom:-2%;transform:rotate(-8deg);z-index:2}
+.ph-c{width:34%;aspect-ratio:2/3;right:-4%;bottom:-6%;transform:rotate(9deg);z-index:3}
+.sticker{position:absolute;z-index:4;top:-4%;left:-2%;width:150px;height:150px}
+.sticker svg{width:100%;height:100%;animation:spin 18s linear infinite}
+.sticker .core{position:absolute;inset:32px;border-radius:50%;background:var(--rosa);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--brush);font-size:20px;line-height:1;border:3px solid var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- marquee ---------- */
+.marquee{background:var(--rosa);color:#fff;border-block:3px solid var(--ink);overflow:hidden;transform:rotate(-1.5deg);margin:-26px -10px 0;position:relative;z-index:5}
+.marquee-track{display:flex;width:max-content;animation:marq 32s linear infinite}
+.marquee span{font-family:var(--brush);font-size:clamp(26px,3.4vw,44px);padding:14px 26px;white-space:nowrap;display:flex;align-items:center;gap:26px}
+.marquee span::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.sec{padding:clamp(96px,12vw,170px) 0}
+.eyebrow{font-family:var(--brush);color:var(--rosa);font-size:clamp(24px,2.4vw,32px);display:block;margin-bottom:8px;transform:rotate(-2deg);transform-origin:left}
+.h2{font-size:clamp(40px,5.6vw,84px)}
+.intro{max-width:52ch;color:var(--ink-2);font-size:clamp(17px,1.3vw,19px);margin-top:18px}
+
+/* menu */
+.menu-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,80px);margin-top:56px;align-items:start}
+.menu-photo{position:sticky;top:130px;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--sun)}
+.menu-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .6s var(--ease),transform 1.2s var(--ease)}
+.menu-photo img.on{opacity:1;transform:scale(1)}
+.menu-photo figcaption{position:absolute;left:16px;bottom:16px;background:var(--cream);border:2.5px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.tab{border:2.5px solid var(--ink);background:transparent;border-radius:999px;padding:11px 20px;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;transition:background .2s,color .2s;min-height:48px}
+.tab[aria-selected=true]{background:var(--ink);color:var(--sun)}
+@media (hover:hover){.tab:hover:not([aria-selected=true]){background:var(--sun)}}
+.panel[hidden]{display:none}
+.panel p.note{color:var(--ink-2);margin-bottom:18px;max-width:56ch}
+.item{display:grid;grid-template-columns:1fr auto;gap:4px 18px;padding:18px 0;border-bottom:2px dashed var(--line)}
+.item h3{font-family:var(--display);font-weight:400;font-size:clamp(20px,1.9vw,26px);line-height:1.1;display:flex;align-items:baseline;gap:12px}
+.item h3::after{content:"";flex:1;border-bottom:2px dotted rgba(22,17,15,.3);transform:translateY(-6px);min-width:20px}
+.item .price{font-family:var(--display);font-size:clamp(20px,1.9vw,26px);color:var(--rosa);font-variant-numeric:tabular-nums}
+.item p{grid-column:1/-1;color:var(--ink-2);font-size:16px;max-width:60ch}
+.menu-foot{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;color:var(--ink-2);font-size:15px}
+
+/* beer runway */
+.beer{background:var(--ink);color:var(--cream);overflow:hidden}
+.beer .eyebrow{color:var(--sun)}
+.beer .intro{color:rgba(255,244,222,.8)}
+.runway-wrap{margin-top:44px}
+@media (min-width:761px){.beer.sec{padding-top:110px;min-height:100vh}.beer .h2{font-size:clamp(36px,4.2vw,64px)}.beer .intro{margin-top:12px}.beer .runway-wrap{margin-top:34px}.beer .card{height:min(calc(100vh - 420px),560px);min-height:300px;width:auto}}
+.runway{display:flex;gap:clamp(18px,2.4vw,34px);padding:0 var(--gut);width:max-content}
+.card{position:relative;width:clamp(260px,28vw,400px);flex:none;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4.2;border:3px solid var(--cream)}
+.card:nth-child(odd){transform:rotate(-1.5deg)}.card:nth-child(even){transform:rotate(1.5deg) translateY(26px)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+@media (hover:hover){.card:hover img{transform:scale(1.06)}}
+.card figcaption{position:absolute;inset:auto 0 0;padding:70px 20px 20px;background:linear-gradient(to top,rgba(22,17,15,.92),rgba(22,17,15,.6) 55%,transparent);color:#fff}
+.card figcaption b{display:block;font-family:var(--display);font-weight:400;font-size:24px;line-height:1.1}
+.card figcaption span{font-size:15px;color:rgba(255,255,255,.85)}
+.card.sun{background:var(--sun);color:var(--ink);display:flex;flex-direction:column;justify-content:space-between;padding:28px;border-color:var(--sun)}
+.card.sun .big{font-family:var(--brush);font-size:clamp(46px,4.6vw,70px);line-height:.95;color:var(--rosa);transform:rotate(-4deg)}
+.card.sun p{font-weight:600;font-size:18px}
+
+/* murals */
+.murals-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,28px);margin-top:60px}
+.m{border-radius:var(--r);overflow:hidden;border:3px solid var(--ink);position:relative}
+.m img{width:100%;height:100%;object-fit:cover}
+.m1{grid-column:1/6;grid-row:1/3;aspect-ratio:2/3}
+.m2{grid-column:6/10;aspect-ratio:1/1;margin-top:60px}
+.m3{grid-column:10/13;aspect-ratio:2/3}
+.m-copy{grid-column:6/13;align-self:end;background:var(--sun);border:3px solid var(--ink);border-radius:var(--r);padding:clamp(22px,3vw,40px);box-shadow:8px 8px 0 var(--rosa)}
+.m-copy p{font-size:clamp(17px,1.3vw,19px);max-width:52ch}
+.stats{display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,44px);margin-top:22px}
+.stats div{display:flex;flex-direction:column}
+.stats strong{font-family:var(--display);font-weight:400;font-size:clamp(38px,4vw,58px);line-height:1;font-variant-numeric:tabular-nums}
+.stats span{font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+
+/* locations */
+.locs{background:var(--paper)}
+.loc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,1.8vw,24px);margin-top:56px}
+.loc{grid-column:span 2;background:#fff;border:3px solid var(--ink);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.loc:nth-child(4){grid-column:2/span 2}
+@media (hover:hover){.loc:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--sun-deep)}}
+.loc h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.2vw,32px);line-height:1}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.loc a.addr{text-decoration:none;font-weight:600;display:flex;gap:10px}
+.loc a.addr:hover{text-decoration:underline;text-decoration-color:var(--rosa);text-decoration-thickness:2px}
+.loc svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--rosa)}
+.loc .hours{font-size:15px;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:12px;margin-top:auto}
+.loc .hours div{display:flex;justify-content:space-between;gap:12px}
+.loc .btn{margin-top:6px;align-self:flex-start;padding:12px 20px;font-size:14px}
+
+/* groups form */
+.groups-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,80px);align-items:center}
+.groups-photo{border-radius:var(--r);overflow:hidden;border:3px solid var(--ink);aspect-ratio:3/4;transform:rotate(-2deg);box-shadow:-10px 10px 0 var(--rosa)}
+.groups-photo img{width:100%;height:100%;object-fit:cover}
+form{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+label{font-weight:700;font-size:14px;letter-spacing:.04em}
+input,select,textarea{font:inherit;font-size:16px;border:2.5px solid var(--ink);border-radius:14px;padding:13px 14px;background:#fff;color:var(--ink);min-height:50px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;box-shadow:0 0 0 4px rgba(212,18,124,.25);border-color:var(--rosa)}
+.err{color:#B00045;font-size:14px;font-weight:600;min-height:0}
+.f.bad input,.f.bad select{border-color:#B00045}
+.form-done{grid-column:1/-1;background:var(--sun);border:3px solid var(--ink);border-radius:var(--r);padding:22px;font-weight:600}
+.btn[disabled]{opacity:.6;cursor:progress}
+
+/* cta + footer */
+.cta{background:var(--sun);border-block:3px solid var(--ink);text-align:center;padding:clamp(80px,10vw,140px) 0;overflow:hidden}
+.cta .h2{font-size:clamp(46px,8vw,128px)}
+.cta .hero-ctas{justify-content:center}
+.foot{background:var(--ink);color:var(--cream);padding:70px 0 0}
+.foot-logo{display:flex;justify-content:center;margin-bottom:56px}
+.foot-logo a{background:var(--cream);border-radius:50%;width:190px;height:190px;display:grid;place-items:center;border:4px solid var(--sun)}
+.foot-logo img{height:120px;width:auto}
+.foot-cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.3fr;gap:40px;padding-bottom:56px;border-bottom:1px solid rgba(255,244,222,.16)}
+.foot h4{font-family:var(--brush);font-weight:400;color:var(--sun);font-size:24px;margin-bottom:14px}
+.foot ul{list-style:none;display:grid;gap:9px}
+.foot a{text-decoration:none;color:rgba(255,244,222,.86)}
+.foot a:hover{color:var(--sun)}
+.foot p{color:rgba(255,244,222,.8);max-width:34ch}
+.socials{display:flex;gap:10px;margin-top:18px}
+.socials a{width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,244,222,.35);display:grid;place-items:center}
+.socials svg{width:20px;height:20px}
+.foot-bar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0 28px;font-size:14px;color:rgba(255,244,222,.65)}
+.foot-bar a{color:rgba(255,244,222,.85)}
+
+.mbar{display:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav,.hdr-cta{display:none}
+  .groups-photo{margin:0 10px;aspect-ratio:4/3}
+  .icon-btn{display:inline-flex}
+  .hdr-in{grid-template-columns:48px 1fr 48px}
+  .logo img{height:84px}.hdr.scrolled .logo img{height:66px}
+  .hero{padding-top:140px}
+  .hero-grid,.menu-grid,.groups-grid{grid-template-columns:1fr}
+  .stack{justify-self:center;max-width:540px;margin-top:20px}
+  .menu-photo{position:relative;top:0;aspect-ratio:16/11}
+  .loc,.loc:nth-child(4){grid-column:span 3}
+  .loc:nth-child(5){grid-column:span 6}
+  .foot-cols{grid-template-columns:1fr 1fr}
+  .murals-grid{grid-template-columns:repeat(6,1fr)}
+  .m1{grid-column:1/4;grid-row:auto}.m2{grid-column:4/7;margin-top:0;aspect-ratio:2/3}.m3{display:none}.m-copy{grid-column:1/-1}
+}
+@media (max-width:760px){
+  body{padding-bottom:76px}
+  .logo img{height:64px}.hdr.scrolled .logo img{height:56px}
+  .hero{padding:118px 0 70px;min-height:auto}
+  .hero-ctas .btn{flex:1 1 auto}
+  .sticker{width:112px;height:112px}.sticker .core{inset:24px;font-size:15px}
+  .loc,.loc:nth-child(4),.loc:nth-child(5){grid-column:1/-1}
+  form{grid-template-columns:1fr}
+  .foot-cols{grid-template-columns:1fr}
+  .m1,.m2{grid-column:span 3}
+  .runway-wrap{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:30px}
+  .card{scroll-snap-align:center;width:76vw}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:80;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,244,222,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:2px solid var(--ink)}
+  .mbar .btn{padding:13px 10px;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .marquee-track,.sticker svg{animation:none}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="icon-btn" href="tel:+19565187800" aria-label="Call Calacas Brownsville, 956-518-7800">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">La Carta</a>
+      <a href="#beer">&amp; Beer</a>
+      <a href="#murals">The Vibe</a>
+      <a href="#locations">Locations</a>
+    </nav>
+    <a class="logo" href="#top" aria-label="Calacas Tacos &amp; Beer, back to top">
+      <img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/62943LOGO.png" alt="Calacas Tacos &amp; Beer" width="400" height="349">
+    </a>
+    <div class="hdr-cta">
+      <a class="btn btn-ghost" href="#groups">Groups</a>
+      <a class="btn btn-rosa" href="#locations">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Find a Calacas
+      </a>
+    </div>
+    <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <a href="#menu">La Carta</a>
+  <a href="#beer">&amp; Beer</a>
+  <a href="#murals">The Vibe</a>
+  <a href="#locations">Locations</a>
+  <a href="#groups">Groups</a>
+  <small>Open daily from 11 am · Till midnight Fri &amp; Sat</small>
+</div>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-bg paper" aria-hidden="true" style="position:absolute;inset:0;opacity:.22"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker"><span class="dot" id="heroDot"></span><span id="heroStatus">Open daily from 11 am</span></span>
+      <h1 data-split aria-label="Street tacos, Matamoros style.">Street tacos, <span class="brush">Matamoros</span> style.</h1>
+      <p class="lede">Bistec, al pastor and fajita on hot corn tortillas, finished with onion, cilantro and avocado. A cold <b>chili-rimmed beer</b> on the side. Five kitchens across the Valley, painted with calaveras.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-rosa" href="#menu">See La Carta</a>
+        <a class="btn btn-sun" href="#locations">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Nearest location
+        </a>
+      </div>
+      <div class="price-pin"><strong>$1.89</strong><span>street tacos, every day</span></div>
+    </div>
+    <div class="stack" id="stack">
+      <figure class="ph ph-a" data-depth="10"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/5548530EFA0B1-7381-4A26-A3BF-7D094A75F1B1.jpeg?w=1400&amp;fit=max&amp;auto=compress,format" alt="Overhead spread of street tacos on Calacas wrapper paper with salsas and a chili-rimmed beer" width="1400" height="933" fetchpriority="high"></figure>
+      <figure class="ph ph-b" data-depth="22"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/233764A0BEFD1-FDF5-49EB-B8D4-9B2412B1D561.jpeg?w=700&amp;fit=max&amp;auto=compress,format" alt="Taco topped with queso fresco and avocado on the skull-print wrapper" width="700" height="1050"></figure>
+      <figure class="ph ph-c" data-depth="30"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/3792E04EDA17-4F8E-4ACE-9D35-A24E052F3BC1.jpeg?w=600&amp;fit=max&amp;auto=compress,format" alt="Loaded michelada in a Calacas cup with olives and dried chile" width="600" height="900"></figure>
+      <div class="sticker" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="c" d="M100 100m-82 0a82 82 0 1 1 164 0a82 82 0 1 1-164 0"/></defs><circle cx="100" cy="100" r="98" fill="#FFD21A" stroke="#16110F" stroke-width="4"/><text font-family="Outfit" font-weight="800" font-size="17" letter-spacing="3.2" fill="#16110F"><textPath href="#c">TILL MIDNIGHT · FRIDAY &amp; SATURDAY · </textPath></text></svg>
+        <span class="core">Hasta<br>las 12</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Bistec</span><span>Al Pastor</span><span>Fajita</span><span>Cochinita Pibil</span><span>Tripita</span><span>Choriqueso</span><span>Aguachile de Ribeye</span><span>Costilla de Elote</span>
+    <span>Bistec</span><span>Al Pastor</span><span>Fajita</span><span>Cochinita Pibil</span><span>Tripita</span><span>Choriqueso</span><span>Aguachile de Ribeye</span><span>Costilla de Elote</span>
+  </div>
+</div>
+
+<section class="sec" id="menu">
+  <div class="wrap">
+    <span class="eyebrow">La Carta</span>
+    <h2 class="h2" data-split aria-label="Small tacos. Big order.">Small tacos. Big order.</h2>
+    <p class="intro">Street tacos are priced by the piece, so order a round of five and raise your hand for more. Starters and antojitos fill out the table.</p>
+    <div class="menu-grid">
+      <figure class="menu-photo" aria-live="polite">
+        <img class="on" data-for="tacos" src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/314080DE3A767-B38E-4562-8200-51A8BFE6C4DE.jpeg?w=1000&amp;fit=max&amp;auto=compress,format" alt="Al pastor taco with pineapple, onion and cilantro" width="1000" height="1500" loading="lazy">
+        <img data-for="antojitos" src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/65859KarenLoza_CalacasTacosnBeerMarch2-05.jpg?w=1000&amp;fit=max&amp;auto=compress,format" alt="Salsa poured over tostadas topped with pickled red onion" width="1000" height="1500" loading="lazy">
+        <img data-for="starters" src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/169KarenLoza_CalacasSept-18.jpeg?w=1000&amp;fit=max&amp;auto=compress,format" alt="Chicharron Calacas pork belly over guacamole with tostadas and salsa" width="1000" height="1500" loading="lazy">
+        <figcaption id="photoCap">Al Pastor · $1.89</figcaption>
+      </figure>
+      <div>
+        <div class="tabs" role="tablist" aria-label="Menu sections">
+          <button class="tab" role="tab" id="t-tacos" aria-selected="true" aria-controls="p-tacos" data-tab="tacos" data-cap="Al Pastor · $1.89">Street Tacos</button>
+          <button class="tab" role="tab" id="t-antojitos" aria-selected="false" aria-controls="p-antojitos" data-tab="antojitos" tabindex="-1" data-cap="Tostada de Tinga · $2.89">Antojitos</button>
+          <button class="tab" role="tab" id="t-starters" aria-selected="false" aria-controls="p-starters" data-tab="starters" tabindex="-1" data-cap="Chicharron Calacas · $23.99">Starters</button>
+        </div>
+        <div class="panel" role="tabpanel" id="p-tacos" aria-labelledby="t-tacos">
+          <div class="item"><h3>Bistec</h3><span class="price">$1.89</span><p>Matamoros-style sirloin, topped with fresh onion, cilantro, avocado and cheese.</p></div>
+          <div class="item"><h3>Al Pastor</h3><span class="price">$1.89</span><p>Thin-sliced pork in the house spice marinade, with onion, cilantro and pineapple.</p></div>
+          <div class="item"><h3>Cochinita Pibil</h3><span class="price">$1.99</span><p>Slow-roasted shredded pork in a mild house sauce, minced onion and cilantro.</p></div>
+          <div class="item"><h3>Fajita</h3><span class="price">$2.34</span><p>Matamoros-style grilled fajita, onion, cilantro, avocado and cheese.</p></div>
+          <div class="item"><h3>Tripita</h3><span class="price">$2.34</span><p>Crispy beef tripita with minced onion, cilantro and fresh cheese.</p></div>
+        </div>
+        <div class="panel" role="tabpanel" id="p-antojitos" aria-labelledby="t-antojitos" hidden>
+          <div class="item"><h3>Street Style Tostada</h3><span class="price">$2.99</span><p>Bistec, onion and cilantro, topped with avocado, queso fresco and grilled onions.</p></div>
+          <div class="item"><h3>Tostada de Tinga</h3><span class="price">$2.89</span><p>Chicken tinga, cabbage mix, pickled red onion and sour cream.</p></div>
+          <div class="item"><h3>Volcán de Cochinita Pibil</h3><span class="price">$2.89</span><p>Cheesy cochinita pibil on a crispy tostada with cabbage, pickled onion and cilantro.</p></div>
+          <div class="item"><h3>Tostada de Deshebrada</h3><span class="price">$2.89</span><p>Refried beans, shredded beef, lettuce, tomato, avocado, fresh cheese and sour cream.</p></div>
+          <div class="item"><h3>Charro Especiales</h3><span class="price">$3.29</span><p>Charro beans topped with bistec, onion, cilantro and fresh cheese.</p></div>
+        </div>
+        <div class="panel" role="tabpanel" id="p-starters" aria-labelledby="t-starters" hidden>
+          <div class="item"><h3>Choriqueso</h3><span class="price">$13.48</span><p>A skillet of melted Oaxaca cheese with chorizo, served with hot corn tortillas.</p></div>
+          <div class="item"><h3>Costilla de Elote</h3><span class="price">$12.49</span><p>Twelve pieces of grilled street corn in the signature house sauce, queso fresco, crema and cilantro.</p></div>
+          <div class="item"><h3>Ceviche Bandera</h3><span class="price">$12.99</span><p>Citrus-cured white fish with onion, cilantro, tomato and avocado, served with totopos.</p></div>
+          <div class="item"><h3>Chicharron Calacas</h3><span class="price">$23.99</span><p>Crispy carnitas-style pork belly over fresh guacamole with onion, tomato, jalapeño and tortillas.</p></div>
+          <div class="item"><h3>Aguachile de Ribeye</h3><span class="price">$25.49</span><p>Just-charred ribeye in a tart dressing with feathered avocado and pickled red onion.</p></div>
+        </div>
+        <div class="menu-foot">
+          <a class="btn btn-ghost" href="https://www.calacastacosandbeer.com/menu/" target="_blank" rel="noopener">Full menu</a>
+          <span>Brownsville prices shown. Each location keeps its own carta.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec beer" id="beer">
+  <div class="wrap">
+    <span class="eyebrow">&amp; Beer</span>
+    <h2 class="h2" data-split aria-label="Rimmed in chile, served ice cold.">Rimmed in chile, served ice cold.</h2>
+    <p class="intro">Half the name is beer. Dos Equis, Indio and Corona come dressed to the neck, and the house cups arrive loaded.</p>
+  </div>
+  <div class="runway-wrap" id="runwayWrap">
+    <div class="runway" id="runway">
+      <figure class="card"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/4060358F5579F-3C28-4CF0-88E0-E987C618DE49.jpeg?w=800&amp;fit=max&amp;auto=compress,format" alt="Dos Equis, Indio and Corona bottles with chile-crusted necks and lime" width="800" height="1200" loading="lazy"><figcaption><b>The chile-neck lineup</b><span>Dos Equis · Indio · Corona</span></figcaption></figure>
+      <figure class="card"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/3792E04EDA17-4F8E-4ACE-9D35-A24E052F3BC1.jpeg?w=800&amp;fit=max&amp;auto=compress,format" alt="Michelada-style cup loaded with olives and a dried chile" width="800" height="1200" loading="lazy"><figcaption><b>Loaded to the lid</b><span>Olives, chile and the Calacas cup</span></figcaption></figure>
+      <div class="card sun"><span class="big">¡Salud, Valle!</span><p>Ask your server what's on tap at your location tonight.</p></div>
+      <figure class="card"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/38734KarenLoza_CalacasTacosnBeerMarch2-39.jpg?w=800&amp;fit=max&amp;auto=compress,format" alt="Two chile-rimmed beer bottles clinking over a table of tacos" width="800" height="1200" loading="lazy"><figcaption><b>Clink first</b><span>Then the tacos</span></figcaption></figure>
+      <figure class="card"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/13700628A337A-AE40-4FE3-A467-075D0958B194.jpeg?w=800&amp;fit=max&amp;auto=compress,format" alt="Three fruit drinks in Calacas cups topped with cucumber, strawberry and mango" width="800" height="1200" loading="lazy"><figcaption><b>No beer? No problem.</b><span>Fruit cups for the designated driver</span></figcaption></figure>
+      <figure class="card"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/61819KarenLoza_CalacasTacosnBeerMarch2-57.jpg?w=800&amp;fit=max&amp;auto=compress,format" alt="Beer bottle and green drink raised in front of a calavera mural" width="800" height="1200" loading="lazy"><figcaption><b>Under the calaveras</b><span>Every wall is painted</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="murals">
+  <div class="wrap">
+    <span class="eyebrow">The vibe</span>
+    <h2 class="h2" data-split aria-label="Pull up to the painted table.">Pull up to the painted table.</h2>
+    <div class="murals-grid">
+      <figure class="m m1"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/91574KarenLoza_CalacasTacosnBeerMarch2-62.jpg?w=1000&amp;fit=max&amp;auto=compress,format" alt="Guest smiling with a beer at a tile-painted table in front of a calavera mural" width="1000" height="1500" loading="lazy"></figure>
+      <figure class="m m2"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/101KarenLoza_CalacasTacosnBeerMarch2-48.jpg?w=900&amp;fit=max&amp;auto=compress,format" alt="Overhead of a painted tile table with tacos, guacamole and two beers" width="900" height="1350" loading="lazy"></figure>
+      <figure class="m m3"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/68997KarenLoza_CalacasTacosnBeerMarch2-60.jpg?w=700&amp;fit=max&amp;auto=compress,format" alt="Guest sipping a drink at a table full of tacos beside a mural and wooden fence" width="700" height="1050" loading="lazy"></figure>
+      <div class="m-copy">
+        <p>Calaveras on the walls, hand-painted tiles on every tabletop, tacos on the skull-print paper. It is a casual night out that still feels like an occasion, from lunch at eleven to the last round at midnight on weekends.</p>
+        <div class="stats">
+          <div><strong data-count="5">5</strong><span>Valley locations</span></div>
+          <div><strong data-count="7">7</strong><span>days a week</span></div>
+          <div><strong>11<small style="font-size:.45em">am</small></strong><span>doors open</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec locs paper-soft" id="locations">
+  <div class="wrap">
+    <span class="eyebrow">Locations</span>
+    <h2 class="h2" data-split aria-label="Five kitchens, one Valley.">Five kitchens, one Valley.</h2>
+    <p class="intro">Every Calacas runs the same hours: 11 am to 11 pm Sunday through Thursday, and till midnight on Friday and Saturday.</p>
+    <div class="loc-grid">
+      <article class="loc" data-hours="std">
+        <span class="status"><span class="dot"></span><span class="st">Open daily</span></span>
+        <h3>Brownsville</h3>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Calacas+Tacos+%26+Beer+3340+Pablo+Kisel+Blvd+Brownsville+TX+78526" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>3340 Pablo Kisel Blvd<br>Brownsville, TX 78526</a>
+        <a class="btn btn-sun" href="tel:+19565187800">Call (956) 518-7800</a>
+        <div class="hours"><div><span>Sun–Thu</span><span>11 am – 11 pm</span></div><div><span>Fri–Sat</span><span>11 am – 12 am</span></div></div>
+      </article>
+      <article class="loc" data-hours="std">
+        <span class="status"><span class="dot"></span><span class="st">Open daily</span></span>
+        <h3>Harlingen</h3>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Calacas+Tacos+%26+Beer+6710+W+Expressway+83+Harlingen+TX+78552" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>6710 W Expressway 83<br>Harlingen, TX 78552</a>
+        <a class="btn btn-sun" href="tel:+19564962816">Call (956) 496-2816</a>
+        <div class="hours"><div><span>Sun–Thu</span><span>11 am – 11 pm</span></div><div><span>Fri–Sat</span><span>11 am – 12 am</span></div></div>
+      </article>
+      <article class="loc" data-hours="std">
+        <span class="status"><span class="dot"></span><span class="st">Open daily</span></span>
+        <h3>San Benito</h3>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Calacas+Tacos+%26+Beer+500+US-77+BUS+San+Benito+TX+78586" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>500 US-77 Business<br>San Benito, TX 78586</a>
+        <a class="btn btn-sun" href="tel:+19566263372">Call (956) 626-3372</a>
+        <div class="hours"><div><span>Sun–Thu</span><span>11 am – 11 pm</span></div><div><span>Fri–Sat</span><span>11 am – 12 am</span></div></div>
+      </article>
+      <article class="loc" data-hours="std">
+        <span class="status"><span class="dot"></span><span class="st">Open daily</span></span>
+        <h3>Pharr</h3>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Calacas+Tacos+%26+Beer+2101+N+Cage+Blvd+Pharr+TX+78577" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>2101 N Cage Blvd<br>Pharr, TX 78577</a>
+        <a class="btn btn-sun" href="tel:+19564753708">Call (956) 475-3708</a>
+        <div class="hours"><div><span>Sun–Thu</span><span>11 am – 11 pm</span></div><div><span>Fri–Sat</span><span>11 am – 12 am</span></div></div>
+      </article>
+      <article class="loc" data-hours="call">
+        <span class="status"><span class="dot"></span><span class="st">Island hours</span></span>
+        <h3>South Padre Island</h3>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Calacas+Tacos+%26+Beer+410+Padre+Blvd+South+Padre+Island+TX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>410 Padre Blvd<br>South Padre Island, TX</a>
+        <a class="btn btn-sun" href="tel:+19564335001">Call (956) 433-5001</a>
+        <div class="hours"><div><span>Island hours</span><span>Call for today's</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="groups">
+  <div class="wrap groups-grid">
+    <figure class="groups-photo"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/66227DCD6B6F0-3874-4E07-A814-572B22116278.jpeg?w=900&amp;fit=max&amp;auto=compress,format" alt="Table spread of street tacos, salsa, a jalapeño and a beer on skull-print paper" width="900" height="1350" loading="lazy"></figure>
+    <div>
+      <span class="eyebrow">Groups &amp; parties</span>
+      <h2 class="h2" data-split aria-label="Bringing the whole crew?">Bringing the whole crew?</h2>
+      <p class="intro">Birthdays, team lunches, watch parties. Tell us the location and headcount and the team will call you back to set up tables and a taco round.</p>
+      <form id="groupForm" novalidate>
+        <div class="f"><label for="fn">Name *</label><input id="fn" name="name" autocomplete="name" required aria-describedby="fn-e"><span class="err" id="fn-e"></span></div>
+        <div class="f"><label for="fp">Phone *</label><input id="fp" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="fp-e"><span class="err" id="fp-e"></span></div>
+        <div class="f"><label for="fl">Location *</label><select id="fl" name="location" required aria-describedby="fl-e"><option value="">Choose one</option><option>Brownsville</option><option>Harlingen</option><option>San Benito</option><option>Pharr</option><option>South Padre Island</option></select><span class="err" id="fl-e"></span></div>
+        <div class="f"><label for="fs">Party size</label><input id="fs" name="size" type="number" min="2" max="200" inputmode="numeric" placeholder="e.g. 14"></div>
+        <div class="f full"><label for="fd">Date &amp; time</label><input id="fd" name="date" type="datetime-local"></div>
+        <div class="f full"><label for="fm">Anything we should know?</label><textarea id="fm" name="msg" placeholder="Birthday, dietary needs, game night..."></textarea></div>
+        <div class="f full"><button class="btn btn-rosa" type="submit" id="fsub">Request a callback</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <span class="eyebrow" style="transform:rotate(-2deg);transform-origin:center">¿Qué onda?</span>
+    <h2 class="h2" data-split aria-label="Tacos tonight.">Tacos <span class="brush">tonight.</span></h2>
+    <div class="hero-ctas">
+      <a class="btn btn-rosa" href="#locations">Find a Calacas</a>
+      <a class="btn btn-ghost" href="tel:+19565187800">Call Brownsville</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-logo"><a href="#top" aria-label="Back to top"><img src="https://images.getbento.com/accounts/75b57f60d8624018311b530a06423c69/media/images/62943LOGO.png" alt="Calacas Tacos &amp; Beer" width="400" height="349" loading="lazy"></a></div>
+    <div class="foot-cols">
+      <div>
+        <h4>Calacas</h4>
+        <p>Matamoros-style street tacos and cold beer, served under the calaveras in five Rio Grande Valley kitchens.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/pages/category/Restaurant/Calacas-Tacos-Beer-110966943592164/" target="_blank" rel="noopener" aria-label="Calacas on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z"/></svg></a>
+          <a href="https://www.calacastacosandbeer.com/" target="_blank" rel="noopener" aria-label="Calacas website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#menu">La Carta</a></li><li><a href="#beer">&amp; Beer</a></li><li><a href="#murals">The vibe</a></li><li><a href="#groups">Groups &amp; parties</a></li><li><a href="https://www.calacastacosandbeer.com/jobs/" target="_blank" rel="noopener">Jobs</a></li></ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul><li><a href="tel:+19565187800">Brownsville</a></li><li><a href="tel:+19564962816">Harlingen</a></li><li><a href="tel:+19566263372">San Benito</a></li><li><a href="tel:+19564753708">Pharr</a></li><li><a href="tel:+19564335001">South Padre Island</a></li></ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul><li>Sun–Thu · 11 am – 11 pm</li><li>Fri–Sat · 11 am – 12 am</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Calacas+Tacos+%26+Beer+3340+Pablo+Kisel+Blvd+Brownsville+TX" target="_blank" rel="noopener">3340 Pablo Kisel Blvd, Brownsville</a></li><li><a href="tel:+19565187800">(956) 518-7800</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bar"><span>© <span id="yr">2026</span> Calacas Tacos &amp; Beer · Concept preview by Drusus Technologies</span><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick actions">
+  <a class="btn btn-rosa" href="tel:+19565187800"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a class="btn btn-sun" href="#locations">Locations</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  $('#yr').textContent = new Date().getFullYear();
+
+  // header scroll state
+  const hdr = $('#hdr');
+  const onScroll = () => hdr.classList.toggle('scrolled', scrollY > 30);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // mobile drawer
+  const burger = $('#burger'), drawer = $('#drawer');
+  const setDrawer = open => { drawer.classList.toggle('open', open); burger.setAttribute('aria-expanded', open); burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); drawer.setAttribute('aria-hidden', !open); document.body.style.overflow = open ? 'hidden' : ''; };
+  burger.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
+  $$('a', drawer).forEach(a => a.addEventListener('click', () => setDrawer(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') setDrawer(false); });
+
+  // live open/closed, Central time. Hours: Sun-Thu 11-23, Fri-Sat 11-24
+  const now = () => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', weekday: 'short', hour: 'numeric', hourCycle: 'h23' }).formatToParts(new Date()).map(x => [x.type, x.value])); return { d: p.weekday, h: +p.hour }; };
+  const isOpen = ({ d, h }) => h >= 11 && h < (d === 'Fri' || d === 'Sat' ? 24 : 23);
+  const t = now(), open = isOpen(t);
+  $('#heroStatus').textContent = open ? `Open now · till ${t.d === 'Fri' || t.d === 'Sat' ? 'midnight' : '11 pm'}` : 'Closed now · opens 11 am';
+  $('#heroDot').classList.toggle('closed', !open);
+  $$('.loc[data-hours=std]').forEach(l => { $('.st', l).textContent = open ? 'Open now' : 'Opens 11 am'; $('.dot', l).classList.toggle('closed', !open); });
+
+  // menu tabs (arrow-key support)
+  const tabs = $$('.tab'), cap = $('#photoCap');
+  const select = tab => {
+    tabs.forEach(b => { const on = b === tab; b.setAttribute('aria-selected', on); b.tabIndex = on ? 0 : -1; $('#' + b.getAttribute('aria-controls')).hidden = !on; });
+    $$('.menu-photo img').forEach(i => i.classList.toggle('on', i.dataset.for === tab.dataset.tab));
+    cap.textContent = tab.dataset.cap;
+    if (!reduce && window.gsap) gsap.from($$('#p-' + tab.dataset.tab + ' .item'), { y: 18, opacity: 0, stagger: .05, duration: .45, ease: 'power3.out', clearProps: 'all' });
+  };
+  tabs.forEach((b, i) => {
+    b.addEventListener('click', () => select(b));
+    b.addEventListener('keydown', e => { const k = { ArrowRight: 1, ArrowLeft: -1 }[e.key]; if (k) { const n = tabs[(i + k + tabs.length) % tabs.length]; n.focus(); select(n); } });
+  });
+
+  // group form
+  const form = $('#groupForm');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const rules = [['fn', v => v.trim().length > 1, 'Please add your name.'], ['fp', v => v.replace(/\D/g, '').length >= 10, 'Enter a 10-digit phone number so we can call back.'], ['fl', v => !!v, 'Pick the location you want to visit.']];
+    let first = null;
+    rules.forEach(([id, ok, msg]) => { const el = $('#' + id), bad = !ok(el.value); el.closest('.f').classList.toggle('bad', bad); el.setAttribute('aria-invalid', bad); $('#' + id + '-e').textContent = bad ? msg : ''; if (bad && !first) first = el; });
+    if (first) { first.focus(); return; }
+    const btn = $('#fsub'); btn.disabled = true; btn.textContent = 'Sending...';
+    setTimeout(() => { form.innerHTML = '<div class="form-done" role="status">Got it, ' + $('#fn').value.split(' ')[0].replace(/[<>&]/g, '') + '. The ' + $('#fl').value + ' team will call you back shortly to set up your table. (Preview form: nothing was sent.)</div>'; }, 700);
+  });
+
+  if (reduce || !window.gsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  // one smooth-scroll engine: Lenis, synced to ScrollTrigger
+  if (window.Lenis) {
+    const lenis = new Lenis({ lerp: .11 });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0);
+    $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => { const id = a.getAttribute('href'); if (id.length > 1 && $(id)) { e.preventDefault(); lenis.scrollTo(id === '#top' ? 0 : $(id), { offset: -90 }); } }));
+  }
+
+  // split headings into words (aria-label keeps the readable name)
+  $$('[data-split]').forEach(h => {
+    const walk = n => [...n.childNodes].forEach(c => {
+      if (c.nodeType === 3) { const f = document.createDocumentFragment(); c.textContent.split(/(\s+)/).forEach(w => { if (!w) return; if (/^\s+$/.test(w)) f.append(w); else { const s = document.createElement('span'); s.className = 'word'; s.setAttribute('aria-hidden', 'true'); s.textContent = w; f.append(s); } }); c.replaceWith(f); }
+      else if (c.nodeType === 1 && !c.classList.contains('word')) { if (c.classList.contains('brush')) { c.classList.add('word'); c.setAttribute('aria-hidden', 'true'); } else walk(c); }
+    });
+    walk(h);
+  });
+
+  // hero intro
+  const h1w = $$('h1 .word');
+  gsap.timeline({ defaults: { ease: 'power4.out' } })
+    .from('.kicker', { y: -16, opacity: 0, duration: .6 })
+    .from(h1w, { yPercent: 110, rotate: 6, opacity: 0, stagger: .08, duration: .9 }, '-=.3')
+    .from('.lede, .hero-ctas, .price-pin', { y: 24, opacity: 0, stagger: .1, duration: .7 }, '-=.55')
+    .from('.ph-a', { y: 80, rotate: 12, opacity: 0, duration: 1.1 }, .2)
+    .from('.ph-b', { x: -90, rotate: -24, opacity: 0, duration: 1 }, .45)
+    .from('.ph-c', { x: 90, rotate: 26, opacity: 0, duration: 1 }, .6)
+    .from('.sticker', { scale: .3, opacity: 0, duration: .8, ease: 'back.out(2)' }, .9);
+
+  // pointer parallax on the photo stack (fine pointers only)
+  if (matchMedia('(pointer:fine)').matches) {
+    const stack = $('#stack'), layers = $$('[data-depth]', stack).map(el => ({ el, d: +el.dataset.depth, x: gsap.quickTo(el, 'x', { duration: .8, ease: 'power3' }), y: gsap.quickTo(el, 'y', { duration: .8, ease: 'power3' }) }));
+    $('.hero').addEventListener('pointermove', e => { const nx = e.clientX / innerWidth - .5, ny = e.clientY / innerHeight - .5; layers.forEach(l => { l.x(nx * l.d); l.y(ny * l.d); }); });
+    addEventListener('blur', () => layers.forEach(l => { l.x(0); l.y(0); }));
+  }
+
+  // section heading reveals
+  $$('[data-split]:not(h1)').forEach(h => gsap.from($$('.word', h), { yPercent: 100, opacity: 0, stagger: .06, duration: .8, ease: 'power4.out', scrollTrigger: { trigger: h, start: 'top 85%' } }));
+  $$('.intro, .eyebrow').forEach(el => gsap.from(el, { y: 24, opacity: 0, duration: .7, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%' } }));
+  gsap.from('.item', { y: 20, opacity: 0, stagger: .05, duration: .6, ease: 'power3.out', scrollTrigger: { trigger: '#p-tacos', start: 'top 80%' } });
+  gsap.from('.loc', { y: 50, opacity: 0, rotate: () => gsap.utils.random(-3, 3), stagger: .08, duration: .8, ease: 'power3.out', scrollTrigger: { trigger: '.loc-grid', start: 'top 82%' } });
+  gsap.from('.m', { y: 70, opacity: 0, stagger: .12, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.murals-grid', start: 'top 80%' } });
+  gsap.from('.m-copy', { y: 40, rotate: -2, opacity: 0, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: '.m-copy', start: 'top 88%' } });
+  $$('[data-count]').forEach(el => { const o = { v: 0 }; gsap.to(o, { v: +el.dataset.count, duration: 1.2, ease: 'power2.out', onUpdate: () => el.textContent = Math.round(o.v), scrollTrigger: { trigger: el, start: 'top 90%' } }); });
+  gsap.to('.m1 img', { yPercent: -8, scale: 1.08, ease: 'none', scrollTrigger: { trigger: '.murals-grid', start: 'top bottom', end: 'bottom top', scrub: true } });
+  gsap.from('.groups-photo', { rotate: -10, y: 60, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.groups-photo', start: 'top 85%' } });
+
+  // pinned horizontal beer runway on wider screens
+  ScrollTrigger.matchMedia({
+    '(min-width: 761px)': () => {
+      const run = $('#runway'), dist = () => run.scrollWidth - innerWidth;
+      gsap.to(run, { x: () => -dist(), ease: 'none', scrollTrigger: { trigger: '#beer', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: .6, invalidateOnRefresh: true, anticipatePin: 1 } });
+    }
+  });
+  addEventListener('load', () => ScrollTrigger.refresh());
+})();
+</script>
+</body>
+</html>
