@@ -43,15 +43,20 @@ tailwind.config = { theme: { extend: {
 </div>
 
 <!-- Nav -->
-<header class="sticky top-0 z-50 bg-mad-ink/85 backdrop-blur border-b border-white/10">
-  <!-- Logo's black wings/lettering need a light plate; it hangs below the bar like a dealer badge -->
-  <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] md:h-[76px] flex md:grid md:grid-cols-[1fr_auto_1fr] items-center justify-between gap-6">
+<header class="sticky top-0 z-50 bg-mad-ink/85 backdrop-blur">
+  <!-- Logo PNG is transparent with black wings/lettering: this filter turns every low-red (dark) pixel white and leaves the brand red untouched -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true"><filter id="logo-knockout" color-interpolation-filters="sRGB">
+    <feColorMatrix values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 1 0"/>
+    <feComponentTransfer><feFuncR type="discrete" tableValues="1 0"/><feFuncG type="discrete" tableValues="1 0"/><feFuncB type="discrete" tableValues="1 0"/></feComponentTransfer>
+    <feComposite in="SourceGraphic" operator="arithmetic" k2="1" k3="1"/>
+  </filter></svg>
+  <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] md:h-[84px] flex md:grid md:grid-cols-[1fr_auto_1fr] items-center justify-between gap-6">
     <div class="hidden md:flex items-center gap-8 text-[13px] font-semibold uppercase tracking-[.18em] text-white/75">
       <a href="#packages" class="hover:text-mad-yellow transition-colors">Packages</a>
       <a href="#services" class="hover:text-mad-yellow transition-colors">Services</a>
     </div>
-    <a href="#top" class="self-start shrink-0 relative z-10 bg-white rounded-b-2xl px-4 md:px-6 pt-2 pb-2.5 md:pt-3 md:pb-3.5 shadow-[0_14px_40px_-12px_rgba(0,0,0,.85)] ring-1 ring-black/5 border-b-[3px] border-mad-redhi hover:-translate-y-0.5 transition-all duration-300" aria-label="Mad Guys Auto Detailing home">
-      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing logo" class="h-[64px] md:h-[84px] w-auto" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-display text-4xl sm:text-5xl tracking-wide leading-none text-mad-ink',innerHTML:'MAD<span style=&quot;color:#E0262D&quot;>GUYS</span>'}))">
+    <a href="#top" class="shrink-0 hover:opacity-90 transition-opacity duration-300" aria-label="Mad Guys Auto Detailing home">
+      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing logo" class="h-[60px] md:h-[68px] w-auto [filter:url(#logo-knockout)]" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-display text-4xl sm:text-5xl tracking-wide leading-none text-white',innerHTML:'MAD<span style=&quot;color:#E0262D&quot;>GUYS</span>'}))">
     </a>
     <div class="flex items-center justify-end gap-8">
       <div class="hidden md:flex items-center gap-8 text-[13px] font-semibold uppercase tracking-[.18em] text-white/75">
@@ -287,7 +292,7 @@ tailwind.config = { theme: { extend: {
 <footer class="bg-mad-ink border-t border-white/10 px-4 sm:px-6 pt-16">
   <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
     <div>
-      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing" class="h-[72px] w-auto bg-white rounded-xl px-3 py-2 border-b-[3px] border-mad-redhi" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'font-display text-4xl uppercase',innerHTML:'Mad<span style=&quot;color:#E0262D&quot;>Guys</span>'}))">
+      <img src="https://madguysautodetailing.com/wp-content/uploads/2025/07/madguys-2-1024x657.png" alt="Mad Guys Auto Detailing" class="h-[72px] w-auto [filter:url(#logo-knockout)]" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'font-display text-4xl uppercase',innerHTML:'Mad<span style=&quot;color:#E0262D&quot;>Guys</span>'}))">
       <p class="text-white/60 text-sm mt-4">Top-of-the-line auto detailing in McAllen, founded by professional detailers and car fanatics.</p>
       <div class="flex gap-3 mt-6">
         <a href="https://www.facebook.com/MadGuysAutoDetailing/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 grid place-items-center rounded-full border border-white/15 hover:border-mad-yellow hover:text-mad-yellow transition-all duration-300"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
