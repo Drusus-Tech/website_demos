@@ -7,7 +7,7 @@
     "email": "slimsecretmedspa@yahoo.com",
     "status": "demo-built",
     "emailSubject": "A sharper site for Slim Secret's GLP-1 program (built a preview)",
-    "emailBody": "Hi Dr. Rodriguez,\n\nI came across Slim Secret Med Spa while looking at med spas in McAllen \u2014 your Google reviews are excellent, and patients clearly love the GLP-1 program. Your current site undersells that, so I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/\n\nIt leads with your physician-led Tirzepatide & Semaglutide program and your dual board certification, puts real patient results (English y Espa\u00f1ol) front and center, and gives mobile visitors a one-tap Call / Book Consult bar so more phone traffic turns into consultations.\n\nHappy to walk you through it or tailor it further \u2014 no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "emailBody": "Hi Dr. Rodriguez,\n\nI came across Slim Secret Med Spa while looking at med spas in McAllen — your Google reviews are excellent, and patients clearly love the GLP-1 program. Your current site undersells that, so I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/\n\nIt leads with your physician-led Tirzepatide & Semaglutide program and your dual board certification, puts real patient results (English y Español) front and center, and gives mobile visitors a one-tap Call / Book Consult bar so more phone traffic turns into consultations.\n\nHappy to walk you through it or tailor it further — no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
     "previewLink": "https://drusus-tech.github.io/website_demos/slim-secret-med-spa-demo/",
     "gitCommands": "cd ~/Documents/GitHub/website_demos && git add slim-secret-med-spa-demo/index.html leads.json && git commit -m \"Add Slim Secret Med Spa demo\" && git push origin main",
     "problems": [
@@ -26,6 +26,36 @@
       "Dr. Ofelia Rodriguez founder section with credentials",
       "Bilingual review marquee using real Google reviews",
       "Cherry + CareCredit financing block, map, hours, consult form and sticky mobile call bar"
+    ]
+  },
+  {
+    "business": "Rejuveskin Spa & Nutrition",
+    "city": "McAllen, TX",
+    "folder": "rejuveskin-spa-nutrition-demo",
+    "contact": "Owner (name not listed)",
+    "email": "",
+    "phone": "956-414-0967",
+    "status": "demo-built",
+    "emailSubject": "A sharper site for Rejuveskin's body studio (built a preview)",
+    "emailBody": "Hi there,\n\nI came across Rejuveskin Spa & Nutrition while looking at body-shaping studios in McAllen. The VacuShaper, Tulip and Roll Shaper setup is a real differentiator, but on the current site the photos load as empty boxes and the services are hard to scan on a phone. I built a free preview of what a refreshed homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/rejuveskin-spa-nutrition-demo/\n\nIt leads with your 'slim and mold without losing the bust' promise, shows the machines with your own studio photos, lays out your 4-step plan (training, supplements, meal plan, check-ins), spotlights the referral program, and gives mobile visitors a one-tap Call / Book bar.\n\nHappy to walk you through it or tailor it further, no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "previewLink": "https://drusus-tech.github.io/website_demos/rejuveskin-spa-nutrition-demo/",
+    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add rejuveskin-spa-nutrition-demo/index.html leads.json && git commit -m \"Rejuveskin demo: remove map embed, fix hero seal stacking\" && git push origin main",
+    "problems": [
+      "Domain is misspelled (rejuveskinspanutritrion.com) and the page title is just the URL",
+      "Service and machine photos lazy-load as empty boxes, so most of the page looks blank",
+      "Flat pink gradient with heavy all-caps headings; no clear hero offer above the fold",
+      "No email, booking form or persistent mobile call button; only a phone number in the footer",
+      "Referral program is the first thing shown, before visitors know what the spa does",
+      "Low-res image assets and no SEO meta description"
+    ],
+    "improvements": [
+      "Editorial hero: 'Sculpt the body. Keep the curves.' with infrared/collagen/cryotherapy chips and Book/Call CTAs",
+      "Service marquee covering VacuShaper, Swan, Tulip, Roll Shaper, IV drips and aesthetics",
+      "4-step Rejuveskin method: training plan, supplements, meal plan, check-ins",
+      "Dark 'Body studio' section showing each machine with real studio photos",
+      "Wellness and Aesthetics service menu with photo thumbnails",
+      "Referral program card: free 30-min Roll Shaper for you, 15% off for your friend",
+      "Studio gallery, hours, call-back form and sticky mobile Call/Book bar"
     ]
   }
 ]

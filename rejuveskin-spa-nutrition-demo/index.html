@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Rejuveskin Spa &amp; Nutrition | Body Shaping Studio in McAllen, TX</title>
+<meta name="description" content="Body shaping, wellness and aesthetics in McAllen, TX. VacuShaper, Tulip, Roll Shaper, IV drips, Botox, fillers and more. Call 956-414-0967.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#D81F7A; --pink-deep:#A8125C; --rose:#EFB3C6; --blush:#F7E4E8;
+  --cream:#FCF7F3; --ink:#2B1320; --ink-soft:#5E4552; --line:rgba(43,19,32,.12);
+  --r:22px; --pad:clamp(20px,5vw,64px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:Fraunces,Georgia,serif;font-optical-sizing:auto}
+em{font-style:italic;color:var(--pink)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--pink)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .25s,background .25s,box-shadow .25s;border:0;cursor:pointer;font-family:inherit}
+.btn-pink{background:var(--pink);color:#fff;box-shadow:0 10px 30px -10px rgba(216,31,122,.6)}
+.btn-pink:hover{background:var(--pink-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(252,247,243,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+nav .logo img{height:46px;width:auto}
+nav ul{display:flex;gap:30px;list-style:none;font-size:14px;font-weight:600}
+nav ul a{text-decoration:none;opacity:.75;transition:opacity .2s}
+nav ul a:hover{opacity:1}
+nav .btn{padding:11px 20px;font-size:14px}
+
+/* hero */
+.hero{position:relative;padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,110px);overflow:hidden}
+.hero::before{content:"";position:absolute;width:780px;height:780px;right:-220px;top:-260px;border-radius:50%;background:radial-gradient(circle,var(--rose) 0%,rgba(239,179,198,0) 68%);opacity:.7;z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{font-family:Fraunces,Georgia,serif;font-weight:350;font-size:clamp(46px,7.4vw,104px);line-height:.94;letter-spacing:-.035em;margin:18px 0 26px}
+.hero h1 em{font-weight:400}
+.hero p.lead{font-size:clamp(17px,1.6vw,19px);color:var(--ink-soft);max-width:520px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 34px}
+.chip{font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line)}
+.chip b{color:var(--pink)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative;aspect-ratio:4/5}
+.hero-art .main{position:absolute;inset:0 0 12% 14%;border-radius:200px 200px var(--r) var(--r);overflow:hidden;box-shadow:0 40px 80px -40px rgba(43,19,32,.5)}
+.hero-art .main img,.hero-art .sub img{width:100%;height:100%;object-fit:cover}
+.hero-art .sub{position:absolute;left:0;bottom:0;width:44%;aspect-ratio:1;border-radius:var(--r);overflow:hidden;border:6px solid var(--cream);box-shadow:0 30px 60px -30px rgba(43,19,32,.5)}
+.hero-art .badge{position:absolute;right:-6px;bottom:18%;background:var(--ink);color:var(--cream);border-radius:18px;padding:16px 18px;max-width:210px;font-size:13px;line-height:1.4}
+.hero-art .badge strong{display:block;font-family:Fraunces,serif;font-size:30px;font-weight:400;color:var(--rose);line-height:1}
+.spin{position:absolute;top:4%;left:0;z-index:3;width:118px;height:118px;background:var(--cream);border-radius:50%;box-shadow:0 18px 40px -18px rgba(43,19,32,.45);animation:spin 22s linear infinite}
+.spin text{font:700 10.5px Manrope,sans-serif;letter-spacing:.24em;fill:var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* marquee */
+.marquee{background:var(--ink);color:var(--cream);overflow:hidden;padding:20px 0;border-block:1px solid var(--ink)}
+.marquee-track{display:flex;gap:44px;width:max-content;animation:scroll 38s linear infinite;font-family:Fraunces,serif;font-size:clamp(22px,2.6vw,32px);font-style:italic;font-weight:300;white-space:nowrap}
+.marquee-track span::after{content:"✦";font-style:normal;font-size:.55em;color:var(--pink);margin-left:44px;vertical-align:middle}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* section shells */
+section{padding:clamp(72px,10vw,140px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:clamp(36px,5vw,64px);flex-wrap:wrap}
+h2{font-family:Fraunces,Georgia,serif;font-weight:350;font-size:clamp(36px,5vw,68px);line-height:1;letter-spacing:-.03em;max-width:760px;margin-top:14px}
+.sec-head p{max-width:400px;color:var(--ink-soft)}
+
+/* method */
+.method-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,90px);align-items:start}
+.method-photo{position:sticky;top:110px;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.method-photo img{width:100%;height:100%;object-fit:cover}
+.method-photo figcaption{position:absolute;left:16px;bottom:16px;background:rgba(252,247,243,.92);border-radius:12px;padding:8px 12px;font-size:12px;font-weight:600}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:72px 1fr;gap:18px;padding:28px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps li::before{content:"0" counter(s);font-family:Fraunces,serif;font-size:40px;font-weight:300;color:var(--pink);line-height:1}
+.steps h3{font-family:Fraunces,serif;font-weight:450;font-size:24px;letter-spacing:-.01em;margin-bottom:6px}
+.steps p{color:var(--ink-soft)}
+
+/* machines */
+.machines{background:var(--ink);color:var(--cream);border-radius:clamp(28px,4vw,48px);margin:0 clamp(8px,1.5vw,20px)}
+.machines .sec-head p{color:rgba(252,247,243,.7)}
+.machines .eyebrow{color:var(--rose)}
+.machines em{color:var(--rose)}
+.m-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.m-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);overflow:hidden;transition:transform .4s,border-color .4s}
+.m-card:hover{transform:translateY(-6px);border-color:var(--rose)}
+.m-card .ph{aspect-ratio:4/5;overflow:hidden;background:#3a2230}
+.m-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.m-card:hover .ph img{transform:scale(1.06)}
+.m-card .ph.light{background:linear-gradient(160deg,#fff,var(--blush));display:grid;place-items:center}
+.m-card .ph.light img{width:80%;height:80%;object-fit:contain}
+.m-card .body{padding:20px 20px 24px}
+.m-card h3{font-family:Fraunces,serif;font-weight:400;font-size:26px}
+.m-card p{font-size:14px;color:rgba(252,247,243,.68);margin-top:6px}
+.tech{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.tech span{padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.18);font-size:13px;font-weight:600}
+.tech span b{color:var(--rose)}
+
+/* services menu */
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px)}
+.menu-col h3{font-family:Fraunces,serif;font-weight:400;font-size:30px;display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:6px}
+.menu-col h3 small{font-family:Manrope,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pink)}
+.item{display:grid;grid-template-columns:76px 1fr auto;gap:18px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.item img{width:76px;height:76px;object-fit:cover;border-radius:50%;background:var(--blush)}
+.item h4{font-size:17px;font-weight:700}
+.item p{font-size:14px;color:var(--ink-soft)}
+.item .arrow{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);transition:background .25s,color .25s,transform .25s}
+.item:hover .arrow{background:var(--pink);color:#fff;border-color:var(--pink);transform:rotate(-45deg)}
+
+/* referral */
+.referral{padding-top:0}
+.ref-card{position:relative;overflow:hidden;border-radius:clamp(28px,4vw,48px);background:linear-gradient(120deg,var(--pink) 0%,#E8578F 55%,#F08FA6 100%);color:#fff;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:clamp(36px,6vw,80px)}
+.ref-card h2{color:#fff}
+.ref-card h2 em{color:var(--ink)}
+.ref-card p{opacity:.92;max-width:460px;margin-top:18px}
+.ref-perks{display:grid;gap:12px}
+.perk{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:18px;padding:20px 22px;backdrop-filter:blur(6px)}
+.perk small{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.perk strong{display:block;font-family:Fraunces,serif;font-weight:400;font-size:28px;line-height:1.1;margin-top:4px}
+.ref-card .btn{background:var(--ink);color:#fff;margin-top:28px}
+.ref-card .btn:hover{background:#000}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(120px,15vw,200px);gap:12px}
+.gallery figure{border-radius:18px;overflow:hidden;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.gallery figure:hover img{transform:scale(1.05)}
+.g1{grid-column:span 3;grid-row:span 2}.g2{grid-column:span 3}.g3{grid-column:span 2}.g4{grid-column:span 1}
+.g5{grid-column:span 2}.g6{grid-column:span 2}.g7{grid-column:span 2}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);align-items:start}
+.info-card,.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3.5vw,40px)}
+.info-row{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+.info-row:last-of-type{border-bottom:0}
+.info-row span{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);padding-top:2px}
+.info-row a{font-weight:700;text-decoration:none}
+.form-card h3{font-family:Fraunces,serif;font-weight:400;font-size:34px;line-height:1.05;margin-bottom:8px}
+.form-card > p{color:var(--ink-soft);margin-bottom:22px}
+label{display:block;font-size:13px;font-weight:700;margin:14px 0 6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--cream);color:var(--ink);transition:border-color .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--pink)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-card .btn{width:100%;justify-content:center;margin-top:22px}
+.thanks{display:none;margin-top:16px;padding:14px 16px;border-radius:14px;background:var(--blush);font-weight:600}
+
+footer{padding:56px 0 120px;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot img{height:54px;width:auto}
+.foot .tag{font-family:Fraunces,serif;font-style:italic;font-size:22px}
+.socials{display:flex;gap:10px}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:background .2s,color .2s}
+.socials a:hover{background:var(--pink);color:#fff;border-color:var(--pink)}
+.fine{margin-top:28px;font-size:13px;color:var(--ink-soft)}
+
+/* mobile bar */
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:8px;padding:8px;background:var(--ink);border-radius:999px;box-shadow:0 20px 40px -12px rgba(43,19,32,.55)}
+.mbar a{flex:1;justify-content:center;padding:14px;font-size:15px}
+.mbar .call{color:var(--cream)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1000px){
+  nav ul{display:none}
+  .hero-grid,.method-grid,.menu,.visit-grid,.ref-card{grid-template-columns:1fr}
+  .hero-art{max-width:520px;width:100%;margin:0 auto}
+  .method-photo{position:relative;top:0;aspect-ratio:16/11}
+  .m-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  nav .btn{display:none}
+  .m-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .m-card h3{font-size:21px}.m-card .body{padding:14px}.m-card p{font-size:13px}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .gallery figure{grid-column:span 1!important;grid-row:span 1!important}
+  .gallery .g1{grid-column:span 2!important;grid-row:span 2!important}
+  .row2{grid-template-columns:1fr}
+  .info-row{grid-template-columns:1fr;gap:4px}
+  .steps li{grid-template-columns:52px 1fr}
+  .steps li::before{font-size:32px}
+  .item{grid-template-columns:60px 1fr auto;gap:14px}.item img{width:60px;height:60px}
+  .mbar{display:flex}
+  .spin{width:92px;height:92px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="#top" aria-label="Rejuveskin Spa &amp; Nutrition home"><img src="https://rejuveskinspanutritrion.com/images/a2503f3dbe19b3c5632ec1d9176e26d7.png" alt="Rejuveskin Spa &amp; Nutrition" width="123" height="46"></a>
+    <ul>
+      <li><a href="#method">Method</a></li>
+      <li><a href="#studio">Body Studio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#referral">Referral</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-pink" href="tel:+19564140967">Call 956-414-0967</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow rv">Body shaping studio · McAllen, TX</span>
+        <h1 class="rv">Sculpt the body.<br><em>Keep</em> the curves.</h1>
+        <p class="lead rv">Selective burning that slims and molds without losing the bust. Infrared, collagen light and cryotherapy machines, plus a plan for what you eat and how you train, all under one roof for the <i>gente bonita</i> of the RGV.</p>
+        <div class="chips rv">
+          <span class="chip"><b>●</b> Infrared light</span>
+          <span class="chip"><b>●</b> Collagen light</span>
+          <span class="chip"><b>●</b> Cryotherapy</span>
+          <span class="chip"><b>8+</b> years in McAllen</span>
+        </div>
+        <div class="ctas rv">
+          <a class="btn btn-pink" href="#visit">Book your first session →</a>
+          <a class="btn btn-ghost" href="tel:+19564140967">Call 956-414-0967</a>
+        </div>
+      </div>
+      <div class="hero-art rv">
+        <svg class="spin" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="c" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#c">BE HEALTHY · BE FIT · STAY BEAUTIFUL ·</textPath></text></svg>
+        <div class="main"><img src="https://rejuveskinspanutritrion.com/images/1c8edda55928eeba1a6a3f5bcb342dd8.jpg" alt="Client training in the VacuShaper at Rejuveskin" fetchpriority="high"></div>
+        <div class="sub"><img src="https://rejuveskinspanutritrion.com/images/30d914e737c2c598a14b365f92d2be49.jpg" alt="Rejuveskin body shaping studio interior" loading="lazy"></div>
+        <div class="badge"><strong>8+ years</strong>helping the RGV look &amp; feel their best</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>VacuShaper</span><span>Swan</span><span>Tulip</span><span>Roll Shaper</span><span>Custom IV Drips</span><span>Botox</span><span>Fillers</span><span>Mesotherapy</span><span>Cavitation</span><span>Facials</span><span>Massage</span>
+      <span>VacuShaper</span><span>Swan</span><span>Tulip</span><span>Roll Shaper</span><span>Custom IV Drips</span><span>Botox</span><span>Fillers</span><span>Mesotherapy</span><span>Cavitation</span><span>Facials</span><span>Massage</span>
+    </div>
+  </div>
+
+  <section id="method">
+    <div class="wrap method-grid">
+      <figure class="method-photo rv">
+        <img src="https://rejuveskinspanutritrion.com/images/5829bbeedabe764ad66676b19763d7a4.jpg" alt="Rejuveskin front desk in McAllen" loading="lazy">
+        <figcaption>907 Nyssa Ave, McAllen</figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow rv">The Rejuveskin method</span>
+        <h2 class="rv">A plan built <em>around you</em>, not a package.</h2>
+        <ol class="steps" style="margin-top:40px">
+          <li class="rv"><div><h3>Your individual training plan</h3><p>We map your sessions across our body-shaping machines to target the areas you want to slim and mold.</p></div></li>
+          <li class="rv"><div><h3>Cosmetics &amp; supplements, chosen for you</h3><p>Products selected to support your cleansing and slimming process between visits.</p></div></li>
+          <li class="rv"><div><h3>A meal plan that fits real life</h3><p>Nutrition is half the result. We help you plan what to eat so the studio work lasts.</p></div></li>
+          <li class="rv"><div><h3>Check-ins through your treatment</h3><p>We follow up as you go, adjust the plan and keep you on track to your goal.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="machines" id="studio">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow rv">The body studio</span>
+          <h2 class="rv">Machines that work <em>while you move.</em></h2>
+        </div>
+        <p class="rv">Infrared light, collagen light and cryotherapy help nourish the skin, reduce cellulite, burn inches and boost blood and lymph circulation.</p>
+      </div>
+      <div class="m-grid">
+        <article class="m-card rv"><div class="ph"><img src="https://rejuveskinspanutritrion.com/images/ca8532d8235ad63d1a63dd3500280da1.jpg" alt="VacuShaper machine" loading="lazy"></div><div class="body"><h3>VacuShaper</h3><p>Vacuum-assisted walking that targets hips, thighs and glutes.</p></div></article>
+        <article class="m-card rv"><div class="ph"><img src="https://rejuveskinspanutritrion.com/images/00f8bafd8f6775799e9e5b84445c2d68.jpg" alt="Tulip infrared machine" loading="lazy"></div><div class="body"><h3>Tulip</h3><p>Infrared and collagen light to firm and smooth the skin.</p></div></article>
+        <article class="m-card rv"><div class="ph"><img src="https://rejuveskinspanutritrion.com/images/bf4c423401a9f7404ff29c31bc13f879.jpg" alt="Roll Shaper session" loading="lazy"></div><div class="body"><h3>Roll Shaper</h3><p>Rolling massage that works on cellulite and circulation.</p></div></article>
+        <article class="m-card rv"><div class="ph light"><img src="https://rejuveskinspanutritrion.com/images/c78fc8d8fe77b35a406a179fbcbe7603.png" alt="Recumbent bike" loading="lazy"></div><div class="body"><h3>Swan &amp; Bike</h3><p>Low-impact cardio stations to round out every session.</p></div></article>
+      </div>
+      <div class="tech rv">
+        <span><b>✦</b> Cellulite reduction</span><span><b>✦</b> Burns inches</span><span><b>✦</b> Skin nourishment</span><span><b>✦</b> Lymph circulation</span><span><b>✦</b> Overall wellbeing</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow rv">Services</span>
+          <h2 class="rv">Health, fitness &amp; beauty. <em>One stop.</em></h2>
+        </div>
+        <p class="rv">Pair your body-shaping plan with wellness treatments and aesthetic cosmetology to get the full result.</p>
+      </div>
+      <div class="menu">
+        <div class="menu-col rv">
+          <h3>Wellness <small>Feel it</small></h3>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/4568067b2444e404ec3fdc02c22ac2ba.png" alt="" loading="lazy"><div><h4>Customized IV Drips</h4><p>Hydration and vitamins tailored to your goals.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/3c6435d598b94a26df5a5a73099f182c.png" alt="" loading="lazy" style="object-position:top"><div><h4>Roll Shaper</h4><p>Smooth, tone and get the circulation going.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/1b6b9f50779c234c13ab29e8a8465d2d.png" alt="" loading="lazy"><div><h4>Massage</h4><p>Recovery and relaxation between sessions.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="menu-col rv">
+          <h3>Aesthetics <small>See it</small></h3>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/984aae79bfbbe0adcb4801dcca8d5aa2.png" alt="" loading="lazy"><div><h4>Botox &amp; Fillers</h4><p>Soften lines and restore volume.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/49db62b5df708272aaadc2f0b4c3df7a.png" alt="" loading="lazy"><div><h4>Facials</h4><p>Deep-clean, hydrate and brighten.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/8fb9cbc1507e726b6caa33ad9eea29ba.png" alt="" loading="lazy"><div><h4>Mesotherapy</h4><p>Targeted micro-injections for skin and body.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+          <a class="item" href="#visit"><img src="https://rejuveskinspanutritrion.com/images/8228f7ad61f18712f3ce1324b629628e.png" alt="" loading="lazy"><div><h4>Cavitation</h4><p>Non-invasive contouring for stubborn areas.</p></div><span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="referral" id="referral">
+    <div class="wrap">
+      <div class="ref-card rv">
+        <div>
+          <span class="eyebrow" style="color:#fff">Referral program</span>
+          <h2>Bring your <em>amiga.</em><br>You both win.</h2>
+          <p>Buy any service and sign up a friend. Every referral that books earns you a free session.</p>
+          <a class="btn" href="tel:+19564140967">Refer a friend →</a>
+        </div>
+        <div class="ref-perks">
+          <div class="perk"><small>You get</small><strong>Free 30-min Roll Shaper session</strong></div>
+          <div class="perk"><small>Your friend gets</small><strong>15% off any package or service</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow rv">Inside the studio</span>
+          <h2 class="rv">Come see the <em>space.</em></h2>
+        </div>
+        <a class="btn btn-ghost rv" href="https://www.instagram.com/rejuveskinspanutrition/" target="_blank" rel="noopener">@rejuveskinspanutrition</a>
+      </div>
+      <div class="gallery">
+        <figure class="g1 rv"><img src="https://rejuveskinspanutritrion.com/images/3b6ac16b6f414464303f7f1e324e653a.jpg" alt="Studio floor with fitness equipment" loading="lazy"></figure>
+        <figure class="g2 rv"><img src="https://rejuveskinspanutritrion.com/images/f4cb0c791b20701495987b64eef4f10a.jpg" alt="Client relaxing during a treatment" loading="lazy"></figure>
+        <figure class="g3 rv"><img src="https://rejuveskinspanutritrion.com/images/13fcbc634f593cd79f4439e72694f8ae.jpg" alt="Tulip machine glowing red" loading="lazy"></figure>
+        <figure class="g4 rv"><img src="https://rejuveskinspanutritrion.com/images/71fb7ce25b513149c31c3c0e2285e032.jpg" alt="Client on the VacuShaper" loading="lazy"></figure>
+        <figure class="g5 rv"><img src="https://rejuveskinspanutritrion.com/images/3edf3fcd4eaa753a7cf477629d8a96cb.jpg" alt="Rejuveskin reception" loading="lazy"></figure>
+        <figure class="g6 rv"><img src="https://rejuveskinspanutritrion.com/images/64ea834123108e4096629fbbdc766780.jpg" alt="Studio with green wall" loading="lazy"></figure>
+        <figure class="g7 rv"><img src="https://rejuveskinspanutritrion.com/images/46827c4083d813c3302edacba1819bb3.jpg" alt="Client in the studio" loading="lazy" style="object-position:center 30%"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow rv">Visit us</span>
+          <h2 class="rv">Your first step is <em>a conversation.</em></h2>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <div class="info-card rv">
+          <div class="info-row"><span>Call</span><a href="tel:+19564140967">956-414-0967</a></div>
+          <div class="info-row"><span>Address</span><a href="https://maps.google.com/?q=907+Nyssa+Ave,+McAllen,+TX+78501" target="_blank" rel="noopener">907 Nyssa Ave, McAllen, TX 78501</a></div>
+          <div class="info-row"><span>Hours</span><div>Mon–Sat: 9am – 7pm<br>Sunday: by appointment</div></div>
+        </div>
+        <form class="form-card rv" id="book">
+          <h3>Request your <em>plan.</em></h3>
+          <p>Tell us your goal and we&rsquo;ll call you to set up your first session.</p>
+          <div class="row2">
+            <div><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+            <div><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <label for="g">I&rsquo;m interested in</label>
+          <select id="g" name="goal">
+            <option>Body shaping (VacuShaper, Tulip, Roll Shaper)</option>
+            <option>Weight loss &amp; meal plan</option>
+            <option>IV drips &amp; wellness</option>
+            <option>Botox, fillers &amp; facials</option>
+            <option>Not sure yet, help me choose</option>
+          </select>
+          <label for="m">Anything we should know? <span style="font-weight:500;color:var(--ink-soft)">(optional)</span></label>
+          <textarea id="m" name="msg" rows="3"></textarea>
+          <button class="btn btn-pink" type="submit">Request a call back →</button>
+          <div class="thanks" id="thanks" role="status">¡Gracias! We&rsquo;ll call you shortly to set up your first session.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="https://rejuveskinspanutritrion.com/images/a2503f3dbe19b3c5632ec1d9176e26d7.png" alt="Rejuveskin Spa &amp; Nutrition" width="145" height="54">
+      <span class="tag">Be healthy. Be fit. Stay beautiful.</span>
+      <div class="socials">
+        <a href="https://www.facebook.com/RejuveskinSpaAndNutrition" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+        <a href="https://www.instagram.com/rejuveskinspanutrition/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <p class="fine">907 Nyssa Ave, McAllen, TX 78501 · <a href="tel:+19564140967">956-414-0967</a> · © Rejuveskin Spa &amp; Nutrition</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn call" href="tel:+19564140967">Call</a>
+  <a class="btn btn-pink" href="#book">Book a session</a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+// demo form: no backend yet, so confirm in place
+document.getElementById('book').addEventListener('submit',e=>{e.preventDefault();e.target.querySelector('button').style.display='none';document.getElementById('thanks').style.display='block'});
+</script>
+</body>
+</html>
