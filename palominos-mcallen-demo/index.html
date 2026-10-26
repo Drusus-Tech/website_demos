@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palominos McAllen — El Auténtico Sabor Sonorense</title>
+<meta name="description" content="Palominos McAllen: Sonoran-style steakhouse since 1974. Mesquite-fired steaks, Rib Eye Aguachile and Filete a la Bacanora at 4117 W Expressway 83, McAllen, TX.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#0d0b09; --char-2:#16120e; --char-3:#211a14;
+  --bone:#f2e8d8; --bone-dim:#c9bba4; --muted:#8f8170;
+  --tan:#b8956a; --tan-2:#d7b88a; --ember:#e2582a; --ember-2:#ff8a3d;
+  --line:rgba(242,232,216,.14);
+  --serif:"DM Serif Display",Georgia,serif;
+  --sans:"Archivo",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--char);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--ember);color:var(--char)}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+@media(min-width:768px){.wrap{width:min(1320px,100% - 80px)}}
+.eyebrow{font-family:var(--sans);font-stretch:125%;font-weight:600;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--tan-2);display:inline-flex;align-items:center;gap:.8em}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.h-xl{font-family:var(--serif);font-weight:400;line-height:.92;letter-spacing:-.02em}
+em,.it{font-family:var(--serif);font-style:italic;color:var(--tan-2)}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* buttons */
+.btn{--bg:var(--ember);display:inline-flex;align-items:center;gap:.7em;padding:1rem 1.6rem;border-radius:999px;background:var(--bg);color:#1a0d06;font-weight:700;font-stretch:112%;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;position:relative;overflow:hidden;isolation:isolate;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.btn::after{content:"";position:absolute;inset:0;background:var(--bone);transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1;border-radius:inherit}
+.btn:hover::after{transform:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px -12px rgba(226,88,42,.7)}
+.btn svg{width:16px;height:16px;transition:transform .5s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn.ghost{--bg:transparent;color:var(--bone);box-shadow:inset 0 0 0 1px var(--line)}
+.btn.ghost:hover{color:var(--char)}
+:focus-visible{outline:2px solid var(--ember-2);outline-offset:3px}
+
+/* preloader */
+#loader{position:fixed;inset:0;z-index:200;background:var(--char);display:grid;place-items:center}
+#loader .lg{width:min(320px,60vw);opacity:0;transform:translateY(12px)}
+#loader .yr{position:absolute;bottom:8vh;left:50%;transform:translateX(-50%);font-family:var(--serif);font-size:clamp(3rem,10vw,7rem);color:var(--tan);line-height:1}
+#loader .bar{position:absolute;bottom:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ember),var(--ember-2))}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:80;padding:12px 0;transition:background .6s,padding .6s var(--ease),backdrop-filter .6s}
+.nav::before{content:"";position:absolute;inset:0 0 -60px;z-index:-1;pointer-events:none;background:linear-gradient(rgba(13,11,9,.82),rgba(13,11,9,.35) 60%,transparent);transition:opacity .6s}
+.nav::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(184,149,106,.6),rgba(224,106,43,.5),rgba(184,149,106,.6),transparent);opacity:0;transition:opacity .6s}
+.nav.solid{background:rgba(13,11,9,.74);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);padding:4px 0}
+.nav.solid::before{opacity:0}.nav.solid::after{opacity:1}
+.nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
+/* logo PNG has ~20% transparent padding; .lc crops to the wordmark (1161x384 of 1500x764) so its height is all logo */
+.lc{position:relative;display:block;overflow:hidden;aspect-ratio:1161/384}
+.lc img{position:absolute;width:129.2%;max-width:none;height:auto;left:-13.7%;top:-40.1%}
+.nav .brand{grid-column:2;justify-self:center;height:104px;transition:height .6s var(--ease),transform .6s var(--ease)}
+.nav .brand:hover{transform:scale(1.03)}
+.nav.solid .brand{height:66px}
+.nav ul{grid-column:1;grid-row:1;justify-self:start;display:none;list-style:none;gap:clamp(18px,2.2vw,34px);font-size:.78rem;font-stretch:118%;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+.nav ul a{position:relative;padding:6px 0}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--ember-2);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav ul a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav .right{grid-column:3;grid-row:1;justify-self:end;display:flex;align-items:center;gap:14px}
+.nav .call{grid-column:1;grid-row:1;justify-self:start;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line);color:var(--tan-2)}
+.nav .call svg{width:18px;height:18px}
+.nav .tel{display:none;font-size:.85rem;font-weight:600;letter-spacing:.06em}
+.nav .btn{padding:.75rem 1.2rem;font-size:.72rem}
+.burger{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line)}
+.burger span{width:18px;height:1.5px;background:var(--bone);display:block;position:relative;transition:transform .4s var(--ease)}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--bone);transition:transform .4s var(--ease),top .4s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+body.menu-open .burger span{background:transparent}
+body.menu-open .burger span::before{top:0;transform:rotate(45deg)}
+body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
+@media(min-width:1024px){.nav ul{display:flex}.burger,.nav .call{display:none}.nav .tel{display:inline}}
+@media(max-width:1023px){.nav .brand{height:84px}.nav.solid .brand{height:56px}}
+@media(max-width:520px){.nav .btn{display:none}.nav .brand{height:62px}.nav.solid .brand{height:46px}}
+.drawer{position:fixed;inset:0;z-index:70;background:var(--char-2);clip-path:circle(0% at calc(100% - 40px) 40px);transition:clip-path .8s var(--ease);display:flex;flex-direction:column;justify-content:center;padding:0 24px}
+body.menu-open .drawer{clip-path:circle(150% at calc(100% - 40px) 40px)}
+.drawer a{font-family:var(--serif);font-size:clamp(2.6rem,12vw,4.5rem);line-height:1.15;display:block}
+.drawer a:hover{color:var(--ember-2)}
+.drawer p{margin-top:30px;color:var(--bone-dim);font-size:.95rem}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;padding:120px 0 56px;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:120%;object-fit:cover;object-position:60% 40%;filter:saturate(1.08) contrast(1.05)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(120% 80% at 80% 30%,transparent 0,rgba(13,11,9,.35) 45%,rgba(13,11,9,.92) 85%),
+  linear-gradient(180deg,rgba(13,11,9,.55) 0,transparent 25%,rgba(13,11,9,.2) 55%,var(--char) 100%)}
+#embers{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-grid{display:grid;gap:36px}
+.hero h1{font-size:clamp(3.4rem,13.5vw,13rem);text-shadow:0 10px 60px rgba(0,0,0,.5)}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:inline-block}
+.hero h1 .ln:nth-child(2){padding-left:clamp(0px,9vw,180px)}
+.hero h1 em{color:var(--ember-2)}
+.hero-meta{display:grid;gap:22px;max-width:520px}
+.hero-meta p{color:var(--bone-dim);font-size:clamp(1rem,1.3vw,1.15rem)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-foot{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);font-stretch:112%}
+.hero-foot b{color:var(--bone);font-weight:600}
+.status{display:inline-flex;align-items:center;gap:.6em}
+.status i{width:8px;height:8px;border-radius:50%;background:#7a7a7a;box-shadow:0 0 0 0 rgba(122,255,140,.6)}
+.status.open i{background:#5be37a;animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(91,227,122,0)}100%{box-shadow:0 0 0 0 rgba(91,227,122,0)}}
+.seal{position:absolute;right:clamp(16px,5vw,80px);top:clamp(110px,18vh,190px);width:clamp(110px,12vw,170px);aspect-ratio:1;display:grid;place-items:center}
+.seal svg{position:absolute;inset:0;animation:spin 22s linear infinite}
+.seal span{font-family:var(--serif);font-size:clamp(1.6rem,2.4vw,2.4rem);color:var(--tan-2)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scrollcue{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);width:1px;height:46px;background:linear-gradient(var(--bone),transparent);opacity:.5}
+@media(min-width:1024px){.hero-grid{grid-template-columns:1.5fr 1fr;align-items:end}.hero-meta{justify-self:end}}
+@media(max-width:600px){.seal{display:none}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:20px 0;background:var(--char-2)}
+.marquee .track{display:flex;width:max-content;gap:0;animation:mq 38s linear infinite}
+.marquee span{font-family:var(--serif);font-size:clamp(1.6rem,3.2vw,2.8rem);padding:0 .6em;white-space:nowrap;display:inline-flex;align-items:center;gap:1.2em}
+.marquee span::after{content:"✦";font-size:.45em;color:var(--ember)}
+.marquee span.hl{color:var(--ember-2);font-style:italic}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.pad{padding:clamp(90px,13vw,180px) 0}
+
+/* story */
+.story-grid{display:grid;gap:56px}
+.year{font-family:var(--serif);font-size:clamp(7rem,26vw,22rem);line-height:.8;letter-spacing:-.04em;background:linear-gradient(180deg,var(--tan-2),rgba(184,149,106,.15));-webkit-background-clip:text;background-clip:text;color:transparent}
+.story h2{font-size:clamp(2.4rem,5.4vw,5rem);margin:22px 0 28px}
+.story p{color:var(--bone-dim);max-width:56ch;margin-bottom:1.1em}
+.story p strong{color:var(--bone);font-weight:600}
+.archival{position:relative;max-width:520px;justify-self:center}
+.archival figure{position:relative;background:#e9dcc4;padding:14px 14px 56px;box-shadow:0 40px 80px -30px rgba(0,0,0,.8);transform:rotate(-3deg)}
+.archival img{filter:sepia(.35) contrast(1.05);aspect-ratio:4/3.3;object-fit:cover;width:100%}
+.archival figcaption{position:absolute;bottom:14px;left:18px;right:18px;font-family:var(--serif);font-style:italic;color:#3a2b1c;font-size:1.15rem}
+.archival .tag{position:absolute;right:-14px;top:-18px;background:var(--ember);color:#1a0d06;font-weight:800;font-stretch:120%;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:.6em 1em;transform:rotate(6deg)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:40px}
+.stats div{padding:22px 10px 0 0}
+.stats b{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);display:block;line-height:1;color:var(--bone)}
+.stats small{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-stretch:115%}
+@media(min-width:960px){.story-grid{grid-template-columns:1.1fr 1fr;align-items:center}}
+
+/* desert parallax */
+.desert{height:clamp(420px,90vh,860px);overflow:hidden;position:relative;display:grid;place-items:center;text-align:center}
+.desert img{position:absolute;inset:-15% 0;width:100%;height:130%;object-fit:cover}
+.desert::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--char) 0,rgba(13,11,9,.15) 30%,rgba(13,11,9,.25) 70%,var(--char) 100%)}
+.desert blockquote{position:relative;z-index:1;font-family:var(--serif);font-size:clamp(2.2rem,6.4vw,6.4rem);line-height:1;max-width:14ch;padding:0 16px;text-shadow:0 6px 40px rgba(0,0,0,.6)}
+.desert cite{display:block;margin-top:24px;font-family:var(--sans);font-style:normal;font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim)}
+
+/* signatures */
+.sig-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:56px}
+.sig-head h2{font-size:clamp(2.6rem,6vw,5.6rem);max-width:12ch}
+.sig-head p{max-width:38ch;color:var(--bone-dim)}
+.sigs{display:grid;gap:22px}
+.sig{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:3/4;isolation:isolate;background:var(--char-3)}
+.sig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease),filter 1.4s}
+.sig::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(10,7,5,.95));z-index:0}
+.sig .in{position:absolute;inset:auto 0 0 0;padding:26px;z-index:1}
+.sig .no{position:absolute;top:20px;left:22px;z-index:1;font-family:var(--serif);font-size:1.1rem;color:var(--tan-2)}
+.sig h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,2.8vw,2.6rem);line-height:1.02;margin-bottom:10px}
+.sig p{color:var(--bone-dim);font-size:.95rem;max-height:0;opacity:0;overflow:hidden;transition:max-height .8s var(--ease),opacity .6s}
+.sig:hover img{transform:scale(1.07)}
+.sig:hover p,.sig:focus-within p{max-height:9em;opacity:1}
+@media(hover:none){.sig p{max-height:none;opacity:1}}
+@media(min-width:860px){.sigs{grid-template-columns:repeat(3,1fr)}.sig:nth-child(2){transform:translateY(60px)}}
+
+/* horizontal gallery */
+.hscroll{overflow:hidden;background:var(--char-2)}
+@media(min-width:768px){.hscroll{min-height:100vh;display:flex;flex-direction:column;justify-content:center}}
+.hs-intro{padding:clamp(70px,9vw,120px) 0 40px}
+.hs-intro h2{font-size:clamp(2.4rem,7vw,7rem)}
+.hs-track{display:flex;gap:18px;padding:0 16px 80px;width:max-content}
+.hs-track figure{position:relative;flex:none;width:clamp(240px,34vw,520px);border-radius:18px;overflow:hidden}
+.hs-track figure:nth-child(odd){margin-top:60px}
+.hs-track img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hs-track figcaption{position:absolute;left:14px;bottom:14px;background:rgba(13,11,9,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:.45em .9em;border-radius:999px;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-stretch:112%}
+@media(max-width:767px){.hs-track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:60px;scrollbar-width:none}.hs-track::-webkit-scrollbar{display:none}.hs-track figure{scroll-snap-align:center;width:76vw}.hs-track figure:nth-child(odd){margin-top:0}}
+
+/* bacanora ritual */
+.ritual{display:grid;min-height:100svh;overflow:hidden}
+.ritual .media{position:relative;min-height:70vh;overflow:hidden}
+.ritual .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ritual .copy{padding:clamp(60px,8vw,120px) clamp(16px,6vw,100px);display:flex;flex-direction:column;justify-content:center;background:radial-gradient(80% 60% at 0% 100%,rgba(226,88,42,.22),transparent 70%),var(--char)}
+.ritual h2{font-size:clamp(2.8rem,6vw,6rem);margin:20px 0 26px}
+.ritual ol{list-style:none;counter-reset:s;display:grid;gap:22px;margin:10px 0 36px}
+.ritual li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+.ritual li::before{content:"0" counter(s);font-family:var(--serif);font-size:1.6rem;color:var(--ember-2);line-height:1}
+.ritual li b{display:block;font-weight:600;font-size:1.05rem}
+.ritual li span{color:var(--bone-dim);font-size:.95rem}
+@media(min-width:960px){.ritual{grid-template-columns:1fr 1fr}.ritual .media{min-height:auto}}
+
+/* menu */
+.menu-sec{background:var(--bone);color:#1c140d}
+.menu-sec .eyebrow{color:#9b4a1f}
+.menu-head{display:grid;gap:24px;margin-bottom:46px}
+.menu-head h2{font-size:clamp(3rem,9vw,8.6rem)}
+.menu-head h2 em{color:#b2441b}
+.menu-head p{max-width:46ch;color:#5a4a3a}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px;margin-bottom:34px;position:sticky;top:64px;z-index:5;background:var(--bone);padding-top:10px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;padding:.7rem 1.15rem;border-radius:999px;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-stretch:115%;box-shadow:inset 0 0 0 1px rgba(28,20,13,.2);transition:background .3s,color .3s}
+.tabs button[aria-selected=true]{background:#1c140d;color:var(--bone)}
+.panel{display:none}
+.panel.on{display:grid;gap:0 60px;animation:fade .6s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}}
+.item{padding:20px 0;border-bottom:1px solid rgba(28,20,13,.14);display:grid;gap:4px}
+.item h4{font-family:var(--serif);font-weight:400;font-size:1.45rem;line-height:1.15;display:flex;align-items:baseline;gap:12px}
+.item h4 small{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b2441b;font-stretch:115%}
+.item p{color:#5a4a3a;font-size:.95rem}
+.note{grid-column:1/-1;background:#1c140d;color:var(--bone);border-radius:14px;padding:16px 20px;font-size:.92rem;margin:6px 0 10px}
+@media(min-width:860px){.panel.on{grid-template-columns:1fr 1fr}.menu-head{grid-template-columns:1.3fr 1fr;align-items:end}}
+
+/* bar */
+.bar-grid{display:grid;gap:40px}
+.bar h2{font-size:clamp(2.8rem,7vw,6.6rem);margin:18px 0 22px}
+.bar .lead{color:var(--bone-dim);max-width:44ch}
+.cocktails{columns:2;column-gap:28px;margin:32px 0;font-family:var(--serif);font-size:1.3rem;line-height:1.6}
+.cocktails li{list-style:none;break-inside:avoid;transition:color .3s,transform .3s}
+.cocktails li:hover{color:var(--ember-2);transform:translateX(6px)}
+.bar-photos{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(70px,9vw,120px);gap:12px}
+.bar-photos img{width:100%;height:100%;object-fit:cover;border-radius:14px}
+.bar-photos img:nth-child(1){grid-column:1/4;grid-row:1/4}
+.bar-photos img:nth-child(2){grid-column:4/7;grid-row:1/3}
+.bar-photos img:nth-child(3){grid-column:4/7;grid-row:3/6}
+.bar-photos img:nth-child(4){grid-column:1/4;grid-row:4/6}
+.wine{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.wine span{font-size:.75rem;letter-spacing:.08em;padding:.45em .9em;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);color:var(--bone-dim)}
+@media(min-width:960px){.bar-grid{grid-template-columns:1fr 1.1fr;align-items:center}}
+
+/* spaces */
+.spaces{display:grid;gap:18px;margin-top:50px}
+.space{position:relative;border-radius:20px;overflow:hidden;min-height:340px;display:flex;align-items:flex-end;padding:24px}
+.space img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.space:hover img{transform:scale(1.05)}
+.space::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,7,5,.92))}
+.space div{position:relative;z-index:1}
+.space h3{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.05}
+.space p{color:var(--bone-dim);font-size:.92rem}
+@media(min-width:860px){.spaces{grid-template-columns:1.4fr 1fr 1fr}.space{min-height:460px}}
+
+/* visit */
+.visit{background:var(--char-2)}
+.visit-grid{display:grid;gap:40px}
+.visit h2{font-size:clamp(3rem,8vw,7.4rem);margin:18px 0 30px}
+.info{display:grid;gap:26px}
+.info h5{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tan-2);font-weight:600;font-stretch:120%;margin-bottom:8px}
+.info .big{font-family:var(--serif);font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.15}
+.info .big a:hover{color:var(--ember-2)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:6px 24px;font-size:1rem}
+.hours dt{color:var(--bone-dim)}
+.hours dd.today,.hours dt.today{color:var(--ember-2);font-weight:600}
+form.res{background:var(--char);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,44px);display:grid;gap:16px}
+form.res h3{font-family:var(--serif);font-weight:400;font-size:2.2rem;line-height:1}
+form.res .row{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+label{display:grid;gap:6px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim);font-weight:600;font-stretch:115%}
+input,select,textarea{font:inherit;font-size:16px;letter-spacing:0;text-transform:none;color:var(--bone);background:var(--char-2);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;width:100%;transition:border-color .3s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ember-2)}
+input::-webkit-calendar-picker-indicator{filter:invert(.8)}
+.ok{display:none;padding:14px 16px;border-radius:12px;background:rgba(91,227,122,.12);color:#a7f0b8;font-size:.95rem}
+@media(min-width:960px){.visit-grid{grid-template-columns:1fr 1fr;align-items:start}}
+@media(max-width:420px){form.res .row{grid-template-columns:1fr}}
+
+/* footer */
+footer{padding:80px 0 120px;overflow:hidden;border-top:1px solid var(--line)}
+.f-top{display:flex;flex-direction:column;align-items:center;text-align:center;gap:34px;margin-bottom:50px}
+.f-logo{height:clamp(84px,10vw,120px)}
+.f-top nav{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-stretch:115%}
+.f-top nav a:hover{color:var(--ember-2)}
+.f-word{font-family:var(--sans);font-weight:800;font-stretch:125%;font-size:clamp(2.6rem,10.5vw,12rem);line-height:.8;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgba(184,149,106,.45);white-space:nowrap;text-align:center}
+.f-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;font-size:.8rem;color:var(--muted)}
+@media(min-width:1024px){footer{padding-bottom:60px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:85;display:grid;grid-template-columns:1fr 1.3fr;gap:8px;padding:8px;border-radius:999px;background:rgba(22,18,14,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);transform:translateY(140%);transition:transform .6s var(--ease)}
+.mbar.show{transform:none}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:.85rem;border-radius:999px;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-stretch:112%}
+.mbar a:last-child{background:var(--ember);color:#1a0d06}
+.mbar svg{width:16px;height:16px}
+@media(min-width:1024px){.mbar{display:none}}
+
+/* reveal defaults (JS enhances) */
+.js .rv{opacity:0;transform:translateY(40px)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<div id="loader" aria-hidden="true">
+  <img class="lg" src="https://static1.squarespace.com/static/66e1e1c7caaaf352c7eff86b/t/66e1fc4ee7d8e841942220d5/1726086222924/PALOMINOS+LOGOTIPO_Mesa+de+trabajo+1.png?format=750w" alt="">
+  <div class="yr">1974</div>
+  <div class="bar"></div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#signatures">Signatures</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#bar">Bar</a></li>
+    </ul>
+    <a class="call" href="tel:+19566270532" aria-label="Call Palominos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+    <a class="brand lc" href="#top" aria-label="Palominos home"><img src="https://static1.squarespace.com/static/66e1e1c7caaaf352c7eff86b/t/66e1fc4ee7d8e841942220d5/1726086222924/PALOMINOS+LOGOTIPO_Mesa+de+trabajo+1.png?format=1500w" alt="Palominos — El auténtico sabor sonorense" decoding="async"></a>
+    <div class="right">
+      <a class="tel" href="tel:+19566270532">(956) 627-0532</a>
+      <a class="btn" href="#visit">Reserve</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Mobile">
+  <a href="#story">Story</a><a href="#signatures">Signatures</a><a href="#menu">Menu</a><a href="#bar">Bar</a><a href="#visit">Reserve</a>
+  <p>4117 W Expressway 83, McAllen, TX<br><a href="tel:+19566270532" style="font:inherit;color:var(--tan-2)">(956) 627-0532</a></p>
+</nav>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/72afb2e7-482d-48aa-b7d1-d8f7e1cb1958/DSC04305-2.jpg?format=2500w" alt="Rib eye searing over open mesquite flames" fetchpriority="high"></div>
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="seal" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text fill="#d7b88a" font-family="Archivo" font-size="13" letter-spacing="5.2" font-weight="600"><textPath href="#c">EL AUTÉNTICO SABOR SONORENSE · DESDE 1974 · </textPath></text></svg>
+    <span>50+</span>
+  </div>
+  <div class="wrap hero-grid">
+    <h1 class="h-xl">
+      <span class="ln"><span>Sonora,</span></span>
+      <span class="ln"><span><em>over</em> mesquite</span></span>
+      <span class="ln"><span>fire.</span></span>
+    </h1>
+    <div class="hero-meta">
+      <p class="hrv">Fifty years of Sonoran steakhouse tradition — from Hermosillo in 1974 to the Rio Grande Valley. Prime cuts, carne asada the way the ranchers made it, and Bacanora flames at your table.</p>
+      <div class="hero-ctas hrv">
+        <a class="btn" href="#visit">Reserve a table <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#menu">View the menu</a>
+      </div>
+      <div class="hero-foot hrv">
+        <span class="status" id="status"><i></i><b>Checking hours…</b></span>
+        <span>4117 W Expressway 83 · McAllen</span>
+      </div>
+    </div>
+  </div>
+  <div class="scrollcue" aria-hidden="true"></div>
+</section>
+
+<div class="marquee" aria-label="Palominos locations">
+  <div class="track">
+    <span class="hl">McAllen, TX</span><span>Hermosillo</span><span>Mexicali</span><span>Tijuana</span><span>Chihuahua</span><span>Culiacán</span><span>Guadalajara</span><span>Ciudad de México</span>
+    <span class="hl" aria-hidden="true">McAllen, TX</span><span aria-hidden="true">Hermosillo</span><span aria-hidden="true">Mexicali</span><span aria-hidden="true">Tijuana</span><span aria-hidden="true">Chihuahua</span><span aria-hidden="true">Culiacán</span><span aria-hidden="true">Guadalajara</span><span aria-hidden="true">Ciudad de México</span>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story pad" id="story">
+  <div class="wrap story-grid">
+    <div>
+      <div class="year" id="year" aria-label="1974">1974</div>
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 class="h-xl rv">Back to our <em>Sonoran</em> roots.</h2>
+      <p class="rv">In 1974, <strong>Don César Pavlovich Sugich</strong> opened the first Palominos — the first restaurant of its kind in the entire state of Sonora — built around family, the grill and traditional <strong>carne asada</strong>.</p>
+      <p class="rv">His <strong>“Paquete Palominos”</strong> paid homage to the cooking of the cattle ranchers who settled the region. Half a century and eleven locations later, McAllen is the first table north of the border — and every guest who walks in is part of the family.</p>
+      <div class="stats rv">
+        <div><b data-count="50">0</b><small>Years of tradition</small></div>
+        <div><b data-count="11">0</b><small>Locations in Mexico</small></div>
+        <div><b>1<span style="font-size:.5em;vertical-align:super">st</span></b><small>In the U.S.</small></div>
+      </div>
+    </div>
+    <div class="archival rv">
+      <figure>
+        <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/47ba5035-bc48-4b97-81d8-4889b5123bd0/menuviejo.jpg?format=1000w" alt="Vintage photograph of the original Restaurant El Palomino with a horse out front" loading="lazy">
+        <figcaption>Restaurant “El Palomino” — where it all began.</figcaption>
+      </figure>
+      <span class="tag">Est. 1974</span>
+    </div>
+  </div>
+</section>
+
+<section class="desert" aria-label="Sonoran desert">
+  <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/fda0b2ac-2b3a-4f9c-bafd-6df23d208b8f/PORTADASTORYPAG.jpg?format=2500w" alt="" loading="lazy" data-par>
+  <blockquote class="rv">“The finest steaks, true to our roots.”<cite>— The Palominos Family</cite></blockquote>
+</section>
+
+<!-- SIGNATURES -->
+<section class="pad" id="signatures">
+  <div class="wrap">
+    <div class="sig-head">
+      <div><span class="eyebrow">House recommendations</span><h2 class="h-xl rv" style="margin-top:18px">Three plates that made the <em>legend.</em></h2></div>
+      <p class="rv">Ask any regular from Hermosillo to McAllen — these are the dishes you come back for.</p>
+    </div>
+    <div class="sigs">
+      <article class="sig rv" tabindex="0">
+        <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/3a7e3709-ae87-4b80-b9e8-a5850e4c9091/Palominos_enero_2024_293.jpg?format=1000w" alt="Black Onyx rib eye with compound butter" loading="lazy">
+        <span class="no">01</span>
+        <div class="in"><h3>Rib Eye<br>Black Onyx</h3><p>A 16 oz Black Onyx rib eye kissed by mesquite coals — deep marbling, crust like a branding iron, rested and sliced to share.</p></div>
+      </article>
+      <article class="sig rv" tabindex="0">
+        <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/0fffc55a-d2b0-4ea0-a73e-650634317f43/DSC06018-3sin.jpg?format=1000w" alt="Rib eye aguachile" loading="lazy">
+        <span class="no">02</span>
+        <div class="in"><h3>Aguachile<br>de Rib Eye</h3><p>Thin slices of seared rib eye over caramelized onions, bathed in red aguachile with fried garlic, avocado and red onion.</p></div>
+      </article>
+      <article class="sig rv" tabindex="0">
+        <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/1ef2aeea-d06f-4d65-8d9a-94bf959cc82c/Palominos50an%CC%83os_Finales_9.jpg?format=1000w" alt="Tenderloin flamed with Bacanora" loading="lazy">
+        <span class="no">03</span>
+        <div class="in"><h3>Filete a la<br>Bacanora</h3><p>Tenderloin finished tableside on a salt block with chiltepín butter, then set alight with authentic Sonoran Bacanora.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HORIZONTAL GALLERY -->
+<section class="hscroll" id="gallery">
+  <div class="wrap hs-intro"><span class="eyebrow">De la parrilla</span><h2 class="h-xl" style="margin-top:16px">Carne, fuego <em>y familia.</em></h2></div>
+  <div class="hs-track" id="hsTrack">
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/efb027c3-30d3-4498-affc-da6cac5e6838/Palominos_Nov_Finales-43+%281%29.jpg?format=1000w" alt="Sauce poured over a plated steak" loading="lazy"><figcaption>Finished at the table</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/9332faf5-fcab-466c-9d8b-c326be7d68a3/DSC04373-9.jpg?format=1000w" alt="Combinación Palominos platter with salsas" loading="lazy"><figcaption>Combinación Palominos</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/efea27a0-23e6-4942-9216-b5212e6d9b7e/Palominos_enero_2024_248.jpg?format=1000w" alt="Steak being sliced on a board" loading="lazy"><figcaption>Prime cuts</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/7e40a36d-655f-4599-b330-291ca26860d6/Palominos50an%CC%83os_Finales_21.jpg?format=1000w" alt="Tacos de short rib ahumado" loading="lazy"><figcaption>Short rib ahumado</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/4d8eaa54-ada7-4b82-9a47-b54e2eea1f96/Palominos_Nov_Finales-40.jpg?format=1000w" alt="Grilled octopus" loading="lazy"><figcaption>Pulpo a las brasas</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/846f501e-467a-4b98-a6c2-6bb58c35757b/DSC04436-7.jpg?format=1000w" alt="Burrito de machaca sonorense" loading="lazy"><figcaption>Machaca sonorense</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/a386cc42-eb8d-4592-a1f2-73549e82c640/DSC05959-52.jpg?format=1000w" alt="Grilled salmon" loading="lazy"><figcaption>Grilled salmon</figcaption></figure>
+    <figure><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/7fe49f31-1730-4580-a9d8-38bc09146673/Palominos_Nov_Finales-18.jpg?format=1000w" alt="Crema de chile verde" loading="lazy"><figcaption>Crema de chile verde</figcaption></figure>
+  </div>
+</section>
+
+<!-- RITUAL -->
+<section class="ritual" id="ritual">
+  <div class="media"><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/18df8e5a-b98f-4a27-ac7d-84792a4e9966/DSC04286-1.jpg?format=1500w" alt="Chef finishing a steak tableside" loading="lazy" data-par></div>
+  <div class="copy">
+    <span class="eyebrow">The tableside ritual</span>
+    <h2 class="h-xl rv">Salt, butter, <em>Bacanora.</em></h2>
+    <ol>
+      <li class="rv"><div><b>The salt block</b><span>Your tenderloin arrives on a searing-hot block of salt, finished right in front of you.</span></div></li>
+      <li class="rv"><div><b>Chiltepín butter</b><span>Wild Sonoran chiltepín folded into butter, melted over the crust.</span></div></li>
+      <li class="rv"><div><b>The flame</b><span>Authentic Bacanora — Sonora’s own agave spirit — poured and lit at the table.</span></div></li>
+    </ol>
+    <div><a class="btn" href="#visit">Book the experience <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-sec pad" id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <div><span class="eyebrow">La carta</span><h2 class="h-xl" style="margin-top:16px">Eat like a <em>Sonorense.</em></h2></div>
+      <p>From mesquite-grilled panela to a 36 oz Tomahawk — a selection from our McAllen menu. Ask your server about today’s cuts.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Menu sections">
+      <button role="tab" aria-selected="true" data-t="steaks">Steaks</button>
+      <button role="tab" aria-selected="false" data-t="premium">Premium Cuts</button>
+      <button role="tab" aria-selected="false" data-t="apps">Appetizers</button>
+      <button role="tab" aria-selected="false" data-t="tacos">Tacos</button>
+      <button role="tab" aria-selected="false" data-t="soups">Soups &amp; Salads</button>
+      <button role="tab" aria-selected="false" data-t="sea">Chicken &amp; Seafood</button>
+      <button role="tab" aria-selected="false" data-t="sides">Sides</button>
+    </div>
+
+    <div class="panel on" id="steaks" role="tabpanel">
+      <div class="item"><h4>Bacanora Tenderloin Steak <small>Signature</small></h4><p>Finished tableside on a salt block, served with chiltepín butter and flamed with authentic Bacanora.</p></div>
+      <div class="item"><h4>Filet Mignon</h4><p>Wrapped in crispy bacon, served with house-made mignon sauce with mushrooms.</p></div>
+      <div class="item"><h4>Peppered Tenderloin Steak</h4><p>Topped with pepper sauce, with truffle fries and freshly grated parmesan.</p></div>
+      <div class="item"><h4>Supreme Tenderloin Steak</h4><p>With two baked potatoes and creamed spinach.</p></div>
+      <div class="item"><h4>Short Rib</h4><p>Oak-smoked 8 hours, basted with demiglace and a piloncillo, Bacanora &amp; chiltepín honey glaze. Sweet potato purée.</p></div>
+      <div class="item"><h4>Palominos Gold Hamburger</h4><p>5.5 oz flank + 5.5 oz smoked short rib, melted Chihuahua cheese, brioche, caper aioli.</p></div>
+      <div class="item"><h4>Cabrería Tenderloin <small>10 oz</small></h4><p>The classic Sonoran cut, straight from the coals.</p></div>
+      <div class="item"><h4>Sonora Skirt Steak <small>10 oz</small></h4><p>Arrachera grilled over mesquite.</p></div>
+    </div>
+    <div class="panel" id="premium" role="tabpanel">
+      <p class="note">Premium steaks are priced per ounce with a 16 oz minimum — tell us how much you’d like.</p>
+      <div class="item"><h4>Rib Eye Black Onyx <small>16 oz</small></h4><p>House recommendation. Deeply marbled, mesquite-seared.</p></div>
+      <div class="item"><h4>New York Black Onyx <small>16 oz</small></h4><p>Bold, beefy strip with a hard sear.</p></div>
+      <div class="item"><h4>Tomahawk Prime <small>36 oz</small></h4><p>The showpiece — built to share.</p></div>
+      <div class="item"><h4>Porterhouse Prime <small>32 oz</small></h4><p>Strip and tenderloin on the bone.</p></div>
+      <div class="item"><h4>Rib Eye Prime <small>16 oz</small></h4><p>USDA Prime, grilled to your temperature.</p></div>
+      <div class="item"><h4>Ojo &amp; Lonja de Rib Eye <small>16 oz</small></h4><p>The eye and the cap — two expressions of the rib eye.</p></div>
+    </div>
+    <div class="panel" id="apps" role="tabpanel">
+      <div class="item"><h4>Aguachile de Rib Eye <small>Signature</small></h4><p>Seared rib eye over caramelized onions in red aguachile, fried garlic, avocado, red onion.</p></div>
+      <div class="item"><h4>Carne Oreada</h4><p>Our famous original recipe: air-dried beef in chile colorado adobo.</p></div>
+      <div class="item"><h4>Combinación Palominos</h4><p>Air-dried beef, two machaca burritos in red chile and Sonoran flour quesadillas. Serves four.</p></div>
+      <div class="item"><h4>Chicharrón de Rib Eye</h4><p>Crispy rib eye with the chef’s spicy pumpkin-seed sauce.</p></div>
+      <div class="item"><h4>Guacamole con Rib Eye</h4><p>In a molcajete with crispy rib eye, pickled onion and serrano.</p></div>
+      <div class="item"><h4>Aguachile Ceniza y Fuego</h4><p>Shrimp &amp; octopus in tortilla-ash citrus emulsion over crispy machaca tacos.</p></div>
+      <div class="item"><h4>Panela a la Parrilla</h4><p>Mesquite-grilled cheese with olive oil and fine herbs.</p></div>
+      <div class="item"><h4>Queso Fundido</h4><p>Traditional Sonora cheese melted in a small clay pot.</p></div>
+      <div class="item"><h4>Burro Percherón</h4><p>“Sobaquera” tortilla with skirt steak, beans, avocado, Anaheim chile and cheese.</p></div>
+      <div class="item"><h4>Tostada de Atún</h4><p>Tuna in chile-ginger vinegar on a rice cracker, jalapeño dressing.</p></div>
+    </div>
+    <div class="panel" id="tacos" role="tabpanel">
+      <div class="item"><h4>Tacos de Short Rib Ahumado</h4><p>8-hour oak-smoked short rib, crispy tripe, avocado, five-chile sauce on a lard flour tortilla.</p></div>
+      <div class="item"><h4>Toreritas</h4><p>Rib eye with a manchego crust and grilled Anaheim chile on corn tortilla.</p></div>
+      <div class="item"><h4>Tacos de Pulpo</h4><p>Crispy octopus, three-chile guacamole, smoky jalapeño dressing.</p></div>
+      <div class="item"><h4>Taco Minini</h4><p>The legendary seasoned shrimp taco in crispy flour tortilla with molcajete sauce and cream.</p></div>
+    </div>
+    <div class="panel" id="soups" role="tabpanel">
+      <div class="item"><h4>Jugo de Carne</h4><p>Premium Sonoran beef extract with a touch of Spanish sherry.</p></div>
+      <div class="item"><h4>Caldo de Queso</h4><p>The traditional one — tomato broth, panela, potato, Anaheim chile.</p></div>
+      <div class="item"><h4>Crema de Chile Verde</h4><p>Sonoran green chile, panela, croutons and sour cream.</p></div>
+      <div class="item"><h4>Ensalada Palominos</h4><p>The original — tomato, onion, cucumber, grilled Anaheim chile, cilantro dressing.</p></div>
+      <div class="item"><h4>Alicia</h4><p>Lemon-cured burrata, kale, spinach, candied beets, grilled peaches, pistachio-ginger dressing.</p></div>
+      <div class="item"><h4>Caesar</h4><p>Prepared at your table with the traditional dressing.</p></div>
+    </div>
+    <div class="panel" id="sea" role="tabpanel">
+      <div class="item"><h4>Chicken Palominos</h4><p>Half chicken in traditional red chile marinade, mashed potatoes, green chile salad.</p></div>
+      <div class="item"><h4>Grilled Octopus</h4><p>Chiltepín sauce, chintextle adobo, leek purée, green apple &amp; ginger salad.</p></div>
+      <div class="item"><h4>Grilled Salmon</h4><p>Fennel cream sauce, warm artichoke and cherry tomato salad.</p></div>
+      <div class="item"><h4>Grilled Portobello</h4><p>Stuffed with goat cheese and sun-dried tomato, asparagus and serrano dressing.</p></div>
+    </div>
+    <div class="panel" id="sides" role="tabpanel">
+      <div class="item"><h4>Frijoles Maneados</h4><p>Creamy Sonoran-style beans with cheese.</p></div>
+      <div class="item"><h4>Mashed Potatoes</h4><p>With crispy tripe and Anaheim chile.</p></div>
+      <div class="item"><h4>Truffle Creamed Corn</h4><p>Rich, sweet and earthy.</p></div>
+      <div class="item"><h4>Grilled Baby Vegetables &amp; Asparagus</h4><p>Straight off the mesquite.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAR -->
+<section class="bar pad" id="bar">
+  <div class="wrap bar-grid">
+    <div>
+      <span class="eyebrow">Libations</span>
+      <h2 class="h-xl rv">Luces de <em>Sonora.</em></h2>
+      <p class="lead rv">Signature cocktails built on Sonoran spirits, classic martinis, carajillos after dinner — and a cellar that runs from Valle de Parras to Opus One.</p>
+      <ul class="cocktails rv">
+        <li>Palominos Punch</li><li>Luces de Sonora</li><li>Bramblerense</li><li>Tequilana Spritz</li><li>Termita de Moras</li><li>Akaame Spritz</li><li>Espresso Martini</li><li>Carajillo 43</li>
+      </ul>
+      <div class="wine rv"><span>Opus One</span><span>Caymus</span><span>Vega Sicilia</span><span>Casa Madero</span><span>Dom Pérignon</span><span>Cristal</span><span>Catena Malbec</span></div>
+    </div>
+    <div class="bar-photos rv">
+      <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/3626d0ed-4496-487a-a722-99a685b88f0a/Palominos_enero_2024_78.jpg?format=1000w" alt="Cocktail with a splash" loading="lazy">
+      <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/b0153682-f40f-4c44-9f15-9b24a8f837e4/DSC05138-21.jpg?format=1000w" alt="Two signature cocktails" loading="lazy">
+      <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/e67401b5-6d42-4f91-a33b-b4b1e4c2be9a/DSC04647-74.jpg?format=1000w" alt="Smoking cocktail in a ceramic vessel" loading="lazy">
+      <img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/16d5aee8-e08a-4693-839d-477434cb6f39/DSC04941-5.jpg?format=1000w" alt="Garnished cocktail" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- SPACES -->
+<section class="pad" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Celebrate with us</span>
+    <h2 class="h-xl rv" style="font-size:clamp(2.6rem,6vw,5.4rem);margin-top:18px;max-width:16ch">Family dinners, birthdays, <em>big deals.</em></h2>
+    <div class="spaces">
+      <a class="space rv" href="#visit"><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/432af3b1-88e6-4e47-aec0-f28df21a44d4/DSC06226-5.jpg?format=1500w" alt="A full table of Palominos dishes and cocktails" loading="lazy"><div><h3>The dining room</h3><p>Long tables built for family-style feasts.</p></div></a>
+      <a class="space rv" href="#visit"><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/01cfc4bb-c886-4965-b46c-27607ddbed82/IMG_0778.jpg?format=1000w" alt="Sonoran desert landscape" loading="lazy"><div><h3>Outdoor terrace</h3><p>Valley evenings, open air.</p></div></a>
+      <a class="space rv" href="#visit"><img src="https://images.squarespace-cdn.com/content/v1/66e1e1c7caaaf352c7eff86b/91d3aaac-01a2-4a51-bea9-54ee574a4495/DSC04338-2.jpg?format=1000w" alt="Shared platters" loading="lazy"><div><h3>Private rooms</h3><p>Business dinners &amp; private events.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit pad" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <span class="eyebrow">Visítanos</span>
+      <h2 class="h-xl rv">Pull up a <em>chair.</em></h2>
+      <div class="info">
+        <div><h5>Call</h5><p class="big"><a href="tel:+19566270532">(956) 627-0532</a></p></div>
+        <div><h5>Find us</h5><p class="big"><a href="https://maps.google.com/?q=Palominos+4117+W+Expressway+83+McAllen+TX+78503" target="_blank" rel="noopener">4117 W Expressway 83<br>McAllen, TX 78503</a></p></div>
+        <div><h5>Hours</h5>
+          <dl class="hours" id="hours">
+            <dt data-d="1,2,3">Mon – Wed</dt><dd data-d="1,2,3">12pm – 11pm</dd>
+            <dt data-d="4,5,6">Thu – Sat</dt><dd data-d="4,5,6">12pm – 1am</dd>
+            <dt data-d="0">Sunday</dt><dd data-d="0">12pm – 10pm</dd>
+          </dl>
+        </div>
+        <div><h5>Write &amp; follow</h5><p><a href="mailto:palominosmcallen@gmail.com">palominosmcallen@gmail.com</a> · <a href="https://www.instagram.com/palominosmcallen" target="_blank" rel="noopener">@palominosmcallen</a></p></div>
+      </div>
+    </div>
+    <form class="res rv" id="resForm">
+      <h3>Request a <em>reservation</em></h3>
+      <p style="color:var(--bone-dim);font-size:.95rem">We’ll confirm by phone. For parties of 10+ or private rooms, call us directly.</p>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <div class="row">
+        <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+        <label>Guests<select name="guests"><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7–9</option><option>10+</option></select></label>
+      </div>
+      <div class="row">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time<select name="time"><option>12:00 pm</option><option>1:30 pm</option><option>3:00 pm</option><option>6:00 pm</option><option selected>7:30 pm</option><option>8:30 pm</option><option>9:30 pm</option></select></label>
+      </div>
+      <label>Occasion (optional)<select name="occ"><option>Just dinner</option><option>Birthday</option><option>Anniversary</option><option>Business</option><option>Private room</option></select></label>
+      <button class="btn" type="submit" style="justify-content:center">Request table <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="ok" id="ok" role="status">¡Gracias! This is a preview — on the live site your request goes straight to the Palominos team. Or call <a href="tel:+19566270532" style="text-decoration:underline">(956) 627-0532</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <span class="lc f-logo"><img src="https://static1.squarespace.com/static/66e1e1c7caaaf352c7eff86b/t/66e1fc4ee7d8e841942220d5/1726086222924/PALOMINOS+LOGOTIPO_Mesa+de+trabajo+1.png?format=1500w" alt="Palominos" loading="lazy"></span>
+      <nav><a href="#story">Story</a><a href="#menu">Menu</a><a href="#bar">Bar</a><a href="#visit">Reservations</a><a href="https://www.instagram.com/palominosmcallen" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+  </div>
+  <div class="f-word" aria-hidden="true">PALOMINOS</div>
+  <div class="wrap f-bot"><span>© 2026 Palominos McAllen · El auténtico sabor sonorense</span><span>4117 W Expressway 83, McAllen, TX 78503 · (956) 627-0532</span></div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a href="tel:+19566270532"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a href="#visit">Reserve a table</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+document.documentElement.classList.add('js');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* open/closed — McAllen is Central time; Thu–Sat run past midnight */
+const HOURS = {0:[12,22],1:[12,23],2:[12,23],3:[12,23],4:[12,25],5:[12,25],6:[12,25]};
+function isOpen(day, h){ // h = fractional hour in local Central time
+  const [o,c] = HOURS[day], prev = HOURS[(day+6)%7];
+  return (h>=o && h<c) || (prev[1]>24 && h < prev[1]-24);
+}
+console.assert(isOpen(6,0.5) && !isOpen(1,0.5) && isOpen(0,0.5) && !isOpen(0,22.5) && isOpen(3,22.9), 'hours check');
+(function(){
+  const p = new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  const g = t => p.find(x=>x.type===t).value;
+  const day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+  const h = (+g('hour')%24) + (+g('minute'))/60;
+  const open = isOpen(day,h), el = document.getElementById('status');
+  el.classList.toggle('open',open);
+  el.querySelector('b').textContent = open ? 'Open now' : 'Closed · opens 12pm';
+  document.querySelectorAll('#hours [data-d]').forEach(n=>{ if(n.dataset.d.split(',').includes(String(day))) n.classList.add('today'); });
+})();
+
+/* nav + drawer + mobile bar */
+const nav = document.getElementById('nav'), mbar = document.getElementById('mbar');
+addEventListener('scroll',()=>{ nav.classList.toggle('solid', scrollY>40); mbar.classList.toggle('show', scrollY>innerHeight*.6); },{passive:true});
+const burger = document.getElementById('burger');
+burger.addEventListener('click',()=>{ const o = document.body.classList.toggle('menu-open'); burger.setAttribute('aria-expanded',o); });
+document.querySelectorAll('#drawer a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false)}));
+
+/* menu tabs */
+const tabs = document.querySelectorAll('.tabs button');
+tabs.forEach(b=>b.addEventListener('click',()=>{
+  tabs.forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.t));
+  ScrollTrigger && ScrollTrigger.refresh();
+}));
+
+/* form (demo only) */
+const f = document.getElementById('resForm');
+f.date.min = new Date().toISOString().slice(0,10);
+f.addEventListener('submit',e=>{ e.preventDefault(); document.getElementById('ok').style.display='block'; f.querySelector('button').disabled=true; });
+
+/* embers */
+(function(){
+  const c = document.getElementById('embers'); if(reduce) return;
+  const x = c.getContext('2d'); let w,h,ps=[];
+  const size=()=>{ w=c.width=c.offsetWidth*devicePixelRatio; h=c.height=c.offsetHeight*devicePixelRatio; };
+  size(); addEventListener('resize',size);
+  const n = innerWidth<700?40:90;
+  const mk = (y)=>({x:Math.random()*w,y:y??h+Math.random()*h*.3,r:(Math.random()*1.8+.4)*devicePixelRatio,v:(Math.random()*.6+.25)*devicePixelRatio,s:Math.random()*Math.PI*2,a:Math.random()*.7+.3});
+  for(let i=0;i<n;i++) ps.push(mk(Math.random()*h));
+  let vis=true; new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(c);
+  (function tick(){
+    if(vis){ x.clearRect(0,0,w,h); x.globalCompositeOperation='lighter';
+      for(const p of ps){ p.y-=p.v; p.s+=.02; p.x+=Math.sin(p.s)*.5;
+        const life = p.y/h; if(p.y<-10) Object.assign(p,mk());
+        x.beginPath(); x.fillStyle=`rgba(255,${120+Math.random()*60|0},40,${p.a*Math.min(1,life*1.6)})`; x.shadowBlur=12; x.shadowColor='#ff7a2f';
+        x.arc(p.x,p.y,p.r,0,7); x.fill(); } }
+    requestAnimationFrame(tick);
+  })();
+})();
+
+/* motion */
+const loader = document.getElementById('loader');
+if(!window.gsap || reduce){ loader.remove(); document.querySelectorAll('.rv').forEach(e=>{e.style.opacity=1;e.style.transform='none'}); }
+else{
+  gsap.registerPlugin(ScrollTrigger);
+  const lenis = new Lenis({lerp:.1});
+  lenis.on('scroll',ScrollTrigger.update);
+  gsap.ticker.add(t=>lenis.raf(t*1000)); gsap.ticker.lagSmoothing(0);
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){e.preventDefault(); lenis.scrollTo(t,{offset:a.getAttribute('href')==='#top'?0:-60});} }));
+
+  const yr = loader.querySelector('.yr'), o={v:1974};
+  gsap.set('.hero h1 .ln>span',{yPercent:110}); gsap.set('.hrv',{opacity:0,y:24});
+  gsap.timeline()
+    .to(loader.querySelector('.lg'),{opacity:1,y:0,duration:.6,ease:'power3.out'})
+    .to(o,{v:2026,duration:1.1,ease:'power2.inOut',onUpdate:()=>yr.textContent=Math.round(o.v)},'<')
+    .to(loader.querySelector('.bar'),{width:'100%',duration:1.1,ease:'power2.inOut'},'<')
+    .to(loader,{clipPath:'inset(0 0 100% 0)',duration:.9,ease:'power4.inOut'},'+=.15')
+    .from('.hero-bg img',{scale:1.25,duration:2,ease:'power3.out'},'<.2')
+    .to('.hero h1 .ln>span',{yPercent:0,duration:1.2,stagger:.1,ease:'power4.out'},'<.2')
+    .to('.hrv',{opacity:1,y:0,duration:.9,stagger:.1,ease:'power3.out'},'<.5')
+    .add(()=>loader.remove());
+
+  gsap.to('.hero-bg img',{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('.hero h1',{yPercent:-18,opacity:.2,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  gsap.utils.toArray('.rv').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+  gsap.utils.toArray('[data-par]').forEach(img=>gsap.fromTo(img,{yPercent:-8},{yPercent:8,ease:'none',scrollTrigger:{trigger:img.parentElement,start:'top bottom',end:'bottom top',scrub:true}}));
+
+  // year scrubs 1974 → 2026 through the story
+  const y={v:1974}, yEl=document.getElementById('year');
+  gsap.to(y,{v:2026,ease:'none',onUpdate:()=>yEl.textContent=Math.round(y.v),scrollTrigger:{trigger:'#story',start:'top 70%',end:'bottom 40%',scrub:true}});
+  document.querySelectorAll('[data-count]').forEach(b=>{ const t={v:0}; gsap.to(t,{v:+b.dataset.count,duration:1.6,ease:'power2.out',onUpdate:()=>b.textContent=Math.round(t.v),scrollTrigger:{trigger:b,start:'top 90%'}}); });
+  gsap.from('.archival figure',{rotate:-12,y:80,ease:'none',scrollTrigger:{trigger:'.archival',start:'top bottom',end:'center center',scrub:true}});
+
+  // pinned horizontal gallery on desktop
+  ScrollTrigger.matchMedia({'(min-width:768px)':()=>{
+    const tr=document.getElementById('hsTrack');
+    gsap.to(tr,{x:()=>-(tr.scrollWidth-innerWidth+32),ease:'none',scrollTrigger:{trigger:'.hscroll',start:'top top',end:()=>'+='+(tr.scrollWidth-innerWidth),pin:true,scrub:1,invalidateOnRefresh:true}});
+  }});
+
+  gsap.fromTo('.f-word',{xPercent:-6},{xPercent:3,ease:'none',scrollTrigger:{trigger:'footer',start:'top bottom',end:'bottom bottom',scrub:true}});
+  addEventListener('load',()=>ScrollTrigger.refresh());
+}
+</script>
+</body>
+</html>

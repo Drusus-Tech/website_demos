@@ -89,5 +89,36 @@
       "Mind / Body / Soul parallax triptych and founder section",
       "VIP, payment plans and mailing-list perks; appointment form and sticky mobile Call/Book bar"
     ]
+  },
+  {
+    "business": "Palominos Restaurant (McAllen)",
+    "city": "McAllen, TX",
+    "folder": "palominos-mcallen-demo",
+    "contact": "Palominos McAllen team",
+    "email": "palominosmcallen@gmail.com",
+    "status": "demo-built",
+    "emailSubject": "Palominos McAllen, over mesquite fire (built you a preview)",
+    "emailBody": "Hola Palominos team,\n\nI'm a local web designer here in the Valley. Your photos and 50-year Sonoran story deserve a site that feels as good as dinner at your place, and the current Squarespace template keeps both hidden. So I built a free preview of what a new homepage could look like:\n\nhttps://drusus-tech.github.io/website_demos/palominos-mcallen-demo/\n\nIt opens on the mesquite grill with a live 'Open now' indicator, tells the 1974 Don César story using the original 'El Palomino' photo, features the Black Onyx, Rib Eye Aguachile and Filete a la Bacanora, puts the full menu in tabs instead of buried pages, and gives phone visitors a one-tap Call / Reserve bar plus a real reservation request form.\n\nHappy to walk you through it or tailor it further, no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "previewLink": "https://drusus-tech.github.io/website_demos/palominos-mcallen-demo/",
+    "gitCommands": "cd ~/Documents/GitHub/website_demos && git add palominos-mcallen-demo/index.html leads.json && git commit -m \"Palominos demo: centered header logo, remove map\" && git push origin main",
+    "problems": [
+      "Generic Squarespace template with leftover placeholder blocks ('Recent Awards — Description text goes here')",
+      "Menu split across Menu/Eat/Drink pages with no direct path from the homepage",
+      "No reservation form; the Reservations page is a single image",
+      "Default Squarespace favicon and small logo",
+      "No sticky call/reserve action on mobile",
+      "Strong 50-year heritage story and archival photo buried on a secondary page"
+    ],
+    "improvements": [
+      "Ember-and-charcoal art direction built from the tan Palominos wordmark",
+      "Centered, oversized wordmark header with glass scroll state",
+      "Full-bleed mesquite-fire hero with animated embers, kinetic type and live open/closed status (Central time)",
+      "1974 heritage story with a year counter that scrubs to 2026 and the original 'El Palomino' photo",
+      "Signature trio: Black Onyx, Aguachile de Rib Eye, Filete a la Bacanora",
+      "Pinned horizontal dish gallery and a tableside Bacanora ritual section",
+      "Tabbed menu (steaks, premium cuts, apps, tacos, soups, seafood, sides) and a Libations section",
+      "Reservation request form, hours highlight, locations marquee, sticky mobile Call/Reserve bar"
+    ],
+    "notes": "Address: 4117 W Expressway 83, McAllen, TX 78503\nPhone: (956) 627-0532\nEmail: palominosmcallen@gmail.com (from their website)\nCurrent site: https://www.restaurantpalominos.com/ (Squarespace)\nImages hotlinked from their Squarespace CDN; reservation form is front-end only.\n\nLatest revision (2026-10-26)\n• Header rebuilt: logo centered between nav links and Call/Reserve, cropped to the wordmark and rendered from the 1500px source (104px desktop, 84px tablet, 62px mobile; shrinks on scroll). Glass blur bar with tan/ember hairline, top scrim for legibility, call icon on mobile.\n• Footer logo centered and enlarged.\n• Map embed removed from the Visit section.\n\nPush commands (run from website_demos):\ngit add palominos-mcallen-demo/index.html leads.json\ngit commit -m \"Palominos demo: centered header logo, remove map\"\ngit push origin main\n\nLive link: https://drusus-tech.github.io/website_demos/palominos-mcallen-demo/"
   }
 ]
