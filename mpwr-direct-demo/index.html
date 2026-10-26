@@ -14,7 +14,7 @@
 <style>
 :root{--y:#f4ed00;--y2:#fff86b;--k:#090909;--k2:#111;--k3:#181818;--line:#242424;--g:#f2f2f2;--m:#9b9b9b;--max:1240px;--ease:cubic-bezier(.2,.7,.1,1)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+/* Lenis owns smooth scroll; native smooth fights its per-frame scrollTo */
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 body{font:400 17px/1.6 Barlow,system-ui,sans-serif;background:var(--k);color:var(--g);-webkit-font-smoothing:antialiased;overflow-x:hidden}
