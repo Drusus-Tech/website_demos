@@ -24,7 +24,9 @@
   --ease:cubic-bezier(.2,.8,.2,1); --r:22px; --gut:clamp(16px,4vw,56px); --max:1320px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+/* Lenis owns smooth scroll; native smooth makes its per-frame scrollTo crawl */
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
 body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
