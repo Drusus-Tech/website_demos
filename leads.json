@@ -120,5 +120,111 @@
       "Reservation request form, hours highlight, locations marquee, sticky mobile Call/Reserve bar"
     ],
     "notes": "Address: 4117 W Expressway 83, McAllen, TX 78503\nPhone: (956) 627-0532\nEmail: palominosmcallen@gmail.com (from their website)\nCurrent site: https://www.restaurantpalominos.com/ (Squarespace)\nImages hotlinked from their Squarespace CDN; reservation form is front-end only.\n\nLatest revision (2026-10-26)\n• Header rebuilt: logo centered between nav links and Call/Reserve, cropped to the wordmark and rendered from the 1500px source (104px desktop, 84px tablet, 62px mobile; shrinks on scroll). Glass blur bar with tan/ember hairline, top scrim for legibility, call icon on mobile.\n• Footer logo centered and enlarged.\n• Map embed removed from the Visit section.\n\nPush commands (run from website_demos):\ngit add palominos-mcallen-demo/index.html leads.json\ngit commit -m \"Palominos demo: centered header logo, remove map\"\ngit push origin main\n\nLive link: https://demos.drusustechnologies.com/palominos-mcallen-demo/"
+  },
+  {
+    "business": "Calacas Tacos & Beer",
+    "city": "Brownsville, TX (also Harlingen, San Benito, Pharr, South Padre Island)",
+    "folder": "calacas-tacos-and-beer-demo",
+    "contact": "Calacas Tacos & Beer team (Balli Restaurants, LLC)",
+    "email": "",
+    "status": "demo-built",
+    "emailSubject": "Calacas, your tacos deserve a louder website (free preview inside)",
+    "emailBody": "Hola Calacas team,\n\nI'm a local web designer here in the Valley. Your photos are some of the best food shots in the RGV, the skull-print paper, the chile-rimmed bottles, the calavera murals, but the current site hides them behind a slideshow and a 'View Menu' link. So I built a free preview of what a new homepage could look like:\n\nhttps://demos.drusustechnologies.com/calacas-tacos-and-beer-demo/\n\nIt opens on your tacos with a live 'Open now' badge, puts La Carta right on the homepage in tabs (street tacos from $1.89, antojitos, starters), gives the '& Beer' half its own scrolling gallery, shows all five locations with one-tap call and directions, and adds a groups and parties callback form. On phones there's a sticky Call / Locations bar.\n\nHappy to walk you through it or tailor it further, no obligation.\n\nBest,\nDrusus Technologies\nhello@drusustechnologies.com",
+    "previewLink": "https://demos.drusustechnologies.com/calacas-tacos-and-beer-demo/",
+    "gitCommands": "git add calacas-tacos-and-beer-demo/index.html\ngit commit -m \"Calacas Tacos & Beer demo: initial build\"\ngit push origin main",
+    "notes": "Address: 3340 Pablo Kisel Blvd, Brownsville, TX 78526 (HQ). Also 6710 W Expressway 83, Harlingen 78552; 500 US-77 BUS, San Benito 78586; 2101 N Cage Blvd, Pharr 78577; 410 Padre Blvd, South Padre Island\nPhone: (956) 518-7800 Brownsville · (956) 496-2816 Harlingen · (956) 626-3372 San Benito · (956) 475-3708 Pharr · (956) 433-5001 SPI\nEmail: none found (website has only a contact form; Facebook About is not public; web search found nothing). Use the contact form at calacastacosandbeer.com/contact/ or call Brownsville.\nCurrent site: https://www.calacastacosandbeer.com/ (BentoBox)\nImages and logo hotlinked from their getbento CDN (resized via imgix params); group form is front-end only.\n\nLatest revision (2026-10-26)\n• Initial build: wrapper-paper art direction from the logo (sun yellow, rosa, ink), centered logo header (112px desktop, 84px tablet, 64px mobile, shrinks on scroll) with frosted cream scroll state and yellow/pink hairline.\n• Hero photo-stack collage with pointer parallax, spinning 'Hasta las 12' sticker, live open/closed status (Central time).\n• Tabbed La Carta (street tacos, antojitos, starters) with real Brownsville prices, pinned horizontal '& Beer' gallery, murals section, five location cards, groups callback form, full footer, mobile Call/Locations bar.\n• QA: demo gate PASS; checked 375/768/1440 with no horizontal overflow.\n• Scroll fix: removed CSS scroll-behavior:smooth that fought Lenis (wheel scrolling crawled/stalled); added Lenis base CSS. Verified steady wheel scroll through the pinned beer section.\n\nPush commands (run from website_demos):\ngit add calacas-tacos-and-beer-demo/index.html\ngit commit -m \"Calacas Tacos & Beer demo: initial build\"\ngit push origin main\n\nLive link: https://demos.drusustechnologies.com/calacas-tacos-and-beer-demo/",
+    "problems": [
+      "Homepage is a 9-photo slideshow plus 'Welcome' text; no menu, prices or hours on the homepage",
+      "Hours and addresses split across five separate location pages",
+      "About page still says 'Brownsville and Harlingen' though there are five locations",
+      "No public email address; contact form only",
+      "No groups/party inquiry path and no sticky call action on mobile",
+      "South Padre Island page has no address or hours text"
+    ],
+    "improvements": [
+      "Wrapper-paper art direction built from the skull logo and their own photography",
+      "Centered, oversized logo header with frosted scroll state",
+      "Hero photo collage with intro choreography, pointer parallax and live open/closed badge",
+      "Tabbed La Carta with real prices and swapping dish photos",
+      "Pinned horizontal '& Beer' gallery",
+      "Murals and atmosphere section with counters",
+      "All five locations with one-tap call, directions links and hours",
+      "Groups and parties callback form with inline validation",
+      "Complete multi-column footer and mobile Call / Locations bar"
+    ]
+  },
+  {
+    "business": "MPWR Electrical Direct",
+    "city": "Pharr, TX",
+    "folder": "mpwr-direct-demo",
+    "contact": "MPWR Electrical Direct crew",
+    "email": "info@mpwrdirect.com",
+    "status": "ready",
+    "emailSubject": "Quick website idea for MPWR Electrical Direct",
+    "emailBody": "Hey MPWR Electrical Direct crew,\n\nI'm Jose with Drusus Technologies over in Pharr.\n\nI was looking over your current setup and put together a quick mockup of what a cleaner, mobile-friendly site for MPWR Electrical Direct could look like. You can check it out right here on your phone:\n\n👉 https://demos.drusustechnologies.com/mpwr-direct-demo/\n\nI noticed some of the images on your current site are still loading from your web developer's demo server (glitchdemo.com), so if that server ever goes down, those pictures go with it.\n\nJust a quick demo to show what's possible. If you ever want to upgrade things down the road, we can add stuff like online quote requests where contractors send in a material list or a photo of one, tap-to-call and directions from any phone, and a simple way to post what's in stock, and keep everything fully branded under the MPWR Electrical Direct name.\n\nTake a look whenever you have a second and let me know what you think!\n\nThanks,\n\nJose Garcia\nDrusus Technologies\n956-929-7706\n703 W Nolana Loop, Pharr, TX 78577\n\nIf you don't want me sending over any more web ideas, just reply \"stop\" and I'll take you off my list.",
+    "previewLink": "https://demos.drusustechnologies.com/mpwr-direct-demo/",
+    "gitCommands": "git add mpwr-direct-demo/index.html\ngit commit -m \"MPWR Direct demo: fix Lenis scroll stall\"\ngit push origin main",
+    "notes": "Address: 323 I-2, Pharr, TX 78577\nPhone: (956) 475-3534\nEmail: info@mpwrdirect.com (from the existing lead record)\nCurrent site: https://mpwrdirect.com/\n\nLatest revision (2026-10-26)\n• Scroll fix: removed CSS scroll-behavior:smooth that fought Lenis (wheel scrolling could crawl or stall). Verified steady wheel scroll in the browser.\n\nPush commands (run from website_demos):\ngit add mpwr-direct-demo/index.html\ngit commit -m \"MPWR Direct demo: fix Lenis scroll stall\"\ngit push origin main\n\nLive link: https://demos.drusustechnologies.com/mpwr-direct-demo/",
+    "problems": [
+      "Site images load from the developer's demo server glitchdemo.com",
+      "Placeholder phone 956-123-4567 appears on the live site"
+    ],
+    "improvements": [
+      "Mobile-first one-page site with tap-to-call (956-475-3534)",
+      "Upgrade: online quote requests (material list or photo)",
+      "Upgrade: tap-to-call and directions",
+      "Upgrade: simple in-stock posting"
+    ]
+  },
+  {
+    "business": "Gil's Auto Detail",
+    "city": "Pharr, TX",
+    "folder": "gils-auto-detail-demo",
+    "contact": "Gil",
+    "email": "gilspcwd@gmail.com",
+    "status": "ready",
+    "emailSubject": "A website for Gil's Auto Detail (already built, take a look)",
+    "emailBody": "Hey Gil,\n\nI'm Jose with Drusus Technologies, just down the road from you on Nolana Loop in Pharr.\n\nI came across Gil's Auto Detail on Facebook and noticed you don't have a website yet, so I put together a quick mockup of what one could look like. You can check it out right here on your phone:\n\n👉 https://demos.drusustechnologies.com/gils-auto-detail-demo/\n\nIt uses your own logo and shop photos, lists your coatings, PPF, tint ($85 / $120 ceramic) and wraps (from $2,400), and every button calls or texts you directly. There's even a little tint preview where people can tap 50%, 35%, 20% or 5% and see how dark it gets.\n\nRight now anyone searching Google for ceramic coating or tint in Pharr only finds you if they happen to be on Facebook. A real site gives you a link that shows up in search and on your Google listing.\n\nJust a quick demo to show what's possible. Down the road we can add things like quote requests where customers send photos of their car, booking by package, and live Google reviews, all branded under Gil's Auto Detail.\n\nTake a look whenever you have a second and let me know what you think!\n\nThanks,\n\nJose Garcia\nDrusus Technologies\n956-929-7706\n703 W Nolana Loop, Pharr, TX 78577\n\nIf you don't want me sending over any more web ideas, just reply \"stop\" and I'll take you off my list.",
+    "previewLink": "https://demos.drusustechnologies.com/gils-auto-detail-demo/",
+    "gitCommands": "git add gils-auto-detail-demo/index.html\ngit commit -m \"Add Gil's Auto Detail demo\"\ngit push origin main",
+    "notes": "Address: 703 E Nolana Loop, Suite 2, Pharr, TX 78577\nPhone: (956) 329-0398 (call or text)\nEmail: gilspcwd@gmail.com (from the Facebook page intro)\nCurrent site: none. Facebook https://www.facebook.com/gilsprofessionalcarwash, Instagram @gilsautodetail7. 100% recommend (8 reviews), 514 followers.\n\nLatest revision (2026-10-26, rev 2)\n• Every section is now dark with its own color light: services (red + steel glow), work (warm red), tint lab (wine to graphite), film & wraps (steel blue + red), process (red glow band), visit (red radial). No white band.\n• Tint lab moved from the light paper band to a dark band; padding tightened and the preview photo now fills its column, so no empty space.\n• Services rebuilt: hover peeks replaced with a sticky photo stage that swaps image, title and price as rows are hovered, tapped, focused or scrolled past; active row gets a red gradient and bar. Works on touch (sticky stage on mobile).\n• Process step numbers are red gradient fills instead of thin outlines.\n• Logo: polisher and stars lifted (shadow lift on chrome, polisher body restored, reds boosted) plus a soft chrome halo, so they read on black.\n• Earlier: logo keyed to transparent with the pink ribbon removed on request; FB photos embedded as WebP data URIs; tint $85 / $120, wraps from $2,400; no form (call/text CTAs); hours shown as 'Opens 9 AM · by appointment'.\n• QA: demo gate PASS; no horizontal scroll at 375 / 768 / 1440; logo 64 / 88 / 112px.\n\nPush commands (run from website_demos):\ngit add gils-auto-detail-demo/index.html\ngit commit -m \"Add Gil's Auto Detail demo\"\ngit push origin main\n\nLive link: https://demos.drusustechnologies.com/gils-auto-detail-demo/",
+    "problems": [
+      "No website: the business is only findable through Facebook and Instagram",
+      "Prices and services live in flyer images, which search engines and screen readers cannot read",
+      "Full weekly hours are not published anywhere online"
+    ],
+    "improvements": [
+      "Mobile-first site with tap-to-call and tap-to-text on every screen",
+      "Service menu with real posted prices for tint and wraps",
+      "Interactive tint shade preview (50 / 35 / 20 / 5%)",
+      "Real shop photos and branded logo, ready to link from the Google Business Profile",
+      "Upgrade path: photo quote requests, booking by package, live Google reviews"
+    ],
+    "industry": "Auto detailing"
+  },
+  {
+    "business": "Test Harbor Plumbing",
+    "city": "Austin, TX",
+    "folder": "test-harbor-plumbing-demo",
+    "industry": "Plumbing",
+    "contact": "Harbor",
+    "email": "pipeline-test@example.com",
+    "status": "ready",
+    "emailSubject": "A website for Test Harbor Plumbing (already built, take a look)",
+    "emailBody": "Hey Harbor,\n\nI'm Jose with Drusus Technologies, a local web designer here in Texas.\n\nI came across Test Harbor Plumbing and noticed you don't have a website yet, so I put together a quick mockup of what one could look like. You can check it out right here on your phone:\n\n👉 https://demos.drusustechnologies.com/test-harbor-plumbing-demo/\n\nIt lists your leak repair, drain cleaning and water heater services, and every button calls you directly.\n\nJust a quick demo to show what's possible. Down the road we can add things like quote requests and live Google reviews, all branded under Test Harbor Plumbing.\n\nTake a look whenever you have a second and let me know what you think!\n\nThanks,\n\nJose Garcia\nDrusus Technologies\n956-929-7706\n703 W Nolana Loop, Pharr, TX 78577\n\nIf you don't want me sending over any more web ideas, just reply \"stop\" and I'll take you off my list.",
+    "previewLink": "https://demos.drusustechnologies.com/test-harbor-plumbing-demo/",
+    "gitCommands": [
+      "git add test-harbor-plumbing-demo leads.json",
+      "git commit -m \"Add Test Harbor Plumbing pipeline test demo\"",
+      "git push origin main"
+    ],
+    "phone": "(512) 555-0100",
+    "notes": "PIPELINE TEST (fictional business). Address: 100 Test St, Austin, TX 78701. Phone: (512) 555-0100. Email source: fictional test address.\nLatest revision 2026-10-27: minimal test demo.\nPush commands (run from website_demos):\ngit add test-harbor-plumbing-demo leads.json\ngit commit -m \"Add Test Harbor Plumbing pipeline test demo\"\ngit push origin main\nhttps://demos.drusustechnologies.com/test-harbor-plumbing-demo/",
+    "problems": [
+      "No website (test)"
+    ],
+    "improvements": [
+      "Header, hero, services, footer"
+    ]
   }
 ]
