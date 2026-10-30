@@ -315,5 +315,10 @@ function sendEstimate(e){
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<!-- drusus-beacon v2 -->
+<script>(function(){try{var n=navigator,u="https://pipeline.drusustechnologies.com/api/public/demo-event",d={},c=0,L=" hero about services gallery reviews areas process pricing faq contact quote booking ",Q="[data-section],section[id],header[id],footer[id]";if(n.doNotTrack=="1"||n.globalPrivacyControl||location.hostname!="demos.drusustechnologies.com")return;function z(t){var q=t.closest&&t.closest(Q),i=q&&(q.getAttribute("data-section")||q.id);return i&&L.indexOf(" "+i+" ")>-1?i:""}
+function s(e,x){var k=e+x;if(!e||d[k]||c>24)return;d[k]=1;c++;try{var b={e:e,p:location.pathname};if(x)b.s=x;fetch(u,{method:"POST",body:JSON.stringify(b),keepalive:!0,credentials:"omit",mode:"cors"}).catch(function(){})}catch(y){}}
+s("view","");addEventListener("submit",function(v){s("form",z(v.target))},!0);addEventListener("click",function(v){try{var t=v.target,a=t.closest("a,button,img,figure,article"),x=z(t),e="";if(!a)return;if(a.matches("a,button")){var t2=((a.getAttribute("data-track")||"")+" "+(a.getAttribute("href")||"")+" "+a.textContent).toLowerCase();e=/quote|estimate/.test(t2)?"quote":/consult|book|schedule/.test(t2)?"consult":/tel:|\bcall/.test(t2)?"call":/mailto:|e-?mail/.test(t2)?"email":/contact/.test(t2)?"contact":""}if(!e&&(x=="services"||x=="gallery"))e=x=="services"?"service":"gallery";s(e,x)}catch(y){}},!0);
+if(window.IntersectionObserver){var o=new IntersectionObserver(function(r){r.forEach(function(m){if(m.isIntersecting){o.unobserve(m.target);s("nav",z(m.target))}})},{threshold:.4});addEventListener("load",function(){try{document.querySelectorAll(Q).forEach(function(m){z(m)&&o.observe(m)})}catch(y){}})}}catch(y){}})()</script>
 </body>
 </html>
